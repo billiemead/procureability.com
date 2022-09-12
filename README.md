@@ -18,7 +18,9 @@ Git is a powerful development tool which enables developers or a development tea
 
 [6. Add Remotes](#add-remotes)
 
-[7. More Info](#more-info)
+[7. Git Push](#git-push)
+
+[8. More Info](#more-info)
 
 - - - -
 
@@ -163,7 +165,7 @@ git@github.com:ProcureAbility-com/procureabi2dev.git
 
 #### Add WP Engine and GitHub Remotes ####
 
-The next step is to map your local repository to the remote endpoints where you will deploy file changes on WP Engine. If you added your key to production, staging, and development environments within your site in the first step, you will need to add a remote for each of these environments.
+The next step is to map your local repository to the remote endpoints where you will deploy file changes on WP Engine. If you added your SSH key to the development environment within the procureability site at the step above, you will need to add a remote for the developement environments as well as for GitHub.
 
 1. First, navigate to the local Git directory that you have created:
 
@@ -178,22 +180,60 @@ git remote add development git@git.wpengine.com:production/procureabi2dev.git
 ````
 
 ````
-git remote add origin git@github.com:ProcureAbility-com/procureabi2dev.git
+git remote add github git@github.com:ProcureAbility-com/procureabi2dev.git
 ````
 - - - -
+
+## Git Push ##
+
+#### Git Push Deploy to WP Engine ####
+
+It is time to deploy using the Git push command.
+
+1. To deploy:
+
+    a. Type `git push`
+
+    b. Type the name of the `remote` you would like to push
+
+    c. Type the name of the local `branch` you wish to push
+    
+    d. We also recommend that `-v` flag to show a verbose output, which can be helpful if there are any errors.
+
+````
+git push -v remote-name branch-name
+````
+2. To push the development main branch, for example, would look like this:
+
+````
+git push -v development main
+````
+3. And to push to the github repo main branch, for example, would look like this:
+
+````
+git push -v github main
+````
+*__Be sure to pay attention to your Git push output, as it will indicate whether the push was successful or if it encountered any errors.__*
 
 ## More Info ##
 
 #### TAKEN FROM WP ENGINE ONLINE SUPPORT #### 
 
-There is a lot more information for setup and troubleshooting that can be found at Wp Engine:
+There is a lot more information for GitHub setup, integration and troubleshooting that can be found at WP Engine:
 
 https://wpengine.com/support/git/
 
+Or reach out to me anytime on Slack or [email](mailto:billie@billiemead.com)
 
-- - - -
 
-## 🔗 Git Repo Link
+## Authors
+
+- [@billiemead](https://www.github.com/billiemead)
+
+
+## 🔗 Links
 
 [![githib](https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ProcureAbility-com/procureabi2dev/)
+
+[![wpengine](https://img.shields.io/badge/wpengine-0ECAD4?style=for-the-badge&logo=wpengine&logoColor=white)](https://wpengine.com/)
 
