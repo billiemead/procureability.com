@@ -18,6 +18,7 @@ Thumbs.db
 # based on https://gist.github.com/jdbartlett/444295
 /*
 !.gitignore
+!README.md
 !wp-content
 
 wp-content/*
