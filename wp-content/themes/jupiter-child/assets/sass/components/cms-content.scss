@@ -1,0 +1,28 @@
+.cms-content {
+  h2, h3 {
+    color: #404040;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  ul, ol {
+    li {
+      margin: 20px 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    vertical-align: middle;
+  }
+}

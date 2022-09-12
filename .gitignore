@@ -1,0 +1,64 @@
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+
+# .gitignore file for WordPress that ignores everything except:
+#
+# - .gitignore
+# - favicon.ico
+# - wp-config.php
+# - everything in mu-plugins
+# - my-plugin
+# - my-theme (except for .sass-cache)
+#
+# based on https://gist.github.com/jdbartlett/444295
+/*
+!.gitignore
+!wp-content
+
+wp-content/*
+!wp-content/themes
+
+wp-content/themes/*
+!wp-content/themes/jupiter-child
+
+.sass-cache
+
+# large/disallowed file types
+# a CDN should be used for these
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi

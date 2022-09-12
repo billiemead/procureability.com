@@ -1,0 +1,135 @@
+@import "~magnific-popup/src/css/main";
+@import '~owl.carousel/dist/assets/owl.carousel.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import '/wp-content/plugins/formidable/css/formidableforms.css';
+@import 'modules/*.scss';
+@import 'layouts/*.scss';
+@import 'components/*.scss';
+@import 'pages.scss';
+@import 'pages/*.scss';
+
+@import 'components/section';
+@import 'components/faq';
+@import 'components/examples';
+@import 'components/experience';
+@import 'components/program-outline';
+@import 'components/hero-image';
+@import 'components/form-section';
+@import 'components/cms-content';
+@import 'components/leadership-section';
+
+#theme-page.master-holder {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.get-going {
+  padding-top: 57px;
+
+  .mk-text-block {
+    text-align: center !important;
+  }
+
+  .gradient--title {
+    font-size: 34px;
+    line-height: 1.27;
+    text-transform: none;
+    margin-bottom: 61px;
+
+    background: linear-gradient(267.72deg, rgba(53, 202, 223, 0.5) 6.87%, rgba(30, 220, 83, 0.195) 85.42%),
+    linear-gradient(267.71deg, rgba(53, 202, 223, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%),
+    linear-gradient(0deg, #0098AE, #0098AE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.get-box {
+  &__lists {
+    margin-bottom: 61px;
+
+    .mk-grid {
+      max-width: 1190px;
+      display: flex;
+      justify-content: space-around;
+
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
+        max-width: 700px;
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+        margin: 0 auto;
+        max-width: 280px;
+      }
+
+      .vc_col-sm-3 {
+        width: auto;
+
+        @media (max-width: 992px) {
+          width: 50%;
+          margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .ult-content-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .wpb_single_image {
+    max-width: 54px;
+    margin-bottom: 0 !important;
+  }
+
+  .ult_main_cl {
+    text-align: left;
+    padding-left: 18px;
+    margin: 0 !important;
+    line-height: 1.41;
+    color: #393a40;
+
+    .ult_btn10_span {
+      border-bottom: 1px dotted #3BA17C;
+      font-family: 'Poppins';
+      font-size: 20px;
+      font-weight: 500;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}
+
+.df-lightbox-wrapper {
+  .df-lightbox-controls {
+    .df-lightbox-close {
+      color: #fff;
+      background-color: rgba(0, 0, 0, .21);
+      border-color: #000;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .4);
+      }
+    }
+  }
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}

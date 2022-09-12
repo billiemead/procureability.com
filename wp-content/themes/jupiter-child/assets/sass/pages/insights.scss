@@ -1,0 +1,118 @@
+.insights-list-item {
+  > .wpb_column {
+    margin-bottom: 60px;
+  }
+
+  .wpb_wrapper {
+    .wpb_content_element {
+      margin-bottom: 0 !important;
+    }
+
+    .img-hover-wrap {
+      width: auto;
+      height: auto;
+
+      .img-hover-img {
+
+      }
+
+      .img-hover-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  .wpb_raw_html {
+    .wpb_wrapper {
+
+      .content_wrapper {
+        text-align: left;
+        padding-left: 20px;
+      }
+
+      .title {
+        a {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 130%;
+          color: #393A40;
+          text-decoration: underline rgba(255, 255, 255, 0);
+          transition: text-decoration-color 300ms;
+
+          &:hover {
+            text-decoration-color: #393A40;
+          }
+        }
+      }
+
+      .description {
+        margin-top: 20px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #61636B;
+      }
+
+      .learn-more {
+        margin-top: 32px;
+
+        a {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 127.5%;
+          color: #3BA17C;
+          text-decoration: underline rgba(255, 255, 255, 0);
+          transition: text-decoration-color 300ms;
+
+          &:hover {
+            text-decoration-color: #3BA17C;
+          }
+        }
+      }
+    }
+  }
+
+  .vc_separator {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .insights-list-item {
+    .wpb_raw_html {
+      .wpb_wrapper {
+        .content_wrapper {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .insights-list-item {
+    .wpb_raw_html {
+      .wpb_wrapper {
+        .title {
+          margin-top: 20px;
+        }
+
+        .learn-more {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
