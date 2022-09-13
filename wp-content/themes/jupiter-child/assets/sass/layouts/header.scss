@@ -78,31 +78,36 @@ header:not(.transparent-header) {
 
 //desktop menu
 .main-navigation-ul {
+
+  &>li.menu-item:not(.menu-item-has-children) {
+    margin-right: 16px;
+  }
   &>li.menu-item {
     &:first-child {
-      &>ul.sub-menu {
-        min-width: 599px !important;
+      & > ul.sub-menu {
+        min-width: 300px;
         left: 50% !important;
+        right: unset !important;
         transform: translateX(-50%) !important;
-        padding: 35px 30px 23px !important;
-        box-sizing: border-box;
+        //padding: 35px 30px 23px !important;
+        //box-sizing: border-box;
 
-        &>li.menu-title-link{
-          float: left;
-          width: 50%;
+        & > li.menu-title-link {
+          //float: left;
+          //width: 50%;
           margin-bottom: 11px;
 
           &.menu-title-link-blue {
-            &>a.menu-item-link {
+            & > a.menu-item-link {
               color: #0095b0;
             }
           }
 
-          &>a.menu-item-link {
+          & > a.menu-item-link {
             font-size: 18px;
             font-weight: 500;
-            margin: 0 0 7px;
-            padding: 0;
+            //margin: 0 0 7px;
+            padding: 5px 20px;
             color: #393a40;
             width: 100% !important;
           }
@@ -111,7 +116,7 @@ header:not(.transparent-header) {
             display: none !important;
           }
 
-          &>ul.sub-menu {
+          & > ul.sub-menu {
             display: block !important;
             transform: none !important;
             left: auto !important;
@@ -121,6 +126,12 @@ header:not(.transparent-header) {
             position: relative !important;
             padding: 0 !important;
             background-color: transparent !important;
+            margin-left: 10px;
+
+            .menu-item-link {
+              padding: 5px 20px !important;
+              width: auto !important;
+            }
           }
 
           &:first-child,
@@ -129,10 +140,10 @@ header:not(.transparent-header) {
           }
         }
 
-        &>li.menu-item {
+        & > li.menu-item {
           padding: 0;
 
-          &>ul.sub-menu {
+          & > ul.sub-menu {
             li.menu-item a.menu-item-link {
               padding: 10px 0;
 
@@ -154,6 +165,9 @@ header:not(.transparent-header) {
     }
 
     &>ul.sub-menu {
+      a.menu-item-link {
+        padding: 5px 20px !important;
+      }
       a.menu-item-link:hover {
         color: #0095B0 !important;
       }
@@ -210,8 +224,9 @@ header:not(.transparent-header) {
 
       &.no-mega-menu {
         ul.sub-menu {
-          min-width: 270px;
+          //min-width: 270px;
           left: 50%;
+          right: unset;
           transform: translateX(-50%);
           padding: 24px 10px ;
 
