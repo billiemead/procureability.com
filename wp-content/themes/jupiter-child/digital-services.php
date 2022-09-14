@@ -305,18 +305,18 @@
         <!--!bottom content-->
 
         <!--team-->
-        <section class="pt-[32px] lg:pt-[80px] pb-[40px] lg:pb-[100px] bg-[#F7F9FA]">
+        <section class="pt-[32px] lg:pt-[80px] pb-[40px] lg:pb-[90px] bg-[#F7F9FA]">
             <div class="px-[33px] lg:px-0 max-w-[1180px] mx-auto">
                 <div class="text-center mb-[24px] lg:mb-[48px]">
                     <span class="brand-text-gradient text-transparent bg-clip-text text-[24px] font-[500] lg:text-[34px] leading-[1.47] lg:font-[600]"><?= get_field('team_title'); ?></span>
                 </div>
-                <div class="max-w-[180px] md:max-w-[398px] lg:max-w-[1030px] mx-auto relative">
+                <div class="max-w-[180px] md:max-w-[398px] lg:max-w-[755px] mx-auto relative">
                     <div id="ourProfessionalTeam" class="swiper">
                         <?php $team_list = get_field('team_list'); ?>
                         <?php if ($team_list) : ?>
                             <div class="swiper-wrapper lg:flex lg:justify-between">
                                 <?php foreach ($team_list as $team_list_item) : ?>
-                                    <div class="swiper-slide lg:!w-[190px]">
+                                    <div class="swiper-slide lg:!w-[192px]">
                                         <a class="block group cursor-pointer"
                                            data-fancybox="team"
                                            data-src="#leader-<?= $team_list_item; ?>"
@@ -326,7 +326,7 @@
                                             <div class="w-[100px] h-[100px] md:w-[160px] md:h-[160px] rounded-full overflow-hidden mx-auto mb-[23px] relative">
                                                 <div class="absolute inset-0 bg-cover"
                                                      style="background-image: url('<?= get_the_post_thumbnail_url($team_list_item); ?>')"></div>
-                                                <div class="absolute inset-0 group-hover:duration-[1s] group-hover:opacity-100 opacity-0 transition-all duration-[.3s] bg-[rgba(247,148,31,.68)]"></div>
+                                                <div class="rounded-full absolute inset-0 group-hover:duration-[1s] group-hover:opacity-100 opacity-0 transition-all duration-[.3s] bg-[rgba(247,148,31,.68)]"></div>
                                                 <div class="absolute inset-0 flex justify-center items-center transform scale-[1.5] group-hover:scale-[1] opacity-0 group-hover:opacity-100 transition-all duration-[.3s] group-hover:duration-[.6s]">
                                                     <span class="text-white text-[18px] leading-[1.1] uppercase font-[600]">Click for bio</span>
                                                 </div>
@@ -357,7 +357,20 @@
                         </svg>
                     </button>
                 </div>
-
+                <?php $team_button_url = get_field('team_button_url'); ?>
+                <?php $team_button_text = get_field('team_button_text'); ?>
+                <?php if ($team_button_url && $team_button_text) : ?>
+                    <div class="mt-[30px] lg:mt-[50px] text-center">
+                        <a class="inline-block pt-[13px] pb-[11px] px-[47px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
+                           href="<?= $team_button_url; ?>"
+                        >
+                            <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
+                                 style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
+                            ></div>
+                            <span class="relative text-white text-[18px] leading-[1.51] font-[600] uppercase"><?= $team_button_text; ?></span>
+                        </a>
+                    </div>
+                <?php endif; ?>
                 <?php if ($team_list): ?>
 
                     <?php foreach ($team_list as $key => $post_id):
@@ -432,7 +445,7 @@
                         >
                             <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                                  style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"></div>
-                            <span class="text-white text-[16px] lg:text-[18px] leading-[1.51] font-[600] uppercase"><?= $insights_button_text; ?></span>
+                            <span class="relative text-white text-[16px] lg:text-[18px] leading-[1.51] font-[600] uppercase"><?= $insights_button_text; ?></span>
                         </a>
                     </div>
                 <?php endif; ?>
