@@ -111,6 +111,5 @@ if ( $mk_options['header_search_location'] === 'fullscreen_search' ) {
 
 	<?php do_action( 'mk_theme_before_body_closing' ); ?>
 
-    <div>test</div>
 </body>
 </html>
