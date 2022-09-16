@@ -8,7 +8,7 @@
 
     <div class="theme-styles-overwrite text-[#393A40]">
         <!--hero-->
-        <section class="pt-[58px] pb-[48px] lg:py-[107px] bg-center bg-cover bg-no-repeat"
+        <section class="pt-[58px] pb-[48px] lg:pt-[140px] lg:pb-[70px] bg-center bg-cover bg-no-repeat"
                  style="background-image: url('<?= get_field('hero_background_image')['url']; ?>'); ">
             <div class="md:max-w-[636px] lg:max-w-[1010px] mx-auto px-[33px] md:px-0">
                 <div class="mb-[24px] lg:mb-[32px] text-center">
