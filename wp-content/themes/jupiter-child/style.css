@@ -30,20 +30,6 @@ body {
     font-weight: 500;
 }
 
-.footer-nav-title {
-    color: #575a63!important;
-    display: block;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0;
-    margin-bottom: 15px;
-    margin-top: 25px;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-.footer-nav-sub {
-    margin-left: 10px!important;
-}
 #custom_html-23 > div > img {
     margin-bottom: 10px;
     display: block;
