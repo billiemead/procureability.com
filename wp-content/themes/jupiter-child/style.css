@@ -44,10 +44,7 @@ body {
     font-weight: 500;
     margin-bottom: 5px;
 }
-.main-navigation-ul>li.menu-item.current-menu-parent>ul.sub-menu>li.current-menu-item>a.menu-item-link,
-.main-navigation-ul>li.menu-item>ul.sub-menu a.menu-item-link:hover {
-    color: #393a40 !important;
-}
+
 #mk-footer .fa {
     font-style: normal;
 }
