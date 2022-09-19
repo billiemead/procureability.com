@@ -515,6 +515,16 @@ body:not(.home) {
   }
 }
 
+.mk-main-navigation {
+  .sub-menu {
+    .current-menu-item {
+      & > .menu-item-link {
+        color: #0095b0 !important;
+      }
+    }
+  }
+}
+
 @media (min-width: 1001px) {
   body:not(.home) {
     header {
