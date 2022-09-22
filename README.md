@@ -156,7 +156,7 @@ ssh git@git.wpengine.com info
 (WP core, plugins are not included)
 
 ````
-git@github.com:ProcureAbility-com/procureabi2dev.git
+git@github.com:ProcureAbility-com/procureability-dev.git
 ````
 
 - - - -
@@ -176,11 +176,11 @@ cd ~/path/to/localcopy
 2. Then add your remotes individually:
 
 ````
-git remote add development git@git.wpengine.com:production/procureabi2dev.git
+git remote add development git@git.wpengine.com:production/procureability-dev.git
 ````
 
 ````
-git remote add github git@github.com:ProcureAbility-com/procureabi2dev.git
+git remote add github git@github.com:ProcureAbility-com/procureability-dev.git
 ````
 - - - -
 
@@ -233,7 +233,7 @@ Or reach out to me anytime on Slack or [email](mailto:billie@billiemead.com)
 
 ## 🔗 Links
 
-[![githib](https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ProcureAbility-com/procureabi2dev/)
+[![githib](https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ProcureAbility-com/procureability-dev/)
 
 [![wpengine](https://img.shields.io/badge/wpengine-0ECAD4?style=for-the-badge&logo=wpengine&logoColor=white)](https://wpengine.com/)
 
