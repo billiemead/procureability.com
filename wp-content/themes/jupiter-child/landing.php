@@ -37,7 +37,7 @@
                                 <div class="text-[18px] lg:text-[24px] leading-[1.4] text-[#61636B]">
                                     <?= $selected_post->post_excerpt; ?>
                                 </div>
-                                <a class="text-[18px] lg:text-[20px] leading-[1.27] text-transparent hover:text-transparent bg-clip-text brand-text-gradient !underline hover:!decoration-[#FAFAFB] !decoration-[#0098AE] underline-offset-[6px] !decoration-dotted inline-block mt-[1.6em] transition-all ease-in-out duration-300"
+                                <a class="text-[18px] lg:text-[20px] leading-[1.27] text-transparent hover:text-transparent bg-clip-text brand-text-gradient inline-block mt-[1.6em] transition-all ease-in-out duration-300 relative after:content-[''] after:absolute after:w-full after:border-b-3 after:border-t-0 after:border-l-0 after:border-r-0 after:border-b-[#0098AE] after:opacity-100 after:block after:border-dotted hover:after:opacity-0 after:transition-all"
                                    href="<?= get_permalink($selected_post); ?>">Learn More</a>
                             </div>
                         </div>
