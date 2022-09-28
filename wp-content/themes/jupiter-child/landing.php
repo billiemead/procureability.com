@@ -22,11 +22,13 @@
             <ul class="list-none m-0 space-y-[40px] lg:space-y-[80px]">
                 <?php foreach ($selected_posts as $selected_post) : ?>
                     <li class="mx-0">
-                        <div class="md:flex bg-[#FAFAFB]">
+                        <div class="md:flex bg-[#FAFAFB] rounded-[6px] lg:min-h-[420px]">
                             <a href="<?= get_permalink($selected_post); ?>"
                                class="block md:min-w-[calc(100%-(100%/1.618))] lg:min-w-[580px]">
-                                <div class="pt-[72.41%] md:h-full md:pt-0 lg:h-auto lg:pt-[72.41%] bg-cover bg-center"
-                                     style="background-image: url('<?= get_the_post_thumbnail_url($selected_post, 'full'); ?>')"></div>
+                                <div class="relative pt-[72.41%] md:h-full md:pt-0 lg:h-auto lg:pt-[72.41%] bg-cover bg-center overflow-hidden">
+                                    <div class="absolute inset-0 bg-cover bg-center hover:scale-110 transition-transform ease-in-out duration-300"
+                                         style="background-image: url('<?= get_the_post_thumbnail_url($selected_post, 'full'); ?>')"></div>
+                                </div>
                             </a>
                             <div class="py-[30px] px-[30px] lg:py-[62px] lg:pl-[64px] lg:pr-[31px]">
                                 <div class="text-[22px] lg:text-[28px] leading-[1.3] text-[#393A40] font-[500] mb-[1.14em]">
@@ -35,7 +37,7 @@
                                 <div class="text-[18px] lg:text-[24px] leading-[1.4] text-[#61636B]">
                                     <?= $selected_post->post_excerpt; ?>
                                 </div>
-                                <a class="text-[18px] lg:text-[20px] leading-[1.27] text-transparent hover:text-transparent bg-clip-text brand-text-gradient !underline hover:!no-underline !decoration-[#0098AE] underline-offset-[6px] !decoration-dotted inline-block mt-[1.6em]"
+                                <a class="text-[18px] lg:text-[20px] leading-[1.27] text-transparent hover:text-transparent bg-clip-text brand-text-gradient !underline hover:!decoration-[#FAFAFB] !decoration-[#0098AE] underline-offset-[6px] !decoration-dotted inline-block mt-[1.6em] transition-all ease-in-out duration-300"
                                    href="<?= get_permalink($selected_post); ?>">Learn More</a>
                             </div>
                         </div>
