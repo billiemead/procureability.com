@@ -22,7 +22,7 @@
             <ul class="list-none m-0 space-y-[40px] lg:space-y-[80px]">
                 <?php foreach ($selected_posts as $selected_post) : ?>
                     <li class="mx-0">
-                        <div class="md:flex bg-[#FAFAFB] rounded-[6px] lg:min-h-[420px]">
+                        <div class="md:flex bg-[#FAFAFB] rounded-[6px] md:min-h-[250px] lg:min-h-[420px]">
                             <a href="<?= get_permalink($selected_post); ?>"
                                class="block md:min-w-[calc(100%-(100%/1.618))] lg:min-w-[580px]">
                                 <div class="relative pt-[72.41%] md:h-full md:pt-0 lg:h-auto lg:pt-[72.41%] bg-cover bg-center overflow-hidden">
