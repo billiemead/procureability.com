@@ -22,8 +22,8 @@
         'relation' => 'AND',
         array(
             'taxonomy' => 'department',
-            'field' => 'term_id',
-            'terms' => 'department'
+            'field' => 'slug',
+            'terms' => 'true-leadership'
         )
     ),
 )); ?>
