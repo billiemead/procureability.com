@@ -16,7 +16,7 @@
     <?php while (have_posts()) : the_post(); ?>
         <section class="pt-[20px] md:pt-[50px]">
             <div class="max-w-[1000px] px-[15px] mx-auto">
-                <h1 class="section-h1"><?= get_the_title(); ?></h1>
+                <h1 class="text-[25px] text-[#ef932f] font-roboto font-[700]"><?= get_the_title(); ?></h1>
                 <div class="cms-content">
                     <?php the_content(); ?>
                 </div>
@@ -57,7 +57,7 @@
 
 <?php if ($cta_title && $cta_text && $cta_button_text && $cta_button_url && $cta_background_image) : ?>
     <!--CTA-->
-    <section class="relative overflow-y-hidden py-[90px] lg:py-[140px] bg-cover bg-center bg-no-repeat"
+    <section class="relative overflow-y-hidden py-[90px] md:py-[140px] bg-cover bg-center bg-no-repeat"
              style="background-image: url('<? $cta_background_image['utl']; ?>')">
         <div class="h-[300%] w-full absolute top-[-150%]">
             <div class="rellax absolute inset-0" data-rellax-percentage="0.5" data-rellax-speed="5">
@@ -66,13 +66,13 @@
             </div>
         </div>
         <div class="relative z-20 max-w-[1000px] mx-auto">
-            <div class="text-center mb-[36px] lg:mb-[86px] text-[40px] leading-none text-white font-[600]"><?= $cta_title; ?>
+            <div class="text-center mb-[36px] md:mb-[86px] text-[40px] leading-none text-white font-[600]"><?= $cta_title; ?>
             </div>
-            <div class="text-center mb-[40px] lg:mb-[90px] [&_p]:text-[25px] [&_p]:leading-[1.5] [&_p]:text-white px-[50px]">
+            <h2 class="text-center mb-[40px] md:mb-[90px] [&_p]:text-[25px] [&_p]:leading-[1.5] [&_p]:text-white px-[50px]">
                 <?= $cta_text; ?>
-            </div>
+            </h2>
             <div class="text-center">
-                <a class="inline-block py-[11px] px-[20px] text-[#24B9CD] bg-white border border-[#24B9CD] border-solid rounded-[3px] hover:bg-[#D1D1D1] hover:text-[#24B9CD] active:relative active:top-[1px]"
+                <a class="inline-block py-[11px] px-[20px] text-[14px] text-[#24B9CD] bg-white border border-[#24B9CD] border-solid rounded-[3px] hover:bg-[#D1D1D1] hover:text-[#24B9CD] active:relative active:top-[1px]"
                    href="<?= $cta_button_url; ?>"><?= $cta_button_text; ?></a>
             </div>
         </div>
@@ -87,14 +87,15 @@
     <!--Advantages-->
     <section>
         <div class="bg-[#575b65] py-[25px]">
-            <div class="text-center">
-                <div class="text-[40px] leading-none font-[600] text-white uppercase pt-[15px] mb-[16px]"><?= $advantages_title; ?>
-                </div>
+            <div class="text-center pt-[15px] mb-[16px] md:w-1/2 mx-auto px-[15px] box-border">
+                <h2 class="text-[40px] leading-none font-[600] text-white uppercase"><?= $advantages_title; ?>
+                </h2>
             </div>
         </div>
         <div class="bg-[#f7941e]">
             <div class="max-w-[1000px] mx-auto">
                 <img class="block max-w-full"
+                     srcset="<?= wp_get_attachment_image_srcset($advantages_image['id']); ?>"
                      src="<?= $advantages_image['url']; ?>" alt="<?= $advantages_image['alt']; ?>">
             </div>
         </div>
@@ -114,13 +115,13 @@
             <div class="grid gap-[20px] md:gap-0 md:grid-cols-2">
                 <?php if ($experts_title && $experts_text) : ?>
                     <div class="px-[15px]">
-                        <div class="text-[25px] leading-[1.66] mb-[20px]"><?= $experts_title; ?></div>
+                        <h3 class="text-[25px] leading-[1.66] mb-[20px]"><?= $experts_title; ?></h3>
                         <div><?= $experts_text; ?></div>
                     </div>
                 <?php endif; ?>
                 <?php if ($quotes_title && $quotes_quotes) : ?>
                     <div class="px-[15px]">
-                        <div class="text-[25px] leading-[1.66] mb-[20px]"><?= $quotes_title; ?></div>
+                        <h3 class="text-[25px] leading-[1.66] mb-[20px]"><?= $quotes_title; ?></h3>
                         <?php if ($quotes_quotes) : ?>
                             <div class="space-y-[20px]">
                                 <?php foreach ($quotes_quotes as $quotes_quote) : ?>
