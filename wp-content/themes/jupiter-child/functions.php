@@ -53,6 +53,15 @@ function procureability_enqueue_styles()
 
     /*Digital Services*/
     wp_enqueue_script('digital-services', '/wp-content/themes/jupiter-child/dist/digital-services.js', array('theme-scripts', 'wow', 'swiper'), false, true);
+
+    /*Digital Services*/
+    wp_enqueue_script('about', '/wp-content/themes/jupiter-child/dist/about.js', array('theme-scripts'), false, true);
+
+    /*Blocks*/
+    /*Leaders*/
+
+    wp_enqueue_script('leaders', '/wp-content/themes/jupiter-child/dist/leaders.js', array('theme-scripts'), false, true);
+
 }
 
 add_action('wp_enqueue_scripts', 'procureability_enqueue_styles');

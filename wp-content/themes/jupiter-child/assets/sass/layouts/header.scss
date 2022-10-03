@@ -71,7 +71,7 @@ header:not(.transparent-header) {
 .header-style-1.header-align-left .header-logo {
   padding-top: 5px;
   
-  @media (max-width: 1000px) {
+  @media (max-width: 1124px) {
     padding-top: 0;
   }
 }
@@ -525,7 +525,7 @@ body:not(.home) {
   }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1125px) {
   body:not(.home) {
     header {
       .header-logo {
@@ -562,7 +562,7 @@ body:not(.home) {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1124px) {
   body:not(.home) {
     .header-logo a {
       .mk-resposnive-logo {

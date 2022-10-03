@@ -11,23 +11,6 @@
 <?php get_template_part('partials/page', 'hero'); ?>
 <!--Hero-->
 
-<?php $leadership = new WP_Query(array(
-    'post_type' => 'leadership',
-    'post_status' => 'publish',
-    'posts_per_page' => -1,
-    'orderby' => array(
-        'date' => 'ASC',
-    ),
-    'tax_query' => array(
-        'relation' => 'AND',
-        array(
-            'taxonomy' => 'department',
-            'field' => 'slug',
-            'terms' => 'true-leadership'
-        )
-    ),
-)); ?>
-
 <?php $team = get_field('team'); ?>
 
 <section class="pt-[40px] md:pt-[100px] pb-[50px] md:pb-[75px]">
@@ -44,7 +27,7 @@
                     >
                         <div class="pb-[100%] lg:pb-0 lg:w-[290px] lg:h-[290px] rounded-full overflow-hidden mx-auto mb-[30px] lg:mb-[15px] relative">
                             <div class="absolute inset-0 bg-cover"
-                                 style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
+                                 style="background-image: url('<?= get_the_post_thumbnail_url(null, 'image-size-550x550'); ?>')"></div>
                             <div class="hidden lg:block lg:rounded-full absolute inset-0 group-hover:duration-[1s] group-hover:opacity-100 opacity-0 transition-all duration-[.3s] bg-[rgba(247,148,31,.68)]"></div>
                             <div class="hidden absolute inset-0 lg:flex justify-center items-center transform scale-[1.5] group-hover:scale-[1] opacity-0 group-hover:opacity-100 transition-all duration-[.3s] group-hover:duration-[.6s]">
                                 <span class="text-white text-[18px] leading-[1.1] uppercase font-[600]">Click for bio</span>
