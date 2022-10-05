@@ -19,6 +19,31 @@ body {
 }
 
 */
+.explainer-video-section {
+    margin-bottom: 2em;
+}
+
+.explain-video-col {
+    display:flex;
+    background-color:#f7941f;
+    justify-content:center;
+    align-items:center;
+    max-width:480px;
+    padding:1em;
+    flex-direction:column;
+}
+.explain-video-title {
+    color:#000;
+    font-weight: bold ;
+    font-size: 1.25em;
+    padding-top: 1em;
+    text-transform: capitalize;
+}
+.explain-video {
+    width: 640px;
+    justify-content: center;
+    display: flex;
+}
 
 .custom-page .cp-technology {
     display: none;
