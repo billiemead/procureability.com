@@ -4,6 +4,7 @@ body.home {
     margin: 0 auto;
     width: 100%;
     padding: 0 15px;
+    box-sizing: border-box;
   }
 
   .home-about {
@@ -30,6 +31,7 @@ body.home {
 
   .img-plus-txt {
     display: flex;
+    position: relative;
 
     &__image {
       width: 50%;
@@ -50,6 +52,7 @@ body.home {
       width: 50%;
       flex-shrink: 0;
       padding: 64px 40px 72px;
+      box-sizing: border-box;
     }
 
     &__title {
@@ -165,6 +168,7 @@ body.home {
     &__item {
       width: 50%;
       padding: 0 15px;
+      box-sizing: border-box;
     }
 
     &__icon {
@@ -216,6 +220,7 @@ body.home {
 
       img {
         display: block;
+        max-width: 100%;
       }
     }
 
@@ -257,6 +262,7 @@ body.home {
       flex-shrink: 0;
       flex-wrap: wrap;
       margin-bottom: -20px;
+      box-sizing: border-box;
     }
 
     &__item {
@@ -269,6 +275,7 @@ body.home {
 
       img {
         display: block;
+        max-width: 100%;
 
         &.on-hover {
           display: none;
@@ -378,7 +385,7 @@ body.home {
 
   .container {
     max-width: 902px !important;
-    
+
     @media (min-width: 1600px) {
       max-width: 1239px !important;
     }
@@ -541,6 +548,7 @@ body.home {
   padding: 70px 0;
   background-color: #f0f0f0;
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: '';
@@ -576,6 +584,10 @@ body.home {
     position: relative;
   }
 
+  &__col {
+    box-sizing: border-box;
+  }
+
   &__item {
     display: flex;
     height: 100%;
@@ -600,6 +612,7 @@ body.home {
     border-top: 0;
     min-height: 230px;
     background-color: #fff;
+    box-sizing: border-box;
   }
 
   &__text {

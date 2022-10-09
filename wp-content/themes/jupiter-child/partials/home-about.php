@@ -1,5 +1,5 @@
 <div class="home-about">
-    <h2 class="home-about__title"><?= $fields['title'] ?></h2>
+    <h2 class="home-about__title"><?= $args['title'] ?></h2>
 
-    <p class="home-about__text"><?= $fields['text'] ?></p>
+    <p class="home-about__text"><?= $args['text'] ?></p>
 </div>
