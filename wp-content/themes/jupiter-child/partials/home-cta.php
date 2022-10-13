@@ -3,7 +3,7 @@
 <?php $frontpage_cta_button_link = get_field('frontpage_cta_button_link'); ?>
 
 <section class="py-[40px] md:py-[56px] xl:py-[82px] relative bg-[#0098AE]">
-    <div class="absolute inset-0 opacity-25"
+    <div class="absolute inset-0 opacity-25 bg-no-repeat bg-cover bg-center"
          style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/homepage/cta-bg-image.jpg')"></div>
     <div class="max-w-[636px] xl:max-w-[746px] px-[34px] mx-auto relative">
         <div class="text-center mb-[24px] md:mb-[32px] xl:mb-[24px]">

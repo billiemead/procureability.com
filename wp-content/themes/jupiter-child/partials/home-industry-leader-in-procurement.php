@@ -15,7 +15,7 @@
         <?php if ($frontpage_industry_leader_in_procurement_clients) : ?>
             <div class="md:max-w-[632px] xl:max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-x-[18px] gap-y-[20px] xl:gap-x-[60px]">
                 <?php foreach ($frontpage_industry_leader_in_procurement_clients as $client) : ?>
-                    <div class="min-h-[64px] flex justify-center items-center [&_img]:max-w-full">
+                    <div class="min-h-[64px] flex justify-center items-center [&_img]:w-auto [&_img]:max-h-[80px] [&_img]:h-auto [&_img]:max-w-full">
                         <?= wp_get_attachment_image($client['image']['id'], 'full'); ?>
                     </div>
                 <?php endforeach; ?>
