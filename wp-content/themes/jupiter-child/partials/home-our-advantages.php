@@ -25,7 +25,7 @@
                                         <div class="font-poppins text-[#61636B] text-[18px] leading-[1.2] md:text-[24px] md:leading-[1.7] font-[600] tracking-[0.03em] uppercase mb-[16px] md:mb-[12px] xl:mb-[16px]">
                                             <?= $advantage['title']; ?>
                                         </div>
-                                        <div class="font-poppins"><?= $advantage['text']; ?>
+                                        <div class="font-poppins text-[#61636B] text-[16px] leading-[1.7]"><?= $advantage['text']; ?>
                                         </div>
                                         <div class="mt-[32px]">
                                             <a class="inline-block py-[12px] px-[38px] uppercase bg-[#3BA17C] rounded-[3px] group relative"
@@ -33,7 +33,7 @@
                                                 <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
                                                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/button-bg-pattern.svg')"
                                                 ></div>
-                                                <span class="font-poppins text-white text-[18px] leading-[1.5] tracking-[0.1em] font-[700]"><?= $advantage['button_text']; ?></span>
+                                                <span class="font-poppins text-white text-[18px] leading-[1.5] font-[700] tracking-[0.1em] font-[700]"><?= $advantage['button_text']; ?></span>
                                             </a>
                                         </div>
                                     </div>
