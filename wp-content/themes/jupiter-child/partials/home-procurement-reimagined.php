@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="flex xl:!block justify-center items-center">
-                    <div class="xl:absolute xl:right-0 xl:top-0 w-[50px] md:w-[80px] xl:w-[160px] mr-[20px] xl:mr-0 [&_img]:max-w-full">
+                    <div class="xl:absolute xl:right-0 xl:top-0 w-[50px] md:w-[80px] xl:w-[160px] mr-[20px] xl:mr-0 [&_img]:max-w-full [&_img]:h-auto">
                         <?= wp_get_attachment_image($frontpage_procurement_reimagined_quote_author_photo['id'], 'full'); ?>
                     </div>
                     <div class="text-[#393A40] text-[14px] md:text-[16px] leading-[1.5] tracking-[-0.02em]">
