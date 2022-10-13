@@ -16,8 +16,9 @@
                     <?php foreach ($frontpage_recent_thought_leadership_posts as $post) : setup_postdata($post); ?>
                         <div class="swiper-slide">
                             <div>
-                                <div class="pb-[55.32%] mb-[24px] md:mb-[42px] xl:mb-[32px] rounded-[6px] bg-cover bg-no-repeat bg-center"
-                                     style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
+                                <a href="<?= get_permalink(); ?>"
+                                   class="block pb-[55.32%] mb-[24px] md:mb-[42px] xl:mb-[32px] rounded-[6px] bg-cover bg-no-repeat bg-center"
+                                   style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></a>
                                 <div class="text-poppins text-[#393A40] text-[14px] md:text-[16px] leading-[1.7] md:leading-[1.65] mb-[16px] opacity-80">
                                     <?= the_title(); ?>
                                 </div>
