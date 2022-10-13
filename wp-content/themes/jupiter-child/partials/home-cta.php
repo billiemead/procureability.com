@@ -11,7 +11,7 @@
         </div>
         <div class="text-center">
             <a class="inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative"
-               href="<?= $frontpage_cta_button_link; ?>">
+               href="<?= $frontpage_cta_button_link['url']; ?>">
                 <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
                 ></div>
