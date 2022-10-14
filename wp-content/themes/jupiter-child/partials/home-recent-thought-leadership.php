@@ -2,7 +2,7 @@
 <?php $frontpage_recent_thought_leadership_posts = get_field('frontpage_recent_thought_leadership_posts'); ?>
 
 <section
-        class="pb-[48px] pt-[65px] md:py-[64px] xl:py-[72px] bg-no-repeat bg-[length:434px_auto] md:bg-[length:584px_auto] xl:bg-[length:741px_auto] bg-[position:calc(50%+61px)_-75px] md:bg-[position:calc(50%+145px)_center] xl:bg-[position:calc(50%+370px)_center]"
+        class="pb-[48px] pt-[65px] md:py-[64px] xl:py-[72px] bg-no-repeat bg-[length:868px_auto] md:bg-[length:1168px_auto] xl:bg-[length:1482px_auto] bg-[position:calc(50%+325px)_-75px] md:bg-[position:calc(50%+380px)_center] xl:bg-[position:calc(50%+757px)_center]"
         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/homepage/section-bg-green.svg')">
     <div class="md:max-w-[640px] xl:max-w-[1200px] px-[34px] mx-auto">
         <div class="text-center mb-[32px] md:mb-[40px]">

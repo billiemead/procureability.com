@@ -26,8 +26,9 @@
                 </a>
             </div>
         </div>
-        <img class="block relative md:!absolute max-w-[240px] md:max-w-[340px] xl:max-w-[390px] mx-auto md:bottom-0 md:right-[-60px] xl:right-[96px]"
+
+        <img class="block relative md:!absolute max-w-[240px] md:max-w-[340px] xl:max-w-[390px] mx-auto md:bottom-0 md:right-[-45px] xl:right-[96px]"
              src="/wp-content/themes/jupiter-child/assets/img/pages/homepage/happy-successful-manager-holding-glasses%202.png"
-             alt="">
+             alt="<?= $frontpage_who_we_are_title; ?>">
     </div>
 </section>

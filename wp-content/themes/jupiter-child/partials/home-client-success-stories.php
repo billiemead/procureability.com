@@ -4,7 +4,7 @@
 <?php $frontpage_client_success_stories_button_link = get_field('frontpage_client_success_stories_button_link'); ?>
 
 <section
-        class="py-[48px] md:py-[64px] xl:py-[72px] bg-no-repeat bg-[length:434px_auto] md:bg-[length:584px_auto] xl:bg-[length:741px_auto] bg-[position:calc(50%+61px)_-75px] md:bg-[position:calc(50%+145px)_center] xl:bg-[position:calc(50%+370px)_center]"
+        class="py-[48px] md:py-[64px] xl:py-[72px] bg-no-repeat bg-[length:868px_auto] md:bg-[length:1168px_auto] xl:bg-[length:1482px_auto] bg-[position:calc(50%+325px)_-75px] md:bg-[position:calc(50%+380px)_center] xl:bg-[position:calc(50%+757px)_center]"
         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/homepage/section-bg-green.svg')">
     <div class="max-w-[636px] xl:max-w-[1200px] px-[34px] mx-auto">
         <div class="text-center mb-[32px] md:mb-[40px]">
@@ -34,11 +34,11 @@
                     <?php wp_reset_postdata(); ?>
                 </div>
                 <div id="clientSuccessStoriesPagination"
-                     class="xl:hidden mt-[24px] xl:mt-[40px] flex justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#0098AE] [&_span]:!opacity-100"></div>
+                     class="xl:!hidden mt-[24px] xl:mt-[40px] flex justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#0098AE] [&_span]:!opacity-100"></div>
             </div>
         <?php endif; ?>
         <div class="text-center">
-            <a class="inline-block py-[12px] px-[34px] bg-[#0098AE] rounded-[3px] relative group"
+            <a class="inline-block py-[12px] px-[25px] md:px-[34px] bg-[#0098AE] rounded-[3px] relative group"
                href="<?= $frontpage_client_success_stories_button_link['url']; ?>">
                 <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
