@@ -47,6 +47,7 @@ new Swiper('#ourAdvantages', {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 20,
+    autoHeight: true,
     navigation: {
         nextEl: '#ourAdvantagesNavigationNext',
         prevEl: '#ourAdvantagesNavigationPrev',
