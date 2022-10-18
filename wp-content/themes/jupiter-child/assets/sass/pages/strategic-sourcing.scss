@@ -1,6 +1,14 @@
 .single-post {
   &.post-strategic-sourcing-solutions-wildfire-mitigation {
     .master-holder {
+      h1 {
+        font-size: 36px !important;
+      }
+
+      h4 {
+        font-size: 24px !important;
+      }
+
       .plan-block {
         padding: 36px 37px 43px;
         background: #FBFBFB;
@@ -53,6 +61,7 @@
             background: #FBFBFB;
             position: relative;
             z-index: 1;
+            text-transform: unset;
           }
         }
 
@@ -245,7 +254,6 @@
                   .mk-text-block {
                     padding: 30px 15px 30px 15px;
                     font-family: 'Poppins';
-                    font-style: italic;
                     font-weight: 400;
                     font-size: 15.0872px;
                     line-height: 22px;
@@ -359,7 +367,7 @@
             }
 
             .mk-text-block {
-              &::before ,
+              &::before,
               &::after {
                 display: none;
               }
