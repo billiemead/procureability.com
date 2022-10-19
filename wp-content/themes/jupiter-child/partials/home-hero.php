@@ -11,7 +11,7 @@
 <?php $frontpage_hero_ukraine_image = get_field('frontpage_hero_ukraine_image'); ?>
 
 <section
-        class="bg-no-repeat bg-center bg-cover"
+        class="bg-no-repeat bg-center bg-cover lg:bg-[length:118%_auto] lg:bg-[position:right_calc(50%-85px)]"
         style="background-image: url('<?= $frontpage_hero_background_image['url'] ?>')">
     <div class="pt-[104px] md:pt-[133px] xl:pt-[213px] pb-[60px] md:pb-[74px] xl:pb-[150px]">
         <div class="px-[34px] xl:max-w-[1096px] mx-auto">
