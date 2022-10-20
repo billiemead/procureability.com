@@ -405,6 +405,10 @@ get_header();
             <?php endif; ?>
         </div>
     </section>
+
+    <!--Leadership-->
+    <?php get_template_part('partials/page', 'leadership'); ?>
+    <!--Leadership-->
 </div>
 
 <?php get_footer(); ?>

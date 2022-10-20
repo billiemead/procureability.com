@@ -202,4 +202,8 @@
     </section>
     <!--Blog-->
 
+    <!--Leadership-->
+<?php get_template_part('partials/page', 'leadership'); ?>
+    <!--Leadership-->
+
 <?php get_footer(); ?>

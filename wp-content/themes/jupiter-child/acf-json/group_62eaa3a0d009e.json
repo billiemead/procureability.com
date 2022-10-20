@@ -63,7 +63,14 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "procurement-staffing-and-recruiting.php"
+                "value": "supply-chain-and-logistics.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-managed-services.php"
             }
         ]
     ],
@@ -76,5 +83,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661857890
+    "modified": 1666267634
 }
