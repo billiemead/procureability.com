@@ -2,7 +2,7 @@
     <div class="home-hero__video">
         <video autoplay="true" muted="muted" loop="loop"
                playsinline="playsinline" webkit-playsinline="webkit-playsinline"
-               src="/wp-content/uploads/2022/02/procureability_video1_slider-1080p.mp4">
+               src="https://procureability.com/wp-content/uploads/2022/02/procureability_video1_slider-1080p.mp4">
         </video>
     </div>
 
@@ -15,7 +15,7 @@
             </div>
 
             <div class="home-hero__image">
-                <img src="/wp-content/uploads/revslider/home-slider-new-11/starburstv2.png" alt="asd">
+                <img src="https://procureability.com/wp-content/uploads/revslider/home-slider-new-11/starburstv2.png" alt="asd">
             </div>
         </div>
     </div>

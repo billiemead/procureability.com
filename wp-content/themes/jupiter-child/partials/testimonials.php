@@ -1,4 +1,4 @@
-<div class="testimonials" style="background-image: url('/wp-content/uploads/2020/10/home-page-testimonial-slider-bkg.jpg');">
+<div class="testimonials" style="background-image: url('https://procureability.com/wp-content/uploads/2020/10/home-page-testimonial-slider-bkg.jpg');">
     <div class="container text-center">
         <div class="testimonials__list js-testimonials owl-carousel">
             <div class="testimonials__item" data-dot="<button class='owl-dot'><span>Debbie</span></button>">
