@@ -45,9 +45,6 @@
                                         <a class="font-roboto text-[14px] leading-[1.1] xl:text-[16px] leading-[1.2] font-[500] uppercase"
                                            href="<?= $feature['button_link']['url']; ?>"
                                            style="color: rgb(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>)"><?= $feature['button_text']; ?>
-                                            <svg class="relative top-[1px] ml-[5px]" xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
-                                                <path d="M1 11.75L6.5 6.25L1 1.25" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.5"/>
-                                            </svg>
                                         </a>
                                     </div>
                                 </div>
