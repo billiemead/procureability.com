@@ -2,7 +2,7 @@
 <?php $frontpage_welcome_to_procureability_feature = get_field('frontpage_welcome_to_procureability_feature'); ?>
 
 <section
-        class="overflow-x-hidden pt-[48px] md:pt-[64px] xl:pt-[72px] pb-[48px] md:pb-[72px] xl:pb-[115px] bg-no-repeat bg-[length:868px_auto] md:bg-[length:1168px_auto] xl:bg-[length:1482px_auto] bg-[position:calc(50%-325px)_-75px] md:bg-[position:calc(50%-380px)_center] xl:bg-[position:calc(50%-757px)_center]"
+        class="overflow-x-hidden pt-[48px] md:pt-[64px] xl:pt-[72px] pb-[48px] md:pb-[72px] xl:pb-[115px] bg-no-repeat bg-[length:434px_auto] md:bg-[length:584px_auto] xl:bg-[length:741px_auto] bg-[position:left_-75px] md:bg-[position:left_center] xl:bg-[position:left_center"
         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/homepage/section-bg-blue.svg')"
 >
     <div class="max-w-[1200px] mx-auto">
@@ -28,7 +28,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bg-white xl:group-active:opacity-100 xl:group-hover:opacity-100 xl:opacity-0 py-[28px] px-[28px] flex flex-col absolute inset-0 transition-opacity rounded-[5px] border border-solid"
+                                <div class="xl:group-active:opacity-100 xl:group-hover:opacity-100 xl:opacity-0 py-[28px] px-[28px] flex flex-col absolute inset-0 transition-opacity rounded-[5px] border border-solid"
                                      style="box-shadow: 0px 10px 20px rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, 0.3); border-color: rgb(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>)">
                                     <div class="text-center mb-[10px] md:mb-[16px] xl:mb-[12px]">
                                         <div class="font-poppins text-[18px] leading-[1.2] md:text-[24px] md:leading-[1.3] font-[600]"

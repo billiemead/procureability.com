@@ -18,7 +18,7 @@
             <div class="text-center font-poppins text-white text-[28px] md:text-[42px] leading-[1.2] md:leading-[1.27] font-[600] mb-[16px]">
                 <?= $frontpage_hero_title; ?>
             </div>
-            <div class="md:max-w-[608px] xl:max-w-full mx-auto text-center font-poppins text-white text-[14px] md:text-[16px] xl:text-[24px] leading-[1.7] md:leading-[1.7] mb-[32px]"><?= $frontpage_hero_text; ?>
+            <div class="text-center font-poppins text-white text-[14px] md:text-[16px] xl:text-[24px] leading-[1.7] md:leading-[1.7] mb-[32px]"><?= $frontpage_hero_text; ?>
             </div>
             <div class="text-center">
                 <a class="inline-block py-[12px] px-[48px] bg-[#3BA17C] rounded-[3px] relative group"

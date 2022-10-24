@@ -2,17 +2,17 @@
 <?php $frontpage_our_advantages_advantages = get_field('frontpage_our_advantages_advantages'); ?>
 
 
-<section class="pt-[48px] md:pt-[64px] md:pb-[15px] xl:pt-[72px] xl:pb-[92px]">
+<section class="pt-[72px] pb-[92px]">
     <div class="max-w-[636px] xl:max-w-[1200px] px-[34px] md:px-0 mx-auto">
-        <div class="text-center mb-[20px] xl:mb-[13px]">
-            <div class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[22px] leading-[1.4] md:text-[36px] md:leading-[1.5] font-[600]">
+        <div class="text-center mb-[13px]">
+            <div class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[36px] leading-[1.5] font-[600]">
                 <?= $frontpage_our_advantages_title; ?>
             </div>
         </div>
         <div class="xl:grid xl:grid-cols-2 xl:items-end xl:gap-[107px]">
             <div class="mb-[24px] md:mb-[40px] xl:mb-0">
                 <img class="block w-full xl:max-w-full"
-                     src="/wp-content/themes/jupiter-child/assets/img/pages/homepage/our-advantages.png" alt="<?= $frontpage_our_advantages_title; ?>">
+                     src="/wp-content/themes/jupiter-child/assets/img/pages/homepage/our-advantages.png" alt="">
             </div>
             <?php if ($frontpage_our_advantages_advantages) : ?>
                 <div class="relative">
