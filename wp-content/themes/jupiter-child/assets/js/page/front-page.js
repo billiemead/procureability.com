@@ -46,7 +46,6 @@ new Swiper('#clientSuccessStories', {
 new Swiper('#ourAdvantages', {
     loop: false,
     slidesPerView: 1,
-    spaceBetween: 20,
     navigation: {
         nextEl: '#ourAdvantagesNavigationNext',
         prevEl: '#ourAdvantagesNavigationPrev',

@@ -4,11 +4,12 @@
 <?php $frontpage_who_we_are_button_link = get_field('frontpage_who_we_are_button_link'); ?>
 
 <section
-        class="pt-[48px] md:pt-[0px] bg-[#F2F6F6] [&_*]:box-border relative bg-no-repeat bg-[length:657px_auto] md:bg-[length:865px_auto] xl:bg-[length:1020px_auto] bg-[position:calc(50%-40px)_bottom] md:bg-[position:calc(50%+180px)_bottom] xl:bg-[position:calc(50%+250px_bottom]"
-        style="background-image: url('/wp-content/themes/jupiter-child/assets/img/pages/homepage/who-we-are-bg.png')">
-
+        class="overflow-hidden xl:overflow-y-visible xl:overflow-visible pt-[48px] md:pt-[0px] bg-[#F2F6F6] [&_*]:box-border">
     <div class="max-w-[310px] md:max-w-[637px] xl:max-w-[1200px] mx-auto relative">
-        <div class="md:pt-[56px] md:pb-[68px] xl:pt-[60px] pb-[30px] xl:pb-[70px] md:max-w-[363px] xl:max-w-[550px] relative">
+        <img class="absolute w-[710px] bottom-[-25px] right-[-130px] md:w-[1040px] md:bottom-[-40px] md:right-[-400px] xl:bottom-0 xl:right-[-120px]"
+             src="/wp-content/themes/jupiter-child/assets/img/pages/homepage/who-we-are-bg.png"
+             alt="">
+        <div class="md:pt-[56px] md:pb-[68px] xl:pt-[60px] pb-[30px] xl:pb-[70px] md:max-w-[363px] xl:max-w-[550px]">
             <div class="text-center md:!text-left mb-[16px] md:mb-[12px]">
                 <div class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[22px] md:text-[36px] leading-[1.4] md:leading-[1.5] font-[600]"><?= $frontpage_who_we_are_title; ?>
                 </div>
@@ -17,7 +18,7 @@
                 <?= apply_filters('the_content', $frontpage_who_we_are_text); ?>
             </div>
             <div class="text-center md:!text-left xl:!text-left">
-                <a class="inline-block py-[12px] px-[65px]  bg-[#3BA17C] rounded-[3px] group relative"
+                <a class="inline-block  py-[12px] px-[65px]  bg-[#3BA17C] rounded-[3px] group relative"
                    href="<?= $frontpage_who_we_are_button_link['url']; ?>">
                     <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
                          style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/button-bg-pattern.svg')"

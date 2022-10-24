@@ -14,14 +14,14 @@
         class="bg-no-repeat bg-center bg-cover"
         style="background-image: url('<?= $frontpage_hero_background_image['url'] ?>')">
     <div class="pt-[104px] md:pt-[133px] xl:pt-[213px] pb-[60px] md:pb-[74px] xl:pb-[150px]">
-        <div class="px-[34px] xl:max-w-[1096px] mx-auto">
+        <div class="px-[34px] xl:max-w-[1200px] mx-auto">
             <div class="text-center font-poppins text-white text-[28px] md:text-[42px] leading-[1.2] md:leading-[1.27] font-[600] mb-[16px]">
                 <?= $frontpage_hero_title; ?>
             </div>
-            <div class="text-center font-poppins text-white text-[14px] md:text-[16px] xl:text-[24px] leading-[1.7] md:leading-[1.7] mb-[32px]"><?= $frontpage_hero_text; ?>
+            <div class="text-center font-poppins text-white text-[14px] xl:text-[24px] leading-[1.7] xl:leading-[1.6] mb-[32px]"><?= $frontpage_hero_text; ?>
             </div>
             <div class="text-center">
-                <a class="inline-block py-[12px] px-[48px] bg-[#3BA17C] rounded-[3px] relative group"
+                <a class="inline-block  py-[12px] px-[48px] bg-[#3BA17C] rounded-[3px] relative group"
                    href="<?= $frontpage_hero_button_link['url']; ?>">
                     <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
                          style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/button-bg-pattern.svg')"
