@@ -1,5 +1,7 @@
 <?php
 
+/*test*/
+
 function asset_hash($file)
 {
 
