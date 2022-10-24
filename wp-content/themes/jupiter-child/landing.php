@@ -7,10 +7,10 @@
 
 <?php get_header(); ?>
 
-<section class="pt-[35px] pb-[40px] xl:pt-[70px] xl:pb-[80px]">
+<section class="pt-[35px] pb-[40px] lg:pt-[70px] lg:pb-[80px]">
     <div class="max-w-[984px] px-[15px] mx-auto">
-        <h1 class="font-poppins text-[32px] xl:text-[38px] leading-[1.2] font-[600] text-[#393A40] mb-[0.66em]"><?= get_the_title(); ?></h1>
-        <div class="[&_p]:text-[18px] xl:[&_p]:text-[22px] [&_p]:leading-[1.6] [&_p]:text-[#393A40] [&_p]:mb-[1.14em] [&_p:last-child]:mb-0">
+        <h1 class="font-poppins text-[32px] lg:text-[38px] leading-[1.2] font-[600] text-[#393A40] mb-[0.66em]"><?= get_the_title(); ?></h1>
+        <div class="[&_p]:text-[18px] lg:[&_p]:text-[22px] [&_p]:leading-[1.6] [&_p]:text-[#393A40] [&_p]:mb-[1.14em] [&_p:last-child]:mb-0">
             <?php the_content(); ?>
         </div>
     </div>
@@ -19,18 +19,18 @@
 <?php if ($selected_posts) : ?>
     <section class="pb-[80px]">
         <div class="max-w-[984px] px-[15px] mx-auto">
-            <ul class="list-none m-0 space-y-[32px] xl:space-y-[64px]">
+            <ul class="list-none m-0 space-y-[32px] lg:space-y-[64px]">
                 <?php foreach ($selected_posts as $selected_post) : ?>
                     <li class="mx-0">
-                        <div class="md:flex bg-[#FAFAFB] rounded-[6px] md:min-h-[200px] xl:min-h-[336px]">
+                        <div class="md:flex bg-[#FAFAFB] rounded-[6px] md:min-h-[200px] lg:min-h-[336px]">
                             <a href="<?= get_permalink($selected_post); ?>"
-                               class="block md:min-w-[calc(100%-(100%/1.618))] xl:min-w-[464px]">
-                                <div class="relative pt-[72.41%] md:h-full md:pt-0 xl:h-auto xl:pt-[72.41%] bg-cover bg-center overflow-hidden">
+                               class="block md:min-w-[calc(100%-(100%/1.618))] lg:min-w-[464px]">
+                                <div class="relative pt-[72.41%] md:h-full md:pt-0 lg:h-auto lg:pt-[72.41%] bg-cover bg-center overflow-hidden">
                                     <div class="absolute inset-0 bg-cover bg-center hover:scale-110 transition-transform ease-in-out duration-300"
                                          style="background-image: url('<?= get_the_post_thumbnail_url($selected_post, 'full'); ?>')"></div>
                                 </div>
                             </a>
-                            <div class="py-[24px] px-[24px] xl:py-[50px] xl:pl-[51px] xl:pr-[25px]">
+                            <div class="py-[24px] px-[24px] lg:py-[50px] lg:pl-[51px] lg:pr-[25px]">
                                 <div class="text-[22px] leading-[1.3] text-[#393A40] font-[500] mb-[1.14em]">
                                     <?= $selected_post->post_title; ?>
                                 </div>

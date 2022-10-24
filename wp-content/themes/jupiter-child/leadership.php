@@ -25,17 +25,17 @@
                        data-thumb="<?= get_the_post_thumbnail_url(); ?>"
                        data-href="<?= get_permalink(); ?>"
                     >
-                        <div class="pb-[100%] xl:pb-0 xl:w-[290px] xl:h-[290px] rounded-full overflow-hidden mx-auto mb-[30px] xl:mb-[15px] relative">
+                        <div class="pb-[100%] lg:pb-0 lg:w-[290px] lg:h-[290px] rounded-full overflow-hidden mx-auto mb-[30px] lg:mb-[15px] relative">
                             <div class="absolute inset-0 bg-cover"
                                  style="background-image: url('<?= get_the_post_thumbnail_url(null, 'image-size-550x550'); ?>')"></div>
-                            <div class="hidden xl:block xl:rounded-full absolute inset-0 group-hover:duration-[1s] group-hover:opacity-100 opacity-0 transition-all duration-[.3s] bg-[rgba(247,148,31,.68)]"></div>
-                            <div class="hidden absolute inset-0 xl:flex justify-center items-center transform scale-[1.5] group-hover:scale-[1] opacity-0 group-hover:opacity-100 transition-all duration-[.3s] group-hover:duration-[.6s]">
+                            <div class="hidden lg:block lg:rounded-full absolute inset-0 group-hover:duration-[1s] group-hover:opacity-100 opacity-0 transition-all duration-[.3s] bg-[rgba(247,148,31,.68)]"></div>
+                            <div class="hidden absolute inset-0 lg:flex justify-center items-center transform scale-[1.5] group-hover:scale-[1] opacity-0 group-hover:opacity-100 transition-all duration-[.3s] group-hover:duration-[.6s]">
                                 <span class="text-white text-[18px] leading-[1.1] uppercase font-[600]">Click for bio</span>
                             </div>
                         </div>
                         <div class="text-center">
-                            <div class="font-relaway xl:font-roboto capitalize text-[20px] leading-[1.25] font-[800] text-[#f97251] xl:text-[#f7941f] xl:py-[5px] xl:px-[10px] xl:mb-[5px]"><?= get_field('leadership_name'); ?></div>
-                            <div class="capitalize font-open-sans text-[12px] xl:text-[14px] leading-[1.83333333333] xl:leading-[1.57] text-[#444] xl:text-[#190000] xl:py-[5px] mb-[20px] xl:mb-0"><?= get_field('leadership_title'); ?></div>
+                            <div class="font-relaway lg:font-roboto capitalize text-[20px] leading-[1.25] font-[800] text-[#f97251] lg:text-[#f7941f] lg:py-[5px] lg:px-[10px] lg:mb-[5px]"><?= get_field('leadership_name'); ?></div>
+                            <div class="capitalize font-open-sans text-[12px] lg:text-[14px] leading-[1.83333333333] lg:leading-[1.57] text-[#444] lg:text-[#190000] lg:py-[5px] mb-[20px] lg:mb-0"><?= get_field('leadership_title'); ?></div>
                         </div>
                     </a>
                 <?php endforeach; ?>

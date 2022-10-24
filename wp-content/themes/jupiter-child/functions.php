@@ -59,10 +59,8 @@ function procureability_enqueue_styles()
 
     /*Blocks*/
     /*Leaders*/
-    wp_enqueue_script('leaders', '/wp-content/themes/jupiter-child/dist/leaders.js', array('theme-scripts'), false, true);
 
-    /*Front page*/
-    wp_enqueue_script('front-page', '/wp-content/themes/jupiter-child/dist/front-page.js', array('theme-scripts'), false, true);
+    wp_enqueue_script('leaders', '/wp-content/themes/jupiter-child/dist/leaders.js', array('theme-scripts'), false, true);
 }
 
 add_action('wp_enqueue_scripts', 'procureability_enqueue_styles');

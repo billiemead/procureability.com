@@ -45,7 +45,7 @@
             <?php $make_a_direct_hire_button_text = get_field('make_a_direct_hire_button_text'); ?>
             <?php $make_a_direct_hire_button_link = get_field('make_a_direct_hire_button_link'); ?>
             <?php if ($make_a_direct_hire_button_text && $make_a_direct_hire_button_link) : ?>
-                <div class="mb-[30px] xl:mb-0 xl:w-1/4 px-[15px] text-center box-border">
+                <div class="mb-[30px] lg:mb-0 lg:w-1/4 px-[15px] text-center box-border">
                     <a class="inline-block py-[13px] px-[19px] rounded-[5px] border-2 border-solid border-[rgb(74,172,135)] text-[rgb(74,172,135)] hover:bg-[rgb(74,172,135)] hover:text-white text-[14px] leading-[normal] uppercase transition-all duration-[.2s] ease-in-out"
                        href="<?= $make_a_direct_hire_button_link; ?>"><?= $make_a_direct_hire_button_text; ?></a>
                 </div>
@@ -53,7 +53,7 @@
             <?php $request_a_recourse_button_text = get_field('request_a_recourse_button_text'); ?>
             <?php $request_a_recourse_button_link = get_field('request_a_recourse_button_link'); ?>
             <?php if ($request_a_recourse_button_text && $request_a_recourse_button_link) : ?>
-                <div class="xl:w-1/4 px-[15px] text-center box-border">
+                <div class="lg:w-1/4 px-[15px] text-center box-border">
                     <a class="inline-block py-[13px] px-[19px] rounded-[5px] border-2 border-solid border-[rgb(0,162,183)] text-[rgb(0,162,183)] hover:bg-[rgb(0,162,183)] hover:text-white text-[14px] leading-[normal] uppercase transition-all duration-[.2s] ease-in-out"
                        href="<?= $request_a_recourse_button_link; ?>"><?= $request_a_recourse_button_text; ?></a>
                 </div>
