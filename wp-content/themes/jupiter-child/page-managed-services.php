@@ -409,6 +409,7 @@ get_header();
     <!--Leadership-->
     <?php get_template_part('partials/page', 'leadership'); ?>
     <!--Leadership-->
+
 </div>
 
 <?php get_footer(); ?>

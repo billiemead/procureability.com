@@ -2,11 +2,11 @@
     <div class="max-w-[930px] px-[15px] mx-auto">
         <?php $bottom_content_title = get_field('bottom_content_title'); ?>
         <?php if ($bottom_content_title) : ?>
-            <div class="lg:ml-[15%] lg:mr-[15%] text-center mb-[52px]">
+            <div class="xl:ml-[15%] xl:mr-[15%] text-center mb-[52px]">
                 <span class="text-[28px] text-[#0a0000] font-[700] leading-[1.66em]"><?= $bottom_content_title; ?></span>
             </div>
         <?php endif; ?>
-        <div class="lg:max-w-[50%] lg:px-[15px] mx-auto">
+        <div class="xl:max-w-[50%] xl:px-[15px] mx-auto">
             <?php $bottom_content_subtitle = get_field('bottom_content_subtitle'); ?>
             <?php if ($bottom_content_subtitle) : ?>
                 <h4 class="text-[18px] text-[#404040] font-[600] uppercase"><?= $bottom_content_subtitle; ?></h4>
