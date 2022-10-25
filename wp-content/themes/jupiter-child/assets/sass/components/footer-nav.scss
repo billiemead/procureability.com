@@ -1,0 +1,42 @@
+.footer-nav-title {
+  font-size: 16px;
+  color: #575a63 !important;
+  letter-spacing: 0;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+}
+
+.footer-nav {
+
+}
+
+.footer-nav-item {
+  margin: 0;
+  list-style: none;
+}
+
+#mk-footer {
+  .footer-nav {
+    .footer-nav-item {
+      margin: 0 !important;
+    }
+  }
+}
+
+.footer-nav-link {
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+  color: #333333;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 15px!important;
+}
+
+.footer-nav-sub {
+  margin-left: 10px !important;
+}

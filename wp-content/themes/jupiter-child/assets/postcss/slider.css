@@ -1,0 +1,25 @@
+.swiper-pagination {
+    position: static !important;
+    margin-top: 20px !important;
+}
+
+.swiper-pagination-bullet {
+    height: 8px !important;
+    width: 8px !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    background-color: #616166 !important;
+    opacity: .3 !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+
+#ourProfessionalTeam .swiper-pagination-bullet-active {
+    background-color: #0098AE !important;
+}
+
+#relatedInsights .swiper-pagination-bullet-active {
+    background-color: #3BA17C !important;
+}

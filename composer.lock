@@ -1,0 +1,1378 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "df876bbe58df4dc8cc4d9be29a509f7e",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/c29dc4b93137acb82734f672c37e029dfbd95b35",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/process": "^5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                },
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "matomo",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "tastyigniter",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v2.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-20T06:45:11+00:00"
+        },
+        {
+            "name": "procureability-com/advanced-custom-fields-pro",
+            "version": "5.12.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/advanced-custom-fields-pro.git",
+                "reference": "f7f6e54f2b0d6602aa6eb5e15d68fc400adf13ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/advanced-custom-fields-pro/zipball/f7f6e54f2b0d6602aa6eb5e15d68fc400adf13ed",
+                "reference": "f7f6e54f2b0d6602aa6eb5e15d68fc400adf13ed",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Advanced Custom Fields Pro Plugin",
+            "homepage": "https://github.com/procureability-com/advanced-custom-fields-pro",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/advanced-custom-fields-pro/tree/5.12.3",
+                "issues": "https://github.com/ProcureAbility-com/advanced-custom-fields-pro/issues"
+            },
+            "time": "2022-09-19T20:16:51+00:00"
+        },
+        {
+            "name": "procureability-com/dflip",
+            "version": "1.7.32",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/dflip.git",
+                "reference": "a508034f49767c89cf0d8e7fa9148251bd7749d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/dflip/zipball/a508034f49767c89cf0d8e7fa9148251bd7749d1",
+                "reference": "a508034f49767c89cf0d8e7fa9148251bd7749d1",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Dflip Realistic 3D Flip-books",
+            "homepage": "https://github.com/procureability-com/dflip",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/dflip/tree/1.7.32",
+                "issues": "https://github.com/ProcureAbility-com/dflip/issues"
+            },
+            "time": "2022-09-20T05:23:17+00:00"
+        },
+        {
+            "name": "procureability-com/essential-grid",
+            "version": "3.0.16",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/essential-grid.git",
+                "reference": "4217e1520944daa1b95a10261a3960c810675ddc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/essential-grid/zipball/4217e1520944daa1b95a10261a3960c810675ddc",
+                "reference": "4217e1520944daa1b95a10261a3960c810675ddc",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Essential Grid",
+            "homepage": "https://github.com/procureability-com/essential-grid",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/essential-grid/tree/3.0.16",
+                "issues": "https://github.com/ProcureAbility-com/essential-grid/issues"
+            },
+            "time": "2022-09-20T05:23:46+00:00"
+        },
+        {
+            "name": "procureability-com/eventon",
+            "version": "4.1.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/eventON.git",
+                "reference": "04eb540a71691e3502bfc46b1033acfc1262184a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/eventON/zipball/04eb540a71691e3502bfc46b1033acfc1262184a",
+                "reference": "04eb540a71691e3502bfc46b1033acfc1262184a",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "EventON",
+            "homepage": "https://github.com/procureability-com/eventON",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/eventON/tree/4.1.1",
+                "issues": "https://github.com/ProcureAbility-com/eventON/issues"
+            },
+            "time": "2022-09-20T05:24:03+00:00"
+        },
+        {
+            "name": "procureability-com/formidable-api",
+            "version": "1.11",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/formidable-api.git",
+                "reference": "380dca8b6f6e392f31138f3d194f0e2511542b45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/formidable-api/zipball/380dca8b6f6e392f31138f3d194f0e2511542b45",
+                "reference": "380dca8b6f6e392f31138f3d194f0e2511542b45",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Formidable API",
+            "homepage": "https://github.com/procureability-com/formidable-api",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/formidable-api/tree/1.11",
+                "issues": "https://github.com/ProcureAbility-com/formidable-api/issues"
+            },
+            "time": "2022-09-20T05:24:33+00:00"
+        },
+        {
+            "name": "procureability-com/formidable-pro",
+            "version": "5.4.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/formidable-pro.git",
+                "reference": "73dfb03badbb9af735690cfb926e817636de54ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/formidable-pro/zipball/73dfb03badbb9af735690cfb926e817636de54ee",
+                "reference": "73dfb03badbb9af735690cfb926e817636de54ee",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Formidable Forms Pro",
+            "homepage": "https://github.com/procureability-com/formidable-pro",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/formidable-pro/tree/5.4.4",
+                "issues": "https://github.com/ProcureAbility-com/formidable-pro/issues"
+            },
+            "time": "2022-09-20T05:25:03+00:00"
+        },
+        {
+            "name": "procureability-com/formidable-registration",
+            "version": "2.08",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/formidable-registration.git",
+                "reference": "b829c98da9480ad9994d788137b48f8d3735c40b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/formidable-registration/zipball/b829c98da9480ad9994d788137b48f8d3735c40b",
+                "reference": "b829c98da9480ad9994d788137b48f8d3735c40b",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Formidable Registration",
+            "homepage": "https://github.com/procureability-com/formidable-registration",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/formidable-registration/tree/2.08",
+                "issues": "https://github.com/ProcureAbility-com/formidable-registration/issues"
+            },
+            "time": "2022-09-20T05:25:35+00:00"
+        },
+        {
+            "name": "procureability-com/formidable-zapier",
+            "version": "2.01",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/formidable-zapier.git",
+                "reference": "b6b774c8cefa2e4b8f9ad8082c14b5590036c00f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/formidable-zapier/zipball/b6b774c8cefa2e4b8f9ad8082c14b5590036c00f",
+                "reference": "b6b774c8cefa2e4b8f9ad8082c14b5590036c00f",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Formidable Zapier",
+            "homepage": "https://github.com/procureability-com/formidable-zapier",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/formidable-zapier/tree/2.01",
+                "issues": "https://github.com/ProcureAbility-com/formidable-zapier/issues"
+            },
+            "time": "2022-09-20T05:25:50+00:00"
+        },
+        {
+            "name": "procureability-com/imagelinks",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/imagelinks.git",
+                "reference": "86351d639f422ebb5bad9707b8bccc4d281bc5fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/imagelinks/zipball/86351d639f422ebb5bad9707b8bccc4d281bc5fb",
+                "reference": "86351d639f422ebb5bad9707b8bccc4d281bc5fb",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "ImageLinks (PRO)",
+            "homepage": "https://github.com/procureability-com/imagelinks",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/imagelinks/tree/1.4.1",
+                "issues": "https://github.com/ProcureAbility-com/imagelinks/issues"
+            },
+            "time": "2022-09-20T01:32:52+00:00"
+        },
+        {
+            "name": "procureability-com/js_composer_theme",
+            "version": "6.9.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/js_composer_theme.git",
+                "reference": "6d54179d226061873ecce0830d7c9e6136146ce4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/js_composer_theme/zipball/6d54179d226061873ecce0830d7c9e6136146ce4",
+                "reference": "6d54179d226061873ecce0830d7c9e6136146ce4",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "WPBakery Page Builder (Modified Version)",
+            "homepage": "https://github.com/procureability-com/js_composer_theme",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/js_composer_theme/tree/6.9.0",
+                "issues": "https://github.com/ProcureAbility-com/js_composer_theme/issues"
+            },
+            "time": "2022-09-19T20:34:20+00:00"
+        },
+        {
+            "name": "procureability-com/jupiter",
+            "version": "6.10.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/jupiter.git",
+                "reference": "728f10af0f873947dd0b4a44cbc710893ab33dff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/jupiter/zipball/728f10af0f873947dd0b4a44cbc710893ab33dff",
+                "reference": "728f10af0f873947dd0b4a44cbc710893ab33dff",
+                "shasum": ""
+            },
+            "type": "wordpress-theme",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Jupiter Theme by Artbees",
+            "homepage": "https://github.com/procureability-com/jupiter",
+            "keywords": [
+                "theme",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/jupiter/tree/6.10.2",
+                "issues": "https://github.com/ProcureAbility-com/jupiter/issues"
+            },
+            "time": "2022-09-20T22:59:18+00:00"
+        },
+        {
+            "name": "procureability-com/jupiter-core",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/jupiter-core.git",
+                "reference": "a21509cca3227859146a980ff49c92259ed36562"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/jupiter-core/zipball/a21509cca3227859146a980ff49c92259ed36562",
+                "reference": "a21509cca3227859146a980ff49c92259ed36562",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Jupiter Core",
+            "homepage": "https://github.com/procureability-com/jupiter-core",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/jupiter-core/tree/1.0.4",
+                "issues": "https://github.com/ProcureAbility-com/jupiter-core/issues"
+            },
+            "time": "2022-09-20T01:28:01+00:00"
+        },
+        {
+            "name": "procureability-com/jupiter-donut",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/jupiter-donut.git",
+                "reference": "1d434a2357c5d820e029cc7759d096213beba07a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/jupiter-donut/zipball/1d434a2357c5d820e029cc7759d096213beba07a",
+                "reference": "1d434a2357c5d820e029cc7759d096213beba07a",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Jupiter Donut",
+            "homepage": "https://github.com/procureability-com/jupiter-donut",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/jupiter-donut/tree/1.4.2",
+                "issues": "https://github.com/ProcureAbility-com/jupiter-donut/issues"
+            },
+            "time": "2022-09-20T01:21:39+00:00"
+        },
+        {
+            "name": "procureability-com/mega-addons-for-visual-composer-pro",
+            "version": "10.4.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/mega-addons-for-visual-composer-pro.git",
+                "reference": "00e90028db743d656891f105030a3bc044d599c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/mega-addons-for-visual-composer-pro/zipball/00e90028db743d656891f105030a3bc044d599c8",
+                "reference": "00e90028db743d656891f105030a3bc044d599c8",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Mega Addons For WPBakery Page Builder Pro",
+            "homepage": "https://github.com/procureability-com/mega-addons-for-visual-composer-pro",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/mega-addons-for-visual-composer-pro/tree/10.4.3",
+                "issues": "https://github.com/ProcureAbility-com/mega-addons-for-visual-composer-pro/issues"
+            },
+            "time": "2022-09-20T01:22:34+00:00"
+        },
+        {
+            "name": "procureability-com/real3d-flipbook",
+            "version": "3.14.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/real3d-flipbook.git",
+                "reference": "12306978a8989ad53d3e1434fb57185c34bdec49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/real3d-flipbook/zipball/12306978a8989ad53d3e1434fb57185c34bdec49",
+                "reference": "12306978a8989ad53d3e1434fb57185c34bdec49",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Real 3D Flipbook",
+            "homepage": "https://github.com/procureability-com/real3d-flipbook",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/real3d-flipbook/tree/3.14.1",
+                "issues": "https://github.com/ProcureAbility-com/real3d-flipbook/issues"
+            },
+            "time": "2022-09-20T01:09:18+00:00"
+        },
+        {
+            "name": "procureability-com/revslider",
+            "version": "6.5.31",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/revslider.git",
+                "reference": "79426e6eb0063528c73821aa032b62f2c86e44f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/revslider/zipball/79426e6eb0063528c73821aa032b62f2c86e44f3",
+                "reference": "79426e6eb0063528c73821aa032b62f2c86e44f3",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Slider Revolution",
+            "homepage": "https://github.com/procureability-com/revslider",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/revslider/tree/6.5.31",
+                "issues": "https://github.com/ProcureAbility-com/revslider/issues"
+            },
+            "time": "2022-09-20T01:05:05+00:00"
+        },
+        {
+            "name": "procureability-com/svc-post-grid-addon",
+            "version": "1.5",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/svc-post-grid-addon.git",
+                "reference": "cfa095ca90a3c832520f0085208a4a0a189660e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/svc-post-grid-addon/zipball/cfa095ca90a3c832520f0085208a4a0a189660e6",
+                "reference": "cfa095ca90a3c832520f0085208a4a0a189660e6",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Visual Composer - Post Layout with Carousel",
+            "homepage": "https://github.com/procureability-com/svc-post-grid-addon",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/svc-post-grid-addon/tree/1.5",
+                "issues": "https://github.com/ProcureAbility-com/svc-post-grid-addon/issues"
+            },
+            "time": "2022-09-19T20:45:59+00:00"
+        },
+        {
+            "name": "procureability-com/ultimate_vc_addons",
+            "version": "3.19.11",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/Ultimate_VC_Addons.git",
+                "reference": "0219fc37bf4e28dd16f90ac28a3b64c6b18a2413"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/Ultimate_VC_Addons/zipball/0219fc37bf4e28dd16f90ac28a3b64c6b18a2413",
+                "reference": "0219fc37bf4e28dd16f90ac28a3b64c6b18a2413",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Ultimate Addons for WPBakery Page Builder",
+            "homepage": "https://github.com/procureability-com/Ultimate_VC_Addons",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/Ultimate_VC_Addons/tree/3.19.11",
+                "issues": "https://github.com/ProcureAbility-com/Ultimate_VC_Addons/issues"
+            },
+            "time": "2022-09-19T20:55:51+00:00"
+        },
+        {
+            "name": "procureability-com/vc-extensions-bundle",
+            "version": "3.6.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/vc-extensions-bundle.git",
+                "reference": "9698623a6b52eeaab4e8ace24b93c262817c796c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/vc-extensions-bundle/zipball/9698623a6b52eeaab4e8ace24b93c262817c796c",
+                "reference": "9698623a6b52eeaab4e8ace24b93c262817c796c",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "All In One Addons for WPBakery Page Builder",
+            "homepage": "https://github.com/procureability-com/vc-extensions-bundle",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/vc-extensions-bundle/tree/3.6.3",
+                "issues": "https://github.com/ProcureAbility-com/vc-extensions-bundle/issues"
+            },
+            "time": "2022-09-20T05:20:34+00:00"
+        },
+        {
+            "name": "procureability-com/vcmegaposts",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/vcmegaposts.git",
+                "reference": "1e4b20a933662566169513b3563d8a0c03d4a147"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/vcmegaposts/zipball/1e4b20a933662566169513b3563d8a0c03d4a147",
+                "reference": "1e4b20a933662566169513b3563d8a0c03d4a147",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Mega Posts and Custom Posts Display for Visual Composer",
+            "homepage": "https://github.com/procureability-com/vcmegaposts",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/vcmegaposts/tree/1.0",
+                "issues": "https://github.com/ProcureAbility-com/vcmegaposts/issues"
+            },
+            "time": "2022-09-20T01:12:40+00:00"
+        },
+        {
+            "name": "procureability-com/wp-asset-clean-up-pro",
+            "version": "1.2.2.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/wp-asset-clean-up-pro.git",
+                "reference": "1f6018c84f29636c1e6dd8fd1a1a3d3b557de581"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/wp-asset-clean-up-pro/zipball/1f6018c84f29636c1e6dd8fd1a1a3d3b557de581",
+                "reference": "1f6018c84f29636c1e6dd8fd1a1a3d3b557de581",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Asset Clean Up Pro",
+            "homepage": "https://github.com/procureability-com/wp-asset-clean-up-pro",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/wp-asset-clean-up-pro/tree/1.2.2.1",
+                "issues": "https://github.com/ProcureAbility-com/wp-asset-clean-up-pro/issues"
+            },
+            "time": "2022-10-02T20:35:37+00:00"
+        },
+        {
+            "name": "procureability-com/wp-migrate-db-pro",
+            "version": "2.3.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/wp-migrate-db-pro.git",
+                "reference": "7527e3ed3709b9516477b1dc483985fcf91300e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/wp-migrate-db-pro/zipball/7527e3ed3709b9516477b1dc483985fcf91300e9",
+                "reference": "7527e3ed3709b9516477b1dc483985fcf91300e9",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "WP Migrate DB Pro",
+            "homepage": "https://github.com/procureability-com/wp-migrate-db-pro",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/wp-migrate-db-pro/tree/2.3.4",
+                "issues": "https://github.com/ProcureAbility-com/wp-migrate-db-pro/issues"
+            },
+            "time": "2022-09-20T22:25:31+00:00"
+        },
+        {
+            "name": "procureability-com/wp-timelines",
+            "version": "3.5.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/wp-timelines.git",
+                "reference": "df015f7b4f909e990005aa808b8631ed6d433c5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/wp-timelines/zipball/df015f7b4f909e990005aa808b8631ed6d433c5d",
+                "reference": "df015f7b4f909e990005aa808b8631ed6d433c5d",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "WP Timeline",
+            "homepage": "https://github.com/procureability-com/wp-timelines",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/wp-timelines/tree/3.5.2",
+                "issues": "https://github.com/ProcureAbility-com/wp-timelines/issues"
+            },
+            "time": "2022-09-19T20:42:19+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/better-font-awesome",
+            "version": "2.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/better-font-awesome/",
+                "reference": "tags/2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/better-font-awesome.2.0.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/better-font-awesome/"
+        },
+        {
+            "name": "wpackagist-plugin/blog-designer-pack",
+            "version": "3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/blog-designer-pack/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/blog-designer-pack.zip?timestamp=1660392441"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/blog-designer-pack/"
+        },
+        {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "1.6.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/1.6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
+            "name": "wpackagist-plugin/classic-widgets",
+            "version": "0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-widgets/",
+                "reference": "tags/0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-widgets.0.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-widgets/"
+        },
+        {
+            "name": "wpackagist-plugin/compact-wp-audio-player",
+            "version": "1.9.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/compact-wp-audio-player/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/compact-wp-audio-player.zip?timestamp=1653893302"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/compact-wp-audio-player/"
+        },
+        {
+            "name": "wpackagist-plugin/content-control",
+            "version": "1.1.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/content-control/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/content-control.zip?timestamp=1660781083"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/content-control/"
+        },
+        {
+            "name": "wpackagist-plugin/custom-post-type-ui",
+            "version": "1.13.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
+                "reference": "tags/1.13.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
+        },
+        {
+            "name": "wpackagist-plugin/display-posts-shortcode",
+            "version": "3.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/display-posts-shortcode/",
+                "reference": "tags/3.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/display-posts-shortcode.3.0.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/display-posts-shortcode/"
+        },
+        {
+            "name": "wpackagist-plugin/formidable",
+            "version": "5.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/formidable/",
+                "reference": "tags/5.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/formidable.5.5.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/formidable/"
+        },
+        {
+            "name": "wpackagist-plugin/header-and-footer-scripts",
+            "version": "2.2.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/header-and-footer-scripts/",
+                "reference": "tags/2.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/header-and-footer-scripts.2.2.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/header-and-footer-scripts/"
+        },
+        {
+            "name": "wpackagist-plugin/inspectlet-heatmaps-and-user-session-recording",
+            "version": "2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/inspectlet-heatmaps-and-user-session-recording/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/inspectlet-heatmaps-and-user-session-recording.zip?timestamp=1489213221"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/inspectlet-heatmaps-and-user-session-recording/"
+        },
+        {
+            "name": "wpackagist-plugin/leadin",
+            "version": "9.0.123",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/leadin/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/leadin.zip?timestamp=1663230384"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/leadin/"
+        },
+        {
+            "name": "wpackagist-plugin/onesignal-free-web-push-notifications",
+            "version": "2.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/onesignal-free-web-push-notifications/",
+                "reference": "tags/2.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/onesignal-free-web-push-notifications.2.3.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/onesignal-free-web-push-notifications/"
+        },
+        {
+            "name": "wpackagist-plugin/pdf-embedder",
+            "version": "4.6.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pdf-embedder/",
+                "reference": "tags/4.6.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pdf-embedder.4.6.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pdf-embedder/"
+        },
+        {
+            "name": "wpackagist-plugin/popup-maker",
+            "version": "1.16.10",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/popup-maker/",
+                "reference": "tags/1.16.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.16.10.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/popup-maker/"
+        },
+        {
+            "name": "wpackagist-plugin/redirection",
+            "version": "5.3.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "tags/5.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.3.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/redirection/"
+        },
+        {
+            "name": "wpackagist-plugin/rocket-lazy-load",
+            "version": "2.3.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/rocket-lazy-load/",
+                "reference": "tags/2.3.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/rocket-lazy-load.2.3.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/rocket-lazy-load/"
+        },
+        {
+            "name": "wpackagist-plugin/sharethis-share-buttons",
+            "version": "1.6.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/sharethis-share-buttons/",
+                "reference": "tags/1.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/sharethis-share-buttons.1.6.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/sharethis-share-buttons/"
+        },
+        {
+            "name": "wpackagist-plugin/ssl-insecure-content-fixer",
+            "version": "2.7.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ssl-insecure-content-fixer/",
+                "reference": "tags/2.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ssl-insecure-content-fixer.2.7.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ssl-insecure-content-fixer/"
+        },
+        {
+            "name": "wpackagist-plugin/tinymce-advanced",
+            "version": "5.6.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/tinymce-advanced/",
+                "reference": "tags/5.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.5.6.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/tinymce-advanced/"
+        },
+        {
+            "name": "wpackagist-plugin/user-access-manager",
+            "version": "2.2.16",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/user-access-manager/",
+                "reference": "tags/2.2.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/user-access-manager.2.2.16.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/user-access-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "19.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/19.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.8.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/zapier",
+            "version": "1.0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/zapier/",
+                "reference": "tags/1.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/zapier.1.0.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/zapier/"
+        },
+        {
+            "name": "wpackagist-theme/twentytwentytwo",
+            "version": "1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentytwentytwo/",
+                "reference": "1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentytwentytwo.1.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentytwentytwo/"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

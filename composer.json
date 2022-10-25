@@ -1,0 +1,193 @@
+{
+    "name": "procureability-com/plugin-install",
+    "description": "WordPress install ProcureAbility plugins",
+    "homepage": "https://github.com/ProcureAbility-com/plugin-install",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Billie Mead",
+            "email": "billie@billiemead.com",
+            "homepage": "https://billiemead.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "procureability", "composer", "wordpress", "wp", "wp-config"
+    ],
+      "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*", 
+                "wpackagist-theme/*"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/advanced-custom-fields-pro.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/js_composer_theme.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/wp-timelines.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/svc-post-grid-addon.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/ultimate_vc_addons.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/revslider.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/real3d-flipbook.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/vcmegaposts.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/mega-addons-for-visual-composer-pro.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/jupiter-donut.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/jupiter-core.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/imagelinks.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/vc-extensions-bundle.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/dflip.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/essential-grid.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/eventON.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/formidable-api.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/formidable-pro.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/formidable-registration.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/formidable-zapier.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/wp-migrate-db-pro.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/jupiter.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/wp-asset-clean-up-pro.git"
+          }
+    ],
+    "require": {
+        "wpackagist-theme/twentytwentytwo": "^1.2",
+        "wpackagist-plugin/better-font-awesome": "^2.0",
+        "wpackagist-plugin/blog-designer-pack": "^3.1",
+        "wpackagist-plugin/classic-editor": "^1.6",
+        "wpackagist-plugin/classic-widgets": "^0.3.0",
+        "wpackagist-plugin/compact-wp-audio-player": "^1.9",
+        "wpackagist-plugin/content-control": "^1.1",
+        "wpackagist-plugin/custom-post-type-ui": "^1.13",
+        "wpackagist-plugin/display-posts-shortcode": "^3.0",
+        "wpackagist-plugin/formidable": "^5.5",
+        "wpackagist-plugin/header-and-footer-scripts": "^2.2",
+        "wpackagist-plugin/inspectlet-heatmaps-and-user-session-recording": "^2.0",
+        "wpackagist-plugin/leadin": "^9.0",
+        "wpackagist-plugin/onesignal-free-web-push-notifications": "^2.2",
+        "wpackagist-plugin/pdf-embedder": "^4.6",
+        "wpackagist-plugin/popup-maker": "^1.16",
+        "wpackagist-plugin/redirection": "^5.3",
+        "wpackagist-plugin/rocket-lazy-load": "^2.3",
+        "wpackagist-plugin/sharethis-share-buttons": "^1.6",
+        "wpackagist-plugin/ssl-insecure-content-fixer": "^2.7",
+        "wpackagist-plugin/tinymce-advanced": "^5.6",
+        "wpackagist-plugin/user-access-manager": "^2.2",
+        "wpackagist-plugin/wordpress-seo": "^19.6",
+        "wpackagist-plugin/zapier": "^1.0",
+        "procureability-com/advanced-custom-fields-pro": "^5.12",
+        "procureability-com/dflip": "^1.7",
+        "procureability-com/essential-grid": "^3.0",
+        "procureability-com/eventon": "^4.1",
+        "procureability-com/formidable-api": "^1.11",
+        "procureability-com/formidable-pro": "^5.4",
+        "procureability-com/formidable-registration": "^2.08",
+        "procureability-com/formidable-zapier": "^2.01",
+        "procureability-com/imagelinks": "^1.4",
+        "procureability-com/js_composer_theme": "^6.9",
+        "procureability-com/jupiter": "^6.10",
+        "procureability-com/jupiter-donut": "^1.4",
+        "procureability-com/jupiter-core": "^1.0",
+        "procureability-com/mega-addons-for-visual-composer-pro": "^10.4",
+        "procureability-com/revslider": "^6.5",
+        "procureability-com/real3d-flipbook": "^3.14",
+        "procureability-com/svc-post-grid-addon": "^1.5",
+        "procureability-com/ultimate_vc_addons": "^3.19",
+        "procureability-com/vc-extensions-bundle": "^3.6",
+        "procureability-com/vcmegaposts": "^1.0",
+        "procureability-com/wp-migrate-db-pro": "dev-main#2.3.4.1",
+        "procureability-com/wp-timelines": "^3.5",
+        "procureability-com/wp-asset-clean-up-pro": "1.2.2.1",
+        "wp-cli/wp-cli-bundle": "^2.7"
+    },
+    "config": {
+        "github-oauth": {
+            "github.com": "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"
+        },
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "extra": {
+        "wordpress-install-dir": "",
+        "installer-paths": {
+            "wp-content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
