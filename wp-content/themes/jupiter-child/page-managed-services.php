@@ -410,7 +410,6 @@ get_header();
     <?php get_template_part('partials/page', 'leadership'); ?>
     <!--Leadership-->
 
-    <!--test-->
 </div>
 
 <?php get_footer(); ?>
