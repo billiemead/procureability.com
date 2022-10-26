@@ -27,17 +27,17 @@ $env = [
         'ssl'    => true,
     ],
     'production'  => [
-        'domain' => 'procurebuddy.procureability.com',
+        'domain' => 'procureability.com',
         'path'   => '',
         'ssl'    => true,
     ],
     'staging'     => [
-        'domain' => 'procurebuddysg.procureability.com',
+        'domain' => 'staging.procureability.com',
         'path'   => '',
         'ssl'    => true,
     ],
     'development' => [
-        'domain' => 'procurebuddydv.procureability.com',
+        'domain' => 'development.procureability.com',
         'path'   => '',
         'ssl'    => true,
     ],

@@ -12,9 +12,8 @@
 define( 'DB_NAME', 'wp_procureabi2dev' );
 define( 'DB_USER', 'procureabi2dev' );
 define( 'DB_PASSWORD', 'xZoyuvFhlwrL2uGBz1IV' );
-define( 'DB_HOST', '127.0.0.1:3306' );
-define( 'DB_HOST_SLAVE', '127.0.0.1:3306' );
-
+define( 'DB_HOST', 'localhost:/var/run/mysqld/mysqld.sock' );
+define( 'DB_HOST_SLAVE', 'localhost:/var/run/mysqld/mysqld.sock' );
 
 # Localized Language Stuff
 
@@ -27,8 +26,6 @@ define( 'FS_METHOD', 'direct' );
 define( 'FS_CHMOD_DIR', 0775 );
 
 define( 'FS_CHMOD_FILE', 0664 );
-
-define( 'PWP_ROOT_DIR', '/nas/wp' );
 
 define( 'WPE_APIKEY', '7fe1bd721afe0a5cafc7d68a2f64d52262239143' );
 
@@ -82,11 +79,7 @@ $wpe_all_domains=array ( 0 => 'procureabi2dev.wpengine.com', 1 => 'procureabi2de
 
 $wpe_varnish_servers=array ( 0 => '127.0.0.1', );
 
-$wpe_special_ips=array ( 0 => '35.190.191.226', 1 => '10.76.35.160', );
-
-$wpe_ec_servers=array ( );
-
-$wpe_largefs=array ( );
+$wpe_special_ips=array ( 0 => '35.190.191.226', 1 => '10.76.21.207', );
 
 $wpe_netdna_domains=array ( );
 
@@ -96,8 +89,7 @@ $wpe_netdna_push_domains=array ( );
 
 $wpe_domain_mappings=array ( );
 
-$memcached_servers=array ( 'default' =>  array ( 0 => '127.0.0.1:11211', ), );
-
+$memcached_servers=array ( 'default' =>  array ( 0 => 'unix:///tmp/memcached.sock', ), );
 
 # WP Engine ID
 
