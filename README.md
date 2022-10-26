@@ -112,6 +112,17 @@ Needed: nodeJS 16.13.0 and npm 8.1.0
 
 > ![9-npm-install](https://user-images.githubusercontent.com/8992422/197702798-6307e0f0-9746-4e78-a9a0-ca2d19b34e56.png)
 
+2. NPM Scripts for development:
+
+    a. `dev`
+    b. `development`
+    c. `production`
+    d. `prod`
+    e. `watch`
+    f. `start`
+    g. `start-dev`
+    h. `start-staging`
+
 - - - -
 
 ## 7 More Info ##
