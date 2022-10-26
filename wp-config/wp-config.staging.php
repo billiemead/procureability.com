@@ -9,19 +9,17 @@
  */
   
 # Database Configuration
-define( 'DB_NAME', 'wp_procurebuddydv' );
-define( 'DB_USER', 'procurebuddydv' );
-define( 'DB_PASSWORD', '9K_WjSiVscvTIfbzMdPc' );
-define( 'DB_HOST', '127.0.0.1:3306' );
-define( 'DB_HOST_SLAVE', '127.0.0.1:3306' );
+define( 'DB_NAME', 'wp_procurabilistg' );
+define( 'DB_USER', 'procurabilistg' );
+define( 'DB_PASSWORD', 'xplGEIagbqW5SPTt9__y' );
+define( 'DB_HOST', 'localhost:/var/run/mysqld/mysqld.sock' );
+define( 'DB_HOST_SLAVE', 'localhost:/var/run/mysqld/mysqld.sock' );
 
 # Localized Language Stuff
 
-define( 'WP_ENV', 'staging' );
-
 define( 'WP_AUTO_UPDATE_CORE', false );
 
-define( 'PWP_NAME', 'procurebuddydv' );
+define( 'PWP_NAME', 'procurabilistg' );
 
 define( 'FS_METHOD', 'direct' );
 
@@ -31,7 +29,7 @@ define( 'FS_CHMOD_FILE', 0664 );
 
 define( 'PWP_ROOT_DIR', '/nas/wp' );
 
-define( 'WPE_APIKEY', 'adef14c33fca8fc6ec91e5d7ff44ffcd3b30b18c' );
+define( 'WPE_APIKEY', 'b643b45b00e4392e25c6cff482df659cb5ddcd0b' );
 
 define( 'WPE_CLUSTER_ID', '205703' );
 
@@ -49,7 +47,7 @@ define( 'WPE_SFTP_PORT', 2222 );
 
 define( 'WPE_LBMASTER_IP', '' );
 
-define( 'WPE_CDN_DISABLE_ALLOWED', true );
+define( 'WPE_CDN_DISABLE_ALLOWED', false );
 
 define( 'DISALLOW_FILE_MODS', FALSE );
 
@@ -79,11 +77,11 @@ $wpe_no_cdn_uris=array ( );
 
 $wpe_content_regexs=array ( );
 
-$wpe_all_domains=array ( 0 => 'procurebuddydv.wpengine.com', 1 => 'procurebuddydv.wpenginepowered.com', );
+$wpe_all_domains=array ( 0 => 'procurabilistg.wpengine.com', 1 => 'procurabilistg.wpenginepowered.com', 2 => 'staging.procureability.com', );
 
 $wpe_varnish_servers=array ( 0 => '127.0.0.1', );
 
-$wpe_special_ips=array ( 0 => '35.190.191.226', 1 => '10.76.7.152', );
+$wpe_special_ips=array ( 0 => '35.190.191.226', 1 => '10.76.21.207', );
 
 $wpe_ec_servers=array ( );
 
@@ -97,7 +95,7 @@ $wpe_netdna_push_domains=array ( );
 
 $wpe_domain_mappings=array ( );
 
-$memcached_servers=array ( 'default' =>  array ( 0 => '127.0.0.1:11211', ), );
+$memcached_servers=array ( 'default' =>  array ( 0 => 'unix:///tmp/memcached.sock', ), );
 
 
 # WP Engine ID
@@ -110,13 +108,13 @@ define( 'DISALLOW_FILE_EDIT', FALSE );
 define( 'WP_MEMORY_LIMIT', '512M' );
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
 
-define('WP_LOCAL_DEV', false);
-define('WP_DEBUG', false);
-define( 'WP_DEBUG_LOG', false );
+define('WP_LOCAL_DEV', true);
+define('WP_DEBUG', true);
+define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false );
 @ini_set( 'display_errors', 0 );
-define( 'WP_SITEURL', 'http://procurebuddysg.procureability.com' );
-define( 'WP_HOME', 'http://procurebuddysg.procureability.com' );
+define( 'WP_SITEURL', 'http://staging.procureability.com' );
+define( 'WP_HOME', 'http://staging.procureability.com' );
 define('FORCE_SSL_ADMIN', true);
 
 define( 'WPE_SFTP_ENDPOINT', '104.196.180.90' );

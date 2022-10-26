@@ -9,19 +9,18 @@
  */
 
 # Database Configuration
-define( 'DB_NAME', 'wp_procurebuddydv' );
-define( 'DB_USER', 'procurebuddydv' );
-define( 'DB_PASSWORD', '9K_WjSiVscvTIfbzMdPc' );
-define( 'DB_HOST', '127.0.0.1:3306' );
-define( 'DB_HOST_SLAVE', '127.0.0.1:3306' );
+define( 'DB_NAME', 'wp_procurability' );
+define( 'DB_USER', 'procurability' );
+define( 'DB_PASSWORD', 'O_4ohFWtYBqAfAGMRCK-' );
+define( 'DB_HOST', 'localhost:/var/run/mysqld/mysqld.sock' );
+define( 'DB_HOST_SLAVE', 'localhost:/var/run/mysqld/mysqld.sock' );
+
 
 # Localized Language Stuff
 
-define( 'WP_ENV', 'production' );
-
 define( 'WP_AUTO_UPDATE_CORE', false );
 
-define( 'PWP_NAME', 'procurebuddydv' );
+define( 'PWP_NAME', 'procurability' );
 
 define( 'FS_METHOD', 'direct' );
 
@@ -31,7 +30,7 @@ define( 'FS_CHMOD_FILE', 0664 );
 
 define( 'PWP_ROOT_DIR', '/nas/wp' );
 
-define( 'WPE_APIKEY', 'adef14c33fca8fc6ec91e5d7ff44ffcd3b30b18c' );
+define( 'WPE_APIKEY', 'e92ffed93a5e2502239fd6ed98c982174ee15190' );
 
 define( 'WPE_CLUSTER_ID', '205703' );
 
@@ -49,15 +48,15 @@ define( 'WPE_SFTP_PORT', 2222 );
 
 define( 'WPE_LBMASTER_IP', '' );
 
-define( 'WPE_CDN_DISABLE_ALLOWED', true );
+define( 'WPE_CDN_DISABLE_ALLOWED', false );
 
 define( 'DISALLOW_FILE_MODS', FALSE );
 
 define( 'DISABLE_WP_CRON', false );
 
-define( 'WPE_FORCE_SSL_LOGIN', false );
+define( 'WPE_FORCE_SSL_LOGIN', true );
 
-define( 'FORCE_SSL_LOGIN', false );
+define( 'FORCE_SSL_LOGIN', true );
 
 /*SSLSTART*/ if ( isset($_SERVER['HTTP_X_WPE_SSL']) && $_SERVER['HTTP_X_WPE_SSL'] ) $_SERVER['HTTPS'] = 'on'; /*SSLEND*/
 
@@ -79,25 +78,25 @@ $wpe_no_cdn_uris=array ( );
 
 $wpe_content_regexs=array ( );
 
-$wpe_all_domains=array ( 0 => 'procurebuddydv.wpengine.com', 1 => 'procurebuddydv.wpenginepowered.com', );
+$wpe_all_domains=array ( 0 => 'procureability.com', 1 => 'procurability.wpengine.com', 2 => 'www.procureability.com', 3 => 'procurability.wpenginepowered.com', );
 
 $wpe_varnish_servers=array ( 0 => '127.0.0.1', );
 
-$wpe_special_ips=array ( 0 => '35.190.191.226', 1 => '10.76.7.152', );
+$wpe_special_ips=array ( 0 => '35.190.191.226', 1 => '10.76.21.207', );
 
 $wpe_ec_servers=array ( );
 
 $wpe_largefs=array ( );
 
-$wpe_netdna_domains=array ( );
+$wpe_netdna_domains=array ( 0 =>  array ( 'match' => 'procureability.com', 'custom' => 'procurability.wpenginepowered.com', 'secure' => true, 'dns_check' => 0, ), 1 =>  array ( 'match' => 'www.procureability.com', 'custom' => 'procurability.wpenginepowered.com', 'secure' => true, 'dns_check' => 0, ), 2 =>  array ( 'match' => 'procurability.wpengine.com', 'custom' => 'procurability.wpenginepowered.com', 'secure' => true, 'dns_check' => 0, ), );
 
-$wpe_netdna_domains_secure=array ( );
+$wpe_netdna_domains_secure=array ( 0 =>  array ( 'match' => 'procureability.com', 'custom' => 'procurability.wpenginepowered.com', 'secure' => true, 'dns_check' => 0, ), 1 =>  array ( 'match' => 'www.procureability.com', 'custom' => 'procurability.wpenginepowered.com', 'secure' => true, 'dns_check' => 0, ), 2 =>  array ( 'match' => 'procurability.wpengine.com', 'custom' => 'procurability.wpenginepowered.com', 'secure' => true, 'dns_check' => 0, ), );
 
 $wpe_netdna_push_domains=array ( );
 
 $wpe_domain_mappings=array ( );
 
-$memcached_servers=array ( 'default' =>  array ( 0 => '127.0.0.1:11211', ), );
+$memcached_servers=array ( 'default' =>  array ( 0 => 'unix:///tmp/memcached.sock', ), );
 
 
 # WP Engine ID
@@ -110,14 +109,15 @@ define( 'DISALLOW_FILE_EDIT', FALSE );
 define( 'WP_MEMORY_LIMIT', '512M' );
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
 
-define('WP_LOCAL_DEV', false);
-define('WP_DEBUG', false);
-define( 'WP_DEBUG_LOG', false );
+define('WP_LOCAL_DEV', true);
+define('WP_DEBUG', true);
+define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false );
 @ini_set( 'display_errors', 0 );
-define( 'WP_SITEURL', 'http://procurebuddy.procureability.com' );
-define( 'WP_HOME', 'http://procurebuddy.procureability.com' );
+define( 'WP_SITEURL', 'http://procureability.com' );
+define( 'WP_HOME', 'http://procureability.com' );
 define('FORCE_SSL_ADMIN', true);
+
 
 # That's It. Pencils down
 if ( !defined('ABSPATH') )
