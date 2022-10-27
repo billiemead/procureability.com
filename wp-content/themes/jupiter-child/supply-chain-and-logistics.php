@@ -48,6 +48,27 @@
     <!--Experience-->
 <?php endif; ?>
 
+
+<?php $video_title = get_field('video_title'); ?>
+<?php $video_video = get_field('video_video'); ?>
+<?php if ($video_title && $video_video ) : ?>
+    <!--Video-->
+<section class="py-[30px]">
+    <div class="max-w-[930px] mx-auto">
+        <div class="bg-[#0095b0] px-[15px] pt-[15px] pb-[40px]">
+            <div>
+                <?= $video_video; ?>
+            </div>
+            <div class="text-center mt-[20px]">
+                <div class="text-[19px] leading-black text-[#000] font-[700] capitalize"><?= $video_title; ?></div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--Video-->
+<?php endif; ?>
+
+
     <!--Form section-->
 <?php get_template_part('partials/page', 'form-section'); ?>
     <!--Form section-->
