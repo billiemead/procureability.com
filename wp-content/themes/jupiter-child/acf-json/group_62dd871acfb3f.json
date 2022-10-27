@@ -277,7 +277,7 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },,
+        },
         {
             "key": "field_62de43052148e",
             "label": "FAQ",
@@ -515,5 +515,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1666876655
+    "modified": 1666879529
 }
