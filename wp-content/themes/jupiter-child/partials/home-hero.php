@@ -56,8 +56,10 @@
         </div>
     </div>
 </section>
+<?php if ($frontpage_hero_ukraine_popup_text) : ?>
 <div class="ukraine-popup mfp-hide" id="ukraine-popup" style="background-image: url(/wp-content/themes/jupiter-child/dist/img/pages/homepage/banner/popup-bg.jpg);">
     <div class="ukraine-popup__text">
-        <p>text</p>
+        <?= $frontpage_hero_ukraine_popup_text ?>
     </div>
 </div>
+<?php endif; ?>
