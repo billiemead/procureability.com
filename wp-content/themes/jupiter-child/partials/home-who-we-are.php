@@ -4,7 +4,7 @@
 <?php $frontpage_who_we_are_button_link = get_field('frontpage_who_we_are_button_link'); ?>
 
 <section
-        class="pt-[48px] md:pt-[0px] bg-[#F2F6F6] [&_*]:box-border relative bg-no-repeat bg-[length:657px_auto] md:bg-[length:865px_auto] xl:bg-[length:1020px_auto] bg-[position:calc(50%-40px)_bottom] md:bg-[position:calc(50%+180px)_bottom] xl:bg-[position:calc(50%+250px_bottom]"
+        class="pt-[48px] md:pt-[0px] bg-[#F2F6F6] [&_*]:box-border relative bg-no-repeat bg-[length:657px_auto] md:bg-[length:865px_auto] xl:bg-[length:1020px_auto] bg-[position:calc(50%-40px)_bottom] md:bg-[position:calc(50%+200px)_bottom] xl:bg-[position:calc(50%+250px_bottom]"
         style="background-image: url('/wp-content/themes/jupiter-child/assets/img/pages/homepage/who-we-are-bg.png')">
 
     <div class="max-w-[310px] md:max-w-[637px] xl:max-w-[1200px] mx-auto relative">
@@ -28,7 +28,7 @@
         </div>
 
         <img class="block relative md:!absolute max-w-[240px] md:max-w-[340px] xl:max-w-[390px] mx-auto md:bottom-0 md:right-[-45px] xl:right-[96px]"
-             src="/wp-content/themes/jupiter-child/assets/img/pages/homepage/happy-successful-manager-holding-glasses%202.png"
+             src="/wp-content/themes/jupiter-child/assets/img/pages/homepage/who-we-are.png"
              alt="<?= $frontpage_who_we_are_title; ?>">
     </div>
 </section>

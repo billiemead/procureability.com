@@ -9,6 +9,7 @@
 <?php $frontpage_hero_ukraine_read_more_text = get_field('frontpage_hero_ukraine_read_more_text'); ?>
 <?php $frontpage_hero_ukraine_read_more_link = get_field('frontpage_hero_ukraine_read_more_link'); ?>
 <?php $frontpage_hero_ukraine_image = get_field('frontpage_hero_ukraine_image'); ?>
+<?php $frontpage_hero_ukraine_popup_text = get_field('frontpage_hero_ukraine_popup_text'); ?>
 
 <section
         class="bg-no-repeat bg-center bg-cover lg:bg-[length:118%_auto] lg:bg-[position:right_calc(50%-85px)] xxl:bg-[position:right_top_55%]"
@@ -42,11 +43,11 @@
                 <span class="xl:max-w-[642px] leading-none">
                     <span class="hidden xl:inline font-poppins text-white text-[14px] leading-[1.6]"><?= $frontpage_hero_ukraine_text_2; ?></span>
                     <a href="<?= $frontpage_hero_ukraine_read_more_link['url']; ?>"
-                       class="font-poppins text-[#FFD700] text-[11px] xl:text-[14px] leading-[1.51] font-[500]"><span><?= $frontpage_hero_ukraine_read_more_text; ?></span>
+                       class="ukraine-popup-mfp font-poppins text-[#FFD700] text-[11px] xl:text-[14px] leading-[1.51] font-[500]"><span><?= $frontpage_hero_ukraine_read_more_text; ?></span>
                         <svg class="align-middle ml-[4px]" xmlns="http://www.w3.org/2000/svg" width="8" height="13"
                              viewBox="0 0 8 13"
                              fill="none">
-                            <path opacity="0.5" d="M1 11.5212L6.5 6.02124L1 1.02124" stroke="#FFD700"
+                            <path opacity="0.5" d="M1 11.5212L6.5 6.02124L1 1.02124" stroke="currentColor"
                                   stroke-width="1.5"/>
                         </svg>
                     </a>
@@ -55,3 +56,8 @@
         </div>
     </div>
 </section>
+<div class="ukraine-popup mfp-hide" id="ukraine-popup" style="background-image: url(/wp-content/themes/jupiter-child/dist/img/pages/homepage/banner/popup-bg.jpg);">
+    <div class="ukraine-popup__text">
+        <p>text</p>
+    </div>
+</div>

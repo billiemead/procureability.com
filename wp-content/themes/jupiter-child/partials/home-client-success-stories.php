@@ -18,8 +18,10 @@
                         <div class="swiper-slide">
                             <div>
                                 <a href="<?= get_permalink(); ?>"
-                                   class="block pb-[52.12%] md:pb-[71%] xl:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] bg-cover bg-center bg-no-repeat"
-                                   style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></a>
+                                   class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden"
+                                >
+                                    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300" style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
+                                </a>
                                 <div class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]">
                                     <?= the_title(); ?>
                                 </div>

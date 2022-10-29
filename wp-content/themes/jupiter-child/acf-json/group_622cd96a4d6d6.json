@@ -211,6 +211,25 @@
             "mime_types": ""
         },
         {
+            "key": "field_635d1f08ec1ae",
+            "label": "Ukraine popup text",
+            "name": "frontpage_hero_ukraine_popup_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_6348021577063",
             "label": "Welcome to procureability",
             "name": "",
@@ -1042,5 +1061,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665670963
+    "modified": 1667049959
 }

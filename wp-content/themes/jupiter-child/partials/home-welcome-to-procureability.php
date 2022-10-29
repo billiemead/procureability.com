@@ -11,7 +11,7 @@
                 <?= $frontpage_welcome_to_procureability_title; ?>
             </div>
         </div>
-        <div class="w-[288px] md:w-[636px] xl:w-auto mx-auto [&>div]:!overflow-visible">
+        <div class="w-[304px] md:w-[636px] xl:w-auto mx-auto [&>div]:!overflow-visible">
             <div id="welcomeToProcureability" class="swiper">
                 <div class="swiper-wrapper">
                     <?php foreach ($frontpage_welcome_to_procureability_feature as $feature) : ?>
