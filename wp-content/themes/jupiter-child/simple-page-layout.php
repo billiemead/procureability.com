@@ -19,8 +19,8 @@
 <?php endif; ?>
 <!--Content-->
 
-<!--Form section-->
+
 <?php get_template_part('partials/page', 'form-section'); ?>
-<!--Form section-->
+
 
 <?php get_footer(); ?>
