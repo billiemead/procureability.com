@@ -301,3 +301,13 @@ function rd_duplicate_post_link($actions, $post)
 }
 add_filter('post_row_actions', 'rd_duplicate_post_link', 10, 2);
 add_filter('page_row_actions', 'rd_duplicate_post_link', 10, 2);
+
+function add_site_url_to_clients_menu_item( $item_output, $item, $depth, $args ) {
+
+    if ($item->title === 'Clients') {
+        return str_replace("#ourclients", home_url() . '/#ourclients', $item_output);
+    }
+    return $item_output;
+}
+
+add_filter( 'walker_nav_menu_start_el', 'add_site_url_to_clients_menu_item', 10, 4 );

@@ -2,7 +2,7 @@
 <?php $frontpage_industry_leader_in_procurement_text = get_field('frontpage_industry_leader_in_procurement_text'); ?>
 <?php $frontpage_industry_leader_in_procurement_clients = get_field('frontpage_industry_leader_in_procurement_clients'); ?>
 
-<section class="pt-[40px] md:pt-[56px] xl:py-[72px] pb-[62px] md:pb-[50px] bg-[#F7F9FA] ">
+<section id="ourclients" class="pt-[40px] md:pt-[56px] xl:py-[72px] pb-[62px] md:pb-[50px] bg-[#F7F9FA] ">
     <div class="px-[34px]">
         <div class="max-w-[210px] md:max-w-full mb-[16px] mx-auto text-center">
             <div class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[22px] md:text-[36px] leading-[1.4] md:leading-[1.5] font-[600]">
@@ -13,13 +13,19 @@
             <p><?= $frontpage_industry_leader_in_procurement_text; ?></p>
         </div>
         <?php if ($frontpage_industry_leader_in_procurement_clients) : ?>
-            <div class="md:max-w-[632px] xl:max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-x-[18px] gap-y-[20px] xl:gap-x-[60px]">
-                <?php foreach ($frontpage_industry_leader_in_procurement_clients as $client) : ?>
-                    <div class="min-h-[64px] flex justify-center items-center [&_img]:w-auto [&_img]:max-h-[80px] [&_img]:h-auto [&_img]:max-w-full">
-                        <?= wp_get_attachment_image($client['image']['id'], 'full'); ?>
-                    </div>
-                <?php endforeach; ?>
+        <div class="relative">
+            <div id="industryLeaders" class="swiper md:max-w-[632px] xl:max-w-[1200px] mx-auto">
+                <div class="swiper-wrapper">
+                    <?php foreach ($frontpage_industry_leader_in_procurement_clients as $client) : ?>
+                        <div class="swiper-slide !h-auto min-h-[64px] flex justify-center items-center [&_img]:w-auto [&_img]:max-h-[80px] [&_img]:h-auto [&_img]:max-w-full">
+                            <?= wp_get_attachment_image($client['image']['id'], 'full'); ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <div id="industryLeadersPagination"
+                     class="mt-[32px] flex justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#3BA17C] [&_span]:!opacity-100"></div>
             </div>
+        </div>
         <?php endif; ?>
     </div>
 </section>
