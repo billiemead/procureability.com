@@ -95,4 +95,26 @@ new Swiper('#recentThoughtLeadership', {
     }
 });
 
-
+new Swiper('#industryLeaders', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 18,
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+    pagination: {
+        el: '#industryLeadersPagination',
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+        1240: {
+            slidesPerView: 6,
+            spaceBetween: 60,
+        }
+    }
+});
