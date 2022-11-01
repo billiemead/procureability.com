@@ -16,9 +16,9 @@
         style="background-image: url('<?= $frontpage_hero_background_image['url'] ?>')">
     <div class="pt-[104px] md:pt-[133px] xl:pt-[400px] pb-[60px] md:pb-[74px] xl:pb-[150px] xxl:pt-[480px]">
         <div class="px-[34px] xl:max-w-[1096px] mx-auto">
-            <div class="text-center font-poppins text-white text-[28px] md:text-[42px] leading-[1.2] md:leading-[1.27] font-[600] mb-[16px]">
+            <h1 class="text-center font-poppins text-white text-[28px] md:text-[42px] leading-[1.2] md:leading-[1.27] font-[600] mb-[16px]">
                 <?= $frontpage_hero_title; ?>
-            </div>
+            </h1>
             <div class="md:max-w-[608px] xl:max-w-full mx-auto text-center font-poppins text-white text-[14px] md:text-[16px] xl:text-[24px] leading-[1.7] md:leading-[1.7] mb-[32px]"><?= $frontpage_hero_text; ?>
             </div>
             <div class="text-center">
