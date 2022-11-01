@@ -100,10 +100,7 @@
   padding-bottom: 100%;
   overflow: hidden;
   position: relative;
-
-  @media (min-width: 768px) {
-    border-radius: 50%;
-  }
+  border-radius: 50%;
 }
 
 .leadership-person-photo {
