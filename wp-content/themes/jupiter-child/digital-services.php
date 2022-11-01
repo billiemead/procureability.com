@@ -12,7 +12,7 @@
                  style="background-image: url('<?= get_field('hero_background_image')['url']; ?>'); ">
             <div class="md:max-w-[636px] xl:max-w-[1010px] mx-auto px-[33px] md:px-0">
                 <div class="mb-[24px] xl:mb-[32px] text-center">
-                    <span class="text-[22px] leading-[1.2] font-[500] md:text-[32px] md:leading-[1.27] xl:text-[40px] xl:leading-[1.3] xl:font-[600] text-white"><?= get_field('hero_text') ?></span>
+                    <h1 class="text-[22px] leading-[1.2] font-[500] md:text-[32px] md:leading-[1.27] xl:text-[40px] xl:leading-[1.3] xl:font-[600] text-white"><?= get_field('hero_text') ?></h1>
                 </div>
                 <div class="text-center">
                     <a class="inline-block pt-[13px] pb-[11px] px-[30px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
