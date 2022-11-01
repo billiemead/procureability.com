@@ -102,6 +102,13 @@
   border: 1px solid #e3e3e3 !important;
   font-family: "Roboto",sans-serif;
   padding: 1px 12px 1px 16px!important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:not([type=file]) {
+    background: url('img/icon/select-arrow.svg') right 10px center / 10px auto no-repeat !important;
+  }
 }
 
 .ult_tabs {
