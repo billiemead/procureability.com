@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div id="industryLeadersPagination"
-                     class="hidden md:flex md:flex-wrap mt-[32px] justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#3BA17C] [&_span]:!opacity-100"></div>
+                     class="relative hidden md:block mt-[32px] justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#3BA17C] [&_span]:!opacity-100"></div>
             </div>
         <?php endif; ?>
     </div>

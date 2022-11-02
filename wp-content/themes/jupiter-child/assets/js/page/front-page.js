@@ -97,7 +97,6 @@ new Swiper('#recentThoughtLeadership', {
 
 new Swiper('#industryLeaders', {
     loop: false,
-    slidesPerView: 1,
     spaceBetween: 18,
     navigation: {
         nextEl: '#industryLeadersNavigationNext',
@@ -106,16 +105,15 @@ new Swiper('#industryLeaders', {
     pagination: {
         el: '#industryLeadersPagination',
         clickable: true,
+        dynamicBullets: true
     },
     breakpoints: {
         768: {
             slidesPerView: 4,
-            slidesPerGroup: 4,
             spaceBetween: 40,
         },
         1240: {
             slidesPerView: 6,
-            slidesPerGroup: 6,
             spaceBetween: 60,
         }
     }
