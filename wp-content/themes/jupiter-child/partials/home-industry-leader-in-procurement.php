@@ -18,7 +18,7 @@
                     <div id="industryLeaders" class="swiper">
                         <div class="swiper-wrapper">
                             <?php foreach ($frontpage_industry_leader_in_procurement_clients as $client) : ?>
-                                <div class="swiper-slide !h-auto min-h-[64px] flex flex-row justify-center items-end [&_img]:w-auto [&_img]:max-h-[80px] [&_img]:h-auto [&_img]:max-w-full">
+                                <div class="swiper-slide !h-auto min-h-[64px] flex justify-center items-center [&_img]:w-auto [&_img]:max-h-[80px] [&_img]:h-auto [&_img]:max-w-full">
                                     <?= wp_get_attachment_image($client['image']['id'], 'full'); ?>
                                 </div>
                             <?php endforeach; ?>
