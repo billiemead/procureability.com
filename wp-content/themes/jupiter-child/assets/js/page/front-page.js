@@ -98,7 +98,7 @@ new Swiper('#recentThoughtLeadership', {
 new Swiper('#industryLeaders', {
     loop: false,
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 18,
     navigation: {
         nextEl: '#industryLeadersNavigationNext',
         prevEl: '#industryLeadersNavigationPrev',
@@ -111,12 +111,12 @@ new Swiper('#industryLeaders', {
         768: {
             slidesPerView: 4,
             slidesPerGroup: 4,
-            spaceBetween: 0,
+            spaceBetween: 40,
         },
         1240: {
             slidesPerView: 6,
             slidesPerGroup: 6,
-            spaceBetween: 0,
+            spaceBetween: 60,
         }
     }
 });
