@@ -99,10 +99,10 @@ new Swiper('#industryLeaders', {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 18,
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
+    navigation: {
+        nextEl: '#industryLeadersNavigationNext',
+        prevEl: '#industryLeadersNavigationPrev',
+    },
     pagination: {
         el: '#industryLeadersPagination',
         clickable: true,
@@ -110,10 +110,12 @@ new Swiper('#industryLeaders', {
     breakpoints: {
         768: {
             slidesPerView: 4,
+            slidesPerGroup: 4,
             spaceBetween: 40,
         },
         1240: {
             slidesPerView: 6,
+            slidesPerGroup: 6,
             spaceBetween: 60,
         }
     }

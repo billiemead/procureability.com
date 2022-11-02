@@ -23,7 +23,23 @@
                     <?php endforeach; ?>
                 </div>
                 <div id="industryLeadersPagination"
-                     class="mt-[32px] flex justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#3BA17C] [&_span]:!opacity-100"></div>
+                     class="hidden md:flex md:flex-wrap mt-[32px] justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#3BA17C] [&_span]:!opacity-100"></div>
+            </div>
+            <div id="industryLeadersNavigationPrev"
+                 class="md:hidden absolute xl:!static left-[-20px] top-[50%] z-50 translate-y-[-50%] [&.swiper-button-disabled]:opacity-30 [&.swiper-button-disabled]:cursor-default [&:not(.swiper-button-disabled)]:hover:opacity-70 cursor-pointer xl:bg-[#cdeaf0] text-[#0098AE] h-[20px] w-[20px] xl:w-[60px] xl:h-[60px] rounded-full inline-flex justify-center items-center xl:mr-[10px]">
+                <svg class="relative xl:left-[-3px]" width="13" height="23" viewBox="0 0 13 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.7676 1.82773L1.76758 11.8277L11.7676 21.8277" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div id="industryLeadersNavigationNext"
+                 class="md:hidden absolute xl:!static right-[-20px] z-50 top-[50%] z-50 translate-y-[-50%] [&.swiper-button-disabled]:opacity-30 [&.swiper-button-disabled]:cursor-default [&:not(.swiper-button-disabled)]:hover:opacity-70 cursor-pointer xl:bg-[#cdeaf0] text-[#0098AE] h-[20px] w-[20px] xl:w-[60px] xl:h-[60px] rounded-full inline-flex justify-center items-center">
+                <svg class="relative xl:right-[-3px]" width="13" height="23" viewBox="0 0 13 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.23242 21.6945L11.2324 11.6945L1.23243 1.69449" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
         </div>
         <?php endif; ?>
