@@ -53,7 +53,7 @@
 <?php $video_video = get_field('video_video'); ?>
 <?php if ($video_title && $video_video ) : ?>
     <!--Video-->
-<section class="py-[30px]">
+<section id="video" class="py-[30px]">
     <div class="max-w-[930px] px-[15px] mx-auto">
         <div class="bg-[#0095b0] px-[15px] pt-[15px] pb-[40px]">
             <div>
