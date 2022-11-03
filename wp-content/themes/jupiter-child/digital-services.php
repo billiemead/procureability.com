@@ -214,7 +214,7 @@
                         <?php endif; ?>
                         <?php if ($video_title) : ?>
                             <div class="text-center mt-[20px]">
-                                <div class="text-[19px] leading-black text-[#000] font-[700] capitalize"><?= $video_title; ?></div>
+                                <div class="text-[19px] leading-black text-[#000] font-[700]"><?= $video_title; ?></div>
                             </div>
                         <?php endif; ?>
                     </div>
