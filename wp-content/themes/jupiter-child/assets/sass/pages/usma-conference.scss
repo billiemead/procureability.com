@@ -1,0 +1,179 @@
+.post-utility-supply-management-association-usma-conference-2022 {
+  .theme-content {
+    h4 {
+      //text-transform: uppercase;
+    }
+
+    .custom-post_image {
+      .mk-text-block {
+        h1 {
+          margin-top: 40px;
+          font-size: 34px;
+        }
+      }
+    }
+
+    .block-keynote-sessions {
+      margin-top: 20px;
+      border-radius: 5px;
+
+      tbody {
+        tr {
+          td {
+            vertical-align: middle;
+            padding: 25px 30px;
+            //background: #fff;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #717171;
+
+            &:nth-child(2) {
+              border-left: 1px solid #CDCDCD;
+            }
+
+            &:last-child {
+              padding-right: 70px;
+            }
+          }
+
+          &:first-child {
+            td {
+              background: #0098AE;
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 26px;
+              color: #FFFFFF;
+              padding: 10px 20px;
+            }
+          }
+
+          &:nth-child(odd) {
+            background: #F7F7F7;
+          }
+        }
+      }
+    }
+
+    a {
+      color: #0098AE;
+    }
+
+    ul {
+      margin-top: -3px;
+
+      li {
+        padding-left: 20px !important;
+
+        &::before {
+          width: 10px;
+          height: 10px;
+          top: 18px;
+          background-color: #0098AE !important;
+          left: -20px;
+        }
+      }
+    }
+  }
+}
+
+.person-block {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+
+  p {
+    margin: 0;
+  }
+
+  .person-image {
+    max-width: 70px;
+    margin-right: 20px;
+  }
+
+  .person-content {
+  }
+
+  .person-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+
+    a {
+      //text-decoration-line: underline;
+      color: #0098AE;
+    }
+  }
+
+  .person-post {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #717171;
+  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 767px) {
+  .post-utility-supply-management-association-usma-conference-2022 {
+    .theme-content {
+      .custom-post_image {
+        .mk-text-block {
+          h1 {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .block-keynote-sessions {
+        tbody {
+          tr {
+            td {
+              padding: 15px 15px;
+              font-size: 14px;
+
+              .person-block {
+                flex-direction: column;
+                align-items: normal;
+              }
+
+              &:last-child {
+                padding-right: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .person-block {
+    min-width: auto;
+
+    .person-image {
+      max-width: 70px;
+      margin-bottom: 10px;
+    }
+
+    .person-content {
+    }
+
+    .person-title {
+
+    }
+
+    .person-post {
+      font-size: 12px;
+    }
+  }
+}
