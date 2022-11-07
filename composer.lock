@@ -1270,12 +1270,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:ProcureAbility-com/formidable-api.git",
-                "reference": "c1183e5716cc42bc2dada03c89355791a81e2cd0"
+                "reference": "1a9e6cf472536989e67bdc22181598f71d02dad2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ProcureAbility-com/formidable-api/zipball/c1183e5716cc42bc2dada03c89355791a81e2cd0",
-                "reference": "c1183e5716cc42bc2dada03c89355791a81e2cd0",
+                "url": "https://api.github.com/repos/ProcureAbility-com/formidable-api/zipball/1a9e6cf472536989e67bdc22181598f71d02dad2",
+                "reference": "1a9e6cf472536989e67bdc22181598f71d02dad2",
                 "shasum": ""
             },
             "type": "wordpress-plugin",
@@ -1296,7 +1296,7 @@
                 "source": "https://github.com/ProcureAbility-com/formidable-api/tree/1.12",
                 "issues": "https://github.com/ProcureAbility-com/formidable-api/issues"
             },
-            "time": "2022-11-07T05:11:26+00:00"
+            "time": "2022-11-07T05:30:33+00:00"
         },
         {
             "name": "procureability-com/formidable-pro",
