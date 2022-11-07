@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "97d26851ed75fd43a928b72b231fa137",
+    "content-hash": "8234021c3c821ee05fc506c7cb407d3c",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1266,16 +1266,16 @@
         },
         {
             "name": "procureability-com/formidable-api",
-            "version": "1.11",
+            "version": "1.12",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ProcureAbility-com/formidable-api.git",
-                "reference": "380dca8b6f6e392f31138f3d194f0e2511542b45"
+                "reference": "c1183e5716cc42bc2dada03c89355791a81e2cd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ProcureAbility-com/formidable-api/zipball/380dca8b6f6e392f31138f3d194f0e2511542b45",
-                "reference": "380dca8b6f6e392f31138f3d194f0e2511542b45",
+                "url": "https://api.github.com/repos/ProcureAbility-com/formidable-api/zipball/c1183e5716cc42bc2dada03c89355791a81e2cd0",
+                "reference": "c1183e5716cc42bc2dada03c89355791a81e2cd0",
                 "shasum": ""
             },
             "type": "wordpress-plugin",
@@ -1293,10 +1293,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/ProcureAbility-com/formidable-api/tree/1.11",
+                "source": "https://github.com/ProcureAbility-com/formidable-api/tree/1.12",
                 "issues": "https://github.com/ProcureAbility-com/formidable-api/issues"
             },
-            "time": "2022-09-20T05:24:33+00:00"
+            "time": "2022-11-07T05:11:26+00:00"
         },
         {
             "name": "procureability-com/formidable-pro",
@@ -5801,6 +5801,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-asset-clean-up",
+            "version": "1.3.8.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-asset-clean-up/",
+                "reference": "tags/1.3.8.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-asset-clean-up.1.3.8.8.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-asset-clean-up/"
         },
         {
             "name": "wpackagist-plugin/zapier",

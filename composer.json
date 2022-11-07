@@ -120,6 +120,7 @@
     "require": {
         "wpackagist-theme/twentytwentytwo": "*",
         "wpackagist-plugin/better-font-awesome": "*",
+        "wpackagist-plugin/wp-asset-clean-up": "*",
         "wpackagist-plugin/blog-designer-pack": "*",
         "wpackagist-plugin/classic-editor": "*",
         "wpackagist-plugin/classic-widgets": "*",
@@ -146,7 +147,7 @@
         "procureability-com/dflip": "^1.7",
         "procureability-com/essential-grid": "^3.0",
         "procureability-com/eventon": "^4.2",
-        "procureability-com/formidable-api": "^1.11",
+        "procureability-com/formidable-api": "^1.12",
         "procureability-com/formidable-pro": "^5.5",
         "procureability-com/formidable-registration": "2.0.9",
         "procureability-com/formidable-zapier": "^2.01",
