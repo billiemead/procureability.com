@@ -196,13 +196,6 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "about.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
                 "value": "procurement-staffing-and-recruiting.php"
             }
         ],
@@ -210,7 +203,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "leadership.php"
+                "value": "insights.php"
             }
         ]
     ],
@@ -223,5 +216,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664452519
+    "modified": 1667919849
 }
