@@ -52,7 +52,7 @@
                 $leadership_bio = get_field('leadership_bio');
                 $leadership_casual_image = get_field('leadership_casual_image');
                 ?>
-                <div class="hidden max-w-[40%] w-[40%] min-w-[60%] !px-[15px] !pt-[15px] !pb-[5px]"
+                <div class="hidden max-w-[40%] w-[40%] min-w-[60%]"
                      id="leader-<?= get_the_ID(); ?>"
                 >
                     <?php if ($leadership_casual_image) : ?>
