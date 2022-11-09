@@ -26,17 +26,13 @@
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
                 <?php foreach ($insights as $insight) : ?>
                     <div class="overflow-hidden shadow-[1px_1px_3px_rgb(0,0,0,.3)]">
-                        <a class="group relative" target="<?= $insight['link']['target'] ?: '_self'; ?>"
+                        <a class="block group relative" target="<?= $insight['link']['target'] ?: '_self'; ?>"
                            href="<?= $insight['link']['url']; ?>">
-                            <div class="translate-x-0 group-hover:translate-x-full duration-[.35s] ease-in-out">
-                                <img class="block w-full max-w-full"
-                                     src="<?= $insight['cover']['url']; ?>"
-                                     alt="<?= $insight['cover']['alt']; ?>">
+                            <div class="translate-x-0 group-hover:translate-x-full duration-[.35s] ease-in-out [&_img]:block [&_img]:w-full [&_img]:max-w-full [&_img]:h-auto">
+                                <?= wp_get_attachment_image($insight['cover']['ID'], 'full'); ?>
                             </div>
-                            <div class="absolute inset-0 translate-x-[-100%] group-hover:translate-x-0 duration-[.35s] ease-in-out">
-                                <img class="block w-full max-w-full"
-                                     src="<?= $insight['content']['url']; ?>"
-                                     alt="<?= $insight['content']['alt']; ?>">
+                            <div class="absolute inset-0 translate-x-[-100%] group-hover:translate-x-0 duration-[.35s] ease-in-out [&_img]:block [&_img]:w-full [&_img]:max-w-full [&_img]:h-auto">
+                                <?= wp_get_attachment_image($insight['content']['ID'], 'full'); ?>
                             </div>
                         </a>
                     </div>
