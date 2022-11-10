@@ -5,3 +5,6 @@
 @import 'slider.css';
 @import 'miscellaneous.pcss';
 @import 'digital-services-form.pcss';
+
+@import "blog/parts/blog-list.pcss";
+@import "blog/parts/custom-content-block.pcss";
