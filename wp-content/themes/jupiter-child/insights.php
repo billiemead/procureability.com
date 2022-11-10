@@ -21,7 +21,7 @@
 
 <?php $insights = get_field('insights'); ?>
 <?php if ($insights) : ?>
-    <section class="pt-[32px] pb-[30px]">
+    <section class="pt-[30px] pb-[30px]">
         <div class="max-w-[930px] px-[15px] mx-auto">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
                 <?php foreach ($insights as $insight) : ?>
