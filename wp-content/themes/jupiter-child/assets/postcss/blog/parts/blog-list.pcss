@@ -1,0 +1,28 @@
+.blog-list {
+    margin-bottom: 24px;
+
+    .blog-list__item {
+        position: relative;
+        padding: 10px 0 10px 20px;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 21px;
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 10px;
+            background-color: #000000;
+        }
+
+        .blog-list-item__title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #404040;
+        }
+    }
+}
