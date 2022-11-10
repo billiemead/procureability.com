@@ -21,11 +21,11 @@
 
 <?php $insights = get_field('insights'); ?>
 <?php if ($insights) : ?>
-    <section class="pt-[32px] pb-[30px]">
+    <section class="py-[30px]">
         <div class="max-w-[930px] px-[15px] mx-auto">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
                 <?php foreach ($insights as $insight) : ?>
-                    <a class="pt-[38.97%] block group relative shadow-[1px_1px_3px_rgb(0,0,0,.3)] overflow-hidden"
+                    <a class="pt-[39.31%] block group relative shadow-[1px_1px_3px_rgb(0,0,0,.3)] overflow-hidden"
                        target="<?= $insight['link']['target'] ?: '_self'; ?>"
                        title="<?= $insight['link']['title']; ?>"
                        href="<?= $insight['link']['url']; ?>">
