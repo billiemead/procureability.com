@@ -31,10 +31,10 @@
                             <a class="block group" target="<?= $insight['link']['target'] ?: '_self'; ?>"
                                href="<?= $insight['link']['url']; ?>">
                                 <div class="translate-x-0 group-hover:translate-x-full duration-[.35s] ease-in-out [&_img]:block [&_img]:w-full [&_img]:max-w-full [&_img]:h-auto">
-                                    <?= wp_get_attachment_image($insight['cover']['ID'], 'full', false, array('alt' => $insight['link']['title'])); ?>
+                                    <?= wp_get_attachment_image($insight['cover']['ID'], array(290, 114), false, array('alt' => $insight['link']['title'])); ?>
                                 </div>
                                 <div class="absolute inset-0 translate-x-[-100%] group-hover:translate-x-0 duration-[.35s] ease-in-out [&_img]:block [&_img]:w-full [&_img]:max-w-full [&_img]:h-auto">
-                                    <?= wp_get_attachment_image($insight['content']['ID'], 'full', false, array('alt' => $insight['link']['title'])); ?>
+                                    <?= wp_get_attachment_image($insight['content']['ID'], array(290, 114), false, array('alt' => $insight['link']['title'])); ?>
                                 </div>
                             </a>
                         </div>
