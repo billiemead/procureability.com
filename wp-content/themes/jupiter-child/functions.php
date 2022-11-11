@@ -29,7 +29,7 @@ function procureability_enqueue_styles()
     wp_register_style('main-jupiter-child-css-print', '/wp-content/themes/jupiter-child/dist/main-print.css', array(), false, 'print');
     wp_enqueue_style('main-jupiter-child-css-print');
     */
-    
+
     wp_register_script('main-jupiter-child-js', asset_hash('/wp-content/themes/jupiter-child/dist/index.js'), array(), null, true);
     wp_enqueue_script('main-jupiter-child-js');
 
@@ -311,3 +311,45 @@ function add_site_url_to_clients_menu_item( $item_output, $item, $depth, $args )
 }
 
 add_filter( 'walker_nav_menu_start_el', 'add_site_url_to_clients_menu_item', 10, 4 );
+
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+}
+
+function widgets_init() {
+
+    register_sidebar( array(
+        'name'          => 'Footer Menu Area First',
+        'id'            => 'footer_menu_area_1',
+        'description'    => '',
+        'class'          => '',
+        'before_widget'  => '<div id="%1$s" class="footer-navigation">',
+        'after_widget'   => "</div>",
+        'before_sidebar' => '',
+        'after_sidebar'  => '',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Footer Menu Area Second',
+        'id'            => 'footer_menu_area_2',
+        'description'    => '',
+        'class'          => '',
+        'before_widget'  => '<div id="%1$s" class="footer-navigation">',
+        'after_widget'   => "</div>",
+        'before_sidebar' => '',
+        'after_sidebar'  => '',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Footer Menu Area Third',
+        'id'            => 'footer_menu_area_3',
+        'description'    => '',
+        'class'          => '',
+        'before_widget'  => '<div id="%1$s" class="footer-navigation">',
+        'after_widget'   => "</div>",
+        'before_sidebar' => '',
+        'after_sidebar'  => '',
+    ) );
+
+}
+add_action( 'widgets_init', 'widgets_init' );
