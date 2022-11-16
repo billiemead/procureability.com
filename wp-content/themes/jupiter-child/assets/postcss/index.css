@@ -6,5 +6,7 @@
 @import 'miscellaneous.pcss';
 @import 'digital-services-form.pcss';
 
+@import 'vendors/formidable.css';
+
 @import "blog/parts/blog-list.pcss";
 @import "blog/parts/custom-content-block.pcss";
