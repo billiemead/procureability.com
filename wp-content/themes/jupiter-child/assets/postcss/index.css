@@ -7,6 +7,7 @@
 @import 'digital-services-form.pcss';
 
 @import 'vendors/formidable.css';
+@import 'formidable-overwrite.pcss';
 
 @import "blog/parts/blog-list.pcss";
 @import "blog/parts/custom-content-block.pcss";
