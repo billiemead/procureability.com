@@ -110,6 +110,6 @@ if ( $mk_options['header_search_location'] === 'fullscreen_search' ) {
 	<?php wp_footer(); ?>
 
 	<?php do_action( 'mk_theme_before_body_closing' ); ?>
-
+<!--test-->
 </body>
 </html>
