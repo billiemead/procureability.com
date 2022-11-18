@@ -33,7 +33,7 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
 
 <footer class="bg-[#393A40]">
     <div class="pt-[33px] pb-[76px] ">
-        <div class="box-border max-w-[1230px] px-[15px] mx-auto">
+        <div class="box-border max-w-[1200px] px-[15px] mx-auto">
             <div class="lg:grid lg:grid-cols-[265px_1fr] lg:gap-[86px]">
                 <div>
                     <?php if ($footer_logo) : ?>
@@ -97,9 +97,7 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
                         <ul class="!m-0 list-none flex">
                             <?php foreach ($socials as $social) : ?>
                                 <li class="!ml-0 !my-0 !mr-[24px] !last:mr-0">
-                                    <a target="<?= $social['link']['target'] ?: '_self'; ?>"
-                                       class="block [&_svg]:block text-white hover:text-black"
-                                       href="<?= $social['link']['url']; ?>">
+                                    <a class="block [&_svg]:block text-white hover:text-black" href="<?= $social['link']['url']; ?>">
                                         <?= file_get_contents($social['icon']['url']); ?>
                                     </a>
                                 </li>
