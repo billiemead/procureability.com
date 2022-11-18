@@ -4,7 +4,7 @@
     <!--Video-->
     <section id="video">
         <div class="max-w-[1200px] px-[15px] mx-auto">
-            <div class="px-[48px] pt-[48px] pb-[40px] bg-[#F7F9FA]">
+            <div class="px-[15px] lg:px-[48px] pt-[20px] lg:pt-[48px] pb-[20] lg:pb-[40px] bg-[#F7F9FA]">
                 <?php if ($video_video) : ?>
                     <div>
                         <?= $video_video; ?>
