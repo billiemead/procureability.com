@@ -69,6 +69,9 @@ function procureability_enqueue_styles()
 
     /*Front page*/
     wp_enqueue_script('front-page', '/wp-content/themes/jupiter-child/dist/front-page.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/front-page.js'), true);
+
+    /*Talent*/
+    wp_enqueue_script('talent', '/wp-content/themes/jupiter-child/dist/talent.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/talent.js'), true);
 }
 
 add_action('wp_enqueue_scripts', 'procureability_enqueue_styles');
