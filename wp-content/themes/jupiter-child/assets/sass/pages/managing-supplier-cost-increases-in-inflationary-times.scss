@@ -1,0 +1,113 @@
+.single-post {
+
+  &.post-managing-supplier-cost-increases-in-inflationary-times {
+    .theme-content {
+      #text-block-3 {
+        padding-right: 20px !important;
+      }
+
+      h4 {
+        text-transform: uppercase;
+      }
+
+      .title_container {
+        margin: 40px 0 12px;
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0;
+        }
+
+        h4 {
+          margin: 0 0 0 10px;
+        }
+      }
+
+      .indexes {
+        margin: 0 -16px 0 -16px;
+        display: flex;
+
+        &__container {
+          border: 1.07766px solid rgba(246, 136, 27, 0.41);
+          border-radius: 7.25043px;
+          margin: 0 16px 24px 16px;
+          padding: 22px 33px;
+          display: flex;
+          align-items: center;
+          width: 100%;
+        }
+
+        &__content {
+
+        }
+
+        &__image {
+          float: left;
+          margin-right: 21px;
+        }
+
+        &__title {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 130%;
+          text-transform: uppercase;
+          color: #F39200;
+        }
+
+        &__text {
+          margin-top: 8px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22px;
+          color: #717171;
+        }
+
+        &:last-child {
+          border-color: rgba(239, 79, 37, 0.41);
+
+          &__title {
+            color: #EF4F25;
+          }
+        }
+      }
+
+      .remember {
+        padding: 32px 43px;
+        background: linear-gradient(270deg, rgba(0, 152, 174, 0.1) -1.07%, rgba(0, 152, 174, 0.08) 100%);
+        border-radius: 9.71074px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .single-post {
+    &.post-managing-supplier-cost-increases-in-inflationary-times {
+      .theme-content {
+
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .single-post {
+    &.post-managing-supplier-cost-increases-in-inflationary-times {
+      .theme-content {
+        .indexes {
+          flex-wrap: wrap;
+        }
+
+        .remember {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
