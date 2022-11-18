@@ -2,7 +2,7 @@
 <?php $recruitment_process_leading = get_field('recruitment_process_leading'); ?>
 <?php $recruitment_process_steps = get_field('recruitment_process_steps'); ?>
 
-<section class="pt-[80px]">
+<section class="pt-[30px] lg:pt-[80px]">
     <div class="max-w-[636px] xl:max-w-[742px] px-[34px] md:px-0 mx-auto mb-[50px]">
         <?php if ($recruitment_process_title) : ?>
             <div class="text-center mb-[20px] xl:mb-[16px]">
