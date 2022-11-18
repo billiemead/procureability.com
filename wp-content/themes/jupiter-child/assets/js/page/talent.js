@@ -20,3 +20,33 @@ new Swiper('#procureabilityBenefits', {
         }
     }
 });
+
+new Swiper('#reasonsToJoin', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoHeight: true,
+    navigation: {
+        nextEl: '#reasonsToJoinNavigationNext',
+        prevEl: '#reasonsToJoinNavigationPrev',
+    },
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+    pagination: {
+        el: '#reasonsToJoinPagination',
+        clickable: true,
+    },
+    breakpoints: {
+        // 768: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 34,
+        // },
+        1240: {
+
+        }
+    }
+});
+
+

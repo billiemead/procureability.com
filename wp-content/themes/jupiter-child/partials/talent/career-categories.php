@@ -1,19 +1,36 @@
-<section class="pt-[48px] pb-[66px] bg-gray-500">
+<?php $career_categories_title = get_field('career_categories_title'); ?>
+<?php $career_categories_procureability_button = get_field('career_categories_procureability_button'); ?>
+<?php $career_categories_industry_button = get_field('career_categories_industry_button'); ?>
+
+<section class="pt-[48px] pb-[66px] bg-cover bg-center bg-no-repeat"
+         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent/career-categories-background.png')">
     <div class="px-[15px]">
-        <div class="text-center mb-[24px]">
-            <div class="font-poppins text-white text-[36px] leading-[1.5] font-[600]">Career Categories</div>
-        </div>
-        <div class="grid md:grid-cols-[auto_auto] md:justify-center gap-[32px]">
-            <div class="min-w-[0px]">
-                <a class="inline-block py-[22px] px-[38px] bg-white rounded-[3px]" href="">
-                    <span class="font-poppins text-[#0098AE] text-[20px] leading-[1.3] font-[700] tracking-[0.1em] uppercase align-middle">ProcureAbility</span>
-                </a>
+        <?php if ($career_categories_title) : ?>
+            <div class="text-center mb-[24px]">
+                <div class="font-poppins text-white text-[36px] leading-[1.5] font-[600]"><?= $career_categories_title; ?></div>
             </div>
-            <div class="min-w-[0px]">
-                <a class="inline-block py-[22px] px-[38px] bg-white rounded-[3px]" href="">
-                    <span class="font-poppins text-[#3BA17C] text-[20px] leading-[1.3] font-[700] tracking-[0.1em] uppercase align-middle">Industry</span>
-                </a>
-            </div>
+        <?php endif; ?>
+        <div class="text-center grid md:grid-cols-[auto_auto] md:justify-center gap-[32px]">
+            <?php if ($career_categories_procureability_button) : ?>
+                <div class="min-w-[0px]">
+                    <a class="inline-block py-[22px] px-[38px] bg-white rounded-[3px] relative active:top-0 hover:top-[-2px]"
+                       href="<?= $career_categories_procureability_button['url']; ?>"
+                       target="<?= $career_categories_procureability_button['target'] ?: '_self'; ?>"
+                    >
+                        <span class="font-poppins text-[#0098AE] text-[20px] leading-[1.3] font-[700] tracking-[0.1em] uppercase align-middle"><?= $career_categories_procureability_button['title']; ?></span>
+                    </a>
+                </div>
+            <?php endif; ?>
+            <?php if ($career_categories_industry_button) : ?>
+                <div class="min-w-[0px]">
+                    <a class="inline-block py-[22px] px-[38px] bg-white rounded-[3px] relative active:top-0 hover:top-[-2px]"
+                       href="<?= $career_categories_industry_button['url']; ?>"
+                       target="<?= $career_categories_procureability_button['target'] ?: '_self'; ?>"
+                    >
+                        <span class="font-poppins text-[#3BA17C] text-[20px] leading-[1.3] font-[700] tracking-[0.1em] uppercase align-middle"><?= $career_categories_industry_button['title']; ?></span>
+                    </a>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>

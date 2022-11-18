@@ -19,18 +19,17 @@
 <?php get_template_part('partials/talent/career-categories'); ?>
 <?php /** !CAREER CATEGORIES */ ?>
 
+<?php /** REASONS TO JOIN */ ?>
+<?php get_template_part('partials/talent/reasons-to-join'); ?>
+<?php /** !REASONS TO JOIN */ ?>
+
+<?php /** RECRUITMENT PROCESS */ ?>
+<?php get_template_part('partials/talent/recruitment-process'); ?>
+<?php /** !RECRUITMENT PROCESS */ ?>
+
 <?php /** BENEFITS */ ?>
 <?php get_template_part('partials/talent/benefits'); ?>
 <?php /** !BENEFITS */ ?>
-
-<?php if (have_posts()) : ?>
-    <!--Content-->
-    <?php while (have_posts()) : the_post(); ?>
-        <?php get_template_part('partials/page', 'content'); ?>
-    <?php endwhile; ?>
-    <!--Content-->
-<?php endif; ?>
-
 
 <?php /** VIDEO */ ?>
 <?php get_template_part('partials/talent/video'); ?>

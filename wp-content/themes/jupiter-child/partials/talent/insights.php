@@ -3,9 +3,7 @@
 <?php $insights_button = get_field('insights_button'); ?>
 
 <!--insights-->
-<section
-        class="py-[48px] md:py-[64px] xl:py-[72px] bg-no-repeat bg-[length:868px_auto] md:bg-[length:1168px_auto] xl:bg-[length:1482px_auto] bg-[position:calc(50%+325px)_-75px] md:bg-[position:calc(50%+380px)_center] xl:bg-[position:calc(50%+757px)_center]"
-        style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/homepage/section-bg-green.svg')">
+<section class="py-[48px] md:py-[64px] xl:py-[80px]">
     <div class="max-w-[636px] xl:max-w-[1200px] px-[34px] mx-auto">
         <div class="text-center mb-[32px] md:mb-[40px]">
             <div class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[22px] leading-[1.4] md:text-[36px] md:leading-[1.5] font-[600]"><?= $insights_title; ?>
@@ -41,7 +39,7 @@
             </div>
         <?php endif; ?>
         <div class="text-center">
-            <a class="inline-block py-[12px] px-[25px] md:px-[34px] bg-[#0098AE] rounded-[3px] relative group"
+            <a class="inline-block py-[12px] px-[25px] md:px-[34px] bg-[#3BA17C] rounded-[3px] relative group"
                href="<?= $insights_button['url']; ?>">
                 <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
