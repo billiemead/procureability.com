@@ -13,7 +13,7 @@
                 <div class="swiper-wrapper">
                     <?php foreach ($benefits_benefits as $benefit) : ?>
                         <div class="swiper-slide">
-                            <div class="pt-[130%] xl:pt-0 xl:!w-[390px] xl:!h-[507px] group">
+                            <div class="pt-[130%] xl:pt-0 xl:!w-[390px] xl:!h-[512px] group">
                                 <div class="inset-0 absolute xl:w-full xl:h-full xl:relative">
                                     <div class="!hidden rounded-[5px] overflow-hidden xl:block xl:group-active:opacity-0 xl:group-hover:opacity-0 xl:opacity-100 absolute inset-0 py-[28px] px-[28px] xl:!flex xl:!flex-col transition-opacity">
                                         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -35,7 +35,7 @@
                                             </div>
                                         </div>
                                         <div class="overflow-auto">
-                                            <div class="[&_*]:!font-poppins [&_*]:!text-[#393A40] opacity-80 [&_*]:!text-[14px] [&_*]:!leading-[1.7] md:[&_*]:!text-[16px] md:[&_*]:!leading-[1.4] [&_ul]:!ml-[5px] [&_li]:!mb-[.5em] marker:text-[#0098AE]">
+                                            <div class="[&_*]:!font-poppins [&_*]:!text-[#393A40] opacity-80 [&_*]:!text-[14px] [&_*]:!leading-[1.7] md:[&_*]:!text-[16px] md:[&_*]:!leading-[1.4] [&_ul]:!ml-[5px] [&_li]:!mb-[.5em] marker:text-[#0098AE] pr-[10px] xl:pr-0">
                                                 <?= $benefit['content']; ?>
                                             </div>
                                         </div>

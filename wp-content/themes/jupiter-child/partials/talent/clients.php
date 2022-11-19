@@ -4,7 +4,7 @@
 <!--clients-->
 <section id="ourclients" class="pt-[40px] md:pt-[56px] xl:py-[80px] pb-[62px] md:pb-[50px]">
     <div class="px-[34px]">
-        <div class="max-w-[210px] md:max-w-full mb-[16px] mx-auto text-center">
+        <div class="mb-[16px] mx-auto text-center">
             <div class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[22px] md:text-[36px] leading-[1.4] md:leading-[1.5] font-[600]">
                 <?= $clients_title; ?>
             </div>
