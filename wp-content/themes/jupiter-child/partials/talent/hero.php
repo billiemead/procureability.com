@@ -4,13 +4,13 @@
 <?php $hero_background_image = get_field('hero_background_image'); ?>
 
 <!--hero-->
-<section class="pt-[185px] pb-[112px] bg-no-repeat bg-center bg-cover"
+<section class="pt-[185px] pb-[185px] bg-no-repeat bg-center md:bg-[left_25%_center] xl:bg-center xxl:bg-[center_top] bg-cover"
          style="background-image: url(<?= $hero_background_image['url']; ?>)">
     <div class="max-w-[1010px] mx-auto px-[15px]">
         <div class="text-center mb-[8px]">
             <?php if ($hero_title) : ?>
-                <div class="font-poppins text-white text-[42px] leading-[1.27] font-[600] tracking-[0.02em]"><?= $hero_title; ?>
-                </div>
+                <h1 class="font-poppins text-white text-[42px] leading-[1.27] font-[600] tracking-[0.02em] !m-0"><?= $hero_title; ?>
+                </h1>
             <?php endif; ?>
         </div>
         <?php if ($hero_leading) : ?>

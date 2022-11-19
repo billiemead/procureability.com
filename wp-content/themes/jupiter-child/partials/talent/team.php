@@ -1,5 +1,5 @@
 <!--team-->
-<section class="pt-[32px] xl:pt-[150px] pb-[40px] xl:pb-[10px]">
+<section class="pt-[100px] xl:pt-[150px] pb-[40px] xl:pb-[10px]">
     <div class="px-[33px] xl:px-0 max-w-[1180px] mx-auto">
         <div class="text-center mb-[24px] xl:mb-[48px]">
             <span class="brand-text-gradient text-transparent bg-clip-text text-[24px] font-[500] xl:text-[34px] leading-[1.47] xl:font-[600]"><?= get_field('team_title'); ?></span>
