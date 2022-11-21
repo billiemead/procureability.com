@@ -62,17 +62,13 @@ Following is the local environment setup to prepare for using Continuous Deliver
 
 ## 3 Edit Local Files ##
 
-#### Edit Local Config Files ####
+#### Create Local Config Files ####
 
-1. Open `devprocureability/wp-config/wp-config.local.php` and set new local MySQL database credentials
+1. Create `devprocureability/wp-config/wp-config.local.php` based on `devprocureability/wp-config/wp-config.local.example.php` and set local MySQL database credentials
 
-> ![6-edit-wp-config-local](https://user-images.githubusercontent.com/8992422/197686031-d1913490-9e86-408f-8af0-314035386ea3.png)
+2. Enable or disable debugging and add any WordPress defines, that you would like for the LOCAL DEVELOPMENT ENVIRONMENT in the newly created `devprocureability/wp-config/wp-config.local.php`
 
-2. Enable or disable debugging and add any WordPress defines, that you would like for the LOCAL DEVELOPMENT ENVIRONMENT in `devprocureability/wp-config/wp-config.local.php`
-
-3. Next, open `devprocureability/wp-config/wp-config.env.php` and change the local domain (in this example change to devprocureability.localdev).
-
-> ![image](https://user-images.githubusercontent.com/8992422/197695109-056524e8-1777-4dac-9163-6dc918317b75.png)
+3. Create `devprocureability/wp-config/wp-config.env.php` based on `devprocureability/wp-config/wp-config.env.example.php` and set the local domain.
 
 - - - -
 
