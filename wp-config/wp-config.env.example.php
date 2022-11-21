@@ -22,9 +22,9 @@
 
 $env = [
     'local' => [
-        'domain' => 'devprocureability.localdev',
+        'domain' => 'procureability.local',
         'path'   => '',
-        'ssl'    => true,
+        'ssl'    => false,
     ],
     'production'  => [
         'domain' => 'procureability.com',
