@@ -4,7 +4,7 @@
 <?php $hero_background_image = get_field('hero_background_image'); ?>
 
 <!--hero-->
-<section class="pt-[285px] lg:pt-[185px] pb-[185px] bg-no-repeat bg-center md:bg-[left_25%_top_-35%] xl:bg-center xxl:bg-[center_top_20%] bg-cover"
+<section class="pt-[285px] pb-[185px] bg-no-repeat bg-center md:bg-[left_25%_top_-35%] xl:bg-center xxl:bg-[center_top_20%] bg-cover"
          style="background-image: url(<?= $hero_background_image['url']; ?>)">
     <div class="max-w-[1010px] mx-auto px-[15px]">
         <div class="text-center mb-[8px]">
