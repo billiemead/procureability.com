@@ -5,6 +5,8 @@
 !wp-config/
 wp-config/.env
 !wp-config.php
+wp-config/wp-config.env.php
+wp-config/wp-config.local.php
 
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
@@ -103,4 +105,5 @@ wp-content/mysql.sql
 # track these mu-plugins, plugins, and themes
 # add your own entries here
 !wp-content/themes/jupiter-child/
+wp-content/themes/jupiter-child/dist
 /vendor/
