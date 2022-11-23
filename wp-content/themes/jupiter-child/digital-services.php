@@ -452,7 +452,7 @@
                                     <div class="hidden xl:block text-[#393A40] text-[14px] leading-[1.65] md:text-[16px] opacity-[.8] md:mb-[16px]">
                                         <?= get_the_excerpt($insights_list_item); ?>
                                     </div>
-                                    <span class="text-[#3BA17C] text-[16px] leading-[1.51] font-[500] uppercase xl:!normal-case">Read More</span>
+                                    <span class="text-[#3BA17C] text-[16px] leading-[1.51] font-[500] uppercase xl:!normal-case group-hover:underline underline-offset-[5px] decoration-dotted">Read More</span>
                                 </a>
                             <?php endforeach; ?>
                         </div>
