@@ -242,7 +242,7 @@
                     <?php if ($benefits_list) : ?>
                         <ul class="relative grid gap-y-[12px] md:gap-y-[10px] xl:grid-cols-[386px_386px] xl:gap-x-[312px] xl:gap-y-[24px] list-none m-0">
                             <?php foreach ($benefits_list as $key => $benefits_list_item) : ?>
-                                <li class="wow fadeIn h-[67px] md:h-[75px] xl:w-[386px] xl:h-[90px] rounded-[100px] border border-solid border-[rgba(1,115,140,0.3)] bg-white flex justify-center items-center text-center py-[20px] px-[26px] box-border m-0 relative <?php if (in_array($key, array(2, 6))) {
+                                <li class="wow fadeIn h-[67px] md:h-[75px] xl:w-[386px] xl:h-[90px] rounded-[100px] border border-solid border-[rgba(1,115,140,0.3)] bg-white flex justify-center items-center text-center py-[20px] px-[10px] box-border m-0 relative <?php if (in_array($key, array(2, 6))) {
                                     echo 'xl:left-[-43px]';
                                 } else if (in_array($key, array(3, 7))) {
                                     echo 'xl:right-[-43px]';
