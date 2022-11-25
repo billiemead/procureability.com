@@ -21,7 +21,7 @@
                                         <div class="absolute inset-0 bg-cover"
                                              style="background-image: url('<?= get_the_post_thumbnail_url($team_list_item); ?>')"></div>
                                         <div class="rounded-full absolute inset-0 group-hover:duration-[1s] group-hover:opacity-100 opacity-0 transition-all duration-[.3s] bg-[rgba(247,148,31,.68)]"></div>
-                                        <div class="absolute inset-0 flex justify-center items-center transform scale-[1.5] group-hover:scale-[1] opacity-0 group-hover:opacity-100 transition-all duration-[.3s] group-hover:duration-[.6s]">
+                                        <div class="hidden absolute inset-0 md:flex justify-center items-center transform scale-[1.5] group-hover:scale-[1] opacity-0 group-hover:opacity-100 transition-all duration-[.3s] group-hover:duration-[.6s]">
                                             <span class="text-white text-[18px] leading-[1.1] uppercase font-[600]">Click for bio</span>
                                         </div>
                                     </div>
