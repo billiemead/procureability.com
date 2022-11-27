@@ -34,11 +34,11 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
 <footer class="bg-[#393A40]">
     <div class="pt-[33px] pb-[76px] ">
         <div class="box-border max-w-[1230px] px-[15px] mx-auto">
-            <div class="lg:grid lg:grid-cols-[265px_1fr] lg:gap-[86px]">
+            <div class="xl:grid xl:grid-cols-[265px_1fr] xl:gap-[86px]">
                 <div>
                     <?php if ($footer_logo) : ?>
                         <div class="mb-[32px] [&_img]:max-w-full [&_img]:h-auto [&_img]:block">
-                            <a href="<?= get_home_url(); ?>">
+                            <a class="block [&_img]:max-w-[223px] [&_img]:h-auto" href="<?= get_home_url(); ?>">
                                 <?= wp_get_attachment_image($footer_logo['id'], 'full'); ?>
                             </a>
                         </div>
@@ -88,7 +88,7 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
         <div class="max-w-[1200px] px-[15px] mx-auto">
             <div class="lg:flex lg:items-center lg:justify-between">
                 <?php if ($footer_bottom_text) : ?>
-                    <div class="[&_p]:!m-0 [&_p]:!font-poppins [&_p]:text-[13px] [&_p]:leading-[1.23] [&_p]:text-white [&_a]:text-white [&_a]:font-[600] [&_a]:hover:text-white [&_a]:hover:underline">
+                    <div class="[&_p]:!m-0 [&_p]:!font-poppins [&_p]:text-[13px] [&_p]:leading-[1.23] [&_p]:text-white [&_a]:text-white [&_a]:font-[600] [&_a]:hover:text-white [&_a]:border-b [&_a]:border-solid [&_a]:border-[rgba(255,255,255,0)] [&_a]:hover:border-[rgba(255,255,255,1)] [&_a]:transition-all">
                         <?= $footer_bottom_text; ?>
                     </div>
                 <?php endif; ?>
@@ -98,7 +98,7 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
                             <?php foreach ($socials as $social) : ?>
                                 <li class="!ml-0 !my-0 !mr-[24px] !last:mr-0">
                                     <a target="<?= $social['link']['target'] ?: '_self'; ?>"
-                                       class="block [&_svg]:block text-white hover:text-black"
+                                       class="block [&_svg]:block text-white hover:text-black [&_svg]:transition-all"
                                        href="<?= $social['link']['url']; ?>">
                                         <?= file_get_contents($social['icon']['url']); ?>
                                     </a>

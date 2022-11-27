@@ -26,6 +26,12 @@
                 line-height: 1.38;
                 text-transform: capitalize;
                 color: #FFFFFF;
+                opacity: 1;
+                transition: opacity .25s;
+
+                &:hover {
+                    opacity: .7;
+                }
             }
 
             & > .sub-menu {
@@ -45,6 +51,12 @@
                         font-size: 16px;
                         line-height: 0.94;
                         color: #FFFFFF;
+                        opacity: 1;
+                        transition: opacity .25s;
+
+                        &:hover {
+                            opacity: .7;
+                        }
                     }
 
                     & > .sub-menu {
@@ -65,7 +77,7 @@
                                 content: '';
                                 position: absolute;
                                 left: 0;
-                                top: 11px;
+                                top: 5px;
                                 display: block;
                                 width: 3px;
                                 height: 3px;
@@ -74,12 +86,19 @@
                             }
 
                             & > a {
+                                display: block;
                                 font-family: 'Poppins';
                                 font-style: normal;
                                 font-weight: 300;
                                 font-size: 13px;
-                                line-height: 1.5;
+                                line-height: 1.15;
                                 color: #FFFFFF;
+                                opacity: 1;
+                                transition: opacity .25s;
+
+                                &:hover {
+                                    opacity: .7;
+                                }
                             }
                         }
                     }
