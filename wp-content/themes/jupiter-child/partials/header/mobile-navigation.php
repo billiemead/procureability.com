@@ -1,0 +1,3 @@
+<div x-show="mobileMenuActive" x-collapse class="xl:hidden">
+    <?php wp_nav_menu(array('theme_location' => 'primary-menu', 'container_class' => 'mobile-nav', 'walker' => new Custom_Menu_Walker())); ?>
+</div>
