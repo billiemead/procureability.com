@@ -100,7 +100,7 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
                                     <a target="<?= $social['link']['target'] ?: '_self'; ?>"
                                        class="block [&_svg]:block text-white hover:text-black [&_svg]:transition-all"
                                        href="<?= $social['link']['url']; ?>">
-                                        <?= file_get_contents($social['icon']['url']); ?>
+                                        <?= file_get_contents(str_replace(get_site_url() . '/', get_home_path(), $social['icon']['url'])); ?>
                                     </a>
                                 </li>
                             <?php endforeach; ?>
