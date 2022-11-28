@@ -43,34 +43,29 @@
             <?php endif; ?>
         </div>
         <?php if ($team) : ?>
-            <?php foreach ($team as $post): setup_postdata($post); ?>
-                <?php
-                $permalink = get_permalink();
-                $title = get_the_title();
-                $leadership_name = get_field('leadership_name');
-                $leadership_title = get_field('leadership_title');
-                $leadership_bio = get_field('leadership_bio');
-                $leadership_casual_image = get_field('leadership_casual_image');
-                ?>
-                <div class="hidden max-w-[40%] w-[40%] min-w-[60%]"
-                     id="leader-<?= get_the_ID(); ?>"
-                >
-                    <?php if ($leadership_casual_image) : ?>
-                        <img class="leadership-content-photo" src="<?= $leadership_casual_image; ?>"
-                             alt="<?= $leadership_name; ?>">
-                    <?php endif; ?>
+        <?php foreach ($team
 
-                    <div class="leadership-content-text">
-                        <div class="leadership-content-name"><strong><?= $leadership_name; ?></strong></div>
-                        <div class="leadership-content-position"><strong><?= $leadership_title; ?></strong>
-                        </div>
-
-                        <?= apply_filters('the_content', $leadership_bio); ?>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <?php wp_reset_postdata(); ?>
-        <?php endif; ?>
+        as $post):
+        setup_postdata($post); ?>
+        <?php
+        $permalink = get_permalink();
+        $title = get_the_title();
+        $leadership_name = get_field('leadership_name');
+        $leadership_title = get_field('leadership_title');
+        $leadership_bio = get_field('leadership_bio');
+        $leadership_casual_image = get_field('leadership_casual_image');
+        ?>
+        <div class="hidden max-w-[40%] w-[40%] min-w-[60%]"
+             id="leader-<?= get_the_ID(); ?>"
+        >
+            <div class="[&_h2]:!m-0 [&_img]:max-w-full [&_img]:h-auto md:[&_img]:max-w-[50%] md:[&_img]:ml-[1.5em] md:[&_img]:mb-[1.5em]">
+                <?= the_content(); ?>
+            </div>
+        </div>
+    </div>
+    <?php endforeach; ?>
+    <?php wp_reset_postdata(); ?>
+    <?php endif; ?>
 </section>
 
 <?php get_footer(); ?>
