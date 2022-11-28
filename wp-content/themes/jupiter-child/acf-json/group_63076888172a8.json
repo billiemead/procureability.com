@@ -6,6 +6,7 @@
             "key": "field_6307688e62766",
             "label": "Areas of expertise",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -22,6 +23,7 @@
             "key": "field_630768aa62767",
             "label": "Title",
             "name": "areas_of_expertise_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -41,6 +43,7 @@
             "key": "field_630768c862768",
             "label": "List",
             "name": "areas_of_expertise_list",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -54,12 +57,13 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_630768dc62769",
                     "label": "Item",
                     "name": "item",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -73,14 +77,17 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_630768c862768"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_6307690f6276a",
             "label": "CTA",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -97,6 +104,7 @@
             "key": "field_6307691b6276b",
             "label": "Make a direct hire button text",
             "name": "make_a_direct_hire_button_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -116,6 +124,7 @@
             "key": "field_6307693f6276c",
             "label": "Make a direct hire button link",
             "name": "make_a_direct_hire_button_link",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -135,6 +144,7 @@
             "key": "field_6307694d6276d",
             "label": "Request a recourse button text",
             "name": "request_a_recourse_button_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -154,6 +164,7 @@
             "key": "field_6307696e6276e",
             "label": "Request a recourse button link",
             "name": "request_a_recourse_button_link",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -168,6 +179,120 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_6384f4a48ff55",
+            "label": "Video",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6384f4a48ff55",
+            "label": "Video",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6384f4ae8ff56",
+            "label": "Title",
+            "name": "video_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6384f4ae8ff56",
+            "label": "Title",
+            "name": "video_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6384f4d08ff57",
+            "label": "Video",
+            "name": "video_video",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6384f4d08ff57",
+            "label": "Video",
+            "name": "video_video",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -188,5 +313,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661430337
+    "modified": 1669657846
 }
