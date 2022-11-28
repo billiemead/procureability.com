@@ -6,6 +6,7 @@
             "key": "field_62ea8f3c5f6d0",
             "label": "Hero",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -22,6 +23,7 @@
             "key": "field_62ea8f5a5f6d1",
             "label": "Hero background image",
             "name": "hero_background_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -46,6 +48,7 @@
             "key": "field_62ea936dfac4b",
             "label": "Form section",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -62,6 +65,7 @@
             "key": "field_62ea937bfac4c",
             "label": "Form section title",
             "name": "form_section_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -81,6 +85,7 @@
             "key": "field_62ea9398fac4d",
             "label": "Form section list",
             "name": "form_section_list",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -94,12 +99,13 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_62ea93affac4e",
                     "label": "Form section list item",
                     "name": "form_section_list_item",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -113,14 +119,17 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_62ea9398fac4d"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_62ea93b7fac4f",
             "label": "Form section form title",
             "name": "form_section_form_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -140,6 +149,7 @@
             "key": "field_62ea93c7fac50",
             "label": "Form section form shortcode",
             "name": "form_section_form_shortcode",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -205,6 +215,13 @@
                 "operator": "==",
                 "value": "insights.php"
             }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "21404"
+            }
         ]
     ],
     "menu_order": 0,
@@ -216,5 +233,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1667919849
+    "modified": 1669647434
 }

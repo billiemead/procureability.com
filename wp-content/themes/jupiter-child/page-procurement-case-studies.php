@@ -13,23 +13,22 @@
     <!--!Content-->
 
     <!--CTA-->
-<?php $cta_title = get_field('cta_title'); ?>
 <?php $cta_subscribe = get_field('cta_subscribe'); ?>
 <?php $cta_login = get_field('cta_login'); ?>
 
 <?php if ($cta_subscribe || $cta_login) : ?>
-    <section class="pt-[20px] pb-[72px]">
+    <section class="pt-[20px] pb-[40px] md:pb-[72px]">
         <div class="max-w-[930px] px-[15px] mx-auto">
             <?php if ($cta_subscribe || $cta_login) : ?>
                 <div class="md:flex md:justify-center">
                     <div class="mb-[22px] md:mb-0 md:w-3/12 px-[15px] box-border text-center">
                         <a target="<?= $cta_subscribe['target'] ?: '_self'; ?>"
-                           class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(87,172,133)] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 rounded-[5px] duration-[.2s] ease-in-out"
+                           class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(87,172,133)] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 duration-[.2s] ease-in-out"
                            href="<?= $cta_subscribe['url']; ?>"><?= $cta_subscribe['title']; ?></a>
                     </div>
                     <div class="md:w-3/12 px-[15px] box-border text-center">
                         <a target="<?= $cta_login['target'] ?: '_self'; ?>"
-                           class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(56,161,181)] hover:text-white hover:bg-[rgb(56,161,181)] border-[rgb(56,161,181)] border-solid border-2 rounded-[5px] duration-[.2s] ease-in-out"
+                           class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(56,161,181)] hover:text-white hover:bg-[rgb(56,161,181)] border-[rgb(56,161,181)] border-solid border-2 duration-[.2s] ease-in-out"
                            href="<?= $cta_login['url']; ?>"><?= $cta_login['title']; ?></a>
                     </div>
                 </div>
@@ -37,8 +36,19 @@
         </div>
     </section>
 <?php endif; ?>
-
     <!--!CTA-->
+
+    <!--POST CTA CONTENT-->
+<?php $post_cta_content_content = get_field('post_cta_content_content'); ?>
+    <section class="pb-[20px] md:pb-[60px]">
+        <div class="max-w-[930px] px-[15px] mx-auto">
+            <div class="cms-content">
+                <?= $post_cta_content_content; ?>
+            </div>
+        </div>
+    </section>
+    <!--POST CTA CONTENT-->
+
 <?php
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args = array(
@@ -93,7 +103,7 @@ $custom_query = new WP_Query($args);
                     'show_all' => false,
                     'end_size' => 2,
                     'mid_size' => 1,
-                    'prev_next' => true,
+                    'prev_next' => false,
                     'add_args' => false,
                 ));
                 ?>
