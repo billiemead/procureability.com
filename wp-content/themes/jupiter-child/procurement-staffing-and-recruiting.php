@@ -73,7 +73,7 @@
                     <?= $video_video; ?>
                 </div>
                 <div class="text-center mt-[20px]">
-                    <div class="text-[19px] leading-black text-[#000] font-[700]"><?= $video_title; ?></div>
+                    <div class="text-[19px] leading-black text-white font-[700]"><?= $video_title; ?></div>
                 </div>
             </div>
         </div>
