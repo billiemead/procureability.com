@@ -560,3 +560,16 @@ class Custom_Menu_Walker extends Walker_Nav_Menu
     }
 
 }
+
+
+function add_acf_body_class($class) {
+
+    $queried_object_id = get_queried_object_id();
+    $hero_image = get_field('hero_background_image', $queried_object_id);
+
+    if ($hero_image) {
+        $class[] = 'has-hero';
+    }
+    return $class;
+}
+add_filter('body_class', 'add_acf_body_class');
