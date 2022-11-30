@@ -71,5 +71,4 @@
         </div>
     </section>
 <?php endif; ?>
-<!--test-->
 <?php get_footer(); ?>
