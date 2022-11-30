@@ -21,12 +21,12 @@
         <div class="max-w-[930px] px-[15px] mx-auto">
             <?php if ($cta_subscribe || $cta_login) : ?>
                 <div class="md:flex md:justify-center">
-                    <div class="mb-[22px] md:mb-0 md:w-3/12 px-[15px] box-border text-center">
+                    <div class="mb-[22px] md:mb-0 md:w-6/12 lg:w-3/12 px-[15px] box-border text-center md:!text-right">
                         <a target="<?= $cta_subscribe['target'] ?: '_self'; ?>"
                            class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(87,172,133)] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 duration-[.2s] ease-in-out"
                            href="<?= $cta_subscribe['url']; ?>"><?= $cta_subscribe['title']; ?></a>
                     </div>
-                    <div class="md:w-3/12 px-[15px] box-border text-center">
+                    <div class="md:w-6/12 lg:w-3/12 px-[15px] box-border text-center md:!text-left">
                         <a target="<?= $cta_login['target'] ?: '_self'; ?>"
                            class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(56,161,181)] hover:text-white hover:bg-[rgb(56,161,181)] border-[rgb(56,161,181)] border-solid border-2 duration-[.2s] ease-in-out"
                            href="<?= $cta_login['url']; ?>"><?= $cta_login['title']; ?></a>
@@ -72,22 +72,25 @@ $custom_query = new WP_Query($args);
                                     <a href="<?= get_permalink(); ?>"
                                        class="block group max-w-[450px] [&_img]:max-w-full [&_img]:h-auto relative [&_img]:block">
                                         <?= get_the_post_thumbnail(get_the_ID(), 'full'); ?>
-                                        <div class="absolute inset-0 bg-[rgba(0,0,0,0.6)] flex justify-center items-center transition-opacity opacity-0 group-hover:opacity-100 duration-[.2s]">
+                                        <div class="absolute inset-0 bg-[rgba(0,0,0,0.6)] flex justify-center items-center transition-opacity opacity-0 group-hover:opacity-100 duration-[.5s]">
                                             <span class="text-white text-[25px]">Click Here</span>
                                         </div>
                                     </a>
                                 </div>
                             <?php endif; ?>
                             <div class="md:w-1/2 px-[15px]">
-                                <div class="font-poppins text-[22px] leading-[1.3] text-[#393A40] font-[600] underline decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:decoration-[#393a40] duration-[.3s] cursor-pointer">
-                                    <?php the_title(); ?>
-                                </div>
-                                <div class="font-poppins text-[16px] leading-[1.4] text-[#61636b] mt-[20px]">
-                                    <?= get_the_excerpt(); ?>
-                                </div>
-                                <div class="mt-[32px]">
-                                    <a class="font-poppins text-[#3ba17c] text-[16px] leading-[1.27] !underline !decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:text-[#3ba17c] hover:!decoration-[#3ba17c] duration-[.3s]"
-                                       href="<?= get_permalink(); ?>">Learn More</a>
+                                <div class="md:pl-[20px]">
+                                    <a href="<?= get_permalink(); ?>"
+                                       class="font-poppins text-[22px] leading-[1.3] text-[#393A40] font-[600] underline decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:decoration-[#393a40] duration-[.3s] cursor-pointer">
+                                        <?php the_title(); ?>
+                                    </a>
+                                    <div class="font-poppins text-[16px] leading-[1.4] text-[#61636b] mt-[20px]">
+                                        <?= get_the_excerpt(); ?>
+                                    </div>
+                                    <div class="mt-[20px] md:mt-[32px]">
+                                        <a class="font-poppins text-[#3ba17c] text-[16px] leading-[1.27] !underline !decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:text-[#3ba17c] hover:!decoration-[#3ba17c] duration-[.3s]"
+                                           href="<?= get_permalink(); ?>">Learn More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
