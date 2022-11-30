@@ -574,6 +574,10 @@ if ( ! function_exists( 'is_transparent' ) ) {
         $queried_object_id = get_queried_object_id();
         $post_type = get_post_type($queried_object_id);
 
+        if (is_404()) {
+            return false;
+        }
+
         if (in_array($post_type, array('post'))) {
             return false;
         }
