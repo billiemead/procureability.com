@@ -39,7 +39,7 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
                     <?php if ($footer_logo) : ?>
                         <div class="mb-[32px]">
                             <a class="block" href="<?= get_home_url(); ?>">
-                                <?= wp_get_attachment_image($footer_logo['id'], 'full', false, array('class' => 'block max-w-[223px] w-full h-auto')); ?>
+                                <?= wp_get_attachment_image($footer_logo['id'], 'full', false, array('class' => 'lazy-load-ignore block max-w-[223px] w-full h-auto')); ?>
                             </a>
                         </div>
                     <?php endif; ?>

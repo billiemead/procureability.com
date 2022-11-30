@@ -592,5 +592,11 @@ if (!function_exists('is_transparent')) {
     }
 }
 
+function rocket_lazyload_exclude_class( $attributes ) {
+    $attributes[] = 'class="lazy-load-ignore';
+
+    return $attributes;
+}
+add_filter( 'rocket_lazyload_excluded_attributes', 'rocket_lazyload_exclude_class' );
 
 
