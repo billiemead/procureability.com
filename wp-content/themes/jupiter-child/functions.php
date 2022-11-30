@@ -31,7 +31,7 @@ function procureability_enqueue_styles()
     */
 
     wp_register_script('main-jupiter-child-js', asset_hash('/wp-content/themes/jupiter-child/dist/index.js'), array(), null, true);
-    wp_localize_script( 'main-jupiter-child-js', 'options',
+    wp_localize_script('main-jupiter-child-js', 'options',
         array(
             'is_transparent' => is_transparent() ? 'true' : 'false',
         )
@@ -568,7 +568,7 @@ class Custom_Menu_Walker extends Walker_Nav_Menu
 
 }
 
-if ( ! function_exists( 'is_transparent' ) ) {
+if (!function_exists('is_transparent')) {
     function is_transparent()
     {
         $queried_object_id = get_queried_object_id();
@@ -578,7 +578,13 @@ if ( ! function_exists( 'is_transparent' ) ) {
             return false;
         }
 
-        if (in_array($post_type, array('post'))) {
+        if (in_array($post_type, array('post', 'leadership'))) {
+            return false;
+        }
+
+        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights');
+
+        if (is_page($pages_slug)) {
             return false;
         }
 
