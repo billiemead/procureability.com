@@ -5,12 +5,12 @@ header {
     --root-level-link-icon: url('/wp-content/themes/jupiter-child/assets/img/icon/angle.svg');
     --root-level-highlight-link-color: #FFFFFF;
 
-    &.stickity {
+    &.is-sticky,
+    &.no-transparency {
         --root-level-link-color: #393A40;
         --root-level-current-link-scroll-color: #0098AE;
         --root-level-link-icon: url('/wp-content/themes/jupiter-child/assets/img/icon/angle-dark.svg');
         --root-level-highlight-link-color: #3BA17C;
-
     }
 
     .desktop-nav {
@@ -80,6 +80,12 @@ header {
                     font-size: 18px;
                     line-height: 1.11;
                     color: var(--root-level-link-color);
+                    oapcity: 1;
+                    transition: opacity .25s ease-in-out;
+
+                    &:hover {
+                        opacity: .75;
+                    }
                 }
 
                 &:hover {
@@ -90,7 +96,7 @@ header {
 
                 & > ul.sub-menu {
                     margin: 0 !important;
-                    padding: 40px;
+                    padding: 40px 70px 40px 48px;
                     background: #FFFFFF;
                     position: absolute;
                     left: -40px;
@@ -98,7 +104,7 @@ header {
                     list-style: none !important;
                     display: none;
                     border-top: 2px solid #0098AE;
-                    box-shadow: 0 4px 8px rgba(0,0,0,.15);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
 
                     & > li.menu-item {
                         margin-left: 0 !important;
@@ -122,6 +128,7 @@ header {
                             font-size: 19px;
                             line-height: 0.79;
                             color: #393A40;
+                            transition: color .25s ease-in-out;
 
                             &:hover {
                                 color: #0098AE;
@@ -168,6 +175,7 @@ header {
                                     font-size: 16px;
                                     line-height: 0.94;
                                     color: #61636B;
+                                    transition: color .25s ease-in-out;
 
                                     &:hover {
                                         color: #0098AE;

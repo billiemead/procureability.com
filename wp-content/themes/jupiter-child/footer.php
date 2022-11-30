@@ -37,9 +37,9 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
             <div class="xl:grid xl:grid-cols-[265px_1fr] xl:gap-[86px]">
                 <div>
                     <?php if ($footer_logo) : ?>
-                        <div class="mb-[32px] [&_img]:max-w-full [&_img]:h-auto [&_img]:block">
-                            <a class="block [&_img]:max-w-[223px] [&_img]:h-auto" href="<?= get_home_url(); ?>">
-                                <?= wp_get_attachment_image($footer_logo['id'], 'full'); ?>
+                        <div class="mb-[32px]">
+                            <a class="block" href="<?= get_home_url(); ?>">
+                                <?= wp_get_attachment_image($footer_logo['id'], 'full', false, array('class' => 'block max-w-[223px] w-full h-auto')); ?>
                             </a>
                         </div>
                     <?php endif; ?>
@@ -65,17 +65,17 @@ $disable_mobile = ($mk_options['footer_disable_mobile'] == 'true') ? $mk_footer_
                 <div class="pt-[50px] lg:pt-[23px] overflow-hidden">
                     <div class="flex flex-wrap justify-between -mr-[30px]">
                         <?php if (is_active_sidebar('footer_menu_area_1')) : ?>
-                            <div class="box-border mb-[50px] xl:mb-0 lg:w-1/2 xl:w-auto last:mb-0 pr-[30px]">
+                            <div class="box-border mb-[50px] xl:mb-0 md:w-1/3 xl:w-auto last:mb-0 pr-[30px]">
                                 <?php dynamic_sidebar('footer_menu_area_1'); ?>
                             </div>
                         <?php endif; ?>
                         <?php if (is_active_sidebar('footer_menu_area_2')) : ?>
-                            <div class="box-border mb-[50px] xl:mb-0 lg:w-1/2 xl:w-auto last:mb-0 pr-[30px]">
+                            <div class="box-border mb-[50px] xl:mb-0 md:w-1/3 xl:w-auto last:mb-0 pr-[30px]">
                                 <?php dynamic_sidebar('footer_menu_area_2'); ?>
                             </div>
                         <?php endif; ?>
                         <?php if (is_active_sidebar('footer_menu_area_3')) : ?>
-                            <div class="box-border mb-[50px] xl:mb-0 lg:w-1/2 xl:w-auto last:mb-0 pr-[30px]">
+                            <div class="box-border mb-[50px] xl:mb-0 md:w-1/3 xl:w-auto last:mb-0 pr-[30px]">
                                 <?php dynamic_sidebar('footer_menu_area_3'); ?>
                             </div>
                         <?php endif; ?>

@@ -38,17 +38,20 @@ do_action('theme_after_body_tag_start');
 
     <div id="mk-theme-container" <?php echo is_header_transparent('class="trans-header"'); ?>>
 
-        <header x-data="{sticky: false, mobileMenuActive: false, mobileSearchActive: false}" class="z-[200] relative"
-                @scroll.window="sticky = (window.pageYOffset > 0 && window.innerWidth > 1239) ? true : false"
-                :class="sticky && 'stickity'"
+        <header
+                x-data="header"
+                x-init="scrollHandler"
+                class="z-[200] relative"
+                @scroll.window="scrollHandler"
+                :class="{'is-sticky': sticky, 'no-transparency': !is_transparent}"
         >
             <div class="xl:!fixed top-0 left-0 w-full h-[72px] relative"
             >
-                <div :class="sticky && 'xl:!opacity-100'"
+                <div :class="{'xl:!opacity-100' : sticky || !is_transparent }"
                      class="xl:opacity-0 transition-opacity ease-in-out duration-200 absolute inset-0 bg-white border-b border-solid border-[rgba(97,99,107,0.2)] shadow-[0_4px_8px_rgba(0,0,0,.15)] xl:shadow-none"
                 >
                 </div>
-                <div class="relative h-full px-[20px]">
+                <div class="relative max-w-[1440px] mx-auto box-border h-full px-[20px]">
                     <div class="flex justify-between h-full">
                         <div>
                             <?php get_template_part('partials/header/logo'); ?>

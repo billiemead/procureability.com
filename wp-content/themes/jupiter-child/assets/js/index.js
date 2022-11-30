@@ -3,9 +3,11 @@ import 'magnific-popup';
 import 'owl.carousel';
 import Alpine from 'alpinejs';
 import collapse from '@alpinejs/collapse';
+import header from './header';
 
 Alpine.plugin(collapse);
 window.Alpine = Alpine;
+Alpine.data('header', header)
 Alpine.start();
 
 if($.fancybox) {

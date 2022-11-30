@@ -31,6 +31,13 @@ function procureability_enqueue_styles()
     */
 
     wp_register_script('main-jupiter-child-js', asset_hash('/wp-content/themes/jupiter-child/dist/index.js'), array(), null, true);
+    wp_localize_script( 'main-jupiter-child-js', 'options',
+        array(
+            'is_transparent' => is_transparent() ? 'true' : 'false',
+        )
+    );
+
+
     wp_enqueue_script('main-jupiter-child-js');
 
     /*Animate.css*/
@@ -561,15 +568,19 @@ class Custom_Menu_Walker extends Walker_Nav_Menu
 
 }
 
+if ( ! function_exists( 'is_transparent' ) ) {
+    function is_transparent()
+    {
+        $queried_object_id = get_queried_object_id();
+        $post_type = get_post_type($queried_object_id);
 
-function add_acf_body_class($class) {
+        if (in_array($post_type, array('post'))) {
+            return false;
+        }
 
-    $queried_object_id = get_queried_object_id();
-    $hero_image = get_field('hero_background_image', $queried_object_id);
-
-    if ($hero_image) {
-        $class[] = 'has-hero';
+        return true;
     }
-    return $class;
 }
-add_filter('body_class', 'add_acf_body_class');
+
+
+
