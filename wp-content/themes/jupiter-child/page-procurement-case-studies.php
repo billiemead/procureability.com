@@ -81,7 +81,7 @@ $custom_query = new WP_Query($args);
                             <div class="md:w-1/2 px-[15px]">
                                 <div class="md:pl-[20px]">
                                     <a href="<?= get_permalink(); ?>"
-                                       class="font-poppins text-[22px] leading-[1.3] text-[#393A40] font-[600] underline decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:decoration-[#393a40] duration-[.3s] cursor-pointer">
+                                       class="font-poppins text-[22px] leading-[1.3] text-[#393A40] font-[600] !underline !decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:!decoration-[#393a40] duration-[.3s] cursor-pointer">
                                         <?php the_title(); ?>
                                     </a>
                                     <div class="font-poppins text-[16px] leading-[1.4] text-[#61636b] mt-[20px]">
