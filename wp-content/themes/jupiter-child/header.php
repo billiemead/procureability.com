@@ -66,7 +66,7 @@ do_action('theme_after_body_tag_start');
                         <div class="xl:hidden absolute top-[50%] right-[20px] translate-y-[-50%]">
                             <?php get_template_part('partials/header/hamburger'); ?>
                         </div>
-                        <div class="hidden xl:block mr-[36px] flex items-center">
+                        <div class="!hidden xl:flex mr-[36px] items-center">
                             <?php get_template_part('partials/header/desktop-search-toggler'); ?>
                         </div>
                     </div>
