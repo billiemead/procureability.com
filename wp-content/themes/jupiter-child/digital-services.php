@@ -337,7 +337,7 @@
                     <div id="ourProfessionalTeam" class="swiper">
                         <?php $team_list = get_field('team_list'); ?>
                         <?php if ($team_list) : ?>
-                            <div class="swiper-wrapper xl:flex xl:justify-between">
+                            <div class="swiper-wrapper xl:flex xl:justify-center">
                                 <?php foreach ($team_list as $team_list_item) : ?>
                                     <div class="swiper-slide xl:!w-[192px]">
                                         <a class="block group cursor-pointer"
