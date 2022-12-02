@@ -33,7 +33,7 @@ function procureability_enqueue_styles()
     wp_register_script('main-jupiter-child-js', asset_hash('/wp-content/themes/jupiter-child/dist/index.js'), array(), null, true);
     wp_localize_script('main-jupiter-child-js', 'options',
         array(
-            'is_transparent' => is_transparent() ? 'true' : 'false',
+            'is_transparent_header' => is_transparent_header() ? 'true' : 'false',
         )
     );
 
@@ -568,8 +568,8 @@ class Custom_Menu_Walker extends Walker_Nav_Menu
 
 }
 
-if (!function_exists('is_transparent')) {
-    function is_transparent()
+if (!function_exists('is_transparent_header')) {
+    function is_transparent_header()
     {
         $queried_object_id = get_queried_object_id();
         $post_type = get_post_type($queried_object_id);
