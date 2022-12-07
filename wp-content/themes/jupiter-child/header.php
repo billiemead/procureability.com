@@ -45,8 +45,8 @@ do_action('theme_after_body_tag_start');
                 :class="{'is-sticky': sticky, 'no-transparency': !isTransparent}"
                 @scroll.window="scrollHandler"
         >
-            <div class="h-[72px] hidden" :class="{'xl:block': !isTransparent}"></div>
-            <div class="xl:!fixed top-0 left-0 w-full h-[72px] relative"
+            <div class="h-[76px] hidden" :class="{'xl:block': !isTransparent}"></div>
+            <div class="xl:!fixed top-0 left-0 w-full h-[76px] relative"
             >
                 <div :class="{'xl:!opacity-100' : sticky || !isTransparent }"
                      class="xl:opacity-0 transition-opacity ease-in-out duration-200 absolute inset-0 bg-white border-b border-solid border-[rgba(97,99,107,0.2)] shadow-[0_4px_8px_rgba(0,0,0,.15)] xl:shadow-none"

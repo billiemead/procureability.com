@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_638147f330267",
-            "label": "Logo Dark",
+            "label": "Logo Dark without Tagline",
             "name": "header_logo_dark",
             "aria-label": "",
             "type": "image",
@@ -29,8 +29,33 @@
         },
         {
             "key": "field_63814a9c30268",
-            "label": "Logo Light",
-            "name": "header_logo_light",
+            "label": "Logo Light with Tagline",
+            "name": "header_logo_light_tagline",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_639081915bd76",
+            "label": "Logo Dark with Tagline",
+            "name": "header_logo_dark_tagline",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -71,5 +96,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1669417675
+    "modified": 1670414886
 }
