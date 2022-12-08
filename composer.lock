@@ -1198,16 +1198,16 @@
         },
         {
             "name": "procureability-com/essential-grid",
-            "version": "3.0.16",
+            "version": "3.0.17",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ProcureAbility-com/essential-grid.git",
-                "reference": "4217e1520944daa1b95a10261a3960c810675ddc"
+                "reference": "4418b716b44ddf19666e257393ab4031948fac18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ProcureAbility-com/essential-grid/zipball/4217e1520944daa1b95a10261a3960c810675ddc",
-                "reference": "4217e1520944daa1b95a10261a3960c810675ddc",
+                "url": "https://api.github.com/repos/ProcureAbility-com/essential-grid/zipball/4418b716b44ddf19666e257393ab4031948fac18",
+                "reference": "4418b716b44ddf19666e257393ab4031948fac18",
                 "shasum": ""
             },
             "type": "wordpress-plugin",
@@ -1225,10 +1225,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/ProcureAbility-com/essential-grid/tree/3.0.16",
+                "source": "https://github.com/ProcureAbility-com/essential-grid/tree/3.0.17",
                 "issues": "https://github.com/ProcureAbility-com/essential-grid/issues"
             },
-            "time": "2022-09-20T05:23:46+00:00"
+            "time": "2022-12-08T14:05:02+00:00"
         },
         {
             "name": "procureability-com/eventon",
@@ -5867,5 +5867,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
