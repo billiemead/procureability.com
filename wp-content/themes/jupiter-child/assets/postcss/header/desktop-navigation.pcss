@@ -1,0 +1,191 @@
+header {
+
+    --root-level-link-color: #FFFFFF;
+    --root-level-current-link-scroll-color: var(--root-level-link-color);
+    --root-level-link-icon: url('/wp-content/themes/jupiter-child/assets/img/icon/angle.svg');
+    --root-level-highlight-link-color: #FFFFFF;
+
+    &.is-sticky,
+    &.no-transparency {
+        --root-level-link-color: #393A40;
+        --root-level-current-link-scroll-color: #0098AE;
+        --root-level-link-icon: url('/wp-content/themes/jupiter-child/assets/img/icon/angle-dark.svg');
+        --root-level-highlight-link-color: #3BA17C;
+    }
+
+    .desktop-nav {
+        height: 72px;
+
+        ul.menu {
+            height: 100%;
+            display: flex;
+            margin: 0 !important;
+
+            & > li.menu-item {
+                display: flex;
+                align-items: center;
+                margin: 0 !important;
+                position: relative;
+                height: 100%;
+
+                &:not(:last-child) {
+                    margin: 0 42px 0 0 !important;
+                }
+
+                &.current-menu-item,
+                &.current-menu-ancestor {
+                    & > a {
+                        font-weight: 700;
+                        color: var(--root-level-current-link-scroll-color);
+                    }
+                }
+
+                &.highlight-on-scroll {
+                    & > a {
+                        color: var(--root-level-highlight-link-color) !important;
+                    }
+                }
+
+                &.menu-item-has-children {
+                    & > a {
+                        padding-right: 18px;
+
+                        &:before {
+                            background: var(--root-level-link-icon) 50% 50% no-repeat;
+                            background-size: contain;
+                            content: "";
+                            height: 12px;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%) rotate(180deg);
+                            transition: .2s;
+                            width: 12px;
+                        }
+                    }
+
+                    &:hover {
+                        & > a {
+                            &:before {
+                                transform: translateY(-50%) rotate(0);
+                            }
+                        }
+                    }
+                }
+
+                & > a {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 1.11;
+                    color: var(--root-level-link-color);
+                    oapcity: 1;
+                    transition: opacity .25s ease-in-out;
+
+                    &:hover {
+                        opacity: .75;
+                    }
+                }
+
+                &:hover {
+                    & > ul.sub-menu {
+                        display: block;
+                    }
+                }
+
+                & > ul.sub-menu {
+                    margin: 0 !important;
+                    padding: 40px 70px 40px 48px;
+                    background: #FFFFFF;
+                    position: absolute;
+                    left: -48px;
+                    top: 100%;
+                    list-style: none !important;
+                    display: none;
+                    border-top: 2px solid #0098AE;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+
+                    & > li.menu-item {
+                        margin-left: 0 !important;
+                        margin-top: 0 !important;
+
+                        &:not(:last-child) {
+                            margin-bottom: 18px;
+                        }
+
+                        &.current-menu-item {
+                            a {
+                                color: #0098AE;
+                            }
+                        }
+
+                        & > a {
+                            white-space: nowrap;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 19px;
+                            line-height: 0.79;
+                            color: #393A40;
+                            transition: color .25s ease-in-out;
+
+                            &:hover {
+                                color: #0098AE;
+                            }
+                        }
+
+                        & > ul.sub-menu {
+                            margin: 24px 0 0 0 !important;
+                            list-style: none !important;
+
+                            li.menu-item {
+                                margin-left: 0 !important;
+                                margin-top: 0 !important;
+                                padding-left: 11px;
+                                position: relative;
+
+                                &:before {
+                                    content: '';
+                                    display: block;
+                                    width: 4px;
+                                    height: 4px;
+                                    border-radius: 9999px;
+                                    background-color: #61636B;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 10px;
+                                }
+
+                                &:not(:last-child) {
+                                    margin-bottom: 18px;
+                                }
+
+                                &.current-menu-item {
+                                    a {
+                                        color: #0098AE;
+                                    }
+                                }
+
+                                a {
+                                    white-space: nowrap;
+                                    font-family: 'Poppins';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 0.94;
+                                    color: #61636B;
+                                    transition: color .25s ease-in-out;
+
+                                    &:hover {
+                                        color: #0098AE;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

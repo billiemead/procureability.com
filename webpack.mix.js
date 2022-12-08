@@ -51,7 +51,7 @@ mix
 
     .postCss(resources_path + 'assets/postcss/index.css', resources_path + 'dist/index.css', [
         require('postcss-import'),
-        require('postcss-nested'),
+        require('postcss-nesting'),
         require('tailwindcss/nesting'),
         require('tailwindcss'),
         require('autoprefixer')
