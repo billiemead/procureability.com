@@ -573,6 +573,10 @@ if (!function_exists('is_transparent_header')) {
             return false;
         }
 
+        if (is_search()) {
+            return false;
+        }
+
         if (in_array($post_type, array('post', 'leadership'))) {
             return false;
         }
