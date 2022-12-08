@@ -586,7 +586,7 @@ if (!function_exists('is_transparent_header')) {
             return false;
         }
 
-        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights');
+        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'procurement-organizations-of-the-future');
 
         if (is_page($pages_slug)) {
             return false;
