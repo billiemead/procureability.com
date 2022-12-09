@@ -1,5 +1,3 @@
-//https://github.com/alpinejs/alpine/discussions/2905
-
 <div x-data="scrollToTop" @scroll.window.debounce="scrollCheck" @scroll.window.throttle="scrollCheck"
      class="fixed right-[22px] bottom-[15px] xl:!bottom-[15px] lg:right-[-60px] transition-all duration-[.2s] ease-in-out opacity-0"
      :class="{'lg:!right-[15px]' : active, 'bottom-[72px]' : active , '!opacity-100' : active}">
