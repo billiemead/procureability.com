@@ -3,11 +3,12 @@ import 'magnific-popup';
 import 'owl.carousel';
 import Alpine from 'alpinejs';
 import collapse from '@alpinejs/collapse';
-import header from './header';
+import { header, scrollToTop } from './header';
 
 Alpine.plugin(collapse);
 window.Alpine = Alpine;
 Alpine.data('header', header)
+Alpine.data('scrollToTop', scrollToTop)
 Alpine.start();
 
 if($.fancybox) {
