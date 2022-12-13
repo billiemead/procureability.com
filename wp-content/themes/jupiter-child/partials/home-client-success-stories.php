@@ -20,15 +20,18 @@
                                 <a href="<?= get_permalink(); ?>"
                                    class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden"
                                 >
-                                    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300" style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
+                                    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300"
+                                         style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
                                 </a>
-                                <div class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]">
+                                <a class="block font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px] hover:text-[#3BA17C] transition-colors"
+                                   href="<?= get_permalink(); ?>">
                                     <?= the_title(); ?>
-                                </div>
-                                <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px]">
+                                </a>
+                                <a class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] opacity-100 hover:opacity-80 transition-opacity"
+                                   href="<?= get_permalink(); ?>">
                                     <?= get_the_excerpt(); ?>
-                                </div>
-                                <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
+                                </a>
+                                <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors"
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
                         </div>
