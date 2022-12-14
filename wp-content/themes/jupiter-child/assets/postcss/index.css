@@ -13,6 +13,7 @@
 @import "blog/parts/blog-list.pcss";
 @import "blog/parts/custom-content-block.pcss";
 @import "blog/parts/blog-list-with-icons.pcss";
+@import "blog/parts/ism-block.pcss";
 
 @import 'header/index.pcss';
 @import 'footer/navigation.pcss';
