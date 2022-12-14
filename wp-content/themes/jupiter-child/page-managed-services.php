@@ -6,6 +6,7 @@
 */
 
 $approach = get_field('approach');
+$video = get_field('video');
 $services = get_field('services');
 $support = get_field('support');
 $model = get_field('model');
@@ -34,7 +35,7 @@ get_header();
         </div>
     </section>
 
-    <section class="cp-approach">
+    <section class="cp-approach" id="video">
         <div class="container">
             <div class="cp-approach__wrapper d-flex">
                 <div class="cp-approach__desc">
@@ -68,6 +69,26 @@ get_header();
             </div>
         </div>
     </section>
+
+    <?php $video_title = $video['video_title']; ?>
+    <?php $video_video = $video['video_video']; ?>
+    <?php if ($video_title && $video_video ) : ?>
+        <!--Video-->
+        <section id="video" class="py-[30px]">
+            <div class="max-w-[930px] px-[15px] mx-auto">
+                <div class="bg-[#0095b0] px-[15px] pt-[15px] pb-[40px]">
+                    <div>
+                        <?= $video_video; ?>
+                    </div>
+                    <div class="text-center mt-[20px]">
+                        <div class="text-[19px] leading-black text-[#000] font-[700] capitalize"><?= $video_title; ?></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Video-->
+    <?php endif; ?>
+
     <!--Form section-->
 		<?php get_template_part('partials/page', 'form-section'); ?>
     <!--Form section-->
@@ -341,7 +362,7 @@ get_header();
             </div>
         </div>
     </section>
-	
+
     <section class="cp-advantages">
         <div class="container text-center">
             <h2 class="cp-advantages__title text-gradient"><?= $advantages['title'] ?></h2>
