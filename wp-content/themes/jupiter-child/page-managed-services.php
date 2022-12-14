@@ -35,7 +35,7 @@ get_header();
         </div>
     </section>
 
-    <section class="cp-approach rrrrr">
+    <section class="cp-approach" id="video">
         <div class="container">
             <div class="cp-approach__wrapper d-flex">
                 <div class="cp-approach__desc">
