@@ -27,30 +27,28 @@
 <?php endif; ?>
 
 <?php $video = get_field('video_code'); ?>
-<?php $video_es = get_field('video_code_es'); ?>
+<?php
+if($_GET['video'] == 'es') $video = get_field('video_code_es');
+?>
 
 <?php if ($video) : ?>
     <!--Video-->
     <section class="pb-[50px]" id="video">
         <div class="max-w-[960px] mx-auto">
 
-            <div class="video-tabs js-video-switch">
-                <div class="video-tab active" data-language="en">
+            <div class="video-tabs">
+                <a href="/about/" class="video-tab">
                     EN
-                </div>
-                <div class="video-tab" data-language="es">
+                </a>
+                <a href="/about/?video=es" class="video-tab">
                     ES
-                </div>
+                </a>
             </div>
 
             <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[15px]" style="border-top-right-radius: 0">
                 <div>
-                    <div class="pb-[56.25%] relative [&_*]:absolute [&_*]:inset-0 [&_*]:w-full [&_*]:h-full video_en">
+                    <div class="pb-[56.25%] relative [&_*]:absolute [&_*]:inset-0 [&_*]:w-full [&_*]:h-full">
                         <?= $video; ?>
-                    </div>
-
-                    <div class="video_es">
-                        <?= $video_es ?>
                     </div>
                 </div>
                 <?php $video_text = get_field('video_text'); ?>
