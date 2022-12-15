@@ -34,18 +34,19 @@
     <section class="pb-[50px]" id="video">
         <div class="max-w-[960px] mx-auto">
 
+            <?php $video_hash = $_GET['video']; ?>
             <div class="video-tabs">
-                <a href="/about/" class="video-tab">
+                <a href="/about/" class="video-tab <?= ($video_hash !== 'es') ? 'active' : ''; ?>">
                     EN
                 </a>
-                <a href="/about/?video=es" class="video-tab">
+                <a href="/about/?video=es" class="video-tab <?= ($video_hash === 'es') ? 'active' : ''; ?>">
                     ES
                 </a>
             </div>
 
             <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[15px]" style="border-top-right-radius: 0">
                 <div>
-                    <?php if($_GET['video'] == 'es') { ?>
+                    <?php if($video_hash == 'es') { ?>
                         <div class="relative">
                             <?= $video_es; ?>
                         </div>
