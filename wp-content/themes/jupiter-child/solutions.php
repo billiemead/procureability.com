@@ -12,6 +12,10 @@
 <?php /** !HERO */ ?>
 
 <?php /** TEAM */ ?>
+<?php get_template_part('partials/solutions/form'); ?>
+<?php /** !TEAM */ ?>
+
+<?php /** TEAM */ ?>
 <?php get_template_part('partials/solutions/team'); ?>
 <?php /** !TEAM */ ?>
 
