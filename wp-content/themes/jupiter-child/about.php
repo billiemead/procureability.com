@@ -27,9 +27,7 @@
 <?php endif; ?>
 
 <?php $video = get_field('video_code'); ?>
-<?php
-if($_GET['video'] == 'es') $video = get_field('video_code_es');
-?>
+<?php $video_es = get_field('video_code_es'); ?>
 
 <?php if ($video) : ?>
     <!--Video-->
@@ -47,9 +45,15 @@ if($_GET['video'] == 'es') $video = get_field('video_code_es');
 
             <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[15px]" style="border-top-right-radius: 0">
                 <div>
-                    <div class="pb-[56.25%] relative">
-                        <?= $video; ?>
-                    </div>
+                    <?php if($_GET['video'] == 'es') { ?>
+                        <div class="relative">
+                            <?= $video_es; ?>
+                        </div>
+                    <?php } else { ?>
+                        <div class="pb-[56.25%] relative [&_*]:absolute [&_*]:inset-0 [&_*]:w-full [&_*]:h-full">
+                            <?= $video; ?>
+                        </div>
+                    <?php } ?>
                 </div>
                 <?php $video_text = get_field('video_text'); ?>
                 <?php if ($video_text) : ?>
