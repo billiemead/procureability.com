@@ -296,3 +296,4 @@ $(function () {
         autoplayHoverPause: true
     });
 })
+
