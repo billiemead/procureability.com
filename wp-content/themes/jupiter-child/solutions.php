@@ -11,9 +11,17 @@
 <?php get_template_part('partials/solutions/hero'); ?>
 <?php /** !HERO */ ?>
 
-<?php /** TEAM */ ?>
+<?php /** POST HERO */ ?>
+<?php get_template_part('partials/solutions/post-hero'); ?>
+<?php /** !POST HERO */ ?>
+
+<?php /** FEATURES */ ?>
+<?php get_template_part('partials/solutions/features'); ?>
+<?php /** !FEATURES */ ?>
+
+<?php /** FORM */ ?>
 <?php get_template_part('partials/solutions/form'); ?>
-<?php /** !TEAM */ ?>
+<?php /** !FORM */ ?>
 
 <?php /** TEAM */ ?>
 <?php get_template_part('partials/solutions/team'); ?>

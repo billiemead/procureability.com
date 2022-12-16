@@ -3,7 +3,7 @@
 <?php $insights_button = get_field('insights_button'); ?>
 
 <!--insights-->
-<section class="py-[48px] md:py-[64px] xl:py-[80px]">
+<section class="py-[48px] md:py-[64px] xl:py-[72px]">
     <div class="max-w-[636px] xl:max-w-[1200px] px-[34px] mx-auto">
         <div class="text-center mb-[32px] md:mb-[40px]">
             <div class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[22px] leading-[1.4] md:text-[36px] md:leading-[1.5] font-[600]"><?= $insights_title; ?>

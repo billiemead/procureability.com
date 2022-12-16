@@ -17,3 +17,5 @@
 
 @import 'header/index.pcss';
 @import 'footer/navigation.pcss';
+
+@import "pages/solutions/feature.pcss";

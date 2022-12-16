@@ -14,9 +14,9 @@ $form_background_image = get_field('form_background_image');
     <div class="relative px-[33px] md:px-0 md:max-w-[636px] xl:max-w-[1200px] mx-auto">
         <div class="xl:flex xl:justify-between">
             <div class="xl:w-[calc((595/1200)*100%)] mb-[24px] xl:mb-0">
-                <div class="text-[24px] leading-[1.3] font-[500] mb-[16px] md:text-[34px] md:leading-[1.47] text-center xl:text-[36px] xl:leading-[1.38] xl:font-[600] xl:!text-left text-white xl:mb-[24px]"><?= $form_list_title; ?></div>
+                <div class="font-poppins text-[24px] leading-[1.3] font-[500] mb-[16px] md:text-[34px] md:leading-[1.47] text-center xl:text-[36px] xl:leading-[1.38] xl:font-[600] xl:!text-left text-white xl:mb-[24px]"><?= $form_list_title; ?></div>
                 <?php if ($form_list) : ?>
-                    <ul class="list-none ml-0 text-[14px] leading-[1.7] text-white xl:leading-[1.6] xl:opacity-90 mb-0 space-y-[12px]">
+                    <ul class="list-none ml-0 text-[14px] leading-[1.7] text-white xl:leading-[1.6] xl:opacity-90 mb-0 space-y-[16px]">
                         <?php foreach ($form_list as $form_list_item) : ?>
                             <li class="relative pl-[23px] ml-0">
                                 <svg class="absolute top-[8px] left-0" width="16" height="12"
@@ -25,8 +25,7 @@ $form_background_image = get_field('form_background_image');
                                           d="M15.0608 3.06065L6.69577 11.4257L0.939453 5.66935L3.06077 3.54803L6.69577 7.18302L12.9395 0.939331L15.0608 3.06065Z"
                                           fill="#F6881B"/>
                                 </svg>
-                                <div class="font-[600] text-[16px] xl:text-[20px]"><?= $form_list_item['title']; ?></div>
-                                <div class="font-[400] text-[14px] xl:text-[18px]"><?= $form_list_item['text']; ?></div>
+                                <div class="font-poppins font-[400] text-[14px] xl:text-[18px] xl:leading-[1.5]"><?= $form_list_item['text']; ?></div>
                             </li>
                         <?php endforeach; ?>
                     </ul>
@@ -36,7 +35,7 @@ $form_background_image = get_field('form_background_image');
                 <div id="form"
                      class="relative bg-white w-full md:rounded-[6px] shadow-[0px_3px_20px_rgba(57,58,64,0.1)] py-[32px] px-[35px] md:pt-[40px] md:pb-[48px] md:px-[78px] xl:px-[54px] xl:pt-[50px] xl:pb-[46px] box-border">
                     <?php if ($form_form_title) : ?>
-                        <div class="text-[16px] md:text-[18px] xl:text-[20px] text-[#393A40] leading-[1.5] font-[500] xl:opacity-80 mb-[32px] text-center"><?= $form_form_title; ?></div>
+                        <div class="font-poppins text-[16px] md:text-[18px] xl:text-[20px] text-[#393A40] leading-[1.5] font-[500] xl:opacity-80 mb-[32px] text-center max-w-[400px] mx-auto"><?= $form_form_title; ?></div>
                     <?php endif; ?>
                     <?php if ($form_form) : ?>
                         <div class="digital-services-form">

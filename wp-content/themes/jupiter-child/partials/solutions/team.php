@@ -5,10 +5,10 @@ $team_list = get_field('team_list');
 
 ?>
 
-<section class="pt-[100px] xl:pt-[150px] pb-[40px] xl:pb-[10px] bg-[#F7F9FA]">
+<section class="pt-[100px] xl:pt-[112px] pb-[40px] xl:pb-[88px] bg-[#F7F9FA]">
     <div class="px-[33px] xl:px-0 max-w-[1180px] mx-auto">
-        <div class="text-center mb-[24px] xl:mb-[48px]">
-            <span class="brand-text-gradient text-transparent bg-clip-text text-[24px] font-[500] xl:text-[34px] leading-[1.47] xl:font-[600]"><?= $team_title; ?></span>
+        <div class="text-center mb-[24px] xl:mb-[56px]">
+            <span class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[24px] font-[500] xl:text-[34px] leading-[1.47] xl:font-[600]"><?= $team_title; ?></span>
         </div>
         <div class="max-w-[180px] md:max-w-[398px] xl:max-w-[755px] mx-auto relative">
             <div id="ourProfessionalTeam" class="swiper">

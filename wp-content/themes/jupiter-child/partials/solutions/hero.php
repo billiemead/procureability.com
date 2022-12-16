@@ -4,9 +4,10 @@
 <?php $hero_background_image = get_field('hero_background_image'); ?>
 
 <!--hero-->
-<section class="pt-[285px] pb-[185px] bg-no-repeat bg-center md:bg-[left_25%_top_-35%] xl:bg-center xxl:bg-[center_top_20%] bg-cover"
-         style="background-image: url(<?= $hero_background_image['url']; ?>)">
-    <div class="max-w-[1010px] mx-auto px-[15px]">
+<section
+        class="pt-[165px] pb-[94px] bg-no-repeat bg-center md:bg-[left_25%_top_-35%] xl:bg-center xxl:bg-[center_top_20%] bg-cover"
+        style="background-image: url(<?= $hero_background_image['url']; ?>)">
+    <div class="max-w-[697px] mx-auto px-[15px]">
         <div class="text-center mb-[8px]">
             <?php if ($hero_title) : ?>
                 <h1 class="font-poppins text-white text-[42px] leading-[1.27] font-[600] tracking-[0.02em] !m-0"><?= $hero_title; ?>
