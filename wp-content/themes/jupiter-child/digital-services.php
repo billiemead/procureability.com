@@ -88,13 +88,11 @@
                              class="relative bg-white w-full md:rounded-[6px] shadow-[0px_3px_20px_rgba(57,58,64,0.1)] py-[32px] px-[35px] md:pt-[40px] md:pb-[48px] md:px-[78px] xl:px-[54px] xl:pt-[50px] xl:pb-[46px] box-border">
                             <?php $form_name = get_field('form_name'); ?>
                             <?php if ($form_name) : ?>
-                                <div class="text-[16px] md:text-[18px] xl:text-[20px] leading-[1.5] font-[500] xl:opacity-80 mb-[32px] text-center"><?= $form_name; ?></div>
+                                <div class="font-poppins text-[16px] md:text-[18px] xl:text-[20px] leading-[1.5] font-[500] xl:opacity-80 mb-[32px] text-center text-[#393A40]"><?= $form_name; ?></div>
                             <?php endif; ?>
                             <?php $form_shortcode = get_field('form_shortcode'); ?>
                             <?php if ($form_shortcode) : ?>
-                                <div class="digital-services-form">
-                                    <?= do_shortcode($form_shortcode); ?>
-                                </div>
+                                <?= do_shortcode($form_shortcode); ?>
                             <?php endif; ?>
                         </div>
                     </div>
