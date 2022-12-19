@@ -20,7 +20,7 @@
             "type": "composer",
             "url": "https://wpackagist.org",
             "only": [
-                "wpackagist-plugin/*", 
+                "wpackagist-plugin/*",
                 "wpackagist-theme/*"
             ]
         },
@@ -115,6 +115,10 @@
           {
             "type": "vcs",
             "url": "git@github.com:ProcureAbility-com/wp-asset-clean-up-pro.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/hotjar.git"
           }
     ],
     "require": {
@@ -130,7 +134,6 @@
         "wpackagist-plugin/display-posts-shortcode": "*",
         "wpackagist-plugin/formidable": "*",
         "wpackagist-plugin/header-and-footer-scripts": "*",
-        "wpackagist-plugin/inspectlet-heatmaps-and-user-session-recording": "*",
         "wpackagist-plugin/leadin": "*",
         "wpackagist-plugin/onesignal-free-web-push-notifications": "*",
         "wpackagist-plugin/pdf-embedder": "*",
@@ -166,6 +169,7 @@
         "procureability-com/wp-migrate-db-pro": "dev-main#2.3.4.1",
         "procureability-com/wp-timelines": "^3.5",
         "procureability-com/wp-asset-clean-up-pro": "1.2.2.4",
+        "procureability-com/hotjar": "*",
         "wp-cli/wp-cli-bundle": "^2.7"
     },
     "config": {
