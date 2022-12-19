@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8234021c3c821ee05fc506c7cb407d3c",
+    "content-hash": "950de58d648444a16e00d83557321816",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1399,6 +1399,40 @@
                 "issues": "https://github.com/ProcureAbility-com/formidable-zapier/issues"
             },
             "time": "2022-09-20T05:25:50+00:00"
+        },
+        {
+            "name": "procureability-com/hotjar",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/hotjar.git",
+                "reference": "a2fa789537610e095c40ab6c450ee8a861627f80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/hotjar/zipball/a2fa789537610e095c40ab6c450ee8a861627f80",
+                "reference": "a2fa789537610e095c40ab6c450ee8a861627f80",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Andrew Tyshchenko",
+                    "email": "mpbrainwave@gmail.com"
+                }
+            ],
+            "description": "Website Heatmaps & Behavior Analytics Tools",
+            "homepage": "https://github.com/procureability-com/hotjar",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/hotjar/tree/main",
+                "issues": "https://github.com/ProcureAbility-com/hotjar/issues"
+            },
+            "time": "2022-12-19T11:02:03+00:00"
         },
         {
             "name": "procureability-com/imagelinks",
@@ -5585,24 +5619,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/header-and-footer-scripts/"
-        },
-        {
-            "name": "wpackagist-plugin/inspectlet-heatmaps-and-user-session-recording",
-            "version": "2.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/inspectlet-heatmaps-and-user-session-recording/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/inspectlet-heatmaps-and-user-session-recording.zip?timestamp=1489213221"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/inspectlet-heatmaps-and-user-session-recording/"
         },
         {
             "name": "wpackagist-plugin/leadin",
