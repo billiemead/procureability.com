@@ -12,11 +12,11 @@ $form_background_image = get_field('form_background_image');
          style="background-image: url('<?= $form_background_image['url']; ?>')">
     <div class="absolute inset-0 brand-bg-gradient opacity-[.25]"></div>
     <div class="relative px-[33px] md:px-0 md:max-w-[636px] xl:max-w-[1200px] mx-auto">
-        <div class="xl:flex xl:justify-between">
+        <div class="xl:flex xl:justify-between xl:items-center">
             <div class="xl:w-[calc((595/1200)*100%)] mb-[24px] xl:mb-0">
                 <div class="font-poppins text-[24px] leading-[1.3] font-[500] mb-[16px] md:text-[34px] md:leading-[1.47] text-center xl:text-[36px] xl:leading-[1.38] xl:font-[600] xl:!text-left text-white xl:mb-[24px]"><?= $form_list_title; ?></div>
                 <?php if ($form_list) : ?>
-                    <ul class="list-none ml-0 text-[14px] leading-[1.7] text-white xl:leading-[1.6] xl:opacity-90 mb-0 space-y-[16px]">
+                    <ul class="list-none ml-0 text-[14px] leading-[1.7] text-white xl:leading-[1.6] opacity-80 xl:opacity-90 mb-0 space-y-[16px]">
                         <?php foreach ($form_list as $form_list_item) : ?>
                             <li class="relative pl-[23px] ml-0">
                                 <svg class="absolute top-[8px] left-0" width="16" height="12"

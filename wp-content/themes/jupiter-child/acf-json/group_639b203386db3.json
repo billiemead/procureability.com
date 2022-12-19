@@ -308,6 +308,22 @@
             "ui": 1
         },
         {
+            "key": "field_63a090e364a7b",
+            "label": "Button",
+            "name": "team_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_639b234bf6b5e",
             "label": "Insights",
             "name": "",
@@ -667,5 +683,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671213869
+    "modified": 1671467305
 }

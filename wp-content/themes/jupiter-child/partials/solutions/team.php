@@ -2,6 +2,7 @@
 
 $team_title = get_field('team_title');
 $team_list = get_field('team_list');
+$team_button = get_field('team_button');
 
 ?>
 
@@ -56,6 +57,18 @@ $team_list = get_field('team_list');
                 </svg>
             </button>
         </div>
+        <?php if ($team_button) : ?>
+            <div class="mt-[30px] xl:mt-[50px] text-center">
+                <a class="inline-block pt-[13px] pb-[11px] px-[47px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
+                   href="<?= $team_button['url']; ?>"
+                >
+                    <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
+                         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
+                    ></div>
+                    <span class="relative text-white text-[18px] leading-[1.51] font-[600] uppercase"><?= $team_button['title']; ?></span>
+                </a>
+            </div>
+        <?php endif; ?>
         <?php if ($team_list): ?>
 
             <?php foreach ($team_list as $key => $post_id):
