@@ -1,0 +1,34 @@
+body.page-template-about {
+
+  .video_es {
+    display: none;
+  }
+
+  .video-tabs {
+    display: flex;
+    justify-content: flex-end;
+
+    .video-tab {
+      display: block;
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #0093a5;
+      color: #fff;
+      font-weight: 500;
+
+      &.active {
+        font-weight: 800;
+        background-color: #00a3b7;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}

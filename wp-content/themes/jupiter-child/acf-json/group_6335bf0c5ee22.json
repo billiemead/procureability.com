@@ -38,6 +38,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_6335bf4766bh5",
+            "label": "Code Es",
+            "name": "video_code_es",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6335bf5396b36",
             "label": "Text",
             "name": "video_text",

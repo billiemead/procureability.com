@@ -1,0 +1,33 @@
+.hamburger {
+    width: 28px;
+    height: 18px;
+    padding: 10px;
+    border: 0 !important;
+    background-color: transparent;
+    box-sizing: content-box;
+
+    div {
+        height: 2px;
+        margin-bottom: 5px;
+        background-color: #393a40;
+        border-radius: 3px;
+        transition: all .2s ease;
+        position: relative;
+    }
+
+    &.active {
+        div:nth-child(1) {
+            top: 8px;
+            transform: rotate3d(0, 0, 1, 45deg);
+        }
+
+        div:nth-child(2) {
+            opacity: 0;
+        }
+
+        div:nth-child(3) {
+            transform: rotate3d(0, 0, 1, -45deg);
+            top: -6px;
+        }
+    }
+}
