@@ -81,7 +81,7 @@ function procureability_enqueue_styles()
     wp_enqueue_script('talent', '/wp-content/themes/jupiter-child/dist/talent.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/talent.js'), true);
 
     if (is_page_template('advisory.php')) {
-        wp_enqueue_script('advisory', get_stylesheet_directory() . '/dist/advisory.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/advisory.js'), true);
+        wp_enqueue_script('advisory', get_stylesheet_directory_uri() . '/dist/advisory.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/advisory.js'), true);
     }
 }
 
