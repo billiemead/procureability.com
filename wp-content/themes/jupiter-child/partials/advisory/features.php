@@ -34,7 +34,7 @@
                                              class="absolute inset-0 flex justify-center items-center bg-center bg-cover"
                                              style="background: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/bubble-background-pattern.svg'), rgba(<?= $feature['color_complimentary']['red']; ?>, <?= $feature['color_complimentary']['green']; ?>, <?= $feature['color_complimentary']['blue']; ?>, <?= $feature['color_complimentary']['alpha']; ?>)"
                                         >
-                                        <span class="font-poppins text-[16px] leading-[1.4] lg:text-[20px] lg:leading-[1.5] font-[600] tracking-[0.05em] uppercase text-center"
+                                        <span class="font-poppins text-[12px] leading-[1.4] lg:text-[20px] lg:leading-[1.5] font-[600] tracking-[0.05em] uppercase text-center"
                                               style="color: rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, <?= $feature['color']['alpha']; ?>);"><?= $feature['title']; ?></span>
                                         </div>
                                         <!--!not active-->
@@ -57,7 +57,7 @@
                     <div>
                         <?php foreach ($features as $index => $feature) : ?>
                             <div x-show="activeIndex === <?= $index; ?>">
-                                <div class="font-poppins text-[26px] leading-[1.4] font-[600] mb-[16px] [&_br]:hidden"
+                                <div class="font-poppins text-[18px] lg:text-[26px] leading-[1.4] font-[600] mb-[16px] [&_br]:hidden"
                                      style="color: rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, <?= $feature['color']['alpha']; ?>)"><?= $feature['title']; ?></div>
                                 <div class="bubble-feature-cms-content"
                                      style="--feature-bullet-color: rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>)">
