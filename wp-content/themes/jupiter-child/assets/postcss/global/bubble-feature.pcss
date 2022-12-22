@@ -1,0 +1,43 @@
+.bubble-feature-cms-content {
+    p {
+        font-family: 'Poppins' !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #393A40;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 0 !important;
+
+        li {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #393A40;
+            position: relative;
+            margin-left: 0 !important;
+            padding-left: 20px;
+
+            &:before {
+                position: absolute;
+                top: 13px;
+                left: 0;
+                display: block;
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 3px;
+                background-color: var(--feature-bullet-color);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
