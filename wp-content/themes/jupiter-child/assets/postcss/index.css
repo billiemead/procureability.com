@@ -6,6 +6,7 @@
 @import 'miscellaneous.pcss';
 
 @import 'vendors/formidable.css';
+@import 'vendors/popup-maker.pcss';
 @import 'formidable-overwrite.pcss';
 @import 'hubspot-form.pcss';
 
