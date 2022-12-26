@@ -24,8 +24,12 @@
 <?php /** !FORM */ ?>
 
 <?php /** TEAM */ ?>
-<?php get_template_part('partials/solutions/team'); ?>
+<?php // get_template_part('partials/solutions/team'); ?>
 <?php /** !TEAM */ ?>
+
+<?php /** VIDEO */ ?>
+<?php get_template_part('partials/solutions/video'); ?>
+<?php /** !VIDEO */ ?>
 
 <?php /** INSIGHTS */ ?>
 <?php get_template_part('partials/solutions/insights'); ?>
