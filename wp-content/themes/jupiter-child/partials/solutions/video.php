@@ -2,16 +2,16 @@
 <?php $video_es = get_field('video_code_es'); ?>
 <?php $video_text = get_field('video_text'); ?>
 
-<section class="pb-[50px]" id="video">
+<section class="mb-[25px] pt-[50px]" id="video">
     <div class="px-[33px] xl:px-0 max-w-[960px] mx-auto">
-
         <?php $video_hash = $_GET['video']; ?>
+        <?php global $wp; ?>
         <div class="flex justify-end">
-            <a href="/about/"
+            <a href="<?= home_url($wp->request); ?>"
                class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
                 EN
             </a>
-            <a href="/about/?video=es"
+            <a href="<?= home_url($wp->request); ?>/about/?video=es"
                class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
                 ES
             </a>
