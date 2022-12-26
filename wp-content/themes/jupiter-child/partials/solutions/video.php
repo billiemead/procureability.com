@@ -11,7 +11,7 @@
                class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
                 EN
             </a>
-            <a href="<?= home_url($wp->request); ?>/about/?video=es"
+            <a href="<?= home_url($wp->request); ?>/?video=es"
                class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
                 ES
             </a>
