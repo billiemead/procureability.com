@@ -1,5 +1,13 @@
 body.page-login {
 
+  .section {
+    &--content {
+      background: url("/wp-content/uploads/2018/09/starburstbackground2-1-1.png");
+      background-position: right center;
+      background-repeat: no-repeat;
+    }
+  }
+
   // Pixel perfect as prod. May be removed in 2023
   .hero-image {
     height: 225px;
@@ -29,13 +37,6 @@ body.page-login {
   }
   // Pixel perfect as prod. May be removed in 2023
 
-  .section {
-    &--content {
-      background: url("/wp-content/uploads/2018/09/starburstbackground2-1-1.png");
-      background-position: right center;
-      background-repeat: no-repeat;
-    }
-  }
 }
 
 @media (max-width: 1200px) {
