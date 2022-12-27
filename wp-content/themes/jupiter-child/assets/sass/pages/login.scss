@@ -9,13 +9,28 @@ body.page-login {
   }
 
   // Pixel perfect as prod. May be removed in 2023
+  @media (min-width: 1200px) {
+    .hero-image {
+      background-position-y: -78px;
+
+      &:before {
+        background-position-y: -90px;
+      }
+    }
+
+    h1 {
+      margin-bottom: 14px;
+    }
+
+    .section {
+      &--content {
+        background-position: right -225px;
+      }
+    }
+  }
+
   .hero-image {
     height: 225px;
-    background-position-y: -78px;
-
-    &:before {
-      background-position-y: -90px;
-    }
 
     &:after {
       background-color: rgba(0, 0, 0, 0.4);
@@ -26,13 +41,9 @@ body.page-login {
     max-width: 1000px;
   }
 
-  h1 {
-    margin-bottom: 14px;
-  }
-
-  .section {
-    &--content {
-      background-position: right -225px;
+  @media (max-width: 767px) {
+    .hero-image {
+      height: 97px;
     }
   }
   // Pixel perfect as prod. May be removed in 2023
