@@ -1,5 +1,4 @@
 body.page-login {
-
   .section {
     &--content {
       background: url("/wp-content/uploads/2018/09/starburstbackground2-1-1.png");
@@ -7,47 +6,6 @@ body.page-login {
       background-repeat: no-repeat;
     }
   }
-
-  // Pixel perfect as prod. May be removed in 2023
-  @media (min-width: 1200px) {
-    .hero-image {
-      background-position: 50% calc(50% - 12px);
-
-      &:before {
-        background-position-y: -20px;
-      }
-    }
-
-    h1 {
-      margin-bottom: 14px;
-    }
-
-    .section {
-      &--content {
-        background-position: right -225px;
-      }
-    }
-  }
-
-  .hero-image {
-    height: 225px;
-
-    &:after {
-      background-color: rgba(0, 0, 0, 0.45);
-    }
-  }
-
-  .section-container {
-    max-width: 1000px;
-  }
-
-  @media (max-width: 767px) {
-    .hero-image {
-      height: 81px;
-    }
-  }
-  // Pixel perfect as prod. May be removed in 2023
-
 }
 
 @media (max-width: 1200px) {
