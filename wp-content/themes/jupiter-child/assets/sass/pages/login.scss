@@ -11,10 +11,10 @@ body.page-login {
   // Pixel perfect as prod. May be removed in 2023
   @media (min-width: 1200px) {
     .hero-image {
-      background-position-y: -78px;
+      background-position: 50% calc(50% - 12px);
 
       &:before {
-        background-position-y: -90px;
+        background-position-y: -20px;
       }
     }
 
@@ -33,7 +33,7 @@ body.page-login {
     height: 225px;
 
     &:after {
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.45);
     }
   }
 
