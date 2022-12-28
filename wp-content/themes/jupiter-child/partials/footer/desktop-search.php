@@ -1,8 +1,8 @@
-<div x-data="{active: false}"
-     @toggle-desktop-search.window="active = !active; setTimeout(function() { $refs.input.focus(); }, 500);"
+<div data-x-data="{active: false}"
+     data-x-on:toggle-desktop-search.window="active = !active; setTimeout(function() { $refs.input.focus(); }, 500);"
      class="fixed top-0 right-0 w-full h-full flex bg-black bg-opacity-95 opacity-0 invisible transition-all duration-[.25s] ease-in-out"
-     :class="{'!opacity-100': active, '!visible': active}">
-    <button @click="active = !active"
+     data-x-bind:class="{'!opacity-100': active, '!visible': active}">
+    <button data-x-on:click="active = !active"
             class="absolute top-[70px] right-[50px] bg-transparent border-0 p-0 text-white opacity-100 hover:opacity-70 transition-all duration-[.25s] ease-in-out">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.17209 23.9997C0.940287 23.9997 0.713675 23.931 0.520921 23.8022C0.328167 23.6735 0.177931 23.4904 0.0892164 23.2763C0.000501992 23.0621 -0.0227054 22.8265 0.0225297 22.5991C0.0677649 22.3718 0.17941 22.1629 0.343344 21.999L21.9996 0.342791C22.2194 0.122993 22.5175 -0.000488281 22.8283 -0.000488281C23.1392 -0.000488281 23.4373 0.122993 23.6571 0.342791C23.8769 0.562589 24.0004 0.8607 24.0004 1.17154C24.0004 1.48238 23.8769 1.78049 23.6571 2.00029L2.00084 23.6565C1.89211 23.7655 1.76292 23.8519 1.6207 23.9108C1.47848 23.9697 1.32602 23.9999 1.17209 23.9997Z"
@@ -12,10 +12,10 @@
         </svg>
     </button>
     <div class="m-auto max-w-[1000px] text-center text-[18px] invisible opacity-0 scale-90 transition-all duration-[.3s] ease-in-out"
-         :class="{'!opacity-100': active, '!visible': active, '!scale-100' : active}">
+         data-x-bind:class="{'!opacity-100': active, '!visible': active, '!scale-100' : active}">
         <p class="text-[14px] text-white mb-[40px] uppercase tracking-[2px]">START TYPING AND PRESS ENTER TO SEARCH</p>
         <form method="get" action="<?php echo home_url('/'); ?>">
-            <input x-ref="input"
+            <input data-x-ref="input"
                    class="w-[800px] !shadow-[0_3px_0_0_rgb(255,255,255,10%)] !bg-transparent !border-0 !text-[35px] !text-white text-center p-[20px]"
                    type="text" value="" name="s"/>
             <button class="bg-transparent border-0 text-white p-0 opacity-100 hover:opacity-70 transition-all duration-[.25s] ease-in-out"

@@ -7,12 +7,12 @@
             <div class="!text-[#404040] !text-[30px] [&_h2]:!font-[600] text-center mb-[39px]"><?= $tabs_title; ?></div>
         <?php endif; ?>
         <?php if ($tabs) : ?>
-            <div class="flex" x-data="{active: 0}">
+            <div class="flex" data-x-data="{active: 0}">
                 <div class="mt-[20px] flex-initial shrink-0 hidden relative md:block space-y-[20px] mr-[-1px]">
                     <?php foreach ($tabs as $index => $tab) : ?>
                         <button class="block w-full py-[14px] px-[20px] border-solid border-t border-b border-l border-[#484152] !border-r-transparent bg-[#50485b] hover:bg-[#413a4a] text-white bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,.01)] ease-in-out transition-all duration-[.2s] [&.active]:bg-[#f8f8f8] [&.active]:text-[#666] [&.active]:border-[#f0f0f0] [&.active]:bg-r-transparent"
-                                x-on:click="active = <?= $index; ?>"
-                                :class="{ 'active': active == <?= $index; ?> }">
+                                data-x-on:click="active = <?= $index; ?>"
+                                data-x-bind:class="{ 'active': active == <?= $index; ?> }">
                             <span class="text-[15px]"><?= $tab['tab_title'] ?></span>
                         </button>
                     <?php endforeach; ?>
@@ -22,9 +22,9 @@
                         <?php foreach ($tabs as $index => $tab) : ?>
                             <div>
                                 <button class="block md:!hidden text-left w-full text-[18px] font-[600] uppercase py-[14px] px-[20px] border-solid border-t border-b border-l border-[#484152] !border-r-transparent bg-[#50485b] hover:bg-[#413a4a] text-white bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,.01)] ease-in-out transition-all duration-[.2s] [&.active]:bg-[#f8f8f8] [&.active]:text-[#666] [&.active]:border-[#f0f0f0] [&.active]:bg-r-transparent [&.active]:bg-[#f8f8f8] [&.active]:text-[#666] [&.active]:cursor-default"
-                                        :class="{ 'active': active == <?= $index; ?> }"
-                                        x-on:click="active = <?= $index; ?>"><?= $tab['tab_title'] ?></button>
-                                <div x-show="active == <?= $index; ?>" x-collapse="x-collapse">
+                                        data-x-bind:class="{ 'active': active == <?= $index; ?> }"
+                                        data-x-on:click="active = <?= $index; ?>"><?= $tab['tab_title'] ?></button>
+                                <div data-x-show="active == <?= $index; ?>" data-x-collapse>
                                     <div class="py-[14px] px-[20px] mt-[10px] md:mt-0 border border-[#f0f0f0] border-solid bg-[#f8f8f8] md:bg-none md:border-none">
                                         <h4 class="text-[18px] text-[#404040] font-[600] mb-[9px]">WHAT?</h4>
                                         <div><?= apply_filters('the_content', $tab['tab_what']); ?></div>

@@ -108,13 +108,13 @@
             <?php if ($faq_list) : ?>
                 <div class="faqs">
                     <?php foreach ($faq_list as $key => $faq_list_item) : ?>
-                        <div class="faqs__item faq" x-data="{active: false}"
-                             x-init="<?= $key ?> === 0 ? active = true : null">
-                            <div class="faq__question" @click="active = !active">
-                                <span class="faq__icon" :class="{'active' : active}"></span>
+                        <div class="faqs__item faq" data-x-data="{active: false}"
+                             data-x-init="<?= $key ?> === 0 ? active = true : null">
+                            <div class="faq__question" data-x-on:click="active = !active">
+                                <span class="faq__icon" data-x-bind:class="{'active' : active}"></span>
                                 <?= $faq_list_item['question']; ?></div>
-                            <div class="faq__answer-wrapper" x-show="active"
-                                 x-collapse.duration.750ms>
+                            <div class="faq__answer-wrapper" data-x-show="active"
+                                 data-x-collapse.duration.750ms>
                                 <div class="faq__answer"><?= $faq_list_item['answer']; ?></div>
                             </div>
                         </div>
