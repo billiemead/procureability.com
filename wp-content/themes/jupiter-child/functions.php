@@ -599,3 +599,10 @@ function rocket_lazyload_exclude_class( $attributes ) {
 add_filter( 'rocket_lazyload_excluded_attributes', 'rocket_lazyload_exclude_class' );
 
 
+function override_images_size() {
+    return 'large';
+}
+add_filter( 'wpseo_opengraph_image_size', 'override_images_size');
+
+
+
