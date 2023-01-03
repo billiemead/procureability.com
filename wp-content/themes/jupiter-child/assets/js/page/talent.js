@@ -134,3 +134,6 @@ const enableTeamSwiper = function () {
 breakpoint.addEventListener("change", breakpointChecker);
 
 breakpointChecker();
+
+
+// buddy works test
