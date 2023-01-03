@@ -2,15 +2,6 @@ new Swiper('#procureabilityBenefits', {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 17,
-    // spaceBetween: 16,
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    // },
     breakpoints: {
         768: {
             slidesPerView: 2,
@@ -30,19 +21,11 @@ new Swiper('#reasonsToJoin', {
         nextEl: '#reasonsToJoinNavigationNext',
         prevEl: '#reasonsToJoinNavigationPrev',
     },
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
     pagination: {
         el: '#reasonsToJoinPagination',
         clickable: true,
     },
     breakpoints: {
-        // 768: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 34,
-        // },
         1240: {}
     }
 });
@@ -75,10 +58,6 @@ new Swiper('#clientSuccessStories', {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 34,
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
     pagination: {
         el: '#clientSuccessStoriesPagination',
         clickable: true,
@@ -134,6 +113,3 @@ const enableTeamSwiper = function () {
 breakpoint.addEventListener("change", breakpointChecker);
 
 breakpointChecker();
-
-
-// buddy works test
