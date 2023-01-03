@@ -3,15 +3,15 @@
 <?php $video_text = get_field('video_text'); ?>
 
 <section class="mb-[25px] pt-[50px]" id="video">
-    <div class="px-[33px] xl:px-0 max-w-[960px] mx-auto">
+    <div class="px-[15px] xl:px-0 max-w-[960px] mx-auto">
         <?php $video_hash = $_GET['video']; ?>
         <?php global $wp; ?>
         <div class="flex justify-end">
-            <a href="<?= home_url($wp->request); ?>"
+            <a href="<?= home_url($wp->request); ?>#video"
                class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
                 EN
             </a>
-            <a href="<?= home_url($wp->request); ?>/?video=es"
+            <a href="<?= home_url($wp->request); ?>/?video=es#video"
                class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
                 ES
             </a>
@@ -30,7 +30,7 @@
                 <?php } ?>
             </div>
             <?php if ($video_text) : ?>
-                <div class="text-center text-[25px] leading-none text-white font-[600] pt-[20px] md:pt-[55px]">
+                <div class="text-center text-[18px] leading-[1.3] md:text-[25px] md:leading-none text-white font-[600] pt-[20px] md:pt-[55px]">
                     <?= $video_text; ?>
                 </div>
             <?php endif; ?>
