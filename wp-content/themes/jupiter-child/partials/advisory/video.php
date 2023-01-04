@@ -21,12 +21,12 @@
 
         <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[15px] rounded-tr-none">
             <div>
-                <?php if ($video_video_es == 'es') : ?>
+                <?php if ($video_hash === 'es') : ?>
                     <div class="relative">
                         <?= $video_video_es; ?>
                     </div>
                 <?php else: ?>
-                    <div class="pb-[56.25%] relative [&_*]:absolute [&_*]:inset-0 [&_*]:w-full [&_*]:h-full">
+                    <div class="pb-[56.25%] relative [&>*]:absolute [&>*]:inset-0 [&>*]:w-full [&>*]:h-full">
                         <?= $video_video; ?>
                     </div>
                 <?php endif; ?>
