@@ -1,19 +1,41 @@
 <?php $video_title = get_field('video_title'); ?>
 <?php $video_video = get_field('video_video'); ?>
+<?php $video_video_es = get_field('video_video_es'); ?>
 
-<?php if ($video_video) : ?>
-    <section class="pr-[10px] lg:pt-[20px] pb-[30px] lg:pb-[80px]">
-        <div class="max-w-[1200px] mx-auto px-[15px] box-border">
-            <div class="p-[10px] md:p-[48px] bg-[#F7F9FA]">
-                <div>
-                    <?= $video_video; ?>
-                </div>
-                <?php if ($video_title) : ?>
-                    <div class="text-center mt-[15px] md:mt-[46px]">
-                        <span class="font-poppins text-[#393A40] text-[18px] md:text-[24px] leading-[1.4] font-semibold tracking-[0.05em]"><?= $video_title; ?></span>
+<section class="mb-[25px]" id="video">
+    <div class="px-[15px] xl:px-0 max-w-[960px] mx-auto">
+        <?php $video_hash = $_GET['video']; ?>
+        <?php global $wp; ?>
+        <div class="flex justify-end">
+            <a href="<?= home_url($wp->request); ?>#video"
+               class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
+                EN
+            </a>
+            <?php if ($video_video_es) : ?>
+                <a href="<?= home_url($wp->request); ?>/?video=es#video"
+                   class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
+                    ES
+                </a>
+            <?php endif; ?>
+        </div>
+
+        <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[15px] rounded-tr-none">
+            <div>
+                <?php if ($video_video_es == 'es') : ?>
+                    <div class="relative">
+                        <?= $video_video_es; ?>
+                    </div>
+                <?php else: ?>
+                    <div class="pb-[56.25%] relative [&_*]:absolute [&_*]:inset-0 [&_*]:w-full [&_*]:h-full">
+                        <?= $video_video; ?>
                     </div>
                 <?php endif; ?>
             </div>
+            <?php if ($video_title) : ?>
+                <div class="text-center text-[18px] leading-[1.3] md:text-[25px] md:leading-none text-white font-[600] pt-[20px] md:pt-[55px]">
+                    <?= $video_title; ?>
+                </div>
+            <?php endif; ?>
         </div>
-    </section>
-<?php endif; ?>
+    </div>
+</section>

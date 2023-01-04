@@ -405,6 +405,26 @@
             "delay": 0
         },
         {
+            "key": "field_63b5523b276a0",
+            "label": "Video ES",
+            "name": "video_video_es",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_63a2e9bd88d02",
             "label": "Form",
             "name": "",
@@ -533,13 +553,13 @@
         },
         {
             "key": "field_63a2f4361259b",
-            "label": "Form title",
-            "name": "form_form_title",
+            "label": "",
+            "name": "",
             "aria-label": "",
             "type": "text",
             "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
+            "required": false,
+            "conditional_logic": false,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -664,5 +684,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671625779
+    "modified": 1672828137
 }
