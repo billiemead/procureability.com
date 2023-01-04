@@ -6,18 +6,18 @@
     <div class="px-[15px] xl:px-0 max-w-[960px] mx-auto">
         <?php $video_hash = $_GET['video']; ?>
         <?php global $wp; ?>
-        <div class="flex justify-end">
-            <a href="<?= home_url($wp->request); ?>#video"
-               class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
-                EN
-            </a>
-            <?php if ($video_video_es) : ?>
+        <?php if ($video_video && $video_video_es) : ?>
+            <div class="flex justify-end">
+                <a href="<?= home_url($wp->request); ?>#video"
+                   class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
+                    EN
+                </a>
                 <a href="<?= home_url($wp->request); ?>/?video=es#video"
                    class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
                     ES
                 </a>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
 
         <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[15px] rounded-tr-none">
             <div>
