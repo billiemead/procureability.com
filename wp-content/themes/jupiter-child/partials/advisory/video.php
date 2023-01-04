@@ -19,7 +19,7 @@
             </div>
         <?php endif; ?>
 
-        <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[15px] rounded-tr-none">
+        <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[15px] <?= ($video_video && $video_video_es) ? 'rounded-tr-none' : null; ?>">
             <div>
                 <?php if ($video_hash === 'es') : ?>
                     <div class="relative">
