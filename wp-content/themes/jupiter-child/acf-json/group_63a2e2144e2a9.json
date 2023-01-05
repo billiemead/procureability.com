@@ -552,26 +552,6 @@
             "append": ""
         },
         {
-            "key": "field_63a2f4361259b",
-            "label": "",
-            "name": "",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": false,
-            "conditional_logic": false,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_63a2ea2688d07",
             "label": "Form",
             "name": "form_form",
@@ -663,5 +643,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1672828137
+    "modified": 1672932282
 }
