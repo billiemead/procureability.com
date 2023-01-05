@@ -413,8 +413,8 @@ class Custom_Menu_Walker extends Walker_Nav_Menu
          */
         $class_names = implode(' ', apply_filters('nav_menu_submenu_css_class', $classes, $args, $depth));
         $class_names = $class_names ? ' class="' . esc_attr($class_names) . '"' : '';
-        $alpine = ($depth < 1) ? ' x-show="active" x-collapse' : null;
-        $button = ($depth < 1) ? '<button x-on:click="active = !active" type="button" class="toggle-btn" :class="active && \'active\'"></button>' : null;
+        $alpine = ($depth < 1) ? ' data-x-show="active" data-x-collapse' : null;
+        $button = ($depth < 1) ? '<button data-x-on:click="active = !active" type="button" class="toggle-btn" data-x-bind:class="active && \'active\'"></button>' : null;
 
         $output .= "{$button}{$n}{$indent}<ul$class_names $alpine>{$n}";
 
@@ -483,7 +483,7 @@ class Custom_Menu_Walker extends Walker_Nav_Menu
          */
         $id = apply_filters('nav_menu_item_id', 'menu-item-' . $menu_item->ID, $menu_item, $args, $depth);
         $id = $id ? ' id="' . esc_attr($id) . '"' : '';
-        $alpine = $this->has_children ? 'x-data="{active: false}"' : '';
+        $alpine = $this->has_children ? ' data-x-data="{active: false}"' : '';
 
         $output .= $indent . '<li' . $id . $class_names . $alpine . '>';
 
@@ -601,5 +601,12 @@ function rocket_lazyload_exclude_class( $attributes ) {
     return $attributes;
 }
 add_filter( 'rocket_lazyload_excluded_attributes', 'rocket_lazyload_exclude_class' );
+
+
+function override_images_size() {
+    return 'large';
+}
+add_filter( 'wpseo_opengraph_image_size', 'override_images_size');
+
 
 

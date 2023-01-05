@@ -6,6 +6,7 @@
 @import 'miscellaneous.pcss';
 
 @import 'vendors/formidable.css';
+@import 'vendors/popup-maker.pcss';
 @import 'formidable-overwrite.pcss';
 @import 'hubspot-form.pcss';
 
@@ -16,5 +17,7 @@
 
 @import 'header/index.pcss';
 @import 'footer/navigation.pcss';
+
+@import "pages/solutions/feature.pcss";
 
 @import "global/bubble-feature.pcss";

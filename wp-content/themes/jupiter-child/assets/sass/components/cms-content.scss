@@ -19,10 +19,22 @@
     }
   }
 
+  strong {
+    color: #f97352;
+  }
+
   img {
     max-width: 100%;
     height: auto;
     border: 0;
     vertical-align: middle;
+
+    &.alignright {
+      @media (max-width: 767px) {
+        display: block !important;
+        float: none !important;
+        margin-left: 0 !important;
+      }
+    }
   }
 }

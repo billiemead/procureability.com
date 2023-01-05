@@ -9,6 +9,7 @@ Alpine.plugin(collapse);
 window.Alpine = Alpine;
 Alpine.data('header', header)
 Alpine.data('scrollToTop', scrollToTop)
+Alpine.prefix("data-x-")
 Alpine.start();
 
 if($.fancybox) {
