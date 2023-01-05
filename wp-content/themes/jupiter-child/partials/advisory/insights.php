@@ -1,6 +1,6 @@
 <?php $insights_title = get_field('insights_title'); ?>
-<?php $insights_posts = get_field('insights_posts'); ?>
 <?php $insights_button = get_field('insights_button'); ?>
+<?php $insights_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 3)); ?>
 
 <!--insights-->
 <section class="py-[48px] md:py-[64px] xl:py-[72px]">
@@ -9,10 +9,10 @@
             <div class="font-poppins brand-text-gradient text-transparent bg-clip-text text-[22px] leading-[1.4] md:text-[36px] md:leading-[1.5] font-[600]"><?= $insights_title; ?>
             </div>
         </div>
-        <?php if ($insights_posts) : ?>
+        <?php if ($insights_query->have_posts()) : ?>
             <div id="clientSuccessStories" class="swiper mb-[32px] xl:mb-[48px]">
                 <div class="swiper-wrapper">
-                    <?php foreach ($insights_posts as $post) : setup_postdata($post); ?>
+                    <?php while ( $insights_query->have_posts() ) : $insights_query->the_post(); ?>
                         <div class="swiper-slide">
                             <div>
                                 <a href="<?= get_permalink(); ?>"
@@ -31,7 +31,7 @@
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
                         </div>
-                    <?php endforeach; ?>
+                    <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
                 </div>
                 <div id="clientSuccessStoriesPagination"

@@ -629,27 +629,6 @@
             "append": ""
         },
         {
-            "key": "field_63a2ea6c88d0a",
-            "label": "Posts",
-            "name": "insights_posts",
-            "aria-label": "",
-            "type": "post_object",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": "",
-            "taxonomy": "",
-            "return_format": "object",
-            "multiple": 1,
-            "allow_null": 0,
-            "ui": 1
-        },
-        {
             "key": "field_63a2ea9288d0b",
             "label": "Button",
             "name": "insights_button",

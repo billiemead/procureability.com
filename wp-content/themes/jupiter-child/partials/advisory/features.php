@@ -30,8 +30,8 @@
                                             :class="{'z-30' : activeIndex === <?= $index; ?>, 'z-20' : [0, 2].includes(<?= $index; ?>) && activeIndex !== <?= $index; ?> }"
                                     >
                                         <!--not active-->
-                                        <div x-show="activeIndex !== <?= $index; ?>"
-                                             class="absolute inset-0 flex justify-center items-center bg-center bg-cover"
+                                        <div :class="activeIndex !== <?= $index; ?> ? '!opacity-100' : '!opacity-0'"
+                                             class="absolute inset-0 flex justify-center items-center bg-center bg-cover transition-opacity <?= $index === 0 ? 'opacity-0' : 'opacity-100'; ?>"
                                              style="background: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/bubble-background-pattern.svg'), rgba(<?= $feature['color_complimentary']['red']; ?>, <?= $feature['color_complimentary']['green']; ?>, <?= $feature['color_complimentary']['blue']; ?>, <?= $feature['color_complimentary']['alpha']; ?>)"
                                         >
                                         <span class="font-poppins text-[12px] leading-[1.4] lg:text-[20px] lg:leading-[1.5] font-[600] tracking-[0.05em] uppercase text-center"
@@ -39,8 +39,8 @@
                                         </div>
                                         <!--!not active-->
                                         <!--active-->
-                                        <div x-show="activeIndex === <?= $index; ?>"
-                                             class="absolute inset-0 flex justify-center items-center bg-center bg-cover"
+                                        <div :class="activeIndex === <?= $index; ?> ? '!opacity-100' : '!opacity-0'"
+                                             class="absolute inset-0 flex justify-center items-center bg-center bg-cover transition-opacity <?= $index === 0 ? 'opacity-100' : 'opacity-0'; ?>"
                                              style="background-image: linear-gradient(360deg, rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, 0.8) 10%, rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, 0) 110%), url('<?= $feature['background_image']['url']; ?>')"
                                         >
                                         <span style="background: linear-gradient(90deg, rgba(<?= $feature['title_gradient_color_start']['red']; ?>, <?= $feature['title_gradient_color_start']['green']; ?>, <?= $feature['title_gradient_color_start']['blue']; ?>, 0.5) 0.6%, rgba(<?= $feature['title_gradient_color_end']['red']; ?>, <?= $feature['title_gradient_color_end']['green']; ?>, <?= $feature['title_gradient_color_end']['blue']; ?>, 0.2) 75%), #FFFFFF;"
