@@ -171,54 +171,61 @@ $(function () {
     listToggle($('.cp-advantages__link'), $('.cp-advantages__wrapper'), 'Hide all advantages', 'Show all advantages');
     listToggle($('.cp-technology__more'), $('.cp-technology__list_mobile'), 'hide benefits', 'Show all benefits');
 
-    $('.cp-issues__item').on('click', function () {
-        window.location.hash = $(this).attr('href');
-    });
+    $('.cp-issues__item').on('click', function (event) {
 
-    $('.js-popup').magnificPopup({
-        type: 'inline',
-        removalDelay: 300,
-        callbacks: {
-            beforeOpen: function () {
-                this.st.mainClass = 'mfp-zoom-out';
-                if ($('.js-issues-popup-slider').length) {
-                    $('.js-issues-popup-slider').owlCarousel({
-                        items: 1,
-                        nav: true,
-                        dots: false,
-                        navSpeed: 800,
-                        dotsSpeed: 800,
-                        loop: false,
-                        margin: 50,
-                        URLhashListener: true,
-                        startPosition: 'URLHash',
-                        navText: [
-                            "<img src='/wp-content/themes/jupiter-child/dist/img/icon/left-arrow.svg' alt='prev'>",
-                            "<img src='/wp-content/themes/jupiter-child/dist/img/icon/right-arrow.svg' alt='next'>"
-                        ],
-                        responsive: {
-                            0: {
-                                dots: true,
-                                nav: false
-                            },
-                            768: {
-                                dots: false,
-                                nav: true
+        event.preventDefault();
+
+        const activeIndex = event.target.getAttribute('data-index');
+
+        $.magnificPopup.open({
+            items: {
+                src: '#issues-popup'
+            },
+            type: 'inline',
+            removalDelay: 300,
+            callbacks: {
+                beforeOpen: function () {
+                    this.st.mainClass = 'mfp-zoom-out';
+                    if ($('.js-issues-popup-slider').length) {
+                        $('.js-issues-popup-slider').owlCarousel({
+                            items: 1,
+                            nav: true,
+                            dots: false,
+                            navSpeed: 800,
+                            dotsSpeed: 800,
+                            loop: false,
+                            margin: 50,
+                            startPosition: activeIndex,
+                            autoHeight:true,
+                            autoHeightClass: '',
+                            navText: [
+                                "<img src='/wp-content/themes/jupiter-child/dist/img/icon/left-arrow.svg' alt='prev'>",
+                                "<img src='/wp-content/themes/jupiter-child/dist/img/icon/right-arrow.svg' alt='next'>"
+                            ],
+                            responsive: {
+                                0: {
+                                    dots: true,
+                                    nav: false
+                                },
+                                768: {
+                                    dots: false,
+                                    nav: true
+                                }
                             }
-                        }
-                    });
+                        });
+                    }
+                },
+                open: function () {
+                    // $('.js-issues-popup-slider').css('opacity', '0');
+                    // setTimeout(function () {
+                    //     $('.js-issues-popup-slider').css('opacity', '1');
+                    // }, 500);
+                },
+                close: function () {
+                    $('.js-issues-popup-slider').trigger('destroy.owl.carousel');
                 }
             },
-            open: function () {
-                $('.js-issues-popup-slider').css('opacity', '0');
-                setTimeout(function () {
-                    $('.js-issues-popup-slider').css('opacity', '1');
-                }, 500);
-            },
-            close: function () {
-                $('.js-issues-popup-slider').trigger('destroy.owl.carousel');
-            }
-        },
+        });
     });
 
     if ($(window).outerWidth() < 992) {

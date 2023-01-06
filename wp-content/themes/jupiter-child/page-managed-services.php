@@ -200,7 +200,7 @@ get_header();
                 <div class="cp-issues__list row text-left owl-carousel js-support-slider">
                     <?php foreach ($issues['list'] as $key => $item) : ?>
                         <div class="cp-issues__col col-md-6 col-lg-3">
-                            <a href="#issue-<?= $key+1 ?>" class="cp-issues__item d-flex align-items-center js-popup" data-mfp-src="#issues-popup">
+                            <a data-index="<?= $key; ?>" class="cp-issues__item d-flex align-items-center js-popup">
                                 <div class="cp-issues__icon">
                                     <img src="<?= $item['icon']['url'] ?>" alt="<?= $item['icon']['alt'] ?>">
                                 </div>
