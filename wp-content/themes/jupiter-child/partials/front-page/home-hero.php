@@ -43,7 +43,7 @@
                 <span class="xl:max-w-[642px] leading-none">
                     <span class="hidden xl:inline font-poppins text-white text-[14px] leading-[1.6]"><?= $frontpage_hero_ukraine_text_2; ?></span>
                     <a href="<?= $frontpage_hero_ukraine_read_more_link['url']; ?>"
-                       class="ukraine-popup-mfp font-poppins text-[#FFD700] text-[11px] xl:text-[14px] leading-[1.51] font-[500]"><span><?= $frontpage_hero_ukraine_read_more_text; ?></span>
+                       class="ukraine-popup-mfp font-poppins text-[#FFD700] text-[11px] xl:text-[14px] leading-[1.51] font-[500] transition-colors"><span><?= $frontpage_hero_ukraine_read_more_text; ?></span>
                         <svg class="align-middle ml-[4px]" xmlns="http://www.w3.org/2000/svg" width="8" height="13"
                              viewBox="0 0 8 13"
                              fill="none">
