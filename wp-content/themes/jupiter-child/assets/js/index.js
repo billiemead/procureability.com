@@ -195,6 +195,7 @@ $(function () {
                             dotsSpeed: 800,
                             loop: false,
                             margin: 50,
+                            URLhashListener: false,
                             startPosition: activeIndex,
                             autoHeight:true,
                             autoHeightClass: '',

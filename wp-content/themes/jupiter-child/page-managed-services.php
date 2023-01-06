@@ -223,7 +223,7 @@ get_header();
             <div class="cp-issues-popup mfp-hide" id="issues-popup">
                 <div class="cp-issues-popup__list owl-carousel js-issues-popup-slider">
                     <?php foreach ($issues['list'] as $key => $item) : ?>
-                        <div class="cp-issues-popup__item" data-hash="issue-<?= $key+1 ?>">
+                        <div class="cp-issues-popup__item">
                             <div class="cp-issues-popup__title"><?= $item['title'] ?></div>
 
                             <div class="cp-issues-popup__text"><?= $item['text'] ?></div>
