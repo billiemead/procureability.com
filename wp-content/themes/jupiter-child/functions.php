@@ -599,6 +599,9 @@ if (!function_exists('is_transparent_header')) {
     }
 }
 
+//disable wp lazy load
+add_filter( 'wp_lazy_loading_enabled', '__return_false' );
+
 function rocket_lazyload_exclude_class( $attributes ) {
     $attributes[] = 'class="lazy-load-ignore';
 
