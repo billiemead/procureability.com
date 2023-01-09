@@ -42,7 +42,7 @@ do_action('theme_after_body_tag_start');
                 data-x-data="header"
                 data-x-init="scrollHandler"
                 class="z-[200] relative"
-                data-x-bind:class="{'is-sticky': sticky, 'no-transparency': !isTransparent}"
+                data-x-bind:class="{'is-sticky': sticky, 'is-transparent': isTransparent}"
                 data-x-on:scroll.window="scrollHandler"
         >
             <div class="h-[76px] hidden" data-x-bind:class="{'xl:block': !isTransparent}"></div>
