@@ -35,6 +35,7 @@
 .leadership-persons {
   display: flex;
   margin: 0 -15px 0 -15px;
+  justify-content: center;
 
   @media (max-width: 576px) {
     flex-wrap: wrap;
