@@ -602,6 +602,14 @@ if (!function_exists('is_transparent_header')) {
 //disable wp lazy load
 add_filter( 'wp_lazy_loading_enabled', '__return_false' );
 
+//disable rocket lazyload on category pages because it conflicts with the themes internal lazyload
+function deactivate_on_page() {
+    if ( is_category() ) {
+        add_filter( 'do_rocket_lazyload', '__return_false' );
+    }
+}
+add_filter( 'wp', __NAMESPACE__ . '\deactivate_on_page' );
+
 function rocket_lazyload_exclude_class( $attributes ) {
     $attributes[] = 'class="lazy-load-ignore';
 
