@@ -589,7 +589,7 @@ if (!function_exists('is_transparent_header')) {
             return false;
         }
 
-        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'procurement-organizations-of-the-future');
+        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'procurement-organizations-of-the-future', 'thank-you-digital', 'thank-you');
 
         if (is_page($pages_slug)) {
             return false;
