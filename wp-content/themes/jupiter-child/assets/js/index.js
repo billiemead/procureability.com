@@ -171,6 +171,36 @@ $(function () {
     listToggle($('.cp-advantages__link'), $('.cp-advantages__wrapper'), 'Hide all advantages', 'Show all advantages');
     listToggle($('.cp-technology__more'), $('.cp-technology__list_mobile'), 'hide benefits', 'Show all benefits');
 
+    if ($('.js-issues-popup-slider').length) {
+        $('.js-issues-popup-slider').owlCarousel({
+            items: 1,
+            nav: true,
+            dots: false,
+            navSpeed: 800,
+            dotsSpeed: 800,
+            loop: false,
+            margin: 50,
+            URLhashListener: false,
+            //startPosition: activeIndex,
+            // autoHeight:true,
+            // autoHeightClass: '',
+            navText: [
+                "<img src='/wp-content/themes/jupiter-child/dist/img/icon/left-arrow.svg' alt='prev'>",
+                "<img src='/wp-content/themes/jupiter-child/dist/img/icon/right-arrow.svg' alt='next'>"
+            ],
+            responsive: {
+                0: {
+                    dots: true,
+                    nav: false
+                },
+                768: {
+                    dots: false,
+                    nav: true
+                }
+            }
+        });
+    }
+
     $('.cp-issues__item').on('click', function (event) {
 
         event.preventDefault();
@@ -183,38 +213,11 @@ $(function () {
             },
             type: 'inline',
             removalDelay: 300,
+            mainClass: 'mfp-zoom-out',
+            preloader: true,
             callbacks: {
                 beforeOpen: function () {
-                    this.st.mainClass = 'mfp-zoom-out';
-                    if ($('.js-issues-popup-slider').length) {
-                        $('.js-issues-popup-slider').owlCarousel({
-                            items: 1,
-                            nav: true,
-                            dots: false,
-                            navSpeed: 800,
-                            dotsSpeed: 800,
-                            loop: false,
-                            margin: 50,
-                            URLhashListener: false,
-                            startPosition: activeIndex,
-                            autoHeight:true,
-                            autoHeightClass: '',
-                            navText: [
-                                "<img src='/wp-content/themes/jupiter-child/dist/img/icon/left-arrow.svg' alt='prev'>",
-                                "<img src='/wp-content/themes/jupiter-child/dist/img/icon/right-arrow.svg' alt='next'>"
-                            ],
-                            responsive: {
-                                0: {
-                                    dots: true,
-                                    nav: false
-                                },
-                                768: {
-                                    dots: false,
-                                    nav: true
-                                }
-                            }
-                        });
-                    }
+                    $(".js-issues-popup-slider").trigger("to.owl.carousel", [activeIndex, 0])
                 },
                 open: function () {
                     // $('.js-issues-popup-slider').css('opacity', '0');
@@ -223,7 +226,7 @@ $(function () {
                     // }, 500);
                 },
                 close: function () {
-                    $('.js-issues-popup-slider').trigger('destroy.owl.carousel');
+                    //$('.js-issues-popup-slider').trigger('destroy.owl.carousel');
                 }
             },
         });
