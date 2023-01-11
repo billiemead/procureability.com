@@ -18,6 +18,6 @@
 @import 'header/index.pcss';
 @import 'footer/navigation.pcss';
 
-@import "pages/solutions/feature.pcss";
+@import "pages/index.pcss";
 
 @import "global/bubble-feature.pcss";
