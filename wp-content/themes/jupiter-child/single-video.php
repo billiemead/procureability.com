@@ -7,7 +7,7 @@
 
 <?php get_header(); ?>
 
-<section id="video" class="py-[15px]">
+<section id="video" class="pt-[45px] pb-[55px]">
     <div class="max-w-[930px] px-[15px] mx-auto">
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
