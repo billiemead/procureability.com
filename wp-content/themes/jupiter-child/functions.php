@@ -30,7 +30,7 @@ function procureability_enqueue_styles()
     wp_enqueue_style('main-jupiter-child-css-print');
     */
 
-    wp_register_script('main-jupiter-child-js', asset_hash('/wp-content/themes/jupiter-child/dist/index.js'), array(), null, true);
+    wp_register_script('main-jupiter-child-js', asset_hash('/wp-content/themes/jupiter-child/dist/index.js'), array('swiper'), null, true);
     wp_localize_script('main-jupiter-child-js', 'options',
         array(
             'is_transparent_header' => is_transparent_header() ? 'true' : 'false',

@@ -1,21 +1,21 @@
-.mfp-bg {
-  background-color: #000;
-  opacity: 1;
-  transition: .6s all linear;
+//.mfp-bg {
+//  background-color: #000;
+//  opacity: 1;
+//  transition: .6s all linear;
+//
+//  &.mfp-ready {
+//    background-color: rgba(#000, .7);
+//  }
+//}
 
-  &.mfp-ready {
-    background-color: rgba(#000, .7);
-  }
-}
-
-.mfp-wrap {
-  &.mfp-ready {
-    .popup {
-      opacity: 1;
-      top: 0;
-    }
-  }
-}
+//.mfp-wrap {
+//  &.mfp-ready {
+//    .popup {
+//      opacity: 1;
+//      top: 0;
+//    }
+//  }
+//}
 
 .mfp-image-holder {
   .mfp-figure figure {
