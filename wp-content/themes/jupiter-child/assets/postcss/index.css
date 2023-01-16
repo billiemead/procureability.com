@@ -16,6 +16,7 @@
 @import "blog/parts/ism-block.pcss";
 @import "blog/parts/blog-list-with-icons.pcss";
 @import "blog/parts/blog-blockquote.pcss";
+@import "blog/parts/blog-card-colored-side.pcss";
 
 @import 'header/index.pcss';
 @import 'footer/navigation.pcss';
