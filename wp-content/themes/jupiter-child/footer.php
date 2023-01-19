@@ -53,7 +53,9 @@
         <div class="max-w-[1200px] px-[15px] mx-auto">
             <div class="lg:flex lg:items-center lg:justify-between">
                 <?php if ($footer_bottom_text) : ?>
-                    <div class="[&_p]:!m-0 [&_p]:!font-poppins [&_p]:text-[13px] [&_p]:leading-[1.23] [&_p]:text-white [&_a]:text-white [&_a]:font-[600] [&_a:hover]:text-white [&_a:hover]:underline">
+                    <div class="font-poppins text-[13px] leading-[1.23] text-white [&_p]:inline [&_p]:!m-0 [&_p]:font-poppins [&_p]:text-[13px] [&_p]:leading-[1.23] [&_p]:text-white [&_a]:text-white [&_a]:font-[600] [&_a:hover]:text-white [&_a:hover]:underline">
+                        <span>&copy;</span>
+                        <span><?= date('Y'); ?></span>
                         <?= $footer_bottom_text; ?>
                     </div>
                 <?php endif; ?>
