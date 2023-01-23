@@ -837,6 +837,15 @@
       box-sizing: border-box;
     }
 
+    .contact-block-new-content-container {
+      max-width: 567px;
+      margin: 0 auto;
+      @media (min-width: 992px) {
+        max-width: 47.25%;
+        margin: 0;
+      }
+    }
+
     h3 {
       font-weight: 600;
       font-size: 36px;
@@ -857,11 +866,13 @@
       a {
         color: #3BA17C;
         text-decoration: underline;
+        text-decoration-color: #3BA17C;
         text-decoration-style: dotted;
         text-underline-offset: 5px;
+        transition: all 0.15s linear;
 
         &:hover {
-          text-decoration: none;
+          text-decoration-color: transparent;
         }
       }
     }
