@@ -97,11 +97,11 @@
 .hbspt-form form select {
   width: 100% !important;
   height: 32px;
-  border-radius: 4px!important;
+  border-radius: 4px !important;
   box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset;
   border: 1px solid #e3e3e3 !important;
-  font-family: "Roboto",sans-serif;
-  padding: 1px 12px 1px 16px!important;
+  font-family: "Roboto", sans-serif;
+  padding: 1px 12px 1px 16px !important;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -230,7 +230,7 @@
       }
     }
 
-    div.with-sup{
+    div.with-sup {
       font-size: 14px;
       line-height: 1.85;
       color: #999;
@@ -812,6 +812,60 @@
       }
     }
   }
+
+  .contact-block-new {
+    margin-top: 20px;
+    margin-bottom: -111px;
+    padding: 50px 0;
+    background-color: #F9F9F9 !important;
+    background-position: right center !important;
+    background-size: auto 100% !important;
+    text-align: center !important;
+
+    @media (min-width: 992px) {
+      padding: 87px 0;
+      margin-top: 64px;
+      text-align: left !important;
+    }
+
+    @media (max-width: 991px) {
+      background-image: none !important;
+    }
+
+    * {
+      font-family: 'Poppins', sans-serif !important;
+      box-sizing: border-box;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 1.4;
+      color: #393A40;
+      margin: 0 0 20px;
+      text-transform: none;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #61636B;
+      margin-bottom: 40px;
+
+      a {
+        color: #3BA17C;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 5px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 #mk-footer {
@@ -981,7 +1035,7 @@
 
         .vc_column_container:first-child {
           .mk-text-block {
-            &::before ,
+            &::before,
             &::after {
               display: none;
             }
@@ -1036,9 +1090,9 @@
   }
 
   .wpb_raw_code.wpb_content_element.wpb_raw_html {
-    margin-bottom: 5px;
+    //margin-bottom: 5px;
 
-    .wpb_wrapper{
+    .wpb_wrapper {
       text-align: center;
     }
   }
