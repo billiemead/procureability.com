@@ -16,6 +16,9 @@ include_once "shortcodes.php";
 
 function procureability_enqueue_styles()
 {
+    /*Lodash*/
+    wp_enqueue_script('lodash', false, array(), false, true);
+
     /*Fancybox*/
     wp_enqueue_style('fancybox3', get_stylesheet_directory_uri() . '/assets/sass/jquery.fancybox.min.css');
     wp_enqueue_script('fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', array(), false, true);
@@ -71,6 +74,21 @@ function procureability_enqueue_styles()
 
     if (is_page_template('advisory.php')) {
         wp_enqueue_script('advisory', get_stylesheet_directory_uri() . '/dist/advisory.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/advisory.js'), true);
+    }
+
+    if (is_page_template('contact.php')) {
+
+        wp_enqueue_script('contact', get_stylesheet_directory_uri() . '/dist/contact.js', array(), filemtime(get_stylesheet_directory() . '/dist/contact.js'), true);
+
+        $leaders = get_posts(array('post_type' => 'leadership', 'numberposts' => -1));
+
+        $leaders_photo = array_map(function ($leader) {
+            return get_the_post_thumbnail_url($leader->ID, 'large');
+        }, $leaders);
+
+        set_query_var( 'teamMembersPhotos', $leaders_photo );
+
+        wp_localize_script('contact', 'teamOnlyImage', $leaders_photo);
     }
 }
 
@@ -578,7 +596,7 @@ if (!function_exists('is_transparent_header')) {
             return false;
         }
 
-        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'procurement-organizations-of-the-future', 'thank-you-digital', 'thank-you', 'hire-a-temporary-resource', 'video', 'privacy-policy');
+        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'procurement-organizations-of-the-future', 'thank-you-digital', 'thank-you', 'hire-a-temporary-resource', 'video', 'privacy-policy', 'contact');
 
         if (is_page($pages_slug)) {
             return false;
