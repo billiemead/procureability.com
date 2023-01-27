@@ -1,0 +1,35 @@
+.page-procurement-events {
+  #theme-page.master-holder {
+   overflow: unset;
+  }
+
+  .theme-content {
+    .content__row {
+      display: flex;
+
+      >.vc_col-sm-4 {
+        //background: #f00;
+        height: unset;
+
+        .wpb_single_image {
+          position: sticky;
+          top: 90px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+  .page-procurement-events {
+    .theme-content {
+      .content__row {
+        display: unset;
+      }
+    }
+  }
+}
