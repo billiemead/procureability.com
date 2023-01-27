@@ -44,3 +44,24 @@ function randomFire() {
 }
 
 randomFire();
+
+//
+
+const select = document.getElementById('getValueFromHere');
+
+window.addEventListener('message', event => {
+    if (
+        event.data.type === 'hsFormCallback' &&
+        event.data.eventName === 'onFormReady' &&
+        event.data.id === '09031dcc-1b2e-4ef4-84c2-3c0b7a664063'
+    ) {
+
+        const form = document.querySelector('.hs-form');
+        const fieldToChange = form.querySelector('input[name=firstname]');
+
+        select.addEventListener('change', function (event) {
+            fieldToChange.value = event.target.value;
+            fieldToChange.innerText = event.target.value;
+        })
+    }
+});
