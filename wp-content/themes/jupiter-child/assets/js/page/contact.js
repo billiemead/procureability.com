@@ -1,53 +1,63 @@
-const circles = document.querySelectorAll(".circle");
+const bubblesContainer = document.getElementById('bubbles');
 
-let startTeamMembers = [];
+const bubbles = document.querySelectorAll(".bubble");
+
 let notAvailableTeamMembers = [];
 
-circles.forEach(item => {
-    const activeCircle = item.querySelector("[data-active=true]");
+const images = window.teamOnlyImage.map(image => {
+    const preloaderImg = document.createElement("img");
+    preloaderImg.src = image;
+    return preloaderImg
+})
 
-    notAvailableTeamMembers.push(activeCircle.dataset.image);
+Promise.all(images.filter(img => !img.complete).map(img => new Promise(resolve => {
+    img.onload = img.onerror = resolve;
+}))).then(() => {
+    bubbles.forEach(item => {
+        const activeBubble = item.querySelector("[data-active=true]");
+        activeBubble.style.backgroundImage = 'url(' + activeBubble.dataset.image + ')';
+        notAvailableTeamMembers.push(activeBubble.dataset.image);
+    })
+    bubblesContainer.classList.remove('opacity-0');
+    bubblesContainer.classList.add('opacity-100');
+    startAnimation();
 });
 
-function randomFire() {
-    let randomTime = lodash.random(0, 3) * 1000;
+function startAnimation() {
+    let randomTime = lodash.random(1, 3) * 1000;
     setTimeout(() => {
-        const randomCircle = lodash.sample(circles);
+        const randomBubble = lodash.sample(bubbles);
 
-        let activeCircle = randomCircle.querySelector("[data-active=true]");
-        let notActiveCircle = randomCircle.querySelector("[data-active=false]");
+        let frontBubble = randomBubble.querySelector("[data-active=true]");
+        let backBubble = randomBubble.querySelector("[data-active=false]");
 
         let availableTeamMember = lodash.sample(
-            teamOnlyImage.filter((x) => !notAvailableTeamMembers.includes(x))
+            window.teamOnlyImage.filter((x) => !notAvailableTeamMembers.includes(x))
         );
 
         notAvailableTeamMembers.push(availableTeamMember);
 
         notAvailableTeamMembers = lodash.filter(notAvailableTeamMembers, (member) => {
-            return member !== activeCircle.dataset.image;
+            return member !== frontBubble.dataset.image;
         });
 
-        activeCircle.classList.remove('opacity-100');
-        activeCircle.classList.add('opacity-0');
+        frontBubble.classList.remove('opacity-100');
+        frontBubble.classList.add('opacity-0');
 
-        notActiveCircle.classList.remove('opacity-0');
-        notActiveCircle.classList.add('opacity-100');
+        backBubble.classList.remove('opacity-0');
+        backBubble.classList.add('opacity-100');
 
-        activeCircle.dataset.active = false;
-        notActiveCircle.dataset.active = true;
+        frontBubble.dataset.active = false;
+        backBubble.dataset.active = true;
 
-        notActiveCircle.style.backgroundImage = "url(" + availableTeamMember + ")";
-        notActiveCircle.dataset.image = availableTeamMember;
+        backBubble.style.backgroundImage = "url(" + availableTeamMember + ")";
+        backBubble.dataset.image = availableTeamMember;
 
-        randomFire();
+        startAnimation();
     }, randomTime);
 }
 
-randomFire();
-
 //
-
-const select = document.getElementById('getValueFromHere');
 
 window.addEventListener('message', event => {
     if (
@@ -59,9 +69,46 @@ window.addEventListener('message', event => {
         const form = document.querySelector('.hs-form');
         const fieldToChange = form.querySelector('input[name=firstname]');
 
-        select.addEventListener('change', function (event) {
-            fieldToChange.value = event.target.value;
-            fieldToChange.innerText = event.target.value;
+        window.addEventListener('hubspot-service', function (event) {
+
+            fieldToChange.value = event.detail.message;
+            fieldToChange.innerHTML = event.detail.message;
         })
     }
 });
+
+//
+
+// let map;
+//
+// function initMap() {
+//     map = new google.maps.Map(document.getElementById("map"), {
+//         center: new google.maps.LatLng(-33.91722, 151.23064),
+//         zoom: 16,
+//     });
+//
+//     const iconBase =
+//         "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+//     const icons = {
+//         parking: {
+//             icon: iconBase + "parking_lot_maps.png",
+//         },
+//     };
+//     const features = [
+//         {
+//             position: new google.maps.LatLng(-33.91721, 151.2263),
+//             type: "info",
+//         }
+//     ];
+//
+//     // Create markers.
+//     for (let i = 0; i < features.length; i++) {
+//         const marker = new google.maps.Marker({
+//             position: features[i].position,
+//             icon: icons[features[i].type].icon,
+//             map: map,
+//         });
+//     }
+// }
+//
+// window.initMap = initMap;

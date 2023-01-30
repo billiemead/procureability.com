@@ -424,6 +424,25 @@
             ]
         },
         {
+            "key": "field_63d7f35b863d2",
+            "label": "Map",
+            "name": "map_map",
+            "aria-label": "",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        },
+        {
             "key": "field_63d6e6702aae1",
             "label": "Clients",
             "name": "",
@@ -552,5 +571,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675031066
+    "modified": 1675097015
 }

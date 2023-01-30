@@ -86,7 +86,7 @@ function procureability_enqueue_styles()
             return get_the_post_thumbnail_url($leader->ID, 'large');
         }, $leaders);
 
-        set_query_var( 'teamMembersPhotos', $leaders_photo );
+        set_query_var('teamMembersPhotos', $leaders_photo);
 
         wp_localize_script('contact', 'teamOnlyImage', $leaders_photo);
     }
@@ -153,6 +153,7 @@ function mytheme_tinymce_config($init)
     }
     return $init;
 }
+
 add_filter('tiny_mce_before_init', 'mytheme_tinymce_config');
 
 
@@ -163,8 +164,8 @@ add_filter('tiny_mce_before_init', 'mytheme_tinymce_config');
 add_filter('wp_check_filetype_and_ext', function ($data, $file, $filename, $mimes) {
     $filetype = wp_check_filetype($filename, $mimes);
     return [
-        'ext'             => $filetype['ext'],
-        'type'            => $filetype['type'],
+        'ext' => $filetype['ext'],
+        'type' => $filetype['type'],
         'proper_filename' => $data['proper_filename']
     ];
 }, 10, 4);
@@ -174,6 +175,7 @@ function cc_mime_types($mimes)
     $mimes['svg'] = 'image/svg+xml';
     return $mimes;
 }
+
 add_filter('upload_mimes', 'cc_mime_types');
 
 function fix_svg()
@@ -185,6 +187,7 @@ function fix_svg()
           }
           </style>';
 }
+
 add_action('admin_head', 'fix_svg');
 
 
@@ -210,6 +213,7 @@ function pdf_embed_shortcode($attrs, $content)
 
     return $htmlStuff;
 }
+
 add_shortcode('pdf', 'pdf_embed_shortcode');
 
 // minor css and you got yourself a nice little PDF with fallback and a neat lil' download button
@@ -253,9 +257,9 @@ function rd_duplicate_post_as_draft()
     */
     if (isset($post) && $post != null) {
 
-    /*
-    * new post data array
-    */
+        /*
+        * new post data array
+        */
         $args = array(
             'comment_status' => $post->comment_status,
             'ping_status' => $post->ping_status,
@@ -272,23 +276,23 @@ function rd_duplicate_post_as_draft()
             'menu_order' => $post->menu_order
         );
 
-    /*
-    * insert the post by wp_insert_post() function
-    */
+        /*
+        * insert the post by wp_insert_post() function
+        */
         $new_post_id = wp_insert_post($args);
 
-    /*
-    * get all current post terms ad set them to the new post draft
-    */
+        /*
+        * get all current post terms ad set them to the new post draft
+        */
         $taxonomies = get_object_taxonomies($post->post_type); // returns array of taxonomy names for post type, ex array("category", "post_tag");
         foreach ($taxonomies as $taxonomy) {
             $post_terms = wp_get_object_terms($post_id, $taxonomy, array('fields' => 'slugs'));
             wp_set_object_terms($new_post_id, $post_terms, $taxonomy, false);
         }
 
-    /*
-    * duplicate all post meta just in two SQL queries
-    */
+        /*
+        * duplicate all post meta just in two SQL queries
+        */
         $post_meta_infos = $wpdb->get_results("SELECT meta_key, meta_value FROM $wpdb->postmeta WHERE post_id=$post_id");
         if (count($post_meta_infos) != 0) {
             $sql_query = "INSERT INTO $wpdb->postmeta (post_id, meta_key, meta_value) ";
@@ -302,15 +306,16 @@ function rd_duplicate_post_as_draft()
             $wpdb->query($sql_query);
         }
 
-    /*
-    * finally, redirect to the edit post screen for the new draft
-    */
+        /*
+        * finally, redirect to the edit post screen for the new draft
+        */
         wp_redirect(admin_url('post.php?action=edit&post=' . $new_post_id));
         exit;
     } else {
         wp_die('Post creation failed, could not find original post: ' . $post_id);
     }
 }
+
 add_action('admin_action_rd_duplicate_post_as_draft', 'rd_duplicate_post_as_draft');
 
 function rd_duplicate_post_link($actions, $post)
@@ -320,10 +325,12 @@ function rd_duplicate_post_link($actions, $post)
     }
     return $actions;
 }
+
 add_filter('post_row_actions', 'rd_duplicate_post_link', 10, 2);
 add_filter('page_row_actions', 'rd_duplicate_post_link', 10, 2);
 
-function add_site_url_to_clients_menu_item( $item_output, $item, $depth, $args ) {
+function add_site_url_to_clients_menu_item($item_output, $item, $depth, $args)
+{
 
     if ($item->title === 'Clients') {
         return str_replace("#ourclients", home_url() . '/#ourclients', $item_output);
@@ -607,28 +614,34 @@ if (!function_exists('is_transparent_header')) {
 }
 
 //disable wp lazy load
-add_filter( 'wp_lazy_loading_enabled', '__return_false' );
+add_filter('wp_lazy_loading_enabled', '__return_false');
 
 //disable rocket lazyload on category pages because it conflicts with the themes internal lazyload
-function deactivate_on_page() {
-    if ( is_category() ) {
-        add_filter( 'do_rocket_lazyload', '__return_false' );
+function deactivate_on_page()
+{
+    if (is_category()) {
+        add_filter('do_rocket_lazyload', '__return_false');
     }
 }
-add_filter( 'wp', __NAMESPACE__ . '\deactivate_on_page' );
 
-function rocket_lazyload_exclude_class( $attributes ) {
+add_filter('wp', __NAMESPACE__ . '\deactivate_on_page');
+
+function rocket_lazyload_exclude_class($attributes)
+{
     $attributes[] = 'class="lazy-load-ignore';
 
     return $attributes;
 }
-add_filter( 'rocket_lazyload_excluded_attributes', 'rocket_lazyload_exclude_class' );
+
+add_filter('rocket_lazyload_excluded_attributes', 'rocket_lazyload_exclude_class');
 
 
-function override_images_size() {
+function override_images_size()
+{
     return 'large';
 }
-add_filter( 'wpseo_opengraph_image_size', 'override_images_size');
+
+add_filter('wpseo_opengraph_image_size', 'override_images_size');
 
 
 
