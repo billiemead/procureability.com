@@ -17,14 +17,12 @@
                             </div>
                         <?php endif; ?>
                         <?php if ($cta_first_form_select) : ?>
-
-
-                            <div class="pb-[12px] border-b border-[#0098AE] border-solid mb-[28px] relative"
+                            <div class="pb-[12px] border-b border-[#0098AE] border-solid mb-[28px] relative max-w-[500px]"
                                  data-x-data="{ open: false, value: null }" data-x-cloak
                                  data-x-on:click.outside="open = false">
-                                <button class="bg-transparent p-0 border-none relative w-full max-w-[500px] pr-[24px] text-left"
+                                <button class="bg-transparent p-0 border-none relative w-full pr-[24px] text-left"
                                         data-x-on:click="open = !open">
-                                    <span class="font-poppins text-[34px] leading-[1.5] text-[#393A40] font-medium"
+                                    <span class="font-poppins text-[27px] md:text-[34px] leading-[1.5] text-[#393A40] font-medium"
                                           data-x-text="value ? value : '<?= $cta_first_form_select['placeholder']; ?>'"></span>
                                     <svg class="absolute right-0 top-[21px]" width="16" height="9" viewBox="0 0 16 9"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">

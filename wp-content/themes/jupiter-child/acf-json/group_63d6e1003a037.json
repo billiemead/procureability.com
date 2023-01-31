@@ -341,7 +341,7 @@
             "label": "Email",
             "name": "map_email",
             "aria-label": "",
-            "type": "link",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -350,7 +350,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_63d6e57c2aade",
@@ -571,5 +575,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675097015
+    "modified": 1675194829
 }

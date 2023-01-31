@@ -57,17 +57,19 @@ function startAnimation() {
     }, randomTime);
 }
 
-//
+// Form
+
+const formID = '09031dcc-1b2e-4ef4-84c2-3c0b7a664063';
 
 window.addEventListener('message', event => {
     if (
         event.data.type === 'hsFormCallback' &&
         event.data.eventName === 'onFormReady' &&
-        event.data.id === '09031dcc-1b2e-4ef4-84c2-3c0b7a664063'
+        event.data.id === formID
     ) {
 
-        const form = document.querySelector('.hs-form');
-        const fieldToChange = form.querySelector('input[name=firstname]');
+        const form = document.getElementById('hsForm_' + formID);
+        const fieldToChange = form.querySelector('input[name=interested_services]');
 
         window.addEventListener('hubspot-service', function (event) {
 

@@ -5,6 +5,15 @@ import Alpine from 'alpinejs';
 import collapse from '@alpinejs/collapse';
 import { header, scrollToTop } from './header';
 import managedServices from './page/managed-services.js';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
+Alpine.magic('lockbody', () => el => {
+    disableBodyScroll(el)
+})
+
+Alpine.magic('unlockbody', () => el => {
+    enableBodyScroll(el)
+})
 
 Alpine.plugin(collapse);
 window.Alpine = Alpine;
