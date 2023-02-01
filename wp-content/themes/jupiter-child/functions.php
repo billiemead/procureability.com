@@ -82,9 +82,9 @@ function procureability_enqueue_styles()
 
         $team = get_field('hero_team');
 
-        $team_photo = array_map(function ($leader) {
+        $team_photo = $team ? array_map(function ($leader) {
             return $leader['team_member']['url'];
-        }, $team);
+        }, $team) : array();
 
         set_query_var('teamMembersPhotos', $team_photo);
 
