@@ -80,15 +80,15 @@ function procureability_enqueue_styles()
 
         wp_enqueue_script('contact', get_stylesheet_directory_uri() . '/dist/contact.js', array(), filemtime(get_stylesheet_directory() . '/dist/contact.js'), true);
 
-        $leaders = get_posts(array('post_type' => 'leadership', 'numberposts' => -1));
+        $team = get_field('hero_team');
 
-        $leaders_photo = array_map(function ($leader) {
-            return get_the_post_thumbnail_url($leader->ID, 'large');
-        }, $leaders);
+        $team_photo = array_map(function ($leader) {
+            return $leader['team_member']['url'];
+        }, $team);
 
-        set_query_var('teamMembersPhotos', $leaders_photo);
+        set_query_var('teamMembersPhotos', $team_photo);
 
-        wp_localize_script('contact', 'teamOnlyImage', $leaders_photo);
+        wp_localize_script('contact', 'teamOnlyImage', $team_photo);
     }
 }
 

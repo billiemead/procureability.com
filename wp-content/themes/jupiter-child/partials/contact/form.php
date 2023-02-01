@@ -2,11 +2,13 @@
 <?php $cta_first_text = get_field('cta_first_text'); ?>
 <?php $cta_first_form_form = get_field('cta_first_form_form'); ?>
 <?php $cta_first_form_select = get_field('cta_first_form_select'); ?>
+<?php $cta_first_background_image = get_field('cta_first_background_image'); ?>
 
 <?php if ($cta_first_form_form) : ?>
-    <section class="pb-[75px]">
-        <div class="max-w-[1200px] mx-auto">
-            <div class="p-[30px] sm:p-[60px] rounded-[3px] bg-white shadow-[0px_3px_8px_rgba(220,228,232,0.6)]">
+    <section class="py-[70px] bg-[#0098AE] bg-center bg-no-repeat bg-cover"
+             style="background-image: url('<?= $cta_first_background_image['url']; ?>')">
+        <div class="max-w-[1200px] px-[15px] mx-auto">
+            <div class="p-[30px] sm:p-[60px] rounded-[3px] bg-white">
                 <div class="grid lg:grid-cols-2 gap-[30px] lg:gap-[80px]">
                     <div>
                         <?php if ($cta_first_title) : ?>
