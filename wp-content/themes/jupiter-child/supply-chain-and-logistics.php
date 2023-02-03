@@ -170,9 +170,9 @@
                     <?php while ($studies_query->have_posts()) : $studies_query->the_post(); ?>
                         <div class="cards-item">
                             <div class="card">
-                                <div class="card__image rocket-lazyload"
-                                     data-bg="<?= get_the_post_thumbnail_url(null, 'large'); ?>"
-                                ></div>
+                                <a href="<?= the_permalink(); ?>" class="block pt-[52.41%] flex-[0_0_auto] overflow-hidden relative">
+                                    <div class="rocket-lazyload absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300" data-bg="<?= get_the_post_thumbnail_url(null, 'large'); ?>"></div>
+                                </a>
                                 <div class="card__body">
                                     <div class="card__text"><?= get_the_excerpt(); ?></div>
                                     <div class="card__button-wrapper">
@@ -204,9 +204,9 @@
                     <?php while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
                         <div class="cards-item">
                             <div class="card">
-                                <div class="card__image rocket-lazyload"
-                                     data-bg="<?= get_the_post_thumbnail_url(null, 'large'); ?>"
-                                ></div>
+                                <a href="<?= the_permalink(); ?>" class="block pt-[52.41%] flex-[0_0_auto] overflow-hidden relative">
+                                    <div class="rocket-lazyload absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300" data-bg="<?= get_the_post_thumbnail_url(null, 'large'); ?>"></div>
+                                </a>
                                 <div class="card__body">
                                     <div class="card__text"><?= get_the_excerpt(); ?></div>
                                     <div class="card__button-wrapper">
