@@ -12,7 +12,7 @@
                     <div class="swiper-wrapper xl:flex xl:justify-center">
                         <?php foreach ($leadership_people as $key => $post_id) : ?>
                             <div class="swiper-slide xl:!w-[192px]">
-                                <a class="block group cursor-pointer"
+                                <a class="block lg:group cursor-pointer"
                                    data-fancybox="team"
                                    data-src="#leader-<?= $post_id ?>"
                                    data-thumb="<?= get_the_post_thumbnail_url($post_id); ?>"
