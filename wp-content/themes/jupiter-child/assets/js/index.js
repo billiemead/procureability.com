@@ -179,19 +179,7 @@ $(function () {
         });
     }
 
-    listToggle($('.cp-advantages__link'), $('.cp-advantages__wrapper'), 'Hide all advantages', 'Show all advantages');
     listToggle($('.cp-technology__more'), $('.cp-technology__list_mobile'), 'hide benefits', 'Show all benefits');
-
-
-    // $('.cp-issues__item').on('click', function (event) {
-    //
-    //     event.preventDefault();
-    //
-    //     const activeIndex = event.target.getAttribute('data-index');
-    //     $(".js-issues-popup-slider").trigger("to.owl.carousel", [activeIndex, 0])
-    //
-    //
-    // });
 
     if ($(window).outerWidth() < 992) {
         $('.js-insights-slider').owlCarousel({

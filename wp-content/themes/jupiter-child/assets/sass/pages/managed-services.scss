@@ -1473,16 +1473,15 @@
     }
 
     &__wrapper {
-      margin: 40px 0 32px;
-      display: none;
-
-      @media (max-width: 991px) {
-        margin: 50px 0 32px;
-      }
-
-      @media (max-width: 767px) {
-        margin: 32px 0;
-      }
+      //padding: 40px 0 32px;
+      //
+      //@media (max-width: 991px) {
+      //  padding: 50px 0 32px;
+      //}
+      //
+      //@media (max-width: 767px) {
+      //  padding: 32px 0;
+      //}
     }
 
     &__list {

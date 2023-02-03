@@ -409,33 +409,35 @@ get_header();
         </div>
     </section>
 
-    <section class="cp-advantages">
+    <section data-x-data="{open: false}" class="cp-advantages">
         <div class="container text-center">
-            <h2 class="cp-advantages__title text-gradient"><?= $advantages['title'] ?></h2>
+            <div class="mb-[40px]">
+                <h2 class="cp-advantages__title text-gradient"><?= $advantages['title'] ?></h2>
+                <div class="cp-advantages__text"><?= $advantages['text'] ?></div>
+            </div>
 
-            <div class="cp-advantages__text"><?= $advantages['text'] ?></div>
-
-            <div class="cp-advantages__wrapper">
-                <?php if (!empty($advantages['list'])) : ?>
-                    <div class="cp-advantages__list row text-left">
+            <?php if ($advantages['list']) : ?>
+                <div data-x-cloak data-x-show="open" data-x-collapse>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[55px] px-[20px] pb-[40px] box-border text-left">
                         <?php foreach ($advantages['list'] as $item) : ?>
-                            <div class="cp-advantages__item col-md-6 col-lg-4">
-                                <div class="cp-advantages__top d-flex align-items-center">
-                                    <div class="cp-advantages__icon">
-                                        <img src="<?= $item['icon']['url'] ?>" alt="<?= $item['icon']['alt'] ?>">
+                            <div>
+                                <div class="flex gap-[24px] mb-[16px] items-center">
+                                    <div class="w-[62px]">
+                                        <img class="block mx-auto" src="<?= $item['icon']['url'] ?>" alt="<?= $item['icon']['alt'] ?>">
                                     </div>
-
                                     <div class="cp-advantages__name"><?= $item['title'] ?></div>
                                 </div>
-
                                 <div class="cp-advantages__desc"><?= $item['text'] ?></div>
                             </div>
                         <?php endforeach; ?>
                     </div>
-                <?php endif; ?>
-            </div>
-
-            <a href="#" class="cp-advantages__link">Show all advantages</a>
+                </div>
+                <div class="text-center">
+                    <a data-x-on:click.prevent="open = !open"
+                       data-x-text="open ? 'Hide all advantages' : 'Show all advantages'"
+                       class="cp-advantages__link cursor-pointer"></a>
+                </div>
+            <?php endif; ?>
         </div>
     </section>
 
