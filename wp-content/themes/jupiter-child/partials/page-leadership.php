@@ -28,7 +28,7 @@
                                     </div>
                                     <div class="text-center text-[16px] leading-[1.5]">
                                         <div class="capitalize font-[600] text-[#393A40]"><?= get_field('leadership_name', $post_id); ?></div>
-                                        <div class="capitalize text-[#393A40]"><?= get_field('leadership_title', $post_id); ?></div>
+                                        <div class="capitalize text-[#393A40] text-[14px]"><?= get_field('leadership_title', $post_id); ?></div>
                                     </div>
                                 </a>
                             </div>
