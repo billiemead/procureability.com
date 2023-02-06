@@ -1,26 +1,26 @@
-new WOW({
-    mobile: false
-}).init();
-
 const breakpoint = window.matchMedia('(min-width: 1240px)');
 
-let insightsSwiper;
+let teamSwiper;
 
 const breakpointChecker = function () {
     if (breakpoint.matches === true) {
-        if (insightsSwiper !== undefined) {
-            insightsSwiper.destroy(true, true);
+        if (teamSwiper !== undefined) {
+            teamSwiper.destroy(true, true);
         }
         return;
     } else if (breakpoint.matches === false) {
-        enableInsightsSwiper();
+        enableTeamSwiper();
     }
 };
 
-const enableInsightsSwiper = function () {
-    teamSwiper = new Swiper('#relatedInsights', {
-        loop: true,
+const enableTeamSwiper = function () {
+    teamSwiper = new Swiper('#ourProfessionalTeam', {
+        loop: false,
         slidesPerView: 1,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -28,7 +28,7 @@ const enableInsightsSwiper = function () {
         breakpoints: {
             768: {
                 slidesPerView: 2,
-                spaceBetween: 24,
+                spaceBetween: 20,
             },
         }
     });
@@ -37,6 +37,3 @@ const enableInsightsSwiper = function () {
 breakpoint.addEventListener("change", breakpointChecker);
 
 breakpointChecker();
-
-
-

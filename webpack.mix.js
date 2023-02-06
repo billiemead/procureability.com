@@ -46,6 +46,7 @@ mix
     .js(resources_path + 'assets/js/page/talent.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/advisory.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/contact.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/partials/leadership-section.js', resources_path + 'dist')
     .vue()
 
     // SASS
