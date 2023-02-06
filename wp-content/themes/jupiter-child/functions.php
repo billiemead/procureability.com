@@ -56,7 +56,7 @@ function procureability_enqueue_styles()
     /*PAGES*/
 
     /*Digital Services*/
-    wp_enqueue_script('digital-services', '/wp-content/themes/jupiter-child/dist/digital-services.js', array('theme-scripts', 'wow', 'swiper'), false, true);
+    wp_enqueue_script('digital-services', '/wp-content/themes/jupiter-child/dist/digital-services.js', array('theme-scripts', 'wow', 'swiper'), filemtime(get_stylesheet_directory() . '/dist/digital-services.js'), true);
 
     /*About*/
     wp_enqueue_script('about', '/wp-content/themes/jupiter-child/dist/about.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/about.js'), true);
