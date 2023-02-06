@@ -38,14 +38,14 @@
                 <div class="xl:hidden swiper-pagination"></div>
             </div>
             <button id="ourProfessionalTeamPrevButton"
-                    class="swiper-button-prev after:!content-none !block xl:!hidden absolute !left-[-64px] md:!left-[-119px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
+                    class="swiper-button-prev after:!content-none xl:!hidden absolute !left-[-64px] md:!left-[-119px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
                     <path d="M14.25 1.5L6.25 9.5L14.25 17.5" stroke="#61636B" stroke-width="1.6"
                           stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
             <button id="ourProfessionalTeamNextButton"
-                    class="swiper-button-next after:!content-none !block xl:!hidden absolute !right-[-64px] md:!right-[-100px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
+                    class="swiper-button-next after:!content-none xl:!hidden absolute !right-[-64px] md:!right-[-100px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.25 1.5L13.25 9.5L5.25 17.5" stroke="#61636B" stroke-width="1.6"
                           stroke-linecap="round" stroke-linejoin="round"/>
