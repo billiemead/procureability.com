@@ -35,7 +35,7 @@
                                             </div>
                                         </div>
                                         <div class="overflow-auto">
-                                            <div class="[&_*]:!font-poppins [&_*]:!text-[#393A40] opacity-80 [&_*]:!text-[14px] [&_*]:!leading-[1.7] md:[&_*]:!text-[16px] md:[&_*]:!leading-[1.4] [&_ul]:!ml-[5px] [&_li]:!mb-[.5em] marker:text-[#0098AE] pr-[10px] xl:pr-0">
+                                            <div class="[&_*]:!font-poppins [&_*]:!text-[#393A40] opacity-80 [&_*]:!text-[14px] [&_*]:!leading-[1.7] md:[&_*]:!leading-[1.4] [&_ul]:!ml-[5px] [&_li]:!mb-[.5em] marker:text-[#0098AE] pr-[10px] xl:pr-0">
                                                 <?= $benefit['content']; ?>
                                             </div>
                                             <?php if ($benefit['button']) : ?>
