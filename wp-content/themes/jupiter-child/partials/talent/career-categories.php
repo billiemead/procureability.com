@@ -10,10 +10,10 @@
                 <div class="font-poppins text-white text-[36px] leading-[1.5] font-[600]"><?= $career_categories_title; ?></div>
             </div>
         <?php endif; ?>
-        <div class="text-center grid md:grid-cols-[auto_auto] md:justify-center gap-[32px]">
+        <div class="text-center grid md:auto-cols-max md:grid-flow-col md:justify-center gap-[32px]">
             <?php if ($career_categories_procureability_button) : ?>
                 <div class="min-w-[0px]">
-                    <a class="inline-block min-w-[272px] box-border py-[22px] px-[38px] bg-white rounded-[3px] hover:opacity-80"
+                    <a class="inline-block min-w-[272px] box-border py-[22px] px-[38px] bg-white rounded-[3px] transition-opacity hover:opacity-80"
                        href="<?= $career_categories_procureability_button['url']; ?>"
                        target="<?= $career_categories_procureability_button['target'] ?: '_self'; ?>"
                     >
@@ -23,7 +23,7 @@
             <?php endif; ?>
             <?php if ($career_categories_industry_button) : ?>
                 <div class="min-w-[0px]">
-                    <a class="inline-block min-w-[272px] box-border py-[22px] px-[38px] bg-white rounded-[3px] hover:opacity-80"
+                    <a class="inline-block min-w-[272px] box-border py-[22px] px-[38px] bg-white rounded-[3px] transition-opacity hover:opacity-80"
                        href="<?= $career_categories_industry_button['url']; ?>"
                        target="<?= $career_categories_procureability_button['target'] ?: '_self'; ?>"
                     >

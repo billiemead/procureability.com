@@ -69,8 +69,15 @@ function procureability_enqueue_styles()
     /*Front page*/
     wp_enqueue_script('front-page', '/wp-content/themes/jupiter-child/dist/front-page.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/front-page.js'), true);
 
+    /*Managed Services*/
+    if (is_page_template('page-managed-services.php')) {
+        wp_enqueue_script('talent', '/wp-content/themes/jupiter-child/dist/managed-services.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/managed-services.js'), true);
+    }
+
     /*Talent*/
-    wp_enqueue_script('talent', '/wp-content/themes/jupiter-child/dist/talent.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/talent.js'), true);
+    if (is_page_template('talent.php')) {
+        wp_enqueue_script('talent', '/wp-content/themes/jupiter-child/dist/talent.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/talent.js'), true);
+    }
 
     if (is_page_template('advisory.php')) {
         wp_enqueue_script('advisory', get_stylesheet_directory_uri() . '/dist/advisory.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/advisory.js'), true);
@@ -97,6 +104,11 @@ function procureability_enqueue_styles()
 
         wp_enqueue_script('leadership-section', get_stylesheet_directory_uri() . '/dist/leadership-section.js', array(), filemtime(get_stylesheet_directory() . '/dist/leadership-section.js'), true);
     }
+
+    /*Collapse AlpineJS*/
+    wp_enqueue_script('collapse-alpinejs', get_stylesheet_directory_uri() . '/dist/collapse-alpine.min.js', array(), false, true);
+    /*AlpineJS*/
+    wp_enqueue_script('alpinejs', get_stylesheet_directory_uri() . '/dist/alpine.min.js', array('collapse-alpinejs'), false, true);
 }
 
 add_action('wp_enqueue_scripts', 'procureability_enqueue_styles');

@@ -1,27 +1,21 @@
 import $ from 'jquery';
 import 'magnific-popup';
 import 'owl.carousel';
-import Alpine from 'alpinejs';
-import collapse from '@alpinejs/collapse';
 import { header, scrollToTop } from './header';
-import managedServices from './page/managed-services.js';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
-Alpine.magic('lockbody', () => el => {
-    disableBodyScroll(el)
+document.addEventListener('alpine:init', () => {
+    Alpine.prefix("data-x-");
+    Alpine.data("header", header);
+    Alpine.data("scrollToTop", scrollToTop);
+
+    Alpine.magic('lockbody', () => el => {
+        disableBodyScroll(el)
+    });
+    Alpine.magic('unlockbody', () => el => {
+        enableBodyScroll(el)
+    });
 })
-
-Alpine.magic('unlockbody', () => el => {
-    enableBodyScroll(el)
-})
-
-Alpine.plugin(collapse);
-window.Alpine = Alpine;
-Alpine.data('header', header)
-Alpine.data('scrollToTop', scrollToTop)
-Alpine.data('managedServices', managedServices)
-Alpine.prefix("data-x-")
-Alpine.start();
 
 if($.fancybox) {
 $('[data-fancybox="group"]')

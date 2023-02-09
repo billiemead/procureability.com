@@ -36,6 +36,9 @@ mix.webpackConfig({
     }
 })
 
+mix.copy('node_modules/@alpinejs/collapse/dist/cdn.min.js', resources_path + 'dist/collapse-alpine.min.js');
+mix.copy('node_modules/alpinejs/dist/cdn.min.js', resources_path + 'dist/alpine.min.js');
+
 // JS
 mix
     .js(resources_path + 'assets/js/index.js', resources_path + 'dist')
@@ -44,6 +47,7 @@ mix
     .js(resources_path + 'assets/js/leaders.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/front-page.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/talent.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/page/managed-services.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/advisory.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/contact.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/partials/leadership-section.js', resources_path + 'dist')

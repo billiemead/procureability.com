@@ -2,13 +2,13 @@
 <?php $post_hero_content = get_field('post_hero_content'); ?>
 <?php $post_hero_image = get_field('post_hero_image'); ?>
 <!--post hero-->
-<section class="pt-[75px] pb-[82px]">
+<section class="pt-[75px]">
     <div class="max-w-[1200px] px-[15px] mx-auto">
         <div class="grid lg:grid-cols-[560px_1fr] gap-[50px] lg:gap-[104px] items-center">
-            <div>
+            <div class="lg:max-w-[523px]">
                 <?php if ($post_hero_title) : ?>
-                    <div class="mb-[16px] max-w-[523px]">
-                        <div class="font-poppins text-[#393A40] text-[36px] leading-[1.5] font-[600]"><?= $post_hero_title; ?>
+                    <div class="mb-[16px]">
+                        <div class="font-poppins text-[#393A40] text-[26px] lg:text-[36px] leading-[1.5] font-[600]"><?= $post_hero_title; ?>
                         </div>
                     </div>
                 <?php endif; ?>

@@ -15,13 +15,13 @@
 <?php get_template_part('partials/talent/post-hero'); ?>
 <?php /** !POST HERO */ ?>
 
-<?php /** CAREER CATEGORIES */ ?>
-<?php get_template_part('partials/talent/career-categories'); ?>
-<?php /** !CAREER CATEGORIES */ ?>
-
 <?php /** REASONS TO JOIN */ ?>
 <?php get_template_part('partials/talent/reasons-to-join'); ?>
 <?php /** !REASONS TO JOIN */ ?>
+
+<?php /** CAREER CATEGORIES */ ?>
+<?php get_template_part('partials/talent/career-categories'); ?>
+<?php /** !CAREER CATEGORIES */ ?>
 
 <?php /** RECRUITMENT PROCESS */ ?>
 <?php get_template_part('partials/talent/recruitment-process'); ?>
@@ -44,7 +44,7 @@
 <?php /** !FORM */ ?>
 
 <?php /** TEAM */ ?>
-<?php get_template_part('partials/talent/team'); ?>
+<?php // get_template_part('partials/talent/team'); ?>
 <?php /** !TEAM */ ?>
 
 <?php /** INSIGHTS */ ?>
