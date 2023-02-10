@@ -20,7 +20,9 @@ module.exports = {
             'xxl': '2000px'
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/line-clamp')
+    ],
     corePlugins: {
         preflight: false,
     }

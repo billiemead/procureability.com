@@ -24,7 +24,7 @@
                                 <div class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]">
                                     <?= the_title(); ?>
                                 </div>
-                                <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px]">
+                                <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] line-clamp-3">
                                     <?= get_the_excerpt(); ?>
                                 </div>
                                 <a class="font-poppins text-[#3BA17C] transition-all text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
