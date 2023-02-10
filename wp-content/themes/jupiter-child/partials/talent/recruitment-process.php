@@ -19,10 +19,10 @@
     </div>
     <?php if ($recruitment_process_steps) : ?>
         <div class="bg-no-repeat bg-[center_top] pt-[115px]"
-             style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent/city.svg')">
+             style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent-test/city-test.svg')">
             <div class="max-w-[1200px] mx-auto">
                 <div class="w-full bg-[length:1200px_auto] bg-no-repeat bg-[center_top_100px] overflow-auto pb-[15px] px-[15px] box-border"
-                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent/road.svg')">
+                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent-test/road-test.svg')">
                     <div class="flex">
                         <?php foreach ($recruitment_process_steps as $step) : ?>
                             <div class="px-[15px] box-border w-1/2 md:w-1/3 lg:w-3/12 flex-[1_0_auto] text-center"
@@ -47,3 +47,4 @@
         </div>
     <?php endif; ?>
 </section>
+<!--test-->

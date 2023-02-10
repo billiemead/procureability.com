@@ -3,7 +3,7 @@
 <?php $career_categories_industry_button = get_field('career_categories_industry_button'); ?>
 
 <section class="pt-[48px] pb-[66px] bg-cover bg-center bg-no-repeat"
-         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent/career-categories-background.png')">
+         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent-test/career-categories-background-test.png')">
     <div class="px-[15px]">
         <?php if ($career_categories_title) : ?>
             <div class="text-center mb-[24px]">
@@ -34,3 +34,4 @@
         </div>
     </div>
 </section>
+<!--test-->
