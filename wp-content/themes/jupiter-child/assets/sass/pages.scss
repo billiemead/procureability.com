@@ -712,6 +712,16 @@
         padding: 0;
         margin: 19px 0 0;
 
+        a {
+          color: #717171;
+          border-bottom: 1px dotted #717171;
+          transition: .2s all linear;
+
+          &:hover {
+            border-bottom-color: transparent;
+          }
+        }
+
         li {
           counter-increment: item;
           padding-left: 46px;
