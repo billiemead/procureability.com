@@ -217,22 +217,12 @@
           border-bottom-color: transparent;
         }
 
-        a {
-          color: #717171;
-          border-bottom: 1px dotted #717171;
-          transition: .2s all linear;
+        &.blue-anchor {
+          color: #0098ae;
+          border-bottom: 1px dotted #0098ae;
 
           &:hover {
             border-bottom-color: transparent;
-          }
-
-          &.blue-anchor {
-            color: #0098ae;
-            border-bottom: 1px dotted #0098ae;
-
-            &:hover {
-              border-bottom-color: transparent;
-            }
           }
         }
       }
