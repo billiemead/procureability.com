@@ -4,7 +4,7 @@
 <?php $form_image = get_field('form_image'); ?>
 
 <?php if ($form_form) : ?>
-    <section class="overflow-hidden">
+    <section class="overflow-hidden" id="subscribe">
         <div class="max-w-[1200px] px-[15px] mx-auto">
             <div class="lg:grid lg:grid-cols-[auto_588px]">
                 <?php if ($form_image) : ?>
