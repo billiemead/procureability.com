@@ -14,7 +14,7 @@
                 <?php endif; ?>
                 <?php if ($hero_leading) : ?>
                     <div class="text-center">
-                        <div class="font-poppins text-[20px] lg:text-[24px] leading-[1.5] text-[#393A40]"><?= $hero_leading ?></div>
+                        <div class="font-poppins text-[16px] lg:text-[18px] leading-[1.5] text-[#393A40]"><?= $hero_leading ?></div>
                     </div>
                 <?php endif; ?>
             </div>
