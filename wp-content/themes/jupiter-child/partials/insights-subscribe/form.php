@@ -9,7 +9,7 @@
             <div class="lg:grid lg:grid-cols-[auto_588px] lg:min-h-[600px]">
                 <?php if ($form_image) : ?>
                     <div class="hidden lg:block relative">
-                        <?= wp_get_attachment_image($form_image['id'], 'full', false, array('class' => 'block absolute right-0 top-0 h-full w-auto')); ?>
+                        <?= wp_get_attachment_image($form_image['id'], 'full', false, array('class' => 'block absolute right-0 top-0 h-full w-auto', 'title' => get_the_title($form_image['id']))); ?>
                     </div>
                 <?php endif; ?>
                 <div class="py-[50px] lg:pt-[100px] lg:pb-0 lg:px-[33px]">

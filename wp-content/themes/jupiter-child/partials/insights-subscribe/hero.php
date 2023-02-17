@@ -22,7 +22,7 @@
         <?php if ($hero_features) : ?>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-y-[30px] md:gap-y-0 max-w-[375px] mx-auto md:max-w-none md:mx-0">
                 <?php foreach ($hero_features as $feature) : ?>
-                    <div class="text-center relative md:after:content-[''] md:after:block after:h-[96px] md:after:w-[1px] md:after:absolute md:after:right-0 md:after:top-[50%] md:after:-translate-y-[50%] md:after:bg-[#A0B0B8] md:last:after:content-none">
+                    <div class="text-center relative md:after:content-[''] md:after:block after:h-[96px] md:after:w-[1px] md:after:absolute md:after:right-0 md:after:top-[50%] md:after:-translate-y-[50%] md:after:bg-[#A0B0B8] md:last:after:content-none px-[15px]">
                         <div class="font-poppins text-[45px] lg:text-[60px] leading-normal font-medium tracking-[0.03em]"
                              style="color: rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, <?= $feature['color']['alpha']; ?>);"><?= $feature['number']; ?></div>
                         <div class="font-poppins text-[16px] lg:text-[20px] leading-[1.24] tracking-[1.5px] text-[#474747] uppercase opacity-[85]">
