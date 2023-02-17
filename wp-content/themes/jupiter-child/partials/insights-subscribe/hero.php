@@ -2,7 +2,7 @@
 <?php $hero_leading = get_field('hero_leading'); ?>
 <?php $hero_features = get_field('hero_features'); ?>
 
-<section class="py-[50px] lg:pt-[60px] lg:pb-[100px] bg-[#F7F9FA] bg-no-repeat bg-[left_calc(50%+373px)_top]"
+<section class="py-[50px] lg:pt-[60px] lg:pb-[100px] bg-[#F7F9FA] bg-no-repeat bg-right-top"
          style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/insights-subscribe/triangle-blue.svg');">
     <div class="max-w-[1200px] px-[15px] mx-auto">
         <?php if ($hero_title | $hero_leading) : ?>

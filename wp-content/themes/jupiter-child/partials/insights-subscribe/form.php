@@ -6,13 +6,13 @@
 <?php if ($form_form) : ?>
     <section class="overflow-hidden" id="subscribe">
         <div class="max-w-[1200px] px-[15px] mx-auto">
-            <div class="lg:grid lg:grid-cols-[auto_588px]">
+            <div class="lg:grid lg:grid-cols-[auto_588px] lg:min-h-[600px]">
                 <?php if ($form_image) : ?>
                     <div class="hidden lg:block relative">
                         <?= wp_get_attachment_image($form_image['id'], 'full', false, array('class' => 'block absolute right-0 top-0 h-full w-auto')); ?>
                     </div>
                 <?php endif; ?>
-                <div class="py-[50px] lg:pt-[100px] lg:pb-[110px] lg:px-[33px]">
+                <div class="py-[50px] lg:pt-[100px] lg:pb-0 lg:px-[33px]">
                     <?php if ($form_title | $form_leading) : ?>
                         <div class="max-w-[486px] mx-auto mb-[34px]">
                             <?php if ($form_title) : ?>

@@ -1,6 +1,7 @@
 <?php $insights_title = get_field('insights_title'); ?>
 <?php $insights_insights = get_field('insights_insights'); ?>
 <?php $insights_button = get_field('insights_button'); ?>
+<?php $form_form = get_field('form_form'); ?>
 
 <section class="py-[50px] lg:pt-[84px] lg:pb-[100px] bg-[#F7F9FA] lg:bg-none">
     <div class="max-w-[1200px] mx-auto px-[15px]">
@@ -43,15 +44,17 @@
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
-        <?php if ($insights_button) : ?>
+        <?php if ($insights_button && $form_form) : ?>
             <div class="text-center mt-[56px]">
-                <a class="inline-block pt-[13px] pb-[11px] lg:p-[16px] max-w-[300px] lg:max-w-[420px] w-full uppercase bg-[#3BA17C] rounded-[3px] group relative box-border"
-                   href="<?= $insights_button['url']; ?>" target="<?= $insights_button['target'] ?: '_self' ?>">
+                <button class="inline-block pt-[13px] pb-[11px] lg:p-[16px] max-w-[300px] lg:max-w-[420px] w-full uppercase bg-[#3BA17C] rounded-[3px] group relative box-border border-none"
+                        data-x-data="{}"
+                        data-x-on:click="document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' })"
+                >
                     <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
                          style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/button-bg-pattern.svg')"
                     ></div>
                     <span class="font-poppins text-white text-[16px] lg:text-[20px] leading-[1.5] font-semibold tracking-[0.1em] uppercase"><?= $insights_button['title']; ?></span>
-                </a>
+                </button>
             </div>
         <?php endif; ?>
     </div>
