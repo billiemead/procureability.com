@@ -44,6 +44,7 @@ mix
     .js(resources_path + 'assets/js/index.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/digital-services.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/about.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/page/insights.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/leaders.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/front-page.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/talent.js', resources_path + 'dist')
