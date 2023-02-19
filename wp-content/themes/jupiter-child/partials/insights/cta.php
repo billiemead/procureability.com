@@ -1,5 +1,6 @@
 <?php $cta_with_image = get_field('cta_with_image'); ?>
 
+<?php if ($cta_with_image) : ?>
 <section class="py-[88px] relative"
          style="background-color: rgba(<?= $cta_with_image['background_color']['red']; ?>, <?= $cta_with_image['background_color']['green']; ?>, <?= $cta_with_image['background_color']['blue']; ?>, <?= $cta_with_image['background_color']['alpha']; ?>);">
     <div class="hidden lg:block absolute inset-0 bg-no-repeat bg-[right_top] bg-[length:auto_100%]"
@@ -8,7 +9,7 @@
         <div class="max-w-[567px] mx-auto lg:mx-0">
             <?php if ($cta_with_image['title']) : ?>
                 <div class="mb-[20px] text-center lg:!text-left">
-                    <div class="font-poppins text-[36px] leading-[1.4] font-semibold text-[#393A40]"><?= $cta_with_image['title'] ?></div>
+                    <div class="font-poppins text-[36px] leading-[1.4] font-semibold text-[#393A40]"><?= $cta_with_image['title']; ?></div>
                 </div>
             <?php endif; ?>
             <?php if ($cta_with_image['content']) : ?>
@@ -32,3 +33,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>
