@@ -40,38 +40,6 @@
             "append": ""
         },
         {
-            "key": "field_636a7e2f9efa6",
-            "label": "Link",
-            "name": "link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
-            "key": "field_636a7e519efa9",
-            "label": "Link",
-            "name": "link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
             "key": "field_636a7b2b9ef97",
             "label": "Insights",
             "name": "insights_insights",
@@ -272,5 +240,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676808866
+    "modified": 1676809167
 }
