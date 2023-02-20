@@ -21,14 +21,15 @@
 <body <?php body_class(mk_get_body_class(global_get_post_id())); ?> <?php echo get_schema_markup('body'); // WPCS: XSS OK. ?>
         data-adminbar="<?php echo esc_attr(is_admin_bar_showing()); ?>">
 <?php
-if (function_exists('wp_body_open')) {
-    wp_body_open();
-}
 
 do_action('mk_theme_after_body_opening');
 
 // Hook when you need to add content right after body opening tag. to be used in child themes or customisations.
 do_action('theme_after_body_tag_start');
+
+if (function_exists('wp_body_open')) {
+    wp_body_open();
+}
 ?>
 
 <!-- Target for scroll anchors to achieve native browser bahaviour + possible enhancements like smooth scrolling -->

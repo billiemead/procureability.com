@@ -668,3 +668,11 @@ add_filter('wpseo_opengraph_image_size', 'override_images_size');
 
 //add test commit
 
+function show_gtag_manager_after_body_tag() {
+    echo '<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W73KW8F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->';
+}
+
+add_action( 'mk_theme_after_body_opening', 'show_gtag_manager_after_body_tag', 10, 0 );
