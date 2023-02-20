@@ -21,7 +21,7 @@
                                          style="border-color: rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, .3)">
                                         <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-[5px]"
                                              style="background-image: url('<?= $insight['image']['url']; ?>')"></div>
-                                        <div class="absolute inset-0 flex flex-col px-[40px] pt-[40px] pb-[40px] md:pb-[50px] bg-white/90 backdrop-blur-[9px]">
+                                        <div class="absolute inset-0 flex flex-col px-[40px] py-[40px] bg-white/90 backdrop-blur-[9px]">
                                             <div class="min-h-0 overflow-auto">
                                                 <div class="mb-[12px]">
                                                     <div class="font-poppins text-[26px] leading-[1.35] font-semibold"
