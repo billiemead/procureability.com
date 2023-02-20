@@ -32,14 +32,13 @@
                                                 </div>
                                             </div>
                                             <?php if ($insight['link']) : ?>
+                                                <?php $button_color = 'rgba(' . $insight['color']['red'] . ',' . $insight['color']['green'] . ',' . $insight['color']['blue'] . ',' . $insight['color']['alpha'] . ')'; ?>
                                                 <div class="mt-auto pt-[20px] lg:pt-[10px]">
-                                                    <a class="inline-block py-[12px] px-[60px] text-center rounded-[3px] relative group/button overflow-hidden border border-solid"
+                                                    <a class="inline-block py-[12px] px-[60px] text-center rounded-[3px] relative group/button overflow-hidden border-2 border-solid hover:!bg-transparent transition-colors duration-500"
                                                        href="<?= $insight['link']['url']; ?>"
-                                                       style="border-color: rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>);"
+                                                       style="border-color: <?= $button_color ?>; background-color: <?= $button_color; ?>; color: <?= $button_color; ?>"
                                                     >
-                                                        <div class="absolute inset-0 group-hover/button:opacity-75 opacity-100 transition-opacity duration-500"
-                                                             style="background-color: rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>);"></div>
-                                                        <span class="relative font-poppins text-[18px] leading-normal text-white tracking-[0.14em] uppercase"><?= $insight['link']['title']; ?></span>
+                                                        <span class="relative font-poppins text-[18px] leading-normal text-white group-hover/button:text-[currentColor] tracking-[0.14em] uppercase transition-colors duration-500"><?= $insight['link']['title']; ?></span>
                                                     </a>
                                                 </div>
                                             <?php endif; ?>
