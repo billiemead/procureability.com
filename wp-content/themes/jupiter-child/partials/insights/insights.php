@@ -22,12 +22,12 @@
                                         <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-[5px]"
                                              style="background-image: url('<?= $insight['image']['url']; ?>')"></div>
                                         <div class="absolute inset-0 flex flex-col px-[40px] py-[40px] bg-white/90 backdrop-blur-[9px]">
-                                            <div class="min-h-0 overflow-auto">
+                                            <div class="min-h-0 flex flex-col">
                                                 <div class="mb-[12px]">
                                                     <div class="font-poppins text-[26px] leading-[1.35] font-semibold"
                                                          style="color: rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>)"><?= $insight['title']; ?></div>
                                                 </div>
-                                                <div>
+                                                <div class="min-h-0 overflow-auto">
                                                     <div class="[&_p]:font-poppins [&_p]:text-[16px] [&_p]:leading-[1.7] [&_p]:text-[#61636B]"><?= $insight['content']; ?></div>
                                                 </div>
                                             </div>
