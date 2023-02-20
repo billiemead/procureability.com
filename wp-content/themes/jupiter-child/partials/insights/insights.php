@@ -32,7 +32,7 @@
                                                 </div>
                                             </div>
                                             <?php if ($insight['link']) : ?>
-                                                <div class="mt-auto pt-[20px]">
+                                                <div class="mt-auto pt-[20px] lg:pt-[10px]">
                                                     <a class="inline-block py-[12px] px-[60px] text-center rounded-[3px] relative group/button overflow-hidden border border-solid"
                                                        href="<?= $insight['link']['url']; ?>"
                                                        style="border-color: rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>);"
