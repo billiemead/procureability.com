@@ -61,9 +61,6 @@ function procureability_enqueue_styles()
     /*About*/
     wp_enqueue_script('about', '/wp-content/themes/jupiter-child/dist/about.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/about.js'), true);
 
-    /*Insights*/
-    wp_enqueue_script('insights', '/wp-content/themes/jupiter-child/dist/insights.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/insights.js'), true);
-
     /*Blocks*/
     /*Leaders*/
 
