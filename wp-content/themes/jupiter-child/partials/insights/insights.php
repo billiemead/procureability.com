@@ -71,7 +71,7 @@
                                 </div>
                                 <div>
                                     <a class="inline-block pt-[11px] pb-[8px] px-[22px] text-center rounded-[3px] bg-[#3BA17C] border-2 border-solid group border-[#3BA17C] hover:bg-transparent transition-colors duration-500"
-                                       href="<?= $insights_cta[''] ?>">
+                                       href="<?= $insights_cta['button']['url']; ?>">
                                         <span class="font-poppins text-white text-[18px] leading-[1.3] font-semibold tracking-[0.1em] uppercase group-hover:text-[#3BA17C] transition-colors duration-500"><?= $insights_cta['button']['title']; ?></span>
                                     </a>
                                 </div>
