@@ -7,7 +7,7 @@
         <div class="max-w-[1200px] mx-auto px-[15px] lg:px-[34px]">
             <?php if ($insights_title) : ?>
                 <div class="mb-[48px] text-center">
-                    <div class="font-poppins text-black text-[28px] md:text-[36px] leading-[1.35] font-semibold"><?= $insights_title; ?></div>
+                    <div class="font-poppins text-[#393A40] text-[28px] md:text-[36px] leading-[1.35] font-semibold"><?= $insights_title; ?></div>
                 </div>
             <?php endif; ?>
             <div class="max-w-[346px] mx-auto md:max-w-none md:mx-0 grid gap-[48px] md:grid-cols-2 md:gap-x-[24px] lg:grid-cols-3 lg:gap-x-[24px] lg:gap-y-[80px]">
