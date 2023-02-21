@@ -15,7 +15,7 @@
                     <?php foreach ($insights_insights as $key => $insight) : ?>
                         <div>
                             <div class="group" style="perspective: 1000px;">
-                                <div class="pt-[117.19%] relative group-hover:rotate-y-[180deg] transition-transform duration-[1500ms] transform-style-3d group-hover:delay-100 delay-500 ease-out">
+                                <div class="pt-[117.19%] relative group-hover:rotate-y-[180deg] transition-transform duration-[1300ms] transform-style-3d group-hover:delay-100 delay-500 ease-out">
                                     <!--back-->
                                     <div class="absolute inset-0 rotate-y-[180deg] backface-hidden overflow-hidden rounded-[5px] border-solid border-2"
                                          style="border-color: rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, .3)">
@@ -38,7 +38,7 @@
                                                        href="<?= $insight['link']['url']; ?>"
                                                        style="border-color: <?= $button_color ?>; background-color: <?= $button_color; ?>; color: <?= $button_color; ?>"
                                                     >
-                                                        <span class="relative font-poppins text-[18px] leading-normal text-white group-hover/button:text-[currentColor] tracking-[0.14em] uppercase transition-colors duration-500"><?= $insight['link']['title']; ?></span>
+                                                        <span class="relative font-poppins text-[18px] font-semibold leading-normal text-white group-hover/button:text-[currentColor] tracking-[0.14em] uppercase transition-colors duration-500"><?= $insight['link']['title']; ?></span>
                                                     </a>
                                                 </div>
                                             <?php endif; ?>
