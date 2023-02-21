@@ -1,7 +1,7 @@
 <?php $hero_background_image = get_field('hero_background_image'); ?>
 
 <section
-        class="hero pt-[80px] pb-[60px] md:pt-[160px] md:pb-[100px] bg-no-repeat bg-[center_15%] bg-cover relative"
+        class="hero pt-[80px] pb-[60px] md:pt-[160px] xl:pt-[12.89%] md:pb-[100px] bg-no-repeat bg-[center_15%] bg-cover relative"
         style="background-image: url('<?= $hero_background_image ? $hero_background_image['url'] : null; ?>')">
 
     <div class="absolute inset-0"
