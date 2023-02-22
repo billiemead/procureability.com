@@ -110,7 +110,7 @@ $insights = get_field('insights');
           <?php
             foreach ($testimonials['items'] as $item) :
           ?>
-          <div class="cp-testimonials__item d-flex">
+          <div class="cp-testimonials__item d-flex align-items-center">
             <div class="cp-testimonials__desc">
               <p class="cp-testimonials__text">
                 <?= $item['text'] ?>
@@ -128,7 +128,7 @@ $insights = get_field('insights');
               </div>
             </div>
 
-            <div class="cp-testimonials__photo d-flex align-items-end">
+            <div class="cp-testimonials__photo">
               <img src="<?= $item['photo']['url'] ?>" alt="<?= $item['photo']['alt'] ?>">
             </div>
           </div>
