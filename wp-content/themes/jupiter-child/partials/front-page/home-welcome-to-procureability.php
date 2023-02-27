@@ -17,7 +17,7 @@
                     <?php foreach ($frontpage_welcome_to_procureability_feature as $feature) : ?>
                         <div class="swiper-slide !w-[288px] !h-[338px] p-[8px] group">
                             <div class="w-full h-full relative">
-                                <div class="!hidden rounded-[5px] overflow-hidden xl:block xl:group-active:opacity-0 xl:group-hover:opacity-0 xl:opacity-100 absolute inset-0 py-[28px] px-[28px] xl:!flex xl:!flex-col transition-opacity">
+                                <div class="rounded-[5px] overflow-hidden absolute inset-0 py-[28px] px-[28px] xl:!flex xl:!flex-col transition-opacity">
                                     <div class="absolute inset-0 bg-cover bg-center"
                                          style="background-image: url('<?= $feature['cover']['url']; ?>')"></div>
                                     <div class="absolute inset-0"
@@ -28,7 +28,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bg-white xl:group-active:opacity-100 xl:group-hover:opacity-100 xl:opacity-0 py-[28px] px-[28px] flex flex-col absolute inset-0 transition-opacity rounded-[5px] border border-solid"
+                                <div class="bg-white xl:group-active:opacity-100 xl:group-hover:opacity-100 xl:opacity-0 py-[28px] px-[28px] flex flex-col absolute inset-0 transition-opacity rounded-[5px] border border-solid duration-700"
                                      style="box-shadow: 0px 10px 20px rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, 0.3); border-color: rgb(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>)">
                                     <div class="text-center mb-[10px] md:mb-[16px] xl:mb-[12px]">
                                         <div class="font-poppins text-[18px] leading-[1.2] md:text-[24px] md:leading-[1.3] font-[600]"
@@ -42,10 +42,10 @@
                                         </div>
                                     </div>
                                     <div class="text-center mt-auto">
-                                        <a class="font-roboto text-[14px] leading-[1.1] xl:text-[16px] leading-[1.2] font-[500] uppercase"
+                                        <a class="font-roboto text-[14px] leading-[1.1] xl:text-[16px] leading-[1.2] font-[500] uppercase group/link"
                                            href="<?= $feature['button_link']['url']; ?>"
                                            style="color: rgb(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>)"><?= $feature['button_text']; ?>
-                                            <svg class="relative top-[1px] ml-[5px]" xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                                            <svg class="relative top-[1px] ml-[5px] transition-transform group-hover/link:translate-x-[5px]" xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
                                                 <path d="M1 11.75L6.5 6.25L1 1.25" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.5"/>
                                             </svg>
                                         </a>
