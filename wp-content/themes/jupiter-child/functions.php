@@ -71,12 +71,12 @@ function procureability_enqueue_styles()
 
     /*Managed Services*/
     if (is_page_template('page-managed-services.php')) {
-        wp_enqueue_script('talent', '/wp-content/themes/jupiter-child/dist/managed-services.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/managed-services.js'), true);
+        wp_enqueue_script('managed-services', '/wp-content/themes/jupiter-child/dist/managed-services.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/managed-services.js'), true);
     }
 
-    /*Talent*/
-    if (is_page_template('talent.php')) {
-        wp_enqueue_script('talent', '/wp-content/themes/jupiter-child/dist/talent.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/talent.js'), true);
+    /*Careers*/
+    if (is_page_template('careers.php')) {
+        wp_enqueue_script('careers', '/wp-content/themes/jupiter-child/dist/careers.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/careers.js'), true);
     }
 
     if (is_page_template('advisory.php')) {
