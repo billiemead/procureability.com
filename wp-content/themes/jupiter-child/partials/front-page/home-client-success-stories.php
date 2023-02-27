@@ -27,10 +27,10 @@
                                    href="<?= get_permalink(); ?>">
                                     <?= the_title(); ?>
                                 </a>
-                                <a class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] opacity-100 hover:opacity-80 transition-opacity"
+                                <div class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px]"
                                    href="<?= get_permalink(); ?>">
                                     <?= get_the_excerpt(); ?>
-                                </a>
+                                </div>
                                 <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors"
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
