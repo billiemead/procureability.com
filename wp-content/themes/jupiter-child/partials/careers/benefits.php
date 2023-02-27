@@ -26,7 +26,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bg-white xl:group-active:opacity-100 xl:group-hover:opacity-100 xl:opacity-0 py-[28px] px-[28px] flex flex-col absolute inset-0 transition-opacity duration-300 rounded-[5px] border border-solid"
+                                    <div class="bg-white xl:group-active:opacity-100 xl:group-hover:opacity-100 xl:opacity-0 py-[28px] px-[28px] flex flex-col absolute inset-0 transition-opacity duration-500 rounded-[5px] border border-solid"
                                          style="box-shadow: 0px 10px 20px rgba(<?= $benefit['color']['red']; ?>, <?= $benefit['color']['green']; ?>, <?= $benefit['color']['blue']; ?>, 0.3); border-color: rgb(<?= $benefit['color']['red']; ?>, <?= $benefit['color']['green']; ?>, <?= $benefit['color']['blue']; ?>)">
                                         <div class="mb-[10px] md:mb-[16px] xl:mb-[12px]">
                                             <div class="font-poppins text-[18px] leading-[1.2] md:text-[24px] md:leading-[1.3] font-[600]"
