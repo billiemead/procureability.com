@@ -128,7 +128,13 @@ get_header();
                 <div class="cp-support__desc">
                     <div class="cp-support__text"><?= $support['text'] ?></div>
 
-                    <a href="<?= $support['btn_link'] ?>" class="cp-support__btn btn"><?= $support['btn_text'] ?></a>
+                    <?php if ($support['btn_link'] && $support['btn_text']) : ?>
+                        <a class="inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll" href="<?= $support['btn_link'] ?>">
+                            <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500" style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
+                            <span class="font-poppins text-white text-[18px] leading-[1.5] font-[700] tracking-[0.1em] uppercase relative"><?= $support['btn_text'] ?></span>
+                        </a>
+                    <?php endif; ?>
+
                 </div>
             </div>
         </div>
@@ -164,8 +170,13 @@ get_header();
 
                     <div class="cp-opportunities__text"><?= $opportunities['text'] ?></div>
 
-                    <a href="<?= $opportunities['btn_link'] ?>"
-                       class="cp-opportunities__btn btn btn_type2 js-smooth-scroll"><?= $opportunities['btn_text'] ?></a>
+
+                    <?php if ($opportunities['btn_link'] && $opportunities['btn_text']) : ?>
+                        <a class="hidden min-[992px]:inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll" href="<?= $opportunities['btn_link'] ?>">
+                            <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500" style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
+                            <span class="font-poppins text-white text-[18px] leading-[1.5] font-[700] tracking-[0.1em] uppercase relative"><?= $opportunities['btn_text'] ?></span>
+                        </a>
+                    <?php endif; ?>
                 </div>
 
                 <div class="cp-opportunities__right">
@@ -320,7 +331,12 @@ get_header();
                 </div>
             <?php endif; ?>
 
-            <a href="<?= $industries['btn_link'] ?>" class="cp-industries__btn btn"><?= $industries['btn_text'] ?></a>
+            <?php if ($industries['btn_link'] && $industries['btn_text']) : ?>
+                <a class="hidden min-[768px]:inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll" href="<?= $industries['btn_link'] ?>">
+                    <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500" style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
+                    <span class="font-poppins text-white text-[18px] leading-[1.5] font-[700] tracking-[0.1em] uppercase relative"><?= $industries['btn_text'] ?></span>
+                </a>
+            <?php endif; ?>
         </div>
     </section>
 
@@ -447,7 +463,12 @@ get_header();
 
             <div class="cp-help__text"><?= $help['text'] ?></div>
 
-            <a href="<?= $help['btn_link'] ?>" class="cp-help__btn btn btn_type3"><?= $help['btn_text'] ?></a>
+            <?php if ($help['btn_link'] && $help['btn_text']) : ?>
+                <a class="inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll" href="<?= $help['btn_link'] ?>">
+                    <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500" style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
+                    <span class="font-poppins text-white text-[18px] leading-[1.5] font-[700] tracking-[0.1em] uppercase relative"><?= $help['btn_text'] ?></span>
+                </a>
+            <?php endif; ?>
         </div>
     </section>
 
