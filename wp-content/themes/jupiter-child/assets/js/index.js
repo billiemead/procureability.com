@@ -111,7 +111,12 @@ $(function () {
 
     $('.ukraine-popup-mfp').magnificPopup({
         type: 'inline',
-        // removalDelay: 300,
+        removalDelay: 500, //delay removal by X to allow out-animation
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        }
     });
 
     $('.mfp-post').magnificPopup({
