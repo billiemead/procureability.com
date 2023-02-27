@@ -14,7 +14,7 @@
         </div>
         <?php if ($clients_clients) : ?>
             <div class="md:max-w-[632px] xl:max-w-[1200px] mx-auto">
-                <div class="relative">
+                <div class="relative px-[30px]">
                     <div id="industryLeaders" class="swiper">
                         <div class="swiper-wrapper">
                             <?php foreach ($clients_clients as $client) : ?>
