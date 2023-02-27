@@ -31,7 +31,7 @@
                                    href="<?= get_permalink(); ?>">
                                     <?= get_the_excerpt(); ?>
                                 </div>
-                                <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors"
+                                <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
                         </div>

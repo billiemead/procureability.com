@@ -24,7 +24,7 @@
                                 <div class="text-poppins text-[#393A40] text-[14px] md:text-[16px] leading-[1.7] md:leading-[1.65] mb-[16px] opacity-80">
                                     <?= the_title(); ?>
                                 </div>
-                                <a class="text-poppins text-[#3BA17C] text-[14px] md:text-[16px] leading-[1.5] font-[500]"
+                                <a class="text-poppins text-[#3BA17C] text-[14px] md:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
                         </div>
