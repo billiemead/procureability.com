@@ -60,6 +60,15 @@
 
     a {
       color: #0098AE;
+      text-decoration: underline;
+      text-decoration-color: #0098AE;
+      text-decoration-style: dotted;
+      text-underline-offset: 4px;
+      transition: all .15s linear;
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
     }
 
     ul {
