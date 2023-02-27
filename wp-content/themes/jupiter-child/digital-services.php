@@ -298,7 +298,7 @@
                                         <div class=" text-[24px] font-[500] mb-[16px] xl:text-[34px] leading-[1.47] xl:font-[600] xl:mb-[24px] <?= ($key % 2 !== 0) ? 'text-[#F6881B]' : 'text-[#3BA17C]'; ?>">
                                             <?= $bottom_content_group_item['title']; ?>
                                         </div>
-                                        <div class="[&_p]:text-[14px] [&_p]:xl:text-[18px] [&_p]:leading-[1.6] [&_a]:font-[600] [&_a]:xl:font-[500] [&_a]:!underline [&_a]:!decoration-[transparent] [&_a]:!transition-all [&_a]:!duration-200 [&_a]:!decoration-[#3BA17C] hover:[&_a]:!no-underline [&_a]:!decoration-dotted [&_a]:!font-poppins [&_a]:!underline-offset-[7px]">
+                                        <div class="[&_p]:text-[14px] [&_p]:xl:text-[18px] [&_p]:leading-[1.6] [&_a]:font-[600] [&_a]:xl:font-[500] [&_a]:!underline [&_a]:!decoration-[transparent] [&_a]:!transition-all [&_a]:!duration-200 [&_a]:!decoration-[#3BA17C] [&_a]:!decoration-dotted [&_a]:!font-poppins [&_a]:!underline-offset-[6px] hover:[&_a]:!decoration-[transparent]">
                                             <?= apply_filters('the_content', $bottom_content_group_item['content']); ?>
                                         </div>
                                     </div>
