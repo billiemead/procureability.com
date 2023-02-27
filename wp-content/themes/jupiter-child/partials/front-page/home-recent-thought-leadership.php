@@ -17,9 +17,9 @@
                         <div class="swiper-slide">
                             <div>
                                 <a href="<?= get_permalink(); ?>"
-                                   class="block pb-[55.32%] mb-[24px] md:mb-[42px] xl:mb-[32px] rounded-[6px] relative overflow-hidden"
+                                   class="block pb-[55.32%] mb-[24px] md:mb-[42px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
                                    >
-                                    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300" style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
+                                    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10" style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
                                 </a>
                                 <div class="text-poppins text-[#393A40] text-[14px] md:text-[16px] leading-[1.7] md:leading-[1.65] mb-[16px] opacity-80">
                                     <?= the_title(); ?>
