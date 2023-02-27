@@ -19,9 +19,9 @@
                         <div>
                             <div class="mb-[20px]">
                                 <a href="<?= get_the_permalink($insight['post']); ?>"
-                                   class="block pt-[52.47%] rounded-[5px] overflow-hidden relative group"
+                                   class="block pt-[52.47%] rounded-[5px] overflow-hidden relative group z-20"
                                 >
-                                    <div class="absolute bg-cover bg-no-repeat bg-center inset-0 group-hover:scale-110 transition-transform ease-in-out duration-300"
+                                    <div class="absolute bg-cover bg-no-repeat bg-center inset-0 group-hover:scale-110 transition-transform ease-in-out duration-300 z-10"
                                          style="background-image: url('<?= get_the_post_thumbnail_url($insight['post'], 'large') ?>');"></div>
                                 </a>
                             </div>
