@@ -23,13 +23,13 @@
                                     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
                                          style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
                                 </a>
-                                <a class="block font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px] hover:text-[#3BA17C] transition-colors"
-                                   href="<?= get_permalink(); ?>">
-                                    <?= the_title(); ?>
+                                <a class="block mb-[12px] group/title"
+                                   href="<?= get_permalink(); ?>" title="<?= the_title(); ?>">
+                                    <span class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] group-hover/title:text-[#3BA17C] transition-colors line-clamp-2"><?= the_title(); ?></span>
                                 </a>
-                                <div class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px]"
-                                   href="<?= get_permalink(); ?>">
-                                    <?= get_the_excerpt(); ?>
+                                <div class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] "
+                                     href="<?= get_permalink(); ?>">
+                                    <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                 </div>
                                 <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
                                    href="<?= get_permalink(); ?>">Read More</a>
