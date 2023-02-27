@@ -1,6 +1,6 @@
 {
     "key": "group_6372202aeb8eb",
-    "title": "Page - Talent",
+    "title": "Page - Careers",
     "fields": [
         {
             "key": "field_63760d9a6855f",
@@ -1301,7 +1301,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "talent.php"
+                "value": "careers.php"
             }
         ]
     ],
@@ -1314,5 +1314,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673458788
+    "modified": 1677505257
 }
