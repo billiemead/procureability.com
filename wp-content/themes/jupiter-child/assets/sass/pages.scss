@@ -442,12 +442,13 @@
               color: #0098AE;
               transition: .2s all linear;
               text-decoration: underline;
+              text-decoration-color: #0098AE;
               text-decoration-style: dotted;
               text-underline-offset: 4px;
               text-decoration-thickness: 1px;
 
               &:hover {
-                text-decoration: none;
+                text-decoration-color: transparent;
               }
             }
           }
