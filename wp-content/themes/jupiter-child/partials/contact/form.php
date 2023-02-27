@@ -37,14 +37,16 @@
                                         <li class="m-0">
                                             <button class="block w-full py-2 px-4 bg-transparent border-none text-left hover:bg-gray-100"
                                                     data-x-on:click="open = false; value = null; $dispatch('hubspot-service', { message: '' })"
-                                            ><?= $cta_first_form_select['placeholder']; ?></button>
+                                            ><span class="font-poppins"><?= $cta_first_form_select['placeholder']; ?></span></button>
                                         </li>
                                     <?php endif; ?>
                                     <?php foreach ($cta_first_form_select['services'] as $service) : ?>
                                         <li class="m-0">
                                             <button
                                                     class="block w-full py-2 px-4 bg-transparent border-none text-left hover:bg-gray-100"
-                                                    data-x-on:click="open = false; value = '<?= $service['service']; ?>'; $dispatch('hubspot-service', { message: '<?= $service['service']; ?>' })"><?= $service['service']; ?></button>
+                                                    data-x-on:click="open = false; value = '<?= $service['service']; ?>'; $dispatch('hubspot-service', { message: '<?= $service['service']; ?>' })">
+                                                <span class="font-poppins"><?= $service['service']; ?></span>
+                                            </button>
                                         </li>
                                     <?php endforeach; ?>
                                 </ul>
