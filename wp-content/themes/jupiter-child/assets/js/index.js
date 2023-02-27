@@ -114,15 +114,10 @@ $(function () {
         removalDelay: 500,
         overflowY: 'scroll',
         autoFocusLast: false,
+        fixedContentPos: true,
         callbacks: {
             beforeOpen: function () {
                 this.st.mainClass = this.st.el.attr('data-effect');
-            },
-            close: function () {
-                clearAllBodyScrollLocks();
-            },
-            open: function () {
-                enableBodyScroll(this.content);
             }
         }
     });
