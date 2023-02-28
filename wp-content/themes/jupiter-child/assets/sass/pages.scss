@@ -227,16 +227,16 @@
         }
       }
 
-      sup {
-        font-size: 10px;
-        top: 0;
-        left: 1px;
-        margin-right: 1px;
-      }
-
       + ul {
         margin-top: -16px;
       }
+    }
+
+    sup {
+      font-size: 10px;
+      top: 0;
+      left: 1px;
+      margin-right: 1px;
     }
 
     div.with-sup {
