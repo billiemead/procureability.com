@@ -20,17 +20,22 @@
     <section class="pt-[20px] pb-[40px] md:pb-[72px]">
         <div class="max-w-[930px] px-[15px] mx-auto">
             <?php if ($cta_subscribe || $cta_login) : ?>
-                <div class="md:flex md:justify-center">
-                    <div class="mb-[22px] md:mb-0 md:w-6/12 lg:w-3/12 px-[15px] box-border text-center md:!text-right">
-                        <a target="<?= $cta_subscribe['target'] ?: '_self'; ?>"
-                           class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(87,172,133)] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 duration-[.2s] ease-in-out"
-                           href="<?= $cta_subscribe['url']; ?>"><?= $cta_subscribe['title']; ?></a>
-                    </div>
-                    <div class="md:w-6/12 lg:w-3/12 px-[15px] box-border text-center md:!text-left">
-                        <a target="<?= $cta_login['target'] ?: '_self'; ?>"
-                           class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(56,161,181)] hover:text-white hover:bg-[rgb(56,161,181)] border-[rgb(56,161,181)] border-solid border-2 duration-[.2s] ease-in-out"
-                           href="<?= $cta_login['url']; ?>"><?= $cta_login['title']; ?></a>
-                    </div>
+                <div class="text-center grid md:auto-cols-max md:grid-flow-col md:justify-center gap-[30px]">
+                    <?php if ($cta_subscribe) : ?>
+                        <div class="min-w-[0px]">
+                            <a target="<?= $cta_subscribe['target'] ?: '_self'; ?>"
+                               class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(87,172,133)] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 duration-[.2s] ease-in-out"
+                               href="<?= $cta_subscribe['url']; ?>"><?= $cta_subscribe['title']; ?></a>
+
+                        </div>
+                    <?php endif; ?>
+                    <?php if ($cta_login) : ?>
+                        <div class="min-w-[0px]">
+                            <a target="<?= $cta_login['target'] ?: '_self'; ?>"
+                               class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(56,161,181)] hover:text-white hover:bg-[rgb(56,161,181)] border-[rgb(56,161,181)] border-solid border-2 duration-[.2s] ease-in-out"
+                               href="<?= $cta_login['url']; ?>"><?= $cta_login['title']; ?></a>
+                        </div>
+                    <?php endif; ?>
                 </div>
             <?php endif; ?>
         </div>
