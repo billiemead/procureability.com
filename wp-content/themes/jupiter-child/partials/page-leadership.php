@@ -1,14 +1,16 @@
 <?php $leadership_section_title = get_field('leadership_title'); ?>
 <?php $leadership_people = get_field('leadership_people'); ?>
 
-<section class="pt-[32px] xl:pt-[80px] pb-[40px] xl:pb-[90px]">
-    <div class="px-[33px] xl:px-0 max-w-[1180px] mx-auto">
-        <div class="text-center mb-[24px] xl:mb-[48px]">
-            <span class="text-[#f7941f] text-[24px] font-[500] xl:text-[34px] leading-[1.47] xl:font-[600]"><?= $leadership_section_title; ?></span>
-        </div>
-        <div class="max-w-[180px] md:max-w-[398px] xl:max-w-[755px] mx-auto relative">
-            <div id="ourProfessionalTeam" class="swiper">
-                <?php if ($leadership_people): ?>
+<?php if ($leadership_people) : ?>
+    <section class="pt-[32px] xl:pt-[80px] pb-[40px] xl:pb-[90px]">
+        <div class="px-[33px] xl:px-0 max-w-[1180px] mx-auto">
+            <?php if ($leadership_section_title) : ?>
+                <div class="text-center mb-[24px] xl:mb-[48px]">
+                    <span class="text-[#f7941f] text-[24px] font-[500] xl:text-[34px] leading-[1.47] xl:font-[600]"><?= $leadership_section_title; ?></span>
+                </div>
+            <?php endif; ?>
+            <div class="max-w-[180px] md:max-w-[398px] xl:max-w-[755px] mx-auto relative">
+                <div id="ourProfessionalTeam" class="swiper">
                     <div class="swiper-wrapper xl:flex xl:justify-center">
                         <?php foreach ($leadership_people as $key => $post_id) : ?>
                             <div class="swiper-slide xl:!w-[192px]">
@@ -34,26 +36,23 @@
                             </div>
                         <?php endforeach; ?>
                     </div>
-                <?php endif; ?>
-                <div class="xl:hidden swiper-pagination"></div>
+                    <div class="xl:hidden swiper-pagination"></div>
+                </div>
+                <button id="ourProfessionalTeamPrevButton"
+                        class="swiper-button-prev after:!content-none xl:!hidden absolute !left-[-64px] md:!left-[-119px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                        <path d="M14.25 1.5L6.25 9.5L14.25 17.5" stroke="#61636B" stroke-width="1.6"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button id="ourProfessionalTeamNextButton"
+                        class="swiper-button-next after:!content-none xl:!hidden absolute !right-[-64px] md:!right-[-100px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.25 1.5L13.25 9.5L5.25 17.5" stroke="#61636B" stroke-width="1.6"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
-            <button id="ourProfessionalTeamPrevButton"
-                    class="swiper-button-prev after:!content-none xl:!hidden absolute !left-[-64px] md:!left-[-119px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                    <path d="M14.25 1.5L6.25 9.5L14.25 17.5" stroke="#61636B" stroke-width="1.6"
-                          stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-            <button id="ourProfessionalTeamNextButton"
-                    class="swiper-button-next after:!content-none xl:!hidden absolute !right-[-64px] md:!right-[-100px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
-                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.25 1.5L13.25 9.5L5.25 17.5" stroke="#61636B" stroke-width="1.6"
-                          stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-
-        <?php if ($leadership_people): ?>
 
             <?php foreach ($leadership_people as $key => $post_id):
                 $permalink = get_permalink($post_id);
@@ -81,6 +80,6 @@
                 </div>
             <?php endforeach; ?>
 
-        <?php endif; ?>
-    </div>
-</section>
+        </div>
+    </section>
+<?php endif; ?>
