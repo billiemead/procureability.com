@@ -10,7 +10,7 @@
 <section class="pt-[35px] pb-[40px] xl:pt-[70px] xl:pb-[80px]">
     <div class="max-w-[984px] px-[15px] mx-auto">
         <h1 class="font-poppins text-[32px] xl:text-[38px] leading-[1.2] font-[600] text-[#393A40] mb-[0.66em]"><?= get_the_title(); ?></h1>
-        <div class="[&_p]:text-[18px] xl:[&_p]:text-[22px] [&_p]:leading-[1.6] [&_p]:text-[#393A40] [&_p]:mb-[1.14em] [&_p:last-child]:mb-0">
+        <div class="[&_p]:!font-poppins [&_p]:text-[18px] xl:[&_p]:text-[22px] [&_p]:leading-[1.6] [&_p]:text-[#393A40] [&_p]:mb-[1.14em] [&_p:last-child]:mb-0">
             <?php the_content(); ?>
         </div>
     </div>
@@ -31,13 +31,13 @@
                                 </div>
                             </a>
                             <div class="py-[24px] px-[24px] xl:py-[50px] xl:pl-[51px] xl:pr-[25px]">
-                                <div class="text-[22px] leading-[1.3] text-[#393A40] font-[500] mb-[1.14em]">
+                                <a href="<?= get_permalink($selected_post); ?>" class="font-poppins block text-[22px] leading-[1.3] text-[#393A40] font-[500] mb-[1.14em]">
                                     <?= $selected_post->post_title; ?>
-                                </div>
-                                <div class="text-[18px] leading-[1.4] text-[#61636B]">
+                                </a>
+                                <div class="font-poppins text-[18px] leading-[1.4] text-[#61636B]">
                                     <?= $selected_post->post_excerpt; ?>
                                 </div>
-                                <a class="text-[18px] leading-[1.27] text-transparent hover:text-transparent bg-clip-text brand-text-gradient inline-block mt-[1.6em] transition-all ease-in-out duration-300 relative after:content-[''] after:absolute after:w-full after:border-b-2 after:border-t-0 after:border-l-0 after:border-r-0 after:border-b-[#0098AE] after:opacity-100 after:block after:border-dotted hover:after:opacity-0 after:transition-all"
+                                <a class="font-poppins text-[18px] leading-[1.27] text-transparent hover:text-transparent bg-clip-text brand-text-gradient inline-block mt-[1.6em] transition-all ease-in-out duration-300 relative after:content-[''] after:absolute after:w-full after:border-b-2 after:border-t-0 after:border-l-0 after:border-r-0 after:border-b-[#0098AE] after:opacity-100 after:block after:border-dotted hover:after:opacity-0 after:transition-all"
                                    href="<?= get_permalink($selected_post); ?>">Learn More</a>
                             </div>
                         </div>
