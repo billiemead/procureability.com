@@ -41,13 +41,14 @@
   }
 
   & > .wp-video {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border: 3px solid #0095b0;
 
     @media (min-width: 1024px) {
       float: right;
       width: 365px !important;
-      padding-left: 30px;
-      padding-bottom: 15px;
+      margin-left: 30px;
+      margin-bottom: 15px;
     }
 
     .mejs-video .mejs-controls {
@@ -56,9 +57,6 @@
 
     .mejs-video .mejs-overlay-button {
       visibility: hidden;
-    }
-    .video-border-styles .mk-text-block {
-      border: 3px solid #0095b0;
     }
   }
 }
