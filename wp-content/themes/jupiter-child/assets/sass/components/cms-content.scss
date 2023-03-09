@@ -49,5 +49,16 @@
       padding-left: 30px;
       padding-bottom: 15px;
     }
+
+    .mejs-video .mejs-controls {
+      opacity: 0;
+    }
+
+    .mejs-video .mejs-overlay-button {
+      visibility: hidden;
+    }
+    .video-border-styles .mk-text-block {
+      border: 3px solid #0095b0;
+    }
   }
 }
