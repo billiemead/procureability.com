@@ -37,14 +37,14 @@ get_header();
 
     <section class="cp-approach" id="video">
         <div class="container">
-            <div class="cp-approach__wrapper d-flex">
-                <div class="cp-approach__desc">
+            <div>
+                <div>
                     <h4 class="cp-approach__title text-gradient"><?= $approach['title'] ?></h4>
 
-                    <div class="cp-approach__text"><?= $approach['text'] ?></div>
+                    <div class="cms-content [&_p]:!mb-[20px]"><?= $approach['text'] ?></div>
                 </div>
 
-                <div class="cp-approach__scl">
+                <div class="hidden cp-approach__scl">
                     <!--                    --><?php //echo do_shortcode('[sharethis-inline-buttons]') ?>
                     <div class="cp-approach__list">
                         <div class="cp-approach__item">
