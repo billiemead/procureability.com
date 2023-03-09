@@ -37,4 +37,15 @@
       }
     }
   }
+
+  .wp-video {
+    padding-bottom: 30px;
+
+    @media (min-width: 1024px) {
+      float: right;
+      width: 365px;
+      padding-left: 30px;
+      padding-bottom: 15px;
+    }
+  }
 }
