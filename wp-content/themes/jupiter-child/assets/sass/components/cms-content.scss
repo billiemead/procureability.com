@@ -43,6 +43,7 @@
   & > .wp-video {
     margin-bottom: 30px;
     border: 3px solid #0095b0;
+    box-sizing: border-box;
 
     @media (min-width: 1024px) {
       float: right;
