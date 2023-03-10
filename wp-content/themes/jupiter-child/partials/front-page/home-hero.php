@@ -12,9 +12,9 @@
 <?php $frontpage_hero_ukraine_popup_text = get_field('frontpage_hero_ukraine_popup_text'); ?>
 
 <section
-        class="bg-no-repeat bg-center bg-[auto_125%] xl:bg-cover xxl:bg-[center_top_20%]"
+        class="bg-no-repeat bg-center bg-[auto_125%] xl:bg-cover xl:bg-[center_top_16%]"
         style="background-image: url('<?= $frontpage_hero_background_image['url'] ?>')">
-    <div class="pt-[104px] md:pt-[133px] xl:pt-[213px] pb-[60px] md:pb-[74px] xl:pb-[150px]">
+    <div class="pt-[104px] md:pt-[133px] xl:pt-[250px] pb-[60px] md:pb-[74px] xl:pb-[150px]">
         <div class="px-[34px] xl:max-w-[1096px] mx-auto">
             <h1 class="text-center font-poppins text-white text-[28px] md:text-[42px] leading-[1.2] md:leading-[1.27] font-[600] mb-[16px]">
                 <?= $frontpage_hero_title; ?>
