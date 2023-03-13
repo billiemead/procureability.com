@@ -7,11 +7,13 @@ $cta_file_download_button = get_field('cta_file_download_button');
 ?>
 
 <?php if ($cta_file_download_title || $cta_file_download_text || $cta_file_download_button) : ?>
-    <section class="pb-[80px] md:pb-[120px]">
+    <section class="pb-[40px] md:pb-[120px]">
         <div class="max-w-[1200px] px-[15px] mx-auto">
-            <div class="bg-[#FAFAFB] border border-[#0098AE] border-solid shadow-[0px_16px_50px_rgba(19,131,156,0.1)] py-[35px] md:py-[77px] px-[25px] bg-no-repeat bg-[bottom_-275px_right_-275px] md:bg-[bottom_-235px_right_-235px]"
-                 style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/branding-star-bold-predictions.svg')">
-                <div class="max-w-[564px] mx-auto">
+            <div class="bg-[#FAFAFB] border border-[#0098AE] border-solid shadow-[0px_16px_50px_rgba(19,131,156,0.1)] py-[35px] md:py-[77px] px-[25px] relative  "
+            >
+                <div class="hidden md:block absolute inset-0 bg-no-repeat bg-[bottom_-235px_right_-235px]"
+                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/branding-star-bold-predictions.svg')"></div>
+                <div class="max-w-[564px] mx-auto relative">
                     <?php if ($cta_file_download_title) : ?>
                         <div class="text-center mb-[16px]">
                             <div class="font-poppins font-semibold text-[32px] leading-[1.3] brand-text-gradient text-transparent bg-clip-text"><?= $cta_file_download_title; ?></div>

@@ -1,6 +1,6 @@
 <?php $selected_posts = get_field('posts'); ?>
 <?php if ($selected_posts) : ?>
-    <section class="pb-[80px]">
+    <section class="pb-[40px] md:pb-[80px]">
         <div class="max-w-[1200px] px-[15px] mx-auto">
             <ul class="list-none m-0 space-y-[32px] xl:space-y-[64px]">
                 <?php foreach ($selected_posts as $selected_post) : ?>
