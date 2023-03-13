@@ -7,7 +7,7 @@
                     <li class="mx-0">
                         <div class="md:flex bg-[#FAFAFB] rounded-[6px] md:min-h-[200px] xl:min-h-[336px]">
                             <a href="<?= get_permalink($selected_post); ?>"
-                               class="block md:min-w-[calc(100%-(100%/1.618))] xl:min-w-[565px]">
+                               class="block md:min-w-[calc(100%-(100%/1.618))] xl:min-w-[464px]">
                                 <div class="relative pt-[72.41%] md:h-full md:pt-0 xl:h-auto xl:pt-[72.41%] bg-cover bg-center overflow-hidden z-20">
                                     <div class="absolute inset-0 bg-cover bg-center hover:scale-110 transition-transform ease-in-out duration-300 z-10"
                                          style="background-image: url('<?= get_the_post_thumbnail_url($selected_post, 'full'); ?>')"></div>
