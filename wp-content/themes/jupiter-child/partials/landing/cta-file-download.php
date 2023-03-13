@@ -8,7 +8,7 @@ $cta_file_download_button = get_field('cta_file_download_button');
 
 <?php if ($cta_file_download_title || $cta_file_download_text || $cta_file_download_button) : ?>
     <section class="pb-[40px] md:pb-[120px]">
-        <div class="max-w-[1200px] px-[15px] mx-auto">
+        <div class="max-w-[984px] px-[15px] mx-auto">
             <div class="bg-[#FAFAFB] border border-[#0098AE] border-solid shadow-[0px_16px_50px_rgba(19,131,156,0.1)] py-[35px] md:py-[77px] px-[25px] relative  "
             >
                 <div class="hidden md:block absolute inset-0 bg-no-repeat bg-[bottom_-235px_right_-235px]"
