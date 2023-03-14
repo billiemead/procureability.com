@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 
     <!--Hero-->
-<?php get_template_part('partials/page', 'hero'); ?>
+<?php get_template_part('partials/page-hero-with-team-photo'); ?>
     <!--Hero-->
 
 <?php if (have_posts()) : ?>
