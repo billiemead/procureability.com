@@ -1,4 +1,6 @@
 .cms-content {
+  overflow: hidden;
+
   h2, h3 {
     color: #404040;
     font-weight: 600;
@@ -35,6 +37,39 @@
         float: none !important;
         margin-left: 0 !important;
       }
+    }
+  }
+
+  & > .wp-video {
+    margin-bottom: 30px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 3px solid #0095b0;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    @media (min-width: 1024px) {
+      float: right;
+      width: 365px !important;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+
+    .mejs-video .mejs-controls {
+      opacity: 0;
+    }
+
+    .mejs-video .mejs-overlay-button {
+      visibility: hidden;
     }
   }
 }

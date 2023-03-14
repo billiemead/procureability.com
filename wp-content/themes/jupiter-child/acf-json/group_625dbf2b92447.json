@@ -60,7 +60,7 @@
                     "label": "Text",
                     "name": "text",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -70,10 +70,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": "br"
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 },
                 {
                     "key": "field_625db9d75f0f6",
@@ -2043,5 +2043,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671123190
+    "modified": 1678383274
 }
