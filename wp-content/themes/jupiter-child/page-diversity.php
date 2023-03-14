@@ -15,9 +15,16 @@ $insights = get_field('insights');
 
 ?>
 <div class="custom-page diversity-page">
-    <!--Hero-->
-    <?php get_template_part('partials/page', 'hero'); ?>
-    <!--Hero-->
+  <section class="hero">
+    <div class="hero__bg"
+         style="background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/diversity-page/hero-bg.jpg')"></div>
+
+    <div class="container">
+      <div class="hero__wrapper d-flex flex-column justify-content-center align-items-center">
+        <h1 class="hero__title text-center hero-text-gradient"><?php the_title(); ?></h1>
+      </div>
+    </div>
+  </section>
 
   <section class="cp-about">
     <div class="cp-about__bg"
@@ -27,7 +34,7 @@ $insights = get_field('insights');
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-12">
-          <h1 class="cp-about__title"><?= $about['title'] ?></h1>
+          <h3 class="cp-about__title"><?= $about['title'] ?></h3>
 
           <ul class="cp-about__list">
             <?php
