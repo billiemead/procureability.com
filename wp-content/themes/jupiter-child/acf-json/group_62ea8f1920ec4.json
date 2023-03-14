@@ -256,13 +256,6 @@
                 "operator": "==",
                 "value": "page-diversity.php"
             }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "about.php"
-            }
         ]
     ],
     "menu_order": 0,
@@ -274,5 +267,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678730519
+    "modified": 1678729804
 }
