@@ -204,10 +204,10 @@
         },
         {
             "key": "field_640efaa533db8",
-            "label": "Button",
-            "name": "cta_file_download_button",
+            "label": "Button text",
+            "name": "cta_file_download_button_text",
             "aria-label": "",
-            "type": "link",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -216,7 +216,31 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64118e145a4d6",
+            "label": "Content (real3dflipbook)",
+            "name": "cta_file_download_real3dflipbook",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -237,5 +261,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678705421
+    "modified": 1678872217
 }

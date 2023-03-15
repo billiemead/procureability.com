@@ -2,11 +2,12 @@
 
 $cta_file_download_title = get_field('cta_file_download_title');
 $cta_file_download_text = get_field('cta_file_download_text');
-$cta_file_download_button = get_field('cta_file_download_button');
+$cta_file_download_button_text = get_field('cta_file_download_button_text');
+$cta_file_download_real3dflipbook = get_field('cta_file_download_real3dflipbook');
 
 ?>
 
-<?php if ($cta_file_download_title || $cta_file_download_text || $cta_file_download_button) : ?>
+<?php if ($cta_file_download_title || $cta_file_download_text || ($cta_file_download_button_text && $cta_file_download_real3dflipbook)) : ?>
     <section class="pb-[40px] md:pb-[120px]">
         <div class="max-w-[984px] px-[15px] mx-auto">
             <div class="bg-[#FAFAFB] border border-[#0098AE] border-solid shadow-[0px_16px_50px_rgba(19,131,156,0.1)] py-[35px] md:py-[45px] px-[25px] relative  "
@@ -24,18 +25,18 @@ $cta_file_download_button = get_field('cta_file_download_button');
                             <div class="[&_p]:!font-poppins [&_p]:text-[#61636B] md:[&_p]:!text-[24px] [&_p]:text-[18px] [&_p]:leading-[1.64] [&_p]:last:mb-0"><?= $cta_file_download_text; ?></div>
                         </div>
                     <?php endif; ?>
-                    <?php if ($cta_file_download_button) : ?>
-                        <div class="text-center">
-                            <a class="inline-block pt-[13px] pb-[11px] px-[47px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
-                               target="<?= $cta_file_download_button['target'] ?: '_self'; ?>"
-                               href="<?= $cta_file_download_button['url']; ?>"
-                               download
-                            >
-                                <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
-                                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
-                                ></div>
-                                <span class="relative font-poppins text-white text-[18px] leading-[1.51] font-semibold uppercase tracking-[0.1em]"><?= $cta_file_download_button['title']; ?></span>
-                            </a>
+                    <?php if ($cta_file_download_button_text && $cta_file_download_real3dflipbook) : ?>
+                        <div>
+                            <div class="hidden"><?= $cta_file_download_real3dflipbook ?></div>
+                            <div class="text-center">
+                                <button class="real3dflipbook-trigger inline-block pt-[13px] pb-[11px] px-[47px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
+                                >
+                                    <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
+                                         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
+                                    ></div>
+                                    <span class="relative font-poppins text-white text-[18px] leading-[1.51] font-semibold uppercase tracking-[0.1em]"><?= $cta_file_download_button_text; ?></span>
+                                </button>
+                            </div>
                         </div>
                     <?php endif; ?>
                 </div>
