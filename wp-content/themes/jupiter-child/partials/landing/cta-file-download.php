@@ -29,7 +29,6 @@ $cta_file_download_button = get_field('cta_file_download_button');
                             <a class="inline-block pt-[13px] pb-[11px] px-[47px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
                                target="<?= $cta_file_download_button['target'] ?: '_self'; ?>"
                                href="<?= $cta_file_download_button['url']; ?>"
-                               download
                             >
                                 <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
