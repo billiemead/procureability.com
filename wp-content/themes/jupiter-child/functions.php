@@ -647,8 +647,8 @@ if (!function_exists('is_transparent_header')) {
         if (in_array($post_type, array('post', 'leadership'))) {
             return false;
         }
-
-        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'thank-you-digital', 'thank-you', 'hire-a-temporary-resource', 'video', 'privacy-policy', 'contact', 'subscribe', 'procurement-services-provider');
+        
+        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'thank-you-digital', 'thank-you', 'hire-a-temporary-resource', 'video', 'privacy-policy', 'contact', 'subscribe', 'leadership');
 
         if (is_page($pages_slug)) {
             return false;
