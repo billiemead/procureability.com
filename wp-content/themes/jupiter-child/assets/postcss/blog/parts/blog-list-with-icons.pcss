@@ -24,6 +24,25 @@
             color: #393A40;
             margin-bottom: 8px;
             text-align: left !important;
+
+            a {
+                color: #717171;
+                border-bottom: 1px dotted #717171;
+                transition: .2s all linear;
+
+                &:hover {
+                    border-bottom-color: transparent;
+                }
+
+                &.blue-anchor {
+                    color: #0098ae;
+                    border-bottom: 1px dotted #0098ae;
+
+                    &:hover {
+                        border-bottom-color: transparent;
+                    }
+                }
+            }
         }
 
         .blog-list-with-icons__text {
