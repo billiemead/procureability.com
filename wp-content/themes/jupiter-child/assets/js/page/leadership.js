@@ -13,6 +13,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
     }
 });
 
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", (event) => {
     const bubblesContainer = document.getElementById('bubbles');
 
@@ -74,10 +75,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 });
 
+=======
+>>>>>>> d7ea95b... [*] leadership new design
 document.addEventListener('alpine:init', () => {
     Alpine.data('leadership', () => ({
         showModal: false,
         slider: null,
+<<<<<<< HEAD
         active: null,
         URLContainsTeamHash() {
             const hash = window.location.hash;
@@ -103,6 +107,17 @@ document.addEventListener('alpine:init', () => {
                     init: swiper => {
                         if (this.active && Number.isInteger(this.active)) {
                             swiper.slideTo(this.active, 0)
+=======
+        init() {
+            this.slider = new Swiper('#slider', {
+                loop: false,
+                slidesPerView: 1,
+                autoHeight: true,
+                on: {
+                    init: swiper => {
+                        if (params.item) {
+                            swiper.slideTo(params.item, 0)
+>>>>>>> d7ea95b... [*] leadership new design
                             this.toggleModal();
                             this.$lockbody(this.$refs.modal);
                         }
@@ -117,6 +132,7 @@ document.addEventListener('alpine:init', () => {
             this.showModal = !this.showModal;
         },
         change(name) {
+<<<<<<< HEAD
             this.active = name;
             window.location.hash = `#team-${name}`;
         },
@@ -133,13 +149,26 @@ document.addEventListener('alpine:init', () => {
                 window.location.href = url;
                 return true;
             }
+=======
+            params.item = name;
+        },
+        handleClick(id) {
+            this.change(id)
+            this.slider.slideTo(id, 0);
+            this.toggleModal();
+            this.$lockbody(this.$refs.modal);
+>>>>>>> d7ea95b... [*] leadership new design
         },
         closeModel() {
             this.showModal = false
             this.$unlockbody(this.$refs.modal);
+<<<<<<< HEAD
             this.active = null;
             const urlWithoutHash = window.location.href.split("#")[0];
             window.history.pushState("", document.title, urlWithoutHash);
+=======
+            params.item = null;
+>>>>>>> d7ea95b... [*] leadership new design
         }
     }));
 });
