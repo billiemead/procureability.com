@@ -5,7 +5,7 @@
 <?php $hero_industry_button = get_field('hero_industry_button'); ?>
 
 <!--hero-->
-<section class="pt-[185px] pb-[110px] xl:pt-[230px] bg-no-repeat bg-[left_40%_center] md:bg-[left_25%_top_-35%] xl:bg-[center_top_20%] xxl:bg-[center_top_30%] bg-cover"
+<section class="pt-[185px] pb-[45px] xl:pt-[170px] bg-no-repeat bg-cover"
          style="background-image: url(<?= $hero_background_image['url']; ?>)">
     <div class="max-w-[1010px] mx-auto px-[15px]">
         <div class="text-center mb-[8px]">
