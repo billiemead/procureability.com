@@ -25,8 +25,8 @@ get_header();
 
 <div class="custom-page managed-services-page">
     <section class="hero">
-        <div class="hero__bg"
-             style="background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/managed-services/hero-bg.jpg')"></div>
+        <div class="hero__bg--managed-services"
+             style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/managed-services/header-ver2.jpg')"></div>
 
         <div class="container">
             <div class="hero__wrapper d-flex flex-column justify-content-center align-items-center">

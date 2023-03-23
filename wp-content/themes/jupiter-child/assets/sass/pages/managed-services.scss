@@ -47,7 +47,7 @@
     border-radius: 3px;
     text-transform: uppercase;
     background: url('/wp-content/themes/jupiter-child/dist/img/pages/managed-services/btn-bg-1.png') no-repeat 50% 50%,
-                linear-gradient(267.71deg, rgba(30, 220, 83, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%), #3BA17C;
+    linear-gradient(267.71deg, rgba(30, 220, 83, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%), #3BA17C;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -58,7 +58,7 @@
 
     &_type2 {
       background: url('/wp-content/themes/jupiter-child/dist/img/pages/managed-services/btn-bg-2.png') no-repeat 50% 50%,
-                  linear-gradient(267.71deg, rgba(30, 220, 83, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%), #3BA17C;
+      linear-gradient(267.71deg, rgba(30, 220, 83, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%), #3BA17C;
       background-size: cover;
 
       &:hover {
@@ -68,7 +68,7 @@
 
     &_type3 {
       background: url('/wp-content/themes/jupiter-child/dist/img/pages/managed-services/btn-bg-3.png') no-repeat 50% 50%,
-                  linear-gradient(267.71deg, rgba(30, 220, 83, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%), #3BA17C;
+      linear-gradient(267.71deg, rgba(30, 220, 83, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%), #3BA17C;
       background-size: cover;
 
       &:hover {
@@ -89,15 +89,21 @@
         max-width: 270px;
         margin: 0 auto;
       }
+
+      @media (min-width: 768px) {
+        font-size: 45px;
+      }
     }
 
-    &__bg {
-      background-position: 50% 38%;
-
-      @media (max-width: 767px) {
-        background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/managed-services/hero-bg-mobile.jpg') !important;
-        background-position: 19% 38%;
-      }
+    &__bg--managed-services {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -357,11 +363,11 @@
       margin-bottom: 32px;
 
       br {
-         + br {
-           display: block;
-           content: '';
-           height: 16px;
-         }
+        + br {
+          display: block;
+          content: '';
+          height: 16px;
+        }
       }
 
       @media (max-width: 767px) {
@@ -758,7 +764,7 @@
       padding: 0 8px;
 
       @media (max-width: 767px) {
-        padding : 1px 2px;
+        padding: 1px 2px;
       }
     }
 
@@ -1206,7 +1212,7 @@
       line-height: 1.5;
 
       @media (max-width: 767px) {
-       font-size: 14px;
+        font-size: 14px;
       }
     }
 

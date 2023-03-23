@@ -4,55 +4,47 @@
 <?php get_template_part('partials/page', 'hero'); ?>
     <!--!Hero-->
 
+
     <!--Content-->
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-        <?php get_template_part('partials/page', 'content'); ?>
-    <?php endwhile; ?>
-<?php endif; ?>
-    <!--!Content-->
-
-    <!--CTA-->
-<?php $cta_subscribe = get_field('cta_subscribe'); ?>
-<?php $cta_login = get_field('cta_login'); ?>
-
-<?php if ($cta_subscribe || $cta_login) : ?>
-    <section class="pt-[20px] pb-[40px] md:pb-[72px]">
-        <div class="max-w-[930px] px-[15px] mx-auto">
-            <?php if ($cta_subscribe || $cta_login) : ?>
-                <div class="text-center grid md:auto-cols-max md:grid-flow-col md:justify-center gap-[30px]">
-                    <?php if ($cta_subscribe) : ?>
-                        <div class="min-w-[0px]">
-                            <a target="<?= $cta_subscribe['target'] ?: '_self'; ?>"
-                               class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(87,172,133)] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 duration-[.2s] ease-in-out"
-                               href="<?= $cta_subscribe['url']; ?>"><?= $cta_subscribe['title']; ?></a>
-
+        <section class="pb-[77px] pt-[35px]">
+            <div class="max-w-[930px] px-[15px] mx-auto">
+                <div class="grid sm:grid-cols-[auto_312px] gap-[30px]">
+                    <div>
+                        <div class="max-w-[353px]">
+                            <h1 class="section-h1"><?= get_the_title(); ?></h1>
+                            <?php $post_cta_content_content = get_field('post_cta_content_content'); ?>
+                            <?php if ($post_cta_content_content) : ?>
+                                <div class="[&_p]:!font-poppins [&_p]:text-[14px] [&_p]:leading-[1.4] [&_p]:text-[#393A40] [&_a]:!font-poppins [&_a]:text-[#393A40] [&_a]:!underline [&_a]:hover:decoration-transparent [&_a]:transition-colors">
+                                    <?= $post_cta_content_content; ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
-                    <?php endif; ?>
-                    <?php if ($cta_login) : ?>
-                        <div class="min-w-[0px]">
-                            <a target="<?= $cta_login['target'] ?: '_self'; ?>"
-                               class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(56,161,181)] hover:text-white hover:bg-[rgb(56,161,181)] border-[rgb(56,161,181)] border-solid border-2 duration-[.2s] ease-in-out"
-                               href="<?= $cta_login['url']; ?>"><?= $cta_login['title']; ?></a>
+                        <?php $cta_subscribe = get_field('cta_subscribe'); ?>
+                        <?php if ($cta_subscribe) : ?>
+                            <div class="mt-[30px]">
+                                <div class="min-w-[0px]">
+                                    <a target="<?= $cta_subscribe['target'] ?: '_self'; ?>"
+                                       class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(87,172,133)] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 duration-[.2s] ease-in-out"
+                                       href="<?= $cta_subscribe['url']; ?>"><?= $cta_subscribe['title']; ?></a>
+
+                                </div>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                    <?php $cta_image = get_field('cta_image'); ?>
+                    <?php if ($cta_image) : ?>
+                        <div>
+                            <?= wp_get_attachment_image($cta_image['ID'], 'full', false, array('class' => 'block w-full h-auto max-w-full')); ?>
                         </div>
                     <?php endif; ?>
                 </div>
-            <?php endif; ?>
-        </div>
-    </section>
-<?php endif; ?>
-    <!--!CTA-->
-
-    <!--POST CTA CONTENT-->
-<?php $post_cta_content_content = get_field('post_cta_content_content'); ?>
-    <section class="pb-[20px] md:pb-[60px]">
-        <div class="max-w-[930px] px-[15px] mx-auto">
-            <div class="cms-content">
-                <?= $post_cta_content_content; ?>
             </div>
-        </div>
-    </section>
-    <!--POST CTA CONTENT-->
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>
+    <!--!Content-->
 
 <?php
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
