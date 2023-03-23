@@ -6,6 +6,7 @@
             "key": "field_5cc62fcc27932",
             "label": "Leadership Name",
             "name": "leadership_name",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -25,6 +26,7 @@
             "key": "field_5cc6301b27933",
             "label": "Leadership Title",
             "name": "leadership_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -44,6 +46,7 @@
             "key": "field_5cc6303427934",
             "label": "Leadership Bio",
             "name": "leadership_bio",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 1,
@@ -63,6 +66,7 @@
             "key": "field_5cc63dee28025",
             "label": "Leadership Casual Image",
             "name": "leadership_casual_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -82,6 +86,77 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_641b73fd51a43",
+            "label": "Leadership Socials",
+            "name": "leadership_socials",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_641b740e51a44",
+                    "label": "Network",
+                    "name": "network",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "linkedin": "Linkedin"
+                    },
+                    "default_value": false,
+                    "return_format": "array",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_641b73fd51a43"
+                },
+                {
+                    "key": "field_641b746e51a45",
+                    "label": "URL",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_641b73fd51a43"
+                }
+            ]
         }
     ],
     "location": [
@@ -102,5 +177,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1666472368
+    "modified": 1679522059
 }

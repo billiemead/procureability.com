@@ -19,7 +19,7 @@ document.addEventListener('alpine:init', () => {
         showModal: false,
         slider: null,
         active: null,
-        checkIfURLContainsTeamHash() {
+        URLContainsTeamHash() {
             const hash = window.location.hash;
 
             if (/^#team-\d+$/.test(hash)) {
@@ -30,20 +30,18 @@ document.addEventListener('alpine:init', () => {
         },
         init() {
 
-            this.active = this.checkIfURLContainsTeamHash();
+            this.active = this.URLContainsTeamHash();
 
             this.slider = new Swiper('#slider', {
                 loop: false,
                 slidesPerView: 1,
-                // autoHeight: true,
-                active: null,
                 navigation: {
                     prevEl: '#teamSliderPrev',
                     nextEl: '#teamSliderNext'
                 },
                 on: {
                     init: swiper => {
-                        if (Number.isInteger(this.active)) {
+                        if (this.active && Number.isInteger(this.active)) {
                             swiper.slideTo(this.active, 0)
                             this.toggleModal();
                             this.$lockbody(this.$refs.modal);
@@ -62,11 +60,19 @@ document.addEventListener('alpine:init', () => {
             this.active = name;
             window.location.hash = `#team-${name}`;
         },
-        handleClick(id) {
-            this.change(id)
-            this.slider.slideTo(id, 0);
-            this.toggleModal();
-            this.$lockbody(this.$refs.modal);
+        handleClick(event, id, url) {
+
+            const viewportWidth = window.innerWidth;
+            if (viewportWidth >= 1024) {
+                this.change(id)
+                this.slider.slideTo(id, 0);
+                this.toggleModal();
+                this.$lockbody(this.$refs.modal);
+            } else {
+                event.stopImmediatePropagation();
+                window.location.href = url;
+                return true;
+            }
         },
         closeModel() {
             this.showModal = false

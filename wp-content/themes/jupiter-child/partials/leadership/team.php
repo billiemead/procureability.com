@@ -10,9 +10,7 @@
                 <?php foreach ($team as $key => $post): setup_postdata($post); ?>
                     <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 pr-[26px] mb-[42px] box-border">
                         <a class="block group cursor-pointer"
-                           data-x-on:click.prevent="handleClick(<?= $key; ?>)"
-                           data-thumb="<?= get_the_post_thumbnail_url(); ?>"
-                           data-href="<?= get_permalink(); ?>"
+                           data-x-on:click.prevent="handleClick($event, <?= $key; ?>, '<?= get_permalink(); ?>')"
                         >
                             <div class="pb-[100%] rounded-full overflow-hidden mx-auto mb-[30px] xl:mb-[14px] relative">
                                 <div class="absolute inset-0 bg-cover"
@@ -76,17 +74,21 @@
                 <div class="bg-[#393A40] bg-opacity-80 absolute inset-0"></div>
                 <div class="swiper h-full w-full" id="slider">
                     <div class="swiper-wrapper h-full w-full">
-                        <?php foreach ($team as $post): setup_postdata($post);
+                        <?php foreach ($team
+
+                                       as $post):
+                            setup_postdata($post);
                             $permalink = get_permalink();
                             $title = get_the_title();
                             $leadership_name = get_field('leadership_name');
                             $leadership_title = get_field('leadership_title');
                             $leadership_bio = get_field('leadership_bio');
                             $leadership_casual_image = get_field('leadership_casual_image');
+                            $leadership_socials = get_field('leadership_socials');
                             ?>
                             <div class="swiper-slide h-full w-full">
-                                <div class="h-full w-full flex flex-col" data-x-on:click.self="closeModel">
-                                    <div class="max-w-[1100px] bg-white m-auto rounded-[5px] overflow-hidden max-h-[625px] relative">
+                                <div class="h-full w-full flex flex-col box-border" data-x-on:click.self="closeModel">
+                                    <div class="max-w-[1100px] w-[76.39%] bg-white m-auto rounded-[5px] overflow-hidden max-h-[625px] relative">
                                         <div class="absolute top-[14px] right-[14px]">
                                             <button data-x-on:click="closeModel"
                                                     class="border-none bg-transparent p-[10px] text-[#D6D6D6] hover:text-[#A1A1A1] transition-colors">
@@ -114,8 +116,8 @@
                                             <div class="h-[4px] bg-[#3BA17C]"></div>
                                             <div class="h-[4px] bg-[#F6881B]"></div>
                                         </div>
-                                        <div class="py-[48px] pb-[56px] px-[80px] box-border h-full">
-                                            <div class="grid gap-[60px] grid-cols-[53.09%_40.51%] h-full overflow-y-auto overflow-x-hidden relative">
+                                        <div class="py-[48px] pb-[56px] px-[40px] lg:px-[80px] box-border h-full">
+                                            <div class="grid gap-[60px] grid-cols-[53.09%_auto] h-full overflow-y-auto overflow-x-hidden relative">
                                                 <div>
                                                     <div>
                                                         <div class="brand-text-gradient text-transparent bg-clip-text font-poppins text-[22px] leading-normal font-semibold"><?= $leadership_name; ?></div>
@@ -130,9 +132,25 @@
                                                 <div>
                                                     <?php if ($leadership_casual_image) : ?>
                                                         <div class="sticky top-0">
-                                                            <img class="w-full h-auto rounded-full"
-                                                                 src="<?= $leadership_casual_image; ?>"
-                                                                 alt="<?= $leadership_name; ?>">
+                                                            <div>
+                                                                <img class="block w-full h-auto rounded-full"
+                                                                     src="<?= $leadership_casual_image; ?>"
+                                                                     alt="<?= $leadership_name; ?>">
+                                                            </div>
+                                                            <?php if ($leadership_socials) : ?>
+                                                                <div class="text-center mt-[40px]">
+                                                                    <?php foreach ($leadership_socials as $leadership_social) : ?>
+                                                                        <a href="<?= $leadership_social['url']; ?>"
+                                                                           target="_blank"
+                                                                           class="inline-flex items-center">
+                                                                            <img class="mr-[12px]"
+                                                                                 src="<?= get_stylesheet_directory_uri() . '/assets/img/socials/' . $leadership_social['network']['value'] . '.svg'; ?>"
+                                                                                 alt="<?= $leadership_social['network']['label']; ?>">
+                                                                            <span class="font-poppins text-[16px] leading-[1.6] text-[#5A5A5A]"><?= $leadership_social['network']['label']; ?></span>
+                                                                        </a>
+                                                                    <?php endforeach; ?>
+                                                                </div>
+                                                            <?php endif; ?>
                                                         </div>
                                                     <?php endif; ?>
                                                 </div>
@@ -147,15 +165,17 @@
                     </div>
 
                     <button id="teamSliderPrev"
-                            class="z-[100] border-none absolute top-[50%] left-0 h-[60px] w-[60px] rounded-full bg-white bg-opacity-50">
-                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            class="z-[100] border-none absolute top-[50%] translate-y-[-50%] left-[4.17%] h-[60px] w-[60px] rounded-full bg-white bg-opacity-50 [&.swiper-button-disabled]:bg-opacity-20 [&.swiper-button-disabled]:cursor-default">
+                        <svg class="relative top-[2px] right-[2px]" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 1L1.5 7.5L8 14" stroke="white" stroke-width="2" stroke-linecap="round"
                                   stroke-linejoin="round"/>
                         </svg>
                     </button>
                     <button id="teamSliderNext"
-                            class="z-[100] border-none absolute top-[50%] right-0 h-[60px] w-[60px] rounded-full bg-white bg-opacity-50">
-                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            class="z-[100] border-none absolute top-[50%] translate-y-[-50%] right-[4.17%] h-[60px] w-[60px] rounded-full bg-white bg-opacity-50 [&.swiper-button-disabled]:bg-opacity-20 [&.swiper-button-disabled]:cursor-default">
+                        <svg class="relative top-[2px] left-[2px]" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L7.5 7.5L1 14" stroke="white" stroke-width="2" stroke-linecap="round"
                                   stroke-linejoin="round"/>
                         </svg>
