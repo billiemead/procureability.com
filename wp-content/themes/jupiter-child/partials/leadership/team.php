@@ -116,7 +116,6 @@
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-
                                             </button>
                                         </div>
 
@@ -126,8 +125,8 @@
                                             <div class="h-[4px] bg-[#3BA17C]"></div>
                                             <div class="h-[4px] bg-[#F6881B]"></div>
                                         </div>
-                                        <div class="py-[48px] pb-[56px] px-[40px] lg:px-[80px] box-border h-full">
-                                            <div class="grid gap-[60px] grid-cols-[53.09%_auto] h-full overflow-y-auto overflow-x-hidden relative">
+                                        <div class="py-[48px] pb-[56px] box-border h-full">
+                                            <div class="grid gap-[60px] grid-cols-[53.09%_auto] h-full overflow-y-auto overflow-x-hidden relative px-[40px] lg:px-[80px]">
                                                 <div>
                                                     <div class="sticky top-0 bg-white pb-[24px]">
                                                         <div>
