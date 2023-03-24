@@ -104,6 +104,10 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @media (min-width: 2000px) {
+        background-position: center 25%;
+      }
     }
   }
 }
