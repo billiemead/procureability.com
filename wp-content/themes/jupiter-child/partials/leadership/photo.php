@@ -1,34 +1,39 @@
+<?php $gallery_title = get_field('gallery_title'); ?>
+<?php $gallery_text = get_field('gallery_text'); ?>
+<?php $gallery_photos = get_field('gallery_photos'); ?>
+
 <section class="pb-[24px] pt-[80px] bg-[#F7F9FB]">
     <div class="max-w-[1200px] mx-auto box-border px-[15px]">
         <div class="grid lg:grid-cols-2 gap-[24px]">
             <div>
                 <div class="lg:max-w-[503px]">
-                    <div class="lg:max-w-[366px] mb-[16px]">
-                        <div class="font-poppins text-[36px] leading-[1.4] font-semibold text-[#393A40]">Our Culture is
-                            Our
-                            Secret Sauce
+                    <?php if ($gallery_title) : ?>
+                        <div class="lg:max-w-[366px] mb-[16px]">
+                            <div class="font-poppins text-[36px] leading-[1.4] font-semibold text-[#393A40]">
+                                <?= $gallery_title; ?>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="font-poppins text-[20px] leading-[1.6] text-[#61636B]">At ProcureAbility, we believe
-                            that DE&I is the “magic” that makes our company great, and are fully committed to building a
-                            diverse team and inclusive culture where our colleagues can grow, learn, and thrive.
+                    <?php endif; ?>
+                    <?php if ($gallery_text) : ?>
+                        <div>
+                            <div class="font-poppins text-[20px] leading-[1.6] text-[#61636B]">
+                                <?= $gallery_text; ?>
+                            </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
-            <div>
-                <img class="block w-full max-w-full" src="<?= get_stylesheet_directory_uri(); ?>/assets/img/photo-1.jpg"
-                     alt="">
-            </div>
-            <div>
-                <img class="block w-full max-w-full" src="<?= get_stylesheet_directory_uri(); ?>/assets/img/photo-1.jpg"
-                     alt="">
-            </div>
-            <div>
-                <img class="block w-full max-w-full" src="<?= get_stylesheet_directory_uri(); ?>/assets/img/photo-1.jpg"
-                     alt="">
-            </div>
+            <?php if ($gallery_photos) : ?>
+                <?php foreach ($gallery_photos as $gallery_photo) : ?>
+                    <div>
+                        <img class="block w-full max-w-full"
+                             src="<?= $gallery_photo['url']; ?>"
+                             alt="<?= $gallery_photo['alt']; ?>"
+                             title="<?= $gallery_photo['title']; ?>"
+                        >
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     </div>
 </section>

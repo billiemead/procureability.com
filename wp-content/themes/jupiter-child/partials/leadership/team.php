@@ -1,14 +1,20 @@
 <?php $team = get_field('team'); ?>
+<?php $cta_title = get_field('cta_title'); ?>
+<?php $cta_text = get_field('cta_text'); ?>
+<?php $cta_button = get_field('cta_button'); ?>
 
-<section class="pt-[40px] md:pt-[100px] pb-[50px] md:pb-[75px] overflow-hidden" data-x-data="leadership">
+<section
+        class="pt-[40px] md:pt-[100px] pb-[50px] md:pb-[75px] overflow-hidden bg-no-repeat bg-[left_calc(50%+338px+70px)_bottom_-145px]"
+        data-x-data="leadership"
+        style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/triangles-bg-leadership.png')">
     <div class="max-w-[1200px] px-[15px] mx-auto">
         <div class="text-center mb-[42px]">
-            <h1 class="font-poppins text-[36px] leading-[1.27] font-medium"><?= get_the_title(); ?></h1>
+            <h1 class="brand-text-gradient text-transparent bg-clip-text font-poppins text-[36px] leading-[1.27] font-semibold"><?= get_the_title(); ?></h1>
         </div>
-        <div class="flex flex-wrap mr-[-26px] mb-[-42px]">
+        <div class="max-w-[345px] mx-auto sm:max-w-none sm:mx-0 sm:flex sm:flex-wrap sm:mr-[-26px] mb-[-42px]">
             <?php if ($team) : ?>
                 <?php foreach ($team as $key => $post): setup_postdata($post); ?>
-                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 pr-[26px] mb-[42px] box-border">
+                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 sm:pr-[26px] mb-[42px] box-border">
                         <a class="block group cursor-pointer"
                            data-x-on:click.prevent="handleClick($event, <?= $key; ?>, '<?= get_permalink(); ?>')"
                         >
@@ -22,7 +28,7 @@
                                     <div class="absolute bottom-[40px] left-0 right-0 text-center">
                                         <span class="font-poppins text-white text-[18px] leading-normal font-semibold uppercase tracking-[0.14em]">read bio</span>
                                         <span>
-                                            <svg class="align-text-bottom ml-[6px]"
+                                            <svg class="align-text-bottom"
                                                  width="18" height="19" viewBox="0 0 18 19"
                                                  fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -44,40 +50,42 @@
                     </div>
                 <?php endforeach; ?>
                 <?php wp_reset_postdata(); ?>
-                <div class="flex-1 pr-[26px] mb-[42px] box-border flex flex-col">
-                    <div class="max-w-[508px] m-auto">
-                        <div class="text-center mb-[16px]">
-                            <div class="font-poppins text-[42px] leading-[1.38] font-medium text-[#3BA17C]">Become a
-                                Part<br>
-                                of Our Team
+                <?php if ($cta_title && $cta_text && $cta_button) : ?>
+                    <div class="flex-1 min-w-6/12 pr-[26px] mb-[42px] box-border flex flex-col">
+                        <div class="max-w-[508px] m-auto">
+                            <div class="text-center mb-[16px]">
+                                <div class="font-poppins text-[42px] leading-[1.38] font-medium text-[#3BA17C]">
+                                    <?= $cta_title; ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="text-center mb-[32px]">
-                            <div class="font-poppins text-[18px] leading-[1.6] opacity-80 text-[#5A5A5A]">At
-                                ProcureAbility, our people are our company
+                            <div class="text-center mb-[32px]">
+                                <div class="font-poppins text-[18px] leading-[1.6] opacity-80 text-[#5A5A5A]">
+                                    <?= $cta_text; ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <a class="inline-block border-2 group border-[#3BA17C] border-solid py-[16px] px-[40px] rounded-[3px] transition-colors hover:bg-[#3BA17C]"
-                               href="">
-                                <span class="text-poppins text-[18px] leading-normal text-[#3BA17C] group-hover:text-white transition-colors font-semibold tracking-[0.14em] uppercase">learn more</span>
-                            </a>
+                            <div class="text-center">
+                                <a class="inline-block border-2 group border-[#3BA17C] bg-white border-solid py-[16px] px-[40px] rounded-[3px] transition-colors hover:bg-[#3BA17C]"
+                                   href="<?= $cta_button['url']; ?>"
+                                   target="<?= $cta_button['target'] ?: '_self'; ?>"
+                                >
+                                    <span class="text-poppins text-[18px] leading-normal text-[#3BA17C] group-hover:text-white transition-colors font-semibold tracking-[0.14em] uppercase"><?= $cta_button['title']; ?></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
 
         <?php if ($team): ?>
 
-            <div class="fixed inset-0 flex flex-col z-[300]" data-x-show="showModal" data-x-ref="modal">
+            <div class="fixed inset-0 flex flex-col z-[300]" data-x-cloak data-x-show="showModal" data-x-ref="modal">
                 <div class="bg-[#393A40] bg-opacity-80 absolute inset-0"></div>
                 <div class="swiper h-full w-full" id="slider">
                     <div class="swiper-wrapper h-full w-full">
-                        <?php foreach ($team
-
-                                       as $post):
+                        <?php foreach ($team as $post):
                             setup_postdata($post);
+
                             $permalink = get_permalink();
                             $title = get_the_title();
                             $leadership_name = get_field('leadership_name');
@@ -88,7 +96,8 @@
                             ?>
                             <div class="swiper-slide h-full w-full">
                                 <div class="h-full w-full flex flex-col box-border" data-x-on:click.self="closeModel">
-                                    <div class="max-w-[1100px] w-[76.39%] bg-white m-auto rounded-[5px] overflow-hidden max-h-[625px] relative">
+                                    <div class="max-w-[1100px] w-[76.39%] bg-white m-auto rounded-[5px] overflow-hidden max-h-[625px] relative bg-no-repeat bg-[length:566px_auto] bg-[right_-170px_bottom_-190px]"
+                                         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/branding-star-leadership.svg')">
                                         <div class="absolute top-[14px] right-[14px]">
                                             <button data-x-on:click="closeModel"
                                                     class="border-none bg-transparent p-[10px] text-[#D6D6D6] hover:text-[#A1A1A1] transition-colors">
@@ -161,7 +170,7 @@
                             </div>
 
                         <?php endforeach; ?>
-
+                        <?php wp_reset_postdata(); ?>
                     </div>
 
                     <button id="teamSliderPrev"

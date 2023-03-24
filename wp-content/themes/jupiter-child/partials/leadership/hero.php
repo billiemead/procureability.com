@@ -2,10 +2,12 @@
 <?php $hero_quote_author = get_field('hero_quote_author'); ?>
 <?php $hero_quote_author_photo = get_field('hero_quote_author_photo'); ?>
 
-<section class="pt-[50px] md:py-[112px] bg-[#F7F9FB] overflow-hidden">
+<section
+        class="pt-[50px] md:py-[112px] bg-[#F7F9FB] overflow-hidden bg-no-repeat bg-[length:692px_auto] bg-[left_calc(50%+346px+290px)_bottom_-150px]"
+        style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/branding-star-leadership.svg')">
     <div class="max-w-[1200px] px-[15px] mx-auto">
         <div class="relative ">
-            <div class="md:w-[56.17%] md:ml-[30px]">
+            <div class="md:w-[50%] md:ml-[30px]">
                 <?php if ($hero_quote) : ?>
                     <div class="mb-[29px]">
                         <div class="font-poppins text-[#393A40] text-[24px] md:text-[30px] leading-[1.6] font-medium">
