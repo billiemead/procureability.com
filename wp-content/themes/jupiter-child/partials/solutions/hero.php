@@ -5,7 +5,7 @@
 
 <!--hero-->
 <section
-        class="pt-[205px] pb-[54px] bg-no-repeat bg-center md:bg-[left_25%_top_-35%] xl:bg-center xxl:bg-[center_25%] bg-cover"
+        class="pt-[205px] pb-[54px] bg-no-repeat bg-center md:bg-[left_25%_top_-35%] xl:bg-center xxl:bg-center bg-cover"
         style="background-image: url(<?= $hero_background_image['url']; ?>)">
     <div class="max-w-[697px] mx-auto px-[15px]">
         <div class="text-center mb-[8px]">
