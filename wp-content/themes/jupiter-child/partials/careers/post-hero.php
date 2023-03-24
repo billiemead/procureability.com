@@ -8,7 +8,7 @@
 <!--background-size: 375px auto;-->
 
 <section
-        class="pb-[235px] lg:pb-[108px] pt-[125px] bg-no-repeat bg-[length:375px_auto] bg-[center_bottom] lg:bg-[calc(50%+469px)_bottom] xl:bg-[calc(50%+469px-100px)_bottom] lg:bg-[length:938px_auto]"
+        class="pb-[235px] lg:pb-[108px] pt-[125px] bg-no-repeat bg-[length:375px_auto] bg-[center_bottom] lg:bg-[calc(50%+375px)_bottom] xl:bg-[calc(50%+375px-80px)_bottom] lg:bg-[length:750px_auto]"
         style="background-image: url('<?= $post_hero_image['url']; ?>')">
     <div class="max-w-[1200px] px-[15px] mx-auto">
         <div class="max-w-[523px] mx-auto lg:ml-0">
