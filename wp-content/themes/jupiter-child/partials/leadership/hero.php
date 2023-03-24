@@ -36,7 +36,7 @@
                 <?php endif; ?>
             </div>
             <?php if ($hero_quote_author_photo) : ?>
-                <div class="max-w-[340px] mx-auto lg:max-w-none lg:mx-0 lg:w-[41.58%] lg:absolute lg:bottom-[-112px] lg:right-[-15px]">
+                <div class="max-w-[340px] mx-auto lg:max-w-none lg:mx-0 lg:w-[41.58%] lg:absolute lg:bottom-[-112px] lg:right-0">
                     <?= wp_get_attachment_image($hero_quote_author_photo['ID'], 'full', false, array('class' => 'block w-full h-auto')) ?>
                 </div>
             <?php endif; ?>
