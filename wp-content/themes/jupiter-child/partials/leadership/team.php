@@ -18,13 +18,13 @@
                         <a class="block group cursor-pointer"
                            data-x-on:click.prevent="handleClick($event, <?= $key; ?>, '<?= get_permalink(); ?>')"
                         >
-                            <div class="pb-[100%] rounded-full overflow-hidden mx-auto mb-[30px] xl:mb-[14px] relative">
-                                <div class="absolute inset-0 bg-cover"
+                            <div class="pb-[100%] mx-auto mb-[30px] xl:mb-[14px] relative">
+                                <div class="absolute inset-0 bg-cover rounded-full overflow-hidden"
                                      style="background-image: url('<?= get_the_post_thumbnail_url(null, 'image-size-550x550'); ?>')"></div>
-                                <div class="absolute inset-0 bg-cover group-hover:opacity-100 opacity-0 transition-opacity"
+                                <div class="absolute inset-0 bg-cover rounded-full overflow-hidden group-hover:opacity-100 opacity-0 transition-opacity"
                                      style="background-image: url('<?= get_field('leadership_casual_image'); ?>')">
                                     <!--shadow-->
-                                    <div class="absolute bottom-0 left-0 right-0 h-[62.50%] bg-gradient-to-t from-[rgba(0,0,0,.8)] trans to-transparent "></div>
+                                    <div class="absolute bottom-0 left-0 right-0 h-[62.50%] bg-gradient-to-t from-[rgba(0,0,0,.8)] trans to-transparent"></div>
                                     <div class="absolute bottom-[40px] left-0 right-0 text-center">
                                         <span class="font-poppins text-white text-[18px] leading-normal font-semibold uppercase tracking-[0.14em]">read bio</span>
                                         <span>
@@ -51,7 +51,7 @@
                 <?php endforeach; ?>
                 <?php wp_reset_postdata(); ?>
                 <?php if ($cta_title && $cta_text && $cta_button) : ?>
-                    <div class="flex-1 min-w-[50%] pr-[26px] mb-[42px] box-border flex flex-col">
+                    <div class="flex-1 sm:min-w-[50%] sm:pr-[26px] mb-[42px] box-border flex flex-col">
                         <div class="max-w-[508px] m-auto">
                             <div class="text-center mb-[16px]">
                                 <div class="font-poppins text-[42px] leading-[1.38] font-medium text-[#3BA17C]">
@@ -79,7 +79,8 @@
 
         <?php if ($team): ?>
 
-            <div class="fixed inset-0 flex flex-col z-[300]" data-x-cloak data-x-show="showModal" data-x-ref="modal">
+            <div class="fixed inset-0 flex flex-col z-[300]" data-x-cloak data-x-transition.opacity.duration.500ms
+                 data-x-show="showModal" data-x-ref="modal">
                 <div class="bg-[#393A40] bg-opacity-80 absolute inset-0"></div>
                 <div class="swiper h-full w-full" id="slider">
                     <div class="swiper-wrapper h-full w-full">
@@ -128,11 +129,13 @@
                                         <div class="py-[48px] pb-[56px] px-[40px] lg:px-[80px] box-border h-full">
                                             <div class="grid gap-[60px] grid-cols-[53.09%_auto] h-full overflow-y-auto overflow-x-hidden relative">
                                                 <div>
-                                                    <div>
-                                                        <div class="brand-text-gradient text-transparent bg-clip-text font-poppins text-[22px] leading-normal font-semibold"><?= $leadership_name; ?></div>
-                                                    </div>
-                                                    <div class="mb-[24px]">
-                                                        <div class="font-poppins text-[#61636B] text-[18px] leading-normal"><?= $leadership_title; ?></div>
+                                                    <div class="sticky top-0 bg-white pb-[24px]">
+                                                        <div>
+                                                            <div class="brand-text-gradient text-transparent bg-clip-text font-poppins text-[22px] leading-normal font-semibold"><?= $leadership_name; ?></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="font-poppins text-[#61636B] text-[18px] leading-normal"><?= $leadership_title; ?></div>
+                                                        </div>
                                                     </div>
                                                     <div class="[&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]">
                                                         <?= apply_filters('the_content', $leadership_bio); ?>
@@ -151,11 +154,11 @@
                                                                     <?php foreach ($leadership_socials as $leadership_social) : ?>
                                                                         <a href="<?= $leadership_social['url']; ?>"
                                                                            target="_blank"
-                                                                           class="inline-flex items-center">
+                                                                           class="inline-flex items-center group mx-[10px]">
                                                                             <img class="mr-[12px]"
                                                                                  src="<?= get_stylesheet_directory_uri() . '/assets/img/socials/' . $leadership_social['network']['value'] . '.svg'; ?>"
                                                                                  alt="<?= $leadership_social['network']['label']; ?>">
-                                                                            <span class="font-poppins text-[16px] leading-[1.6] text-[#5A5A5A]"><?= $leadership_social['network']['label']; ?></span>
+                                                                            <span class="font-poppins text-[16px] leading-[1.6] text-[#5A5A5A] underline decoration-transparent group-hover:decoration-current transition-colors"><?= $leadership_social['network']['label']; ?></span>
                                                                         </a>
                                                                     <?php endforeach; ?>
                                                                 </div>
@@ -174,18 +177,18 @@
                     </div>
 
                     <button id="teamSliderPrev"
-                            class="z-[100] border-none absolute top-[50%] translate-y-[-50%] left-[4.17%] h-[60px] w-[60px] rounded-full bg-white bg-opacity-50 [&.swiper-button-disabled]:bg-opacity-20 [&.swiper-button-disabled]:cursor-default">
+                            class="z-[100] border-none absolute top-[50%] translate-y-[-50%] left-[4.17%] h-[60px] w-[60px] rounded-full bg-white bg-opacity-50 [&.swiper-button-disabled]:bg-opacity-20 [&.swiper-button-disabled]:cursor-default hover:[&:not(.swiper-button-disabled)]:bg-opacity-70 transition-all text-white hover:[&:not(.swiper-button-disabled)]:text-[#61636B]">
                         <svg class="relative top-[2px] right-[2px]" width="9" height="15" viewBox="0 0 9 15" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 1L1.5 7.5L8 14" stroke="white" stroke-width="2" stroke-linecap="round"
+                            <path d="M8 1L1.5 7.5L8 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                   stroke-linejoin="round"/>
                         </svg>
                     </button>
                     <button id="teamSliderNext"
-                            class="z-[100] border-none absolute top-[50%] translate-y-[-50%] right-[4.17%] h-[60px] w-[60px] rounded-full bg-white bg-opacity-50 [&.swiper-button-disabled]:bg-opacity-20 [&.swiper-button-disabled]:cursor-default">
+                            class="z-[100] border-none absolute top-[50%] translate-y-[-50%] right-[4.17%] h-[60px] w-[60px] rounded-full bg-white bg-opacity-50 [&.swiper-button-disabled]:bg-opacity-20 [&.swiper-button-disabled]:cursor-default hover:[&:not(.swiper-button-disabled)]:bg-opacity-70 transition-all text-white hover:[&:not(.swiper-button-disabled)]:text-[#61636B]">
                         <svg class="relative top-[2px] left-[2px]" width="9" height="15" viewBox="0 0 9 15" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L7.5 7.5L1 14" stroke="white" stroke-width="2" stroke-linecap="round"
+                            <path d="M1 1L7.5 7.5L1 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                   stroke-linejoin="round"/>
                         </svg>
                     </button>

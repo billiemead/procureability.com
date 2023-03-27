@@ -3,15 +3,15 @@
 <?php $hero_quote_author_photo = get_field('hero_quote_author_photo'); ?>
 
 <section
-        class="pt-[50px] md:py-[112px] bg-[#F7F9FB] overflow-hidden bg-no-repeat bg-[length:692px_auto] bg-[left_calc(50%+346px+290px)_bottom_-150px]"
+        class="pt-[50px] lg:py-[112px] bg-[#F7F9FB] overflow-hidden bg-no-repeat bg-[length:692px_auto] bg-[left_calc(50%+346px)_bottom_-150px] lg:bg-[left_calc(50%+346px+290px)_bottom_-150px]"
         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/branding-star-leadership.svg')">
     <div class="max-w-[1200px] px-[15px] mx-auto">
         <div class="relative ">
-            <div class="md:w-[50%] md:ml-[30px]">
+            <div class="lg:w-[50%] lg:ml-[30px]">
                 <?php if ($hero_quote) : ?>
                     <div class="mb-[29px]">
                         <div class="font-poppins text-[#393A40] text-[24px] md:text-[30px] leading-[1.6] font-medium">
-                        <span class="relative md:!absolute md:left-[-9px] md:top-[-7px]">
+                        <span class="relative lg:!absolute lg:left-[-9px] lg:top-[-7px]">
                             <svg width="34" height="28" viewBox="0 0 34 28" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.45333 27.1969C5.35708 27.1969 3.57139 26.4834 2.09625 25.0563C0.698749 23.55 0 21.7266 0 19.5861C0 18.3176 0.232917 17.0888 0.69875 15.8996C1.24222 14.7104 2.05743 13.2834 3.14437 11.6185L10.4812 0.796875L15.1396 3.88877L9.43312 12.8077C10.8306 13.0455 12.0728 13.7987 13.1598 15.0671C14.2467 16.2563 14.7902 17.7626 14.7902 19.5861C14.7902 21.7266 14.0526 23.55 12.5775 25.0563C11.18 26.4834 9.47194 27.1969 7.45333 27.1969ZM25.9138 27.1969C23.8175 27.1969 22.0318 26.4834 20.5567 25.0563C19.1592 23.55 18.4604 21.7266 18.4604 19.5861C18.4604 18.3176 18.6933 17.0888 19.1592 15.8996C19.7027 14.7104 20.5179 13.2834 21.6048 11.6185L28.9417 0.796875L33.6 3.88877L27.8936 12.8077C29.2911 13.0455 30.5333 13.7987 31.6202 15.0671C32.7072 16.2563 33.2506 17.7626 33.2506 19.5861C33.2506 21.7266 32.5131 23.55 31.0379 25.0563C29.6404 26.4834 27.9324 27.1969 25.9138 27.1969Z"
@@ -30,13 +30,13 @@
                     </div>
                 <?php endif; ?>
                 <?php if ($hero_quote_author) : ?>
-                    <div>
+                    <div class="text-right lg:!text-left">
                         <div class="font-poppins text-[18px] md:text-[24px] leading-normal text-[#393A40]"><?= $hero_quote_author; ?></div>
                     </div>
                 <?php endif; ?>
             </div>
             <?php if ($hero_quote_author_photo) : ?>
-                <div class="max-w-[340px] mx-auto md:max-w-none md:mx-0 md:w-[41.58%] md:absolute md:bottom-[-112px] md:right-[-15px]">
+                <div class="max-w-[340px] mx-auto lg:max-w-none lg:mx-0 lg:w-[41.58%] lg:absolute lg:bottom-[-112px] lg:right-[-15px]">
                     <?= wp_get_attachment_image($hero_quote_author_photo['ID'], 'full', false, array('class' => 'block w-full h-auto')) ?>
                 </div>
             <?php endif; ?>
