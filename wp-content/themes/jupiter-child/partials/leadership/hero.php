@@ -3,7 +3,7 @@
 <?php $hero_quote_author_photo = get_field('hero_quote_author_photo'); ?>
 
 <section
-        class="pt-[50px] lg:py-[112px] bg-[#F7F9FB] overflow-hidden bg-no-repeat bg-[length:692px_auto] bg-[left_calc(50%+346px)_bottom_-150px] lg:bg-[left_calc(50%+346px+290px)_bottom_-150px]"
+        class="pt-[50px] lg:py-[112px] bg-[#F7F9FB] overflow-hidden bg-no-repeat bg-[length:692px_auto] bg-[left_calc(50%+346px)_bottom_-150px] lg:bg-[left_calc(50%+346px+220px)_bottom_-150px]"
         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/branding-star-leadership.svg')">
     <div class="max-w-[1200px] px-[15px] mx-auto">
         <div class="relative ">
@@ -36,7 +36,7 @@
                 <?php endif; ?>
             </div>
             <?php if ($hero_quote_author_photo) : ?>
-                <div class="max-w-[340px] mx-auto lg:max-w-none lg:mx-0 lg:w-[41.58%] lg:absolute lg:bottom-[-112px] lg:right-[40px]">
+                <div class="max-w-[340px] mx-auto lg:max-w-none lg:mx-0 lg:w-[41.58%] lg:absolute lg:bottom-[-112px] lg:right-[70px]">
                     <?= wp_get_attachment_image($hero_quote_author_photo['ID'], 'full', false, array('class' => 'block w-full h-auto')) ?>
                 </div>
             <?php endif; ?>
