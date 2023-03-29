@@ -1,0 +1,136 @@
+.post-measuring-the-success-of-procurement-rebranding-efforts {
+  .theme-content {
+    h4 {
+      //text-transform: uppercase;
+    }
+
+    .block-costs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 -20px 30px -20px;
+
+      .costs__item {
+        padding: 0 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .costs__image {
+          flex-shrink: 0;
+        }
+
+        .costs__title {
+          padding-left: 20px;
+          font-size: 16px;
+        }
+
+        &:nth-child(2), &:nth-child(3) {
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -5px;
+            top: 5px;
+            bottom: 5px;
+            border-left: 1px solid #ccc;
+          }
+        }
+      }
+    }
+
+    .block-increasing {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      border-radius: 5px;
+      //filter: drop-shadow(0px 2px 9px rgba(0, 0, 0, 0.12)) drop-shadow(13px 10px 24px rgba(0, 0, 0, 0.05));
+      box-shadow: (0px 2px 9px rgba(0, 0, 0, 0.12)), (13px 10px 24px rgba(0, 0, 0, 0.05));
+      padding: 38px 40px;
+
+      .increasing__icon {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 84px;
+        color: #0098AE;
+        flex-shrink: 0;
+      }
+
+      .increasing__text {
+        padding-left: 25px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #565A63;
+      }
+    }
+
+    ul {
+      margin-top: -3px;
+
+      li {
+        padding-left: 14px !important;
+
+        &::before {
+          width: 6px;
+          height: 6px;
+          top: 17px;
+          background-color: #0098AE !important;
+          left: -13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .post-measuring-the-success-of-procurement-rebranding-efforts {
+    .theme-content {
+      .block-costs {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .costs__item {
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          .costs__image {
+            min-width: 54px;
+            text-align: center;
+          }
+
+          .costs__title {
+          }
+
+          &:nth-child(2), &:nth-child(3) {
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .post-measuring-the-success-of-procurement-rebranding-efforts {
+    .theme-content {
+      .block-increasing {
+        padding: 25px 20px 25px 15px;
+        align-items: flex-start;
+
+        .increasing__icon {
+          max-width: 40px;
+          margin-top: 6px;
+        }
+
+        .increasing__text {
+          padding-left: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
