@@ -5,7 +5,7 @@
 <?php $cta_first_background_image = get_field('cta_first_background_image'); ?>
 
 <?php if ($cta_first_form_form) : ?>
-    <section class="py-[70px] bg-[#0098AE] bg-center bg-no-repeat bg-cover"
+    <section id="contact-form" class="py-[70px] bg-[#0098AE] bg-center bg-no-repeat bg-cover"
              style="background-image: url('<?= $cta_first_background_image['url']; ?>')">
         <div class="max-w-[1200px] px-[15px] mx-auto">
             <div class="p-[30px] sm:p-[60px] rounded-[3px] bg-white">
@@ -37,7 +37,9 @@
                                         <li class="m-0">
                                             <button class="block w-full py-2 px-4 bg-transparent border-none text-left hover:bg-gray-100"
                                                     data-x-on:click="open = false; value = null; $dispatch('hubspot-service', { message: '' })"
-                                            ><span class="font-poppins"><?= $cta_first_form_select['placeholder']; ?></span></button>
+                                            >
+                                                <span class="font-poppins"><?= $cta_first_form_select['placeholder']; ?></span>
+                                            </button>
                                         </li>
                                     <?php endif; ?>
                                     <?php foreach ($cta_first_form_select['services'] as $service) : ?>

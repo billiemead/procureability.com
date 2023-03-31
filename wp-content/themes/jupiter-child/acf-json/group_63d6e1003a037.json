@@ -61,10 +61,10 @@
         },
         {
             "key": "field_63d6e14e2aad2",
-            "label": "Button text",
-            "name": "hero_button_text",
+            "label": "Button",
+            "name": "hero_button",
             "aria-label": "",
-            "type": "text",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -73,51 +73,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_63d6ea7e2aae8",
-            "label": "Form title",
-            "name": "hero_form_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_63d6ea912aae9",
-            "label": "Form",
-            "name": "hero_form_form",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "array"
         },
         {
             "key": "field_63daa81bddc19",
@@ -650,5 +606,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675274341
+    "modified": 1680191080
 }
