@@ -177,7 +177,7 @@
                         </div>
                         <?php $analytics_list = get_field('analytics_list'); ?>
                         <?php if ($analytics_list) : ?>
-                            <ul class="pt-[24px] px-[47px] pb-[40px] md:pt-[36px] md:pb-[32px] md:px-[38px] xl:pt-[34px] xl:px-[60px] xl:pb-[42px] list-none xl:flex xl:flex-wrap [&_li:nth-child(odd)]:xl:w-[341px] [&_li:nth-child(even)]:xl:w-[399px] xl:justify-around m-0 text-[14px] leading-[1.4] md:text-[16px] xl:text-[18px] xl:leading-[2.1] space-y-[8px] md:space-y-[16px] xl:space-y-0 box-border">
+                            <ul class="pt-[24px] px-[24px] pb-[40px] md:pt-[36px] md:pb-[32px] md:px-[38px] xl:pt-[34px] xl:px-[60px] xl:pb-[42px] list-none xl:flex xl:flex-wrap [&_li:nth-child(odd)]:xl:w-[341px] [&_li:nth-child(even)]:xl:w-[399px] xl:justify-around m-0 text-[14px] leading-[1.4] md:text-[16px] xl:text-[18px] xl:leading-[2.1] space-y-[8px] md:space-y-[16px] xl:space-y-0 box-border">
                                 <?php foreach ($analytics_list as $analytics_list_item) : ?>
                                     <li class="relative pl-[28px] ml-0 box-border">
                                         <svg class="absolute left-[5px] top-[6px] xl:left-0 xl:top-[11px] w-[12px] xl:w-[17px] h-auto"
