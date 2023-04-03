@@ -4,7 +4,7 @@
 <?php $cta_button = get_field('cta_button'); ?>
 
 <section
-        class="pt-[40px] md:pt-[100px] pb-[50px] md:pb-[75px] overflow-hidden bg-no-repeat bg-[left_calc(50%+338px+70px)_bottom_-145px]"
+        class="pt-[40px] md:pt-[56px] pb-[50px] md:pb-[75px] overflow-hidden bg-no-repeat bg-[left_calc(50%+338px+70px)_bottom_-145px]"
         data-x-data="leadership"
         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/triangles-bg-leadership.png')">
     <div class="max-w-[1200px] px-[15px] mx-auto">
@@ -126,46 +126,50 @@
                                             <div class="h-[4px] bg-[#F6881B]"></div>
                                         </div>
                                         <div class="py-[48px] pb-[56px] box-border h-full">
-                                            <div class="grid gap-[60px] grid-cols-[53.09%_auto] h-full overflow-y-auto overflow-x-hidden relative px-[40px] lg:px-[80px]">
-                                                <div>
-                                                    <div class="sticky top-0 bg-white pb-[24px]">
-                                                        <div>
-                                                            <div class="brand-text-gradient text-transparent bg-clip-text font-poppins text-[22px] leading-normal font-semibold"><?= $leadership_name; ?></div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="font-poppins text-[#61636B] text-[18px] leading-normal"><?= $leadership_title; ?></div>
-                                                        </div>
+
+                                            <div class="px-[40px] lg:px-[80px] h-full flex flex-col">
+                                                <div class="pb-[24px] flex-1">
+                                                    <div>
+                                                        <div class="brand-text-gradient text-transparent bg-clip-text font-poppins text-[22px] leading-normal font-semibold"><?= $leadership_name; ?></div>
                                                     </div>
-                                                    <div class="[&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]">
-                                                        <?= apply_filters('the_content', $leadership_bio); ?>
+                                                    <div>
+                                                        <div class="font-poppins text-[#61636B] text-[18px] leading-normal"><?= $leadership_title; ?></div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <?php if ($leadership_casual_image) : ?>
-                                                        <div class="sticky top-0">
-                                                            <div>
-                                                                <img class="block w-full h-auto rounded-full"
-                                                                     src="<?= $leadership_casual_image; ?>"
-                                                                     alt="<?= $leadership_name; ?>">
-                                                            </div>
-                                                            <?php if ($leadership_socials) : ?>
-                                                                <div class="text-center mt-[40px]">
-                                                                    <?php foreach ($leadership_socials as $leadership_social) : ?>
-                                                                        <a href="<?= $leadership_social['url']; ?>"
-                                                                           target="_blank"
-                                                                           class="inline-flex items-center group mx-[10px]">
-                                                                            <img class="mr-[12px]"
-                                                                                 src="<?= get_stylesheet_directory_uri() . '/assets/img/socials/' . $leadership_social['network']['value'] . '.svg'; ?>"
-                                                                                 alt="<?= $leadership_social['network']['label']; ?>">
-                                                                            <span class="font-poppins text-[16px] leading-[1.6] text-[#5A5A5A] underline decoration-transparent group-hover:decoration-current transition-colors"><?= $leadership_social['network']['label']; ?></span>
-                                                                        </a>
-                                                                    <?php endforeach; ?>
-                                                                </div>
-                                                            <?php endif; ?>
+                                                <div class="flex-0 grid gap-[60px] grid-cols-[53.09%_auto] overflow-y-auto overflow-x-hidden">
+                                                    <div>
+                                                        <div class="[&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]">
+                                                            <?= apply_filters('the_content', $leadership_bio); ?>
                                                         </div>
-                                                    <?php endif; ?>
+                                                        <?php if ($leadership_socials) : ?>
+                                                            <div class="mt-[32px] space-x-[30px]">
+                                                                <?php foreach ($leadership_socials as $leadership_social) : ?>
+                                                                    <a href="<?= $leadership_social['url']; ?>"
+                                                                       target="_blank"
+                                                                       class="inline-flex items-center group">
+                                                                        <img class="mr-[12px]"
+                                                                             src="<?= get_stylesheet_directory_uri() . '/assets/img/socials/' . $leadership_social['network']['value'] . '.svg'; ?>"
+                                                                             alt="<?= $leadership_social['network']['label']; ?>">
+                                                                        <span class="font-poppins text-[16px] leading-[1.6] text-[#5A5A5A] underline decoration-transparent group-hover:decoration-current transition-colors"><?= $leadership_social['network']['label']; ?></span>
+                                                                    </a>
+                                                                <?php endforeach; ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                    <div>
+                                                        <?php if ($leadership_casual_image) : ?>
+                                                            <div class="sticky top-0">
+                                                                <div>
+                                                                    <img class="block w-full h-auto rounded-full"
+                                                                         src="<?= $leadership_casual_image; ?>"
+                                                                         alt="<?= $leadership_name; ?>">
+                                                                </div>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>

@@ -2,7 +2,7 @@
 <?php $gallery_text = get_field('gallery_text'); ?>
 <?php $gallery_photos = get_field('gallery_photos'); ?>
 
-<section class="pb-[24px] pt-[80px] bg-[#F7F9FB]">
+<section class="pb-[100px] pt-[88px] bg-[#F7F9FB]">
     <div class="max-w-[1200px] mx-auto box-border px-[15px]">
         <div class="grid lg:grid-cols-2 gap-[24px]">
             <div>
