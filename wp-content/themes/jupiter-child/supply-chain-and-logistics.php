@@ -166,7 +166,7 @@
             <?php $studies_query = new WP_Query(array('category_name' => 'supply-chain-and-logistics-case-studies', 'posts_per_page' => 3)); ?>
 
             <?php if ($studies_query->have_posts()) : ?>
-                <div class="cards-wrapper">
+                <div class="cards-wrapper space-y-[30px] md:space-y-0">
                     <?php while ($studies_query->have_posts()) : $studies_query->the_post(); ?>
                         <div class="cards-item">
                             <div class="card">
@@ -200,7 +200,7 @@
             <?php $blog_query = new WP_Query(array('category_name' => 'supply-chain-management', 'posts_per_page' => 3)); ?>
 
             <?php if ($blog_query->have_posts()) : ?>
-                <div class="cards-wrapper">
+                <div class="cards-wrapper space-y-[30px] md:space-y-0">
                     <?php while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
                         <div class="cards-item">
                             <div class="card">
