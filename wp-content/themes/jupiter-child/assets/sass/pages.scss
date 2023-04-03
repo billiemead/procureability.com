@@ -880,7 +880,11 @@
       text-align: left !important;
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 1239px) and (min-width: 992px) {
+      background-position: right -300px center !important;
+    }
+
+    @media (max-width: 991.98px) {
       background-image: none !important;
     }
 
@@ -1158,7 +1162,7 @@
   .wpb_raw_code.wpb_content_element.wpb_raw_html {
     //margin-bottom: 5px;
 
-    .wpb_wrapper{
+    .wpb_wrapper {
       text-align: center;
     }
   }
