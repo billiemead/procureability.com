@@ -200,19 +200,20 @@
 
         <?php $video_title = get_field('video_title'); ?>
         <?php $video_video = get_field('video_video'); ?>
+
         <?php if ($video_title || $video_video) : ?>
             <!--Video-->
-            <section id="video" class="pb-[30px]">
-                <div class="max-w-[930px] px-[15px] mx-auto">
-                    <div class="px-[15px] pt-[15px] pb-[40px]">
-                        <?php if ($video_video) : ?>
-                            <div>
+            <section class="mb-[25px]" id="video">
+                <div class="px-[15px] xl:px-0 max-w-[960px] mx-auto">
+                    <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[10px] md:rounded-[15px]">
+                        <div>
+                            <div class="pb-[56.25%] relative [&>*]:absolute [&>*]:inset-0 [&>*]:w-full [&>*]:h-full">
                                 <?= $video_video; ?>
                             </div>
-                        <?php endif; ?>
+                        </div>
                         <?php if ($video_title) : ?>
-                            <div class="text-center mt-[20px]">
-                                <div class="text-[19px] leading-black text-[#000] font-[700]"><?= $video_title; ?></div>
+                            <div class="text-center text-[18px] leading-[1.3] md:text-[25px] md:leading-none text-white font-[600] pt-[20px] md:pt-[55px]">
+                                <?= $video_title; ?>
                             </div>
                         <?php endif; ?>
                     </div>
