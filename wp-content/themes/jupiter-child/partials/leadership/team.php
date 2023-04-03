@@ -127,8 +127,8 @@
                                         </div>
                                         <div class="py-[48px] pb-[56px] box-border h-full">
 
-                                            <div class="px-[40px] lg:px-[80px] h-full flex flex-col">
-                                                <div class="pb-[24px] flex-1">
+                                            <div class="h-full flex flex-col">
+                                                <div class="pb-[24px] flex-1 px-[40px] lg:px-[80px]">
                                                     <div>
                                                         <div class="brand-text-gradient text-transparent bg-clip-text font-poppins text-[22px] leading-normal font-semibold"><?= $leadership_name; ?></div>
                                                     </div>
@@ -136,7 +136,7 @@
                                                         <div class="font-poppins text-[#61636B] text-[18px] leading-normal"><?= $leadership_title; ?></div>
                                                     </div>
                                                 </div>
-                                                <div class="flex-0 grid gap-[60px] grid-cols-[53.09%_auto] overflow-y-auto overflow-x-hidden">
+                                                <div class="flex-0 grid gap-[60px] grid-cols-[53.09%_auto] overflow-y-auto overflow-x-hidden px-[40px] lg:px-[80px]">
                                                     <div>
                                                         <div class="[&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]">
                                                             <?= apply_filters('the_content', $leadership_bio); ?>
