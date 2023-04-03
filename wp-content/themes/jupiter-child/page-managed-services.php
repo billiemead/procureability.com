@@ -336,12 +336,14 @@ get_header();
             <?php endif; ?>
 
             <?php if ($industries['btn_link'] && $industries['btn_text']) : ?>
-                <a class="hidden min-[768px]:inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll"
-                   href="<?= $industries['btn_link'] ?>">
-                    <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
-                         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
-                    <span class="font-poppins text-white text-[18px] leading-[1.5] font-[700] tracking-[0.1em] uppercase relative"><?= $industries['btn_text'] ?></span>
-                </a>
+                <div class="relative z-20">
+                    <a class="hidden min-[768px]:inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll"
+                       href="<?= $industries['btn_link'] ?>">
+                        <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
+                             style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
+                        <span class="font-poppins text-white text-[18px] leading-[1.5] font-[700] tracking-[0.1em] uppercase relative"><?= $industries['btn_text'] ?></span>
+                    </a>
+                </div>
             <?php endif; ?>
         </div>
     </section>
