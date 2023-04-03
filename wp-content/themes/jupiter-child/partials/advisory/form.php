@@ -33,7 +33,7 @@ $form_background_image = get_field('form_background_image');
             </div>
             <div class="xl:w-[calc((555/1200)*100%)]">
                 <div id="form"
-                     class="relative bg-white w-full md:rounded-[6px] shadow-[0px_3px_20px_rgba(57,58,64,0.1)] py-[32px] px-[35px] md:pt-[40px] md:pb-[48px] md:px-[78px] xl:px-[54px] xl:pt-[50px] xl:pb-[46px] box-border">
+                     class="relative bg-white mx-[-33px] md:mx-0 md:rounded-[6px] shadow-[0px_3px_20px_rgba(57,58,64,0.1)] py-[32px] px-[35px] md:pt-[40px] md:pb-[48px] md:px-[78px] xl:px-[54px] xl:pt-[50px] xl:pb-[46px] box-border">
                     <?php if ($form_form_title) : ?>
                         <div class="font-poppins text-[16px] md:text-[18px] xl:text-[20px] text-[#393A40] leading-[1.5] font-[500] xl:opacity-80 mb-[32px] text-center max-w-[400px] mx-auto"><?= $form_form_title; ?></div>
                     <?php endif; ?>
