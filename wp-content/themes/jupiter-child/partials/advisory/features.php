@@ -26,7 +26,7 @@
                             <div style="order: <?= (in_array($index, array(2, 3))) ? $index === 3 ? 3 : 4 : $index + 1; ?>">
                                 <div class="pt-[100%] relative">
                                     <button data-x-on:click="activeIndex = <?= $index; ?>"
-                                            class="p-0 bg-transparent border-0 absolute inset-0 rounded-full lg:m-[-13px] overflow-hidden"
+                                            class="p-0 bg-transparent border-0 absolute inset-0 w-full h-full rounded-full lg:m-[-13px] overflow-hidden"
                                             data-x-bind:class="{'z-30' : activeIndex === <?= $index; ?>, 'z-20' : [0, 2].includes(<?= $index; ?>) && activeIndex !== <?= $index; ?> }"
                                     >
                                         <!--not active-->
