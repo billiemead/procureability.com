@@ -79,6 +79,30 @@ window.addEventListener('message', event => {
     }
 });
 
+new Swiper('#industryLeaders', {
+    loop: false,
+    spaceBetween: 18,
+    navigation: {
+        nextEl: '#industryLeadersNavigationNext',
+        prevEl: '#industryLeadersNavigationPrev',
+    },
+    pagination: {
+        el: '#industryLeadersPagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+        1240: {
+            slidesPerView: 6,
+            spaceBetween: 60,
+        }
+    }
+});
+
 //
 
 // let map;
