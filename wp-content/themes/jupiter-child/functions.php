@@ -67,7 +67,7 @@ function procureability_enqueue_styles()
     wp_enqueue_script('leaders', '/wp-content/themes/jupiter-child/dist/leaders.js', array('theme-scripts'), false, true);
 
     /*Front page*/
-    wp_enqueue_script('front-page', '/wp-content/themes/jupiter-child/dist/front-page.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/front-page.js'), true);
+    wp_enqueue_script('front-page', '/wp-content/themes/jupiter-child/dist/front-page.js', array(), filemtime(get_stylesheet_directory() . '/dist/front-page.js'), true);
 
     /*Managed Services*/
     if (is_page_template('page-managed-services.php')) {
