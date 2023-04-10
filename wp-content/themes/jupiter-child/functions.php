@@ -19,8 +19,15 @@ function procureability_enqueue_styles()
     /*Owl.carousel*/
     wp_register_script( 'owl-carousel', get_stylesheet_directory_uri() . '/dist/owl-carousel.js', array('jquery'), '2.3.4', true);
 
+    /*Swiper*/
+    wp_register_script( 'swiper', get_stylesheet_directory_uri() . '/dist/swiper.js', array(), '8.4.7', true);
+    wp_register_style( 'swiper', get_stylesheet_directory_uri() . '/dist/swiper.css', array(), '8.4.7' );
+
     /*Lodash*/
-    wp_enqueue_script('lodash', false, array(), false, true);
+    wp_register_script('lodash', false, array(), false, true);
+
+    wp_enqueue_script('swiper');
+    wp_enqueue_style('swiper');
 
     /*Fancybox*/
     wp_enqueue_style('fancybox3', get_stylesheet_directory_uri() . '/assets/sass/jquery.fancybox.min.css');
@@ -32,20 +39,11 @@ function procureability_enqueue_styles()
     /*WOW.js*/
     wp_enqueue_script('wow', 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', array(), false, true);
 
-    /*Swiper.js*/
-    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js', array(), false, true);
-    wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
-
     wp_register_style('main-jupiter-child-css', asset_hash('/wp-content/themes/jupiter-child/dist/style.css'), array(), null);
     wp_enqueue_style('main-jupiter-child-css');
 
     wp_register_style('main-jupiter-child-css-custom-pages', asset_hash('/wp-content/themes/jupiter-child/assets/sass/custom-style/custom-page.css'), array(), null);
     wp_enqueue_style('main-jupiter-child-css-custom-pages');
-
-    /*
-    wp_register_style('main-jupiter-child-css-print', '/wp-content/themes/jupiter-child/dist/main-print.css', array(), false, 'print');
-    wp_enqueue_style('main-jupiter-child-css-print');
-    */
 
     wp_register_script('main-jupiter-child-js', asset_hash('/wp-content/themes/jupiter-child/dist/index.js'), array(), null, true);
     wp_localize_script('main-jupiter-child-js', 'options',
@@ -80,7 +78,6 @@ function procureability_enqueue_styles()
 
     /*Blocks*/
     /*Leaders*/
-
     wp_enqueue_script('leaders', '/wp-content/themes/jupiter-child/dist/leaders.js', array('theme-scripts'), false, true);
 
     /*Front page*/
@@ -96,12 +93,15 @@ function procureability_enqueue_styles()
         wp_enqueue_script('careers', '/wp-content/themes/jupiter-child/dist/careers.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/careers.js'), true);
     }
 
+    /*Advisory*/
     if (is_page_template('advisory.php')) {
         wp_enqueue_script('advisory', get_stylesheet_directory_uri() . '/dist/advisory.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/advisory.js'), true);
     }
 
+    /*Contact*/
     if (is_page_template('contact.php')) {
 
+        wp_enqueue_script('lodash');
         wp_enqueue_script('contact', get_stylesheet_directory_uri() . '/dist/contact.js', array(), filemtime(get_stylesheet_directory() . '/dist/contact.js'), true);
 
         $team = get_field('hero_team');

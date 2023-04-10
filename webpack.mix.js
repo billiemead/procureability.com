@@ -46,6 +46,7 @@ mix
     .js(resources_path + 'assets/js/partials/leadership-section.js', resources_path + 'dist')
     /*third parties*/
     .js(resources_path + 'assets/js/thirdparties/owl-carousel.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/thirdparties/swiper.js', resources_path + 'dist')
     /*pages*/
     .js(resources_path + 'assets/js/page/managed-services.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/diversity-equity-inclusion.js', resources_path + 'dist')
@@ -66,6 +67,8 @@ mix
         require('tailwindcss'),
         require('autoprefixer')
     ])
+    /*third parties*/
+    .postCss(resources_path + 'assets/postcss/vendors/swiper.pcss', resources_path + 'dist/swiper.css')
 
     // Generate sourceMaps
     .sourceMaps(false, 'source-map')
