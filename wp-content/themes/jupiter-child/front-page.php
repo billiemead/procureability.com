@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_fields(); //cache to reduce amount of DB requests per get_field() ?>
+
 <?php /** HERO */ ?>
 <?php get_template_part('partials/front-page/home-hero'); ?>
 <?php /** !HERO */ ?>
