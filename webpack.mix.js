@@ -42,16 +42,19 @@ mix.copy('node_modules/alpinejs/dist/cdn.min.js', resources_path + 'dist/alpine.
 // JS
 mix
     .js(resources_path + 'assets/js/index.js', resources_path + 'dist')
-    .js(resources_path + 'assets/js/page/digital-services.js', resources_path + 'dist')
-    .js(resources_path + 'assets/js/page/about.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/leaders.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/partials/leadership-section.js', resources_path + 'dist')
+    /*third parties*/
+    .js(resources_path + 'assets/js/thirdparties/owl-carousel.js', resources_path + 'dist')
+    /*pages*/
+    .js(resources_path + 'assets/js/page/managed-services.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/page/diversity-equity-inclusion.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/front-page.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/careers.js', resources_path + 'dist')
-    .js(resources_path + 'assets/js/page/managed-services.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/advisory.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/contact.js', resources_path + 'dist')
-    .js(resources_path + 'assets/js/partials/leadership-section.js', resources_path + 'dist')
-    .vue()
+    .js(resources_path + 'assets/js/page/digital-services.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/page/about.js', resources_path + 'dist')
 
     // SASS
     .sass(resources_path + 'assets/sass/main.scss', resources_path + 'dist/main.css')

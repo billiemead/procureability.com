@@ -154,24 +154,6 @@ function home_hero() {
 
 add_shortcode( 'home_hero', 'home_hero' );
 
-function testimonials() {
-
-    ob_start();
-
-    $fields = get_field('testimonials');
-
-    if(!empty($fields)) {
-        set_query_var('fields', $fields);
-
-        get_template_part( 'partials/testimonials' );
-    }
-
-    get_template_part( 'partials/testimonials' );
-
-    return ob_get_clean();
-}
-
-add_shortcode( 'testimonials', 'testimonials' );
 
 function grid_posts() {
 

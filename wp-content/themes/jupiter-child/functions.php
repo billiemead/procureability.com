@@ -16,6 +16,9 @@ include_once "shortcodes.php";
 
 function procureability_enqueue_styles()
 {
+    /*Owl.carousel*/
+    wp_register_script( 'owl-carousel', get_stylesheet_directory_uri() . '/dist/owl-carousel.js', array('jquery'), '2.3.4', true);
+
     /*Lodash*/
     wp_enqueue_script('lodash', false, array(), false, true);
 
@@ -54,6 +57,20 @@ function procureability_enqueue_styles()
     wp_enqueue_script('main-jupiter-child-js');
 
     /*PAGES*/
+
+    /*Diversity Equity Inclusion*/
+    if (is_page_template('page-diversity.php')) {
+        wp_enqueue_script('owl-carousel');
+
+        wp_enqueue_script('diversity-equity-inclusion', get_stylesheet_directory_uri() . '/dist/diversity-equity-inclusion.js', array('owl-carousel'), filemtime(get_stylesheet_directory() . '/dist/diversity-equity-inclusion.js'), true);
+    }
+
+    /*Managed Services*/
+    if (is_page_template('page-managed-services.php')) {
+        wp_enqueue_script('owl-carousel');
+
+        wp_enqueue_script('managed-services', get_stylesheet_directory_uri() . '/dist/managed-services.js', array('owl-carousel'), filemtime(get_stylesheet_directory() . '/dist/managed-services.js'), true);
+    }
 
     /*Digital Services*/
     wp_enqueue_script('digital-services', '/wp-content/themes/jupiter-child/dist/digital-services.js', array('theme-scripts', 'wow', 'swiper'), filemtime(get_stylesheet_directory() . '/dist/digital-services.js'), true);

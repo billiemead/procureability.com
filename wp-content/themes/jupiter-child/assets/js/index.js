@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import 'magnific-popup';
-import 'owl.carousel';
 import {header, scrollToTop} from './header';
 import {disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks} from 'body-scroll-lock';
 
@@ -68,31 +67,6 @@ if ($.fancybox) {
 
 $(function () {
 
-    var searchForm = $('.responsive-searchform').detach().hide();
-
-    $('.mk-header-inner').after(searchForm);
-    $('.mk-nav-responsive-link').after('<a class="mk-mob-search-trigger" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.9171 20.0385L15.6811 14.5928C17.0273 12.9924 17.765 10.9788 17.765 8.88249C17.765 3.98476 13.7802 0 8.88249 0C3.98476 0 0 3.98476 0 8.88249C0 13.7802 3.98476 17.765 8.88249 17.765C10.7212 17.765 12.4733 17.2104 13.9714 16.1576L19.2472 21.6447C19.4677 21.8737 19.7643 22 20.0822 22C20.383 22 20.6684 21.8853 20.8851 21.6768C21.3454 21.2338 21.3601 20.4992 20.9171 20.0385ZM8.88249 2.31717C12.5027 2.31717 15.4478 5.2623 15.4478 8.88249C15.4478 12.5027 12.5027 15.4478 8.88249 15.4478C5.2623 15.4478 2.31717 12.5027 2.31717 8.88249C2.31717 5.2623 5.2623 2.31717 8.88249 2.31717Z" fill="#393A40"/></svg></a>').replaceWith('<div class="mk-nav-responsive-hamburger"><div class="mk-css-icon-menu"><div class="mk-css-icon-menu-line-1"></div><div class="mk-css-icon-menu-line-2"></div><div class="mk-css-icon-menu-line-3"></div></div></div>');
-
-    $('.responsive-searchform').find('i').replaceWith('<a class="mk-mob-search-close" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 24.9998L24.799 5.20084L26.2132 6.61505L6.41421 26.414L5 24.9998Z" fill="#393A40"/><path d="M6.41421 5L26.2132 24.799L24.799 26.2132L5 6.41421L6.41421 5Z" fill="#393A40"/></svg></a>');
-
-    $(document).on('click', '.mk-nav-responsive-hamburger', function (e) {
-        e.preventDefault();
-        $(this).toggleClass('is-active');
-        $('.mk-responsive-wrap').slideToggle();
-    });
-
-    $(document).on('click', '.mk-mob-search-trigger', function (e) {
-        e.preventDefault();
-        $(this).toggleClass('is-active');
-        $('.responsive-searchform').slideToggle();
-    });
-
-    $(document).on('click', '.mk-mob-search-close', function (e) {
-        e.preventDefault();
-        $('.mk-mob-search-trigger').removeClass('is-active');
-        $('.responsive-searchform').slideUp();
-    });
-
     $('.theme-content img').each(function () {
         if (!$(this).parent('a').hasClass('vc_single_image-wrapper')) {
             $(this).parent('a').addClass('mfp-image');
@@ -130,126 +104,6 @@ $(function () {
                 this.st.mainClass = 'mfp-zoom-out';
             },
         },
-    });
-
-
-    $('.js-cp-testimonials').owlCarousel({
-        items: 1,
-        nav: true,
-        navText: [
-            "<img src='/wp-content/themes/jupiter-child/dist/img/icon/right-arrow.svg' alt='prev'>",
-            "<img src='/wp-content/themes/jupiter-child/dist/img/icon/right-arrow.svg' alt='next'>"
-        ],
-        navSpeed: 800,
-        dotsSpeed: 800,
-        loop: true,
-        margin: 30,
-        stagePadding: 15
-    });
-
-    // accordion
-    let $accordion = $('.js-accordion');
-    let $accordionTrigger = $('.js-accordion-trigger');
-
-    $accordionTrigger.on('click', function () {
-        if ($(this).parent().hasClass('active')) {
-            $(this).parent().removeClass('active').find('.js-accordion-content').slideUp();
-        } else {
-            $(this).parent().addClass('active').siblings().removeClass('active').find('.js-accordion-content').slideUp();
-            $(this).parent().find('.js-accordion-content').slideDown();
-        }
-    });
-
-    function listToggle($trigger, $list, hidePhrase, showPhrase) {
-        $trigger.on('click', function (e) {
-            e.preventDefault();
-
-            $list.toggleClass('active').slideToggle();
-
-            if ($list.hasClass('active')) {
-                $trigger.html(hidePhrase);
-            } else {
-                $trigger.html(showPhrase);
-            }
-        });
-    }
-
-    listToggle($('.cp-technology__more'), $('.cp-technology__list_mobile'), 'hide benefits', 'Show all benefits');
-
-    if ($(window).outerWidth() < 992) {
-        $('.js-insights-slider').owlCarousel({
-            items: 2,
-            nav: false,
-            dots: false,
-            navSpeed: 800,
-            dotsSpeed: 800,
-            loop: true,
-            margin: 24,
-            responsive: {
-                0: {
-                    items: 1,
-                    dots: true
-                },
-                768: {
-                    items: 2,
-                    dots: false
-                }
-            }
-        });
-    }
-
-    if ($(window).outerWidth() < 768) {
-        $('.js-services-slider').owlCarousel({
-            items: 1,
-            nav: false,
-            dots: true,
-            navSpeed: 800,
-            dotsSpeed: 800,
-            loop: true,
-            margin: 50
-        });
-
-        $('.js-support-slider').owlCarousel({
-            items: 1,
-            nav: false,
-            dots: true,
-            navSpeed: 800,
-            dotsSpeed: 800,
-            loop: false,
-            margin: 50,
-        });
-
-        $('.js-industries-slider').owlCarousel({
-            items: 1,
-            nav: true,
-            dots: false,
-            navText: [
-                "<img src='/wp-content/themes/jupiter-child/dist/img/icon/left-arrow.svg' alt='prev'>",
-                "<img src='/wp-content/themes/jupiter-child/dist/img/icon/right-arrow.svg' alt='next'>"
-            ],
-            navSpeed: 800,
-            dotsSpeed: 800,
-            loop: true,
-            margin: 50
-        });
-    }
-
-    $('.js-testimonials').owlCarousel({
-        items: 1,
-        nav: false,
-        dots: true,
-        navSpeed: 800,
-        dotsSpeed: 800,
-        loop: true,
-        margin: 0,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        mouseDrag: false,
-        touchDrag: true,
-        dotsData: true,
-        autoplay: true,
-        autoplayTimeout: 7500,
-        autoplayHoverPause: true
     });
 })
 
