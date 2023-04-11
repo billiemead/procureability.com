@@ -60,6 +60,8 @@ mix
     // SASS
     .sass(resources_path + 'assets/sass/main.scss', resources_path + 'dist/main.css')
 
+    //jupiter theme styles
+    .postCss(resources_path + 'assets/postcss/jupiter/full-styles-only-required.pcss', resources_path + 'dist/full-styles-only-required.css')
     .postCss(resources_path + 'assets/postcss/index.css', resources_path + 'dist/index.css', [
         require('postcss-import'),
         require('postcss-nesting'),
