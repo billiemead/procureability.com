@@ -15,7 +15,7 @@
                 <?php endif; ?>
                 <?php if ($reasons_to_join_text) : ?>
                     <div class="text-center mb-[24px]">
-                        <div class="font-poppins text-[16px] leading-[1.7] text-[#393A40]"><?= $reasons_to_join_text; ?>
+                        <div class="[&_p]:!font-poppins [&_p]:text-[16px] [&_p]:leading-[1.7] [&_p]:text-[#393A40]"><?= $reasons_to_join_text; ?>
                         </div>
                     </div>
                 <?php endif; ?>
