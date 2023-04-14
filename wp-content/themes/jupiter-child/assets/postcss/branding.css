@@ -2,6 +2,10 @@
     background: linear-gradient(267.34deg, rgba(53, 202, 223, 0.5) 6.83%, rgba(30, 220, 83, 0.195) 93.71%), #00A2B7;
 }
 
+.brand-light-text-gradient {
+    background: linear-gradient(267.71deg, rgba(53, 202, 223, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%), #FFFFFF;
+}
+
 .brand-button-gradient {
     background: linear-gradient(267.71deg, rgba(30, 220, 83, 0.5) -13.05%, rgba(30, 220, 83, 0) 106.84%), #3BA17C;
 }

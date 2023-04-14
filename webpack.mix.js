@@ -36,6 +36,7 @@ mix.webpackConfig({
     }
 })
 
+mix.copy('node_modules/@alpinejs/intersect/dist/cdn.min.js', resources_path + 'dist/intersect-alpine.min.js');
 mix.copy('node_modules/@alpinejs/collapse/dist/cdn.min.js', resources_path + 'dist/collapse-alpine.min.js');
 mix.copy('node_modules/alpinejs/dist/cdn.min.js', resources_path + 'dist/alpine.min.js');
 
@@ -56,6 +57,7 @@ mix
     .js(resources_path + 'assets/js/page/contact.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/digital-services.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/about.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/page/culture.js', resources_path + 'dist')
 
     // SASS
     .sass(resources_path + 'assets/sass/main.scss', resources_path + 'dist/main.css')
