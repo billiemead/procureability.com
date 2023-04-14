@@ -1,7 +1,7 @@
 <?php $reasons_to_join_title = get_field('reasons_to_join_title'); ?>
 <?php $reasons_to_join_text = get_field('reasons_to_join_text'); ?>
 <?php $reasons_to_join_button = get_field('reasons_to_join_button'); ?>
-<?php $reasons_to_join = get_field('reasons_to_join', 30515); ?>
+<?php $reasons_to_join = get_field('reasons_to_join', 30277); ?>
 
 <div class="relative" data-x-data="rtjCards">
     <section class="py-[40px] md:pt-[80px] md:pb-[50px]">

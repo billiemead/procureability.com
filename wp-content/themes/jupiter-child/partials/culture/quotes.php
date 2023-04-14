@@ -16,7 +16,7 @@
                         <div class="order-2 md:group-[:nth-child(even)]:order-2 md:group-[:nth-child(odd)]:order-1">
                             <?php if ($quote['text']) : ?>
                                 <div class="mb-[16px]">
-                                    <div class="[&_p]:font-poppins [&_p]text-[16px] [&_p]leading-[1.65] [&_p]text-[#393A40] [&_p]:inline relative">
+                                    <div class="[&_p]:!font-poppins [&_p]text-[16px] [&_p]leading-[1.65] [&_p]text-[#393A40] [&_p]:inline relative">
                                         <svg class="absolute left-[-28px]" width="22" height="16" viewBox="0 0 22 16"
                                              fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
