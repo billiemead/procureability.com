@@ -21,7 +21,7 @@ $insights = get_field('insights');
 
   <section class="cp-about">
     <div class="cp-about__bg"
-         style="background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/diversity-page/about-bg.png')"></div>
+         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/branding-star-revision.svg')"></div>
 
     <?php if(!empty($about['list'])) : ?>
     <div class="container">

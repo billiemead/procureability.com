@@ -11,8 +11,8 @@ $cta_file_download_button = get_field('cta_file_download_button');
         <div class="max-w-[984px] px-[15px] mx-auto">
             <div class="bg-[#FAFAFB] border border-[#0098AE] border-solid shadow-[0px_16px_50px_rgba(19,131,156,0.1)] py-[35px] md:py-[45px] px-[25px] relative  "
             >
-                <div class="hidden md:block absolute inset-0 bg-no-repeat bg-[bottom_-235px_right_-235px]"
-                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/branding-star-bold-predictions.svg')"></div>
+                <div class="hidden md:block absolute inset-0 bg-no-repeat bg-[670px_auto] bg-[bottom_-235px_right_-235px]"
+                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/branding-star-revision.svg')"></div>
                 <div class="max-w-[564px] mx-auto relative">
                     <?php if ($cta_file_download_title) : ?>
                         <div class="text-center mb-[16px]">

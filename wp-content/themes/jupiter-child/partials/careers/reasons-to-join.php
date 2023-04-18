@@ -5,7 +5,7 @@
 <?php $reasons_to_join_contact_card = get_field('contact_card'); ?>
 
 <div class="relative" data-x-data="rtjCards">
-    <div class="hidden lg:block absolute inset-0 bg-no-repeat bg-[left_calc(50%+550px)_bottom]"
+    <div class="hidden lg:block absolute inset-0 bg-no-repeat bg-[700px_auto] bg-[left_calc(50%+550px)_bottom]"
          style="background-image: url('<?= $reasons_to_join_background_image['url']; ?>')"></div>
     <section class="relative py-[48px] md:pt-[64px] md:pb-[15px] xl:py-[90px]">
         <div class="max-w-[636px] xl:max-w-[1200px] px-[34px] md:px-0 mx-auto">
