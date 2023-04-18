@@ -33,16 +33,9 @@
             </div>
             <?php if ($small_video_video) : ?>
                 <div class="-mx-[34px] md:mx-0">
-                    <?= wp_video_shortcode(
-                        array(
-                            'mp4' => $small_video_video['url'],
-                            'class' => 'block w-full h-auto rounded-[3px] shadow-lg shadow-gray-400 cursor-pointer',
-                            'width' => 0,
-                            'height' => 0,
-                            'preload' => true,
-                            'poster' => $small_video_poster['url']
-                        )
-                    ); ?>
+                    <div class="[&_.mejs-video_.mejs-controls]:opacity-0 [&_.mejs-video_.mejs-overlay-button]:hidden rounded-[3px] shadow-lg shadow-gray-400 overflow-hidden">
+                        <?= do_shortcode('[video width="0" height="0" mp4="' . $small_video_video['url'] . '" poster="' . $small_video_poster['url'] . '"][/video]') ?>
+                    </div>
                 </div>
             <?php endif; ?>
         </div>

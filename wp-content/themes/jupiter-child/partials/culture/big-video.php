@@ -13,8 +13,9 @@
         <?php endif; ?>
         <?php if ($big_video_video) : ?>
             <div class="-mx-[34px] md:mx-0">
-                <?= wp_video_shortcode(array('mp4' => $big_video_video['url'], 'class' => 'w-full h-auto rounded-[3px] cursor-pointer', 'width' => 0, 'height' => 0,
-                    'preload' => true, 'poster' => $big_video_poster['url'])) ?>
+                <div class="[&_.mejs-video_.mejs-controls]:opacity-0 [&_.mejs-video_.mejs-overlay-button]:hidden rounded-[3px] overflow-hidden">
+                    <?= do_shortcode('[video width="0" height="0" mp4="' . $big_video_video['url'] . '" poster="' . $big_video_poster['url'] . '"][/video]') ?>
+                </div>
             </div>
         <?php endif; ?>
     </div>
