@@ -91,6 +91,7 @@ wp-content/mysql.sql
 !package-lock.json
 !webpack.mix.js
 !tailwind.config.js
+!BingSiteAuth.xml
 
 # track favicon files, if they exist
 !android-chrome-*.png
