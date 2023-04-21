@@ -62,8 +62,8 @@
                 <?php if ($insights_cta) : ?>
                     <div>
                         <div class="pt-[117.19%] relative">
-                            <div class="absolute inset-0 rounded-[5px] p-[40px] border-2 border-solid border-[rgba(0,152,174,0.6)] shadow-[0px_9px_42px_rgba(0,152,174,0.16)] bg-no-repeat bg-[right_-75px_bottom_-131px] bg-[400px_auto]"
-                                 style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/branding-star-revision.svg')">
+                            <div class="absolute inset-0 rounded-[5px] p-[40px] border-2 border-solid border-[rgba(0,152,174,0.6)] shadow-[0px_9px_42px_rgba(0,152,174,0.16)] bg-no-repeat bg-[right_0px_bottom_0px]"
+                                 style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/star-insights.svg')">
                                 <div class="mb-[20px]">
                                     <div class="font-poppins text-[#393A40] text-[30px] leading-[1.3] font-semibold ">
                                         <?= $insights_cta['title']; ?>
