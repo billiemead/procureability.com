@@ -35,7 +35,7 @@ get_header();
         </div>
     </section>
 
-    <section class="cp-approach" id="video">
+    <section class="cp-approach" id="video-1">
         <div class="container">
             <div>
                 <div>
@@ -76,7 +76,7 @@ get_header();
     <?php $video_video = $video['video_video']; ?>
     <?php if ($video_title && $video_video) : ?>
         <!--Video-->
-        <section id="video" class="pb-[30px] pt-[15px] md:pt-0">
+        <section id="video-2" class="pb-[30px] pt-[15px] md:pt-0">
             <div class="max-w-[930px] px-[15px] mx-auto">
                 <div class="bg-[#0095b0] px-[15px] pt-[15px] pb-[40px]">
                     <div>
