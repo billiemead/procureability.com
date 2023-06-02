@@ -1674,16 +1674,16 @@
         },
         {
             "name": "procureability-com/revslider",
-            "version": "6.6.5",
+            "version": "6.6.12",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ProcureAbility-com/revslider.git",
-                "reference": "a2c98133002ea9126b9ff9eb35567bf5fe33cea0"
+                "reference": "439cdedc0b980cb4a7624bd3f29ebf2fdc19de1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ProcureAbility-com/revslider/zipball/a2c98133002ea9126b9ff9eb35567bf5fe33cea0",
-                "reference": "a2c98133002ea9126b9ff9eb35567bf5fe33cea0",
+                "url": "https://api.github.com/repos/ProcureAbility-com/revslider/zipball/439cdedc0b980cb4a7624bd3f29ebf2fdc19de1d",
+                "reference": "439cdedc0b980cb4a7624bd3f29ebf2fdc19de1d",
                 "shasum": ""
             },
             "type": "wordpress-plugin",
@@ -1701,10 +1701,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/ProcureAbility-com/revslider/tree/6.6.5",
+                "source": "https://github.com/ProcureAbility-com/revslider/tree/6.6.12",
                 "issues": "https://github.com/ProcureAbility-com/revslider/issues"
             },
-            "time": "2022-11-07T03:43:24+00:00"
+            "time": "2023-05-31T16:35:30+00:00"
         },
         {
             "name": "procureability-com/svc-post-grid-addon",
