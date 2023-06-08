@@ -707,5 +707,3 @@ function remove_author_wpseo_article_schema( $graph_piece ) {
 }
 
 add_filter( 'wpseo_schema_article', 'remove_author_wpseo_article_schema' );
-
-remove_action( 'wp_head', 'mk_structured_data_meta_tags' );
