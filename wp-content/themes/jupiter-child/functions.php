@@ -696,14 +696,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 
 add_action( 'mk_theme_after_body_opening', 'show_gtag_manager_after_body_tag', 10, 0 );
-
-add_filter( 'wpseo_meta_author', '__return_false' );
-
-add_filter( 'wpseo_schema_needs_author', '__return_false' );
-
-function remove_author_wpseo_article_schema( $graph_piece ) {
-    unset( $graph_piece['author'] );
-    return $graph_piece;
-}
-
-add_filter( 'wpseo_schema_article', 'remove_author_wpseo_article_schema' );
