@@ -118,7 +118,7 @@ function procureability_enqueue_styles()
         wp_localize_script('contact', 'teamOnlyImage', $team_photo);
     }
 
-    $leadership_section_pages_slug = array('assessments-and-transformations', 'category-management', 'strategic-sourcing', 'supply-chain-and-logistics', 'managed-services', 'digital-services', 'procurement-staffing-and-recruiting');
+    $leadership_section_pages_slug = array('assessments-and-transformations', 'category-management', 'strategic-sourcing', 'supply-chain-and-logistics', 'managed-services', 'digital-services', 'procurement-staffing-and-recruiting', 'digital-procurement-solutions', 'procurement-transformation', 'category-management-services');
 
     if (is_page($leadership_section_pages_slug)) {
 
