@@ -62,7 +62,7 @@
                             </div>
                         <?php endif; ?>
                     </div>
-                    <div class="[&_.hbspt-form_form_.hs-submit]:!mt-0">
+                    <div>
                         <?= do_shortcode($cta_first_form_form); ?>
                     </div>
                 </div>
