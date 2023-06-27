@@ -9,6 +9,7 @@
 @import 'vendors/tailwindcss.pcss';
 @import 'formidable-overwrite.pcss';
 @import 'hubspot-form.pcss';
+@import 'vendors/popup-maker.pcss';
 
 @import "blog/parts/blog-list.pcss";
 @import "blog/parts/custom-content-block.pcss";
