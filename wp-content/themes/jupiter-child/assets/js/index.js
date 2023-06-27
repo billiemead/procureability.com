@@ -107,3 +107,18 @@ $(function () {
     });
 })
 
+const formID = '794fc76d-49dd-4cbb-b777-bb844d175ca0';
+
+window.addEventListener('message', event => {
+    if (
+        event.data.type === 'hsFormCallback' &&
+        event.data.eventName === 'onFormSubmitted' &&
+        event.data.id === formID
+    ) {
+        const popup = document.getElementById('popmake-31144');
+
+        popup.dispatchEvent(new Event("pumSetCookie"));
+
+        window.location.href = "https://development.procureability.com/5-bold-procurement-predictions-for-2030/";
+    }
+});
