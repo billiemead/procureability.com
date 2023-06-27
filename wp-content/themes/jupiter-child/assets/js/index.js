@@ -117,7 +117,7 @@ window.addEventListener('message', event => {
     ) {
         const popup = document.getElementById('popmake-31144');
 
-        popup.dispatchEvent(new Event("pumSetCookie"));
+        popup.dispatchEvent(new Event("pumSetCookie", {bubbles: true}));
 
         window.location.href = "https://development.procureability.com/5-bold-procurement-predictions-for-2030/";
     }
