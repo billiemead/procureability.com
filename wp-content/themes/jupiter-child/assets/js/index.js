@@ -119,6 +119,6 @@ window.addEventListener('message', event => {
 
         popup.dispatchEvent(new Event("pumSetCookie", {bubbles: true}));
 
-        //window.location.href = "https://development.procureability.com/5-bold-procurement-predictions-for-2030/";
+        window.location.href = "https://development.procureability.com/5-bold-procurement-predictions-for-2030/";
     }
 });
