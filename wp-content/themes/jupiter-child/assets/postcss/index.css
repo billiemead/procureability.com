@@ -19,6 +19,7 @@
 @import "blog/parts/blog-heading-with-icon.pcss";
 @import "blog/parts/blog-two-columns-block-with-arrows.pcss";
 @import "blog/parts/blog-two-columns-list-block.pcss";
+@import "blog/parts/problem-result.pcss";
 
 @import 'header/index.pcss';
 @import 'footer/navigation.pcss';
