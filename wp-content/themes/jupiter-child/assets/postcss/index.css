@@ -25,7 +25,12 @@
 @import "blog/parts/blog-link-with-dotted-underline.pcss";
 @import "blog/parts/blog-authors.pcss";
 @import "blog/parts/problem-result.pcss";
+<<<<<<< HEAD
 @import "blog/parts/blog-strategic-plan.pcss";
+=======
+@import "blog/parts/blog-single-column-list-block.pcss";
+
+>>>>>>> 5d01c4a... [+] Adapt or Fall Behind: How to Reskill and Upskill Your Procurement Team Amid Rapid Change blog page
 
 @import 'header/index.pcss';
 @import 'footer/navigation.pcss';
