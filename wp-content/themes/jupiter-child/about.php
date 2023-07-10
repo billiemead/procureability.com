@@ -36,10 +36,10 @@
 
             <?php $video_hash = $_GET['video']; ?>
             <div class="video-tabs">
-                <a href="/about/" class="video-tab <?= ($video_hash !== 'es') ? 'active' : ''; ?>">
+                <a href="/procurement-services-company/" class="video-tab <?= ($video_hash !== 'es') ? 'active' : ''; ?>">
                     EN
                 </a>
-                <a href="/about/?video=es" class="video-tab <?= ($video_hash === 'es') ? 'active' : ''; ?>">
+                <a href="/procurement-services-company/?video=es" class="video-tab <?= ($video_hash === 'es') ? 'active' : ''; ?>">
                     ES
                 </a>
             </div>
