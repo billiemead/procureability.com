@@ -107,3 +107,18 @@ $(function () {
     });
 })
 
+const formID = '794fc76d-49dd-4cbb-b777-bb844d175ca0';
+
+window.addEventListener('message', event => {
+    if (
+        event.data.type === 'hsFormCallback' &&
+        event.data.eventName === 'onFormSubmitted' &&
+        event.data.id === formID
+    ) {
+        const popup = document.getElementById('popmake-30894');
+
+        popup.dispatchEvent(new Event("pumSetCookie", {bubbles: true}));
+
+        window.location.href = "https://procureability.com/wp-content/uploads/2023/07/final-white-paper-bold-predictions-27.6.23.pdf";
+    }
+});
