@@ -115,10 +115,10 @@ window.addEventListener('message', event => {
         event.data.eventName === 'onFormSubmitted' &&
         event.data.id === formID
     ) {
-        const popup = document.getElementById('popmake-31144');
+        const popup = document.getElementById('popmake-30894');
 
         popup.dispatchEvent(new Event("pumSetCookie", {bubbles: true}));
 
-        window.location.href = "https://development.procureability.com/wp-content/uploads/2023/06/final-white-paper-bold-predictions-27.6.23.pdf";
+        window.location.href = "https://procureability.com/wp-content/uploads/2023/07/final-white-paper-bold-predictions-27.6.23.pdf";
     }
 });
