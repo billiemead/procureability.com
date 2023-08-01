@@ -63,6 +63,12 @@ function procureability_enqueue_styles()
         wp_enqueue_script('diversity-equity-inclusion', get_stylesheet_directory_uri() . '/dist/diversity-equity-inclusion.js', array('owl-carousel'), filemtime(get_stylesheet_directory() . '/dist/diversity-equity-inclusion.js'), true);
     }
 
+    /*Thank You*/
+    if (is_page_template('thank-you.php')) {
+
+        wp_enqueue_script('thank-you', get_stylesheet_directory_uri() . '/dist/thank-you.js', array(), filemtime(get_stylesheet_directory() . '/dist/thank-you.js'), true);
+    }
+
     /*Managed Services*/
     if (is_page_template('page-managed-services.php')) {
         wp_enqueue_script('owl-carousel');
@@ -649,6 +655,10 @@ if (!function_exists('is_transparent_header')) {
         }
 
         if (is_page_template('landing.php')) {
+            return false;
+        }
+
+        if (is_page_template('thank-you.php')) {
             return false;
         }
 
