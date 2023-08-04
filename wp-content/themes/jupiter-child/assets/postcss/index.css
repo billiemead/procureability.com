@@ -9,7 +9,8 @@
 @import 'vendors/tailwindcss.pcss';
 @import 'formidable-overwrite.pcss';
 @import 'hubspot-form.pcss';
-@import 'vendors/popup-maker.pcss';
+@import 'vendors/popup-maker/themes/pum-theme-download-5-bold-procurement-predictions-for-2030.pcss';
+@import 'vendors/popup-maker/themes/pum-theme-event-page.pcss';
 
 @import "blog/parts/blog-list.pcss";
 @import "blog/parts/custom-content-block.pcss";
