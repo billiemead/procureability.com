@@ -56,6 +56,7 @@ mix
     .js(resources_path + 'assets/js/page/contact.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/digital-services.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/about.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/page/thank-you.js', resources_path + 'dist')
 
     // SASS
     .sass(resources_path + 'assets/sass/main.scss', resources_path + 'dist/main.css')
