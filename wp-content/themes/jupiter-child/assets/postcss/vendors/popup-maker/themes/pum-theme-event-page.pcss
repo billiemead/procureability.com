@@ -2,9 +2,10 @@
 
     &.pum-overlay {
         &.pum-active {
-            //overflow: scroll !important;
+        //overflow: scroll !important;
         }
     }
+
     .pum-container {
         padding: 65px 16px !important;
         background-position: center center;
@@ -20,11 +21,12 @@
 
     .pum-content {
         & + .pum-close {
-            width: 24px !important;
-            height: 24px !important;
+            width: 28px !important;
+            height: 28px !important;
             top: 8px !important;
             right: 8px !important;
-            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADqSURBVHgB7ZRNDoIwEIU7NPE89S9epyGyId6BegcXLoxxydYb6FYS6zE8BZWqC4RCX10YF3xJk0Jm3kfopIwN/CVSJoIFImXq7IlahUkqiI90HKcZA7G1xEm7Pow3X9yuxV1MF1Rt1WQ8Z1oXZ1+4IVLVWh/229wreEkuJ0TyEb7bKFeNU4BIkPBeQZ8EDbcQA5DLlSJjsmop+4yGw4K65C2Awi0RA4nK0rj2PjhSVP/njMieAzTCkKB5oOgIQ4KuaQmR8NDwUAn/JjxE0hI8b8WIcnQU6xIxmx/tXebr6bx6e3uS8J6B3/AAiAC4K7DDZswAAAAASUVORK5CYII=') !important;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADYSURBVHgBrZPBDcIwDEXtIu6M0BG6QkfoBkGIS5kHLgiRDRihK3QERui9UoMd2ggSJ0GiPjSq8993basAfwbyY384dXSUpjCNvl76FKBUW+EGWd/fb+e6mPMVG+CEnTq21Q/wDgyUnLMGVLmmY+CLmIkHD2YyjWvBCghi2ArIjE2XdgS41vp9h19VBBMYSRSBAwPJZE6LsGggmEAMdkMMYvTeucxWVIYG/sAgs50iBfNn51aMKXjpObVizMGuQMTEtkDwIwVzsNhv53MGzxQcmBjS088Ea8QL2rq4CWQeVxwAAAAASUVORK5CYII=') !important;
+            background-position: center center;
             background-color: transparent !important;
             font-size: 0px !important;
             box-shadow: none !important;
@@ -36,4 +38,14 @@
             }
         }
     }
+}
+
+@media (min-width: 768px) {
+    html.pum-open.pum-open-overlay.pum-open-scrollable body > [aria-hidden] {
+        padding-right: 15px !important;
+    }
+}
+
+html.pum-open.pum-open-overlay.pum-open-scrollable body > [aria-hidden] {
+    padding-right: 0px !important;
 }
