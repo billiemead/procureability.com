@@ -28,7 +28,7 @@
                                     <div class="font-poppins text-[16px] leading-[1.6] text-[#61636B]"><?= the_excerpt(); ?></div>
                                 </div>
                                 <div>
-                                    <a class="font-poppins text-[#3BA17C] text-[16px] font-semibold leading-normal uppercase tracking-[1.6px]"
+                                    <a class="font-poppins hover:decoration-transparent transition-colors text-[#3BA17C] text-[16px] font-semibold leading-normal uppercase tracking-[1.6px] !underline underline-offset-[7px] !decoration-dotted"
                                        href="<?= the_permalink(); ?>">read more</a>
                                 </div>
                             </div>
