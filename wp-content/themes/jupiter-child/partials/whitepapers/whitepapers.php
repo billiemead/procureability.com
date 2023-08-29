@@ -13,7 +13,7 @@
                         <div class="grid md:grid-cols-[45%_auto] gap-[30px]">
                             <div>
                                 <a class="block relative group" href="<?= the_permalink(); ?>">
-                                    <?= get_the_post_thumbnail($post, 'large', array('class' => 'block max-w-full h-auto')); ?>
+                                    <?= get_the_post_thumbnail($post, 'full', array('class' => 'block max-w-full h-auto')); ?>
                                     <div class="transition-opacity duration-200 group-hover:opacity-100 flex items-center justify-center absolute inset-0 bg-[rgba(64,64,64,.5)] opacity-0">
                                         <span class="text-[25px] text-white">Click Here</span>
                                     </div>
@@ -22,7 +22,7 @@
                             </div>
                             <div>
                                 <div class="mb-[16px]">
-                                    <div class="font-poppins text-[#393A40] text-[20px] leading-[1.3] font-semibold"><?= the_title(); ?></div>
+                                    <a href="<?= the_permalink(); ?>" class="font-poppins text-[#393A40] text-[20px] leading-[1.3] font-semibold"><?= the_title(); ?></a>
                                 </div>
                                 <div class="mb-[35px]">
                                     <div class="font-poppins text-[16px] leading-[1.6] text-[#61636B]"><?= the_excerpt(); ?></div>
