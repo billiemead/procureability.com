@@ -5,8 +5,8 @@
 
 <!--hero-->
 <section
-    class="pt-[100px] md:pt-[165px] pb-[94px] bg-no-repeat bg-center bg-cover"
-    style="background-image: url(<?= $hero_background_image['url']; ?>)">
+        class="pt-[100px] md:pt-[165px] pb-[94px] bg-no-repeat bg-[center_top] md:bg-[left_40%_top] lg:bg-[center_top] bg-cover"
+        style="background-image: url(<?= $hero_background_image['url']; ?>)">
     <div class="max-w-[952px] mx-auto px-[15px]">
         <div class="text-center mb-[8px]">
             <?php if ($hero_title) : ?>
