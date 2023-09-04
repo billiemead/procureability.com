@@ -45,7 +45,13 @@ $hero_button = get_field('hero_button');
 <!--Content-->
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-        <?php get_template_part('partials/page', 'content'); ?>
+        <section class="section section--content">
+            <div class="section-container">
+                <div class="cms-content">
+                    <?php the_content(); ?>
+                </div>
+            </div>
+        </section>
     <?php endwhile; ?>
 <?php endif; ?>
 <!--Content-->
