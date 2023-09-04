@@ -3,6 +3,84 @@
     "title": "Page – Managed Services",
     "fields": [
         {
+            "key": "field_64f59c09310a7",
+            "label": "Hero",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64f59c1c310a9",
+            "label": "Background image",
+            "name": "hero_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64f59c0f310a8",
+            "label": "Title",
+            "name": "hero_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64f59c2d310aa",
+            "label": "Button",
+            "name": "hero_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_625db98c5f0f1",
             "label": "Approach",
             "name": "",
@@ -247,6 +325,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_625dba665f0fe",
@@ -295,8 +374,7 @@
                             "maxlength": "",
                             "parent_repeater": "field_625dba4b5f0fd"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 }
             ]
         },
@@ -492,6 +570,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_625dca68dcb9d",
@@ -540,8 +619,7 @@
                             "maxlength": "",
                             "parent_repeater": "field_625dca60dcb9c"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 }
             ]
         },
@@ -837,6 +915,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_625dc25e93147",
@@ -906,8 +985,7 @@
                             "new_lines": "",
                             "parent_repeater": "field_625dc24393146"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 }
             ]
         },
@@ -983,6 +1061,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_625dc2df1f210",
@@ -1026,8 +1105,7 @@
                             "new_lines": "",
                             "parent_repeater": "field_625dc2d91f20f"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 }
             ]
         },
@@ -1103,6 +1181,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_625dc3331f216",
@@ -1151,8 +1230,7 @@
                             "maxlength": "",
                             "parent_repeater": "field_625dc3281f215"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 },
                 {
                     "key": "field_625dc3571f219",
@@ -1353,6 +1431,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_625dc46d2d054",
@@ -1401,8 +1480,7 @@
                             "maxlength": "",
                             "parent_repeater": "field_625dc4502d053"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 }
             ]
         },
@@ -1538,6 +1616,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_625dc5102d05d",
@@ -1581,8 +1660,7 @@
                             "maxlength": "",
                             "parent_repeater": "field_625dc5072d05c"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 }
             ]
         },
@@ -1678,6 +1756,7 @@
                     "max": 0,
                     "layout": "table",
                     "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_625dc5b8f81cd",
@@ -1747,8 +1826,7 @@
                             "new_lines": "br",
                             "parent_repeater": "field_625dc5aaf81cc"
                         }
-                    ],
-                    "rows_per_page": 20
+                    ]
                 }
             ]
         },
@@ -2043,5 +2121,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678383274
+    "modified": 1693818015
 }

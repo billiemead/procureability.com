@@ -23,18 +23,43 @@ $insights = get_field('insights');
 get_header();
 ?>
 
-<div class="custom-page managed-services-page">
-    <section class="hero">
-        <div class="hero__bg--managed-services"
-             style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/managed-services/header-ver2.jpg')"></div>
 
-        <div class="container">
-            <div class="hero__wrapper d-flex flex-column justify-content-center align-items-center">
-                <h1 class="hero__title text-center hero-text-gradient"><?php the_title(); ?></h1>
+<?php
+
+$hero_title = get_field('hero_title');
+$hero_background_image = get_field('hero_image');
+$hero_button = get_field('hero_button');
+
+?>
+
+<!--hero-->
+<section
+        class="pt-[58px] pb-[48px] xl:pt-0 xl:pb-0 bg-center bg-cover bg-no-repeat xl:min-h-[480px] xl:flex xl:flex-col xl:justify-center xl:items-center"
+        style="background-image: url('<?= $hero_background_image ? $hero_background_image['url'] : ''; ?>'); ">
+    <div class="md:max-w-[636px] xl:max-w-[480px] mx-auto px-[33px] md:px-0">
+        <?php if ($hero_title) : ?>
+            <div class="text-center">
+                <h1 class="font-poppins text-[22px] leading-[1.2] font-medium md:text-[32px] xl:text-[42px] text-white mb-0"><?= $hero_title; ?></h1>
             </div>
-        </div>
-    </section>
+        <?php endif; ?>
+        <?php if ($hero_button) : ?>
+            <div class="text-center mt-[24px]">
+                <a href="<?= $hero_button['url']; ?>"
+                   target="<?= $hero_button['target'] ? $hero_button['target'] : '_self'; ?>"
+                   class="inline-block pt-[13px] pb-[11px] px-[30px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
+                >
+                    <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
+                         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
+                    ></div>
+                    <span class="relative font-poppins text-white text-[18px] leading-[1.51] font-[700] uppercase tracking-[2px]"><?= $hero_button['title']; ?></span>
+                </a>
+            </div>
+        <?php endif; ?>
+    </div>
+</section>
+<!--!hero-->
 
+<div class="custom-page managed-services-page">
     <section class="cp-approach md:pt-0 before:content-[''] before:block before:h-[76px] before:mt-[-76px] before:invisible" id="video-1">
         <div class="container">
             <div>
