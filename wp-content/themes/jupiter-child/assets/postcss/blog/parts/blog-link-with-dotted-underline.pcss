@@ -1,0 +1,22 @@
+.link-with-dotted-underline {
+    &--black {
+        color: #000000 !important;
+        border-bottom-color: #000000 !important;
+    }
+    border-bottom-width: 1px !important;
+    border-bottom-style: dotted !important;
+    transition: all .2s linear !important;
+
+    &:hover {
+        border-bottom-color: transparent !important;
+    }
+
+    &--green {
+        color: #0098ae !important;
+        border-bottom-color: #0098ae !important;
+
+        &:hover {
+            color: #0098ae !important;
+        }
+    }
+}
