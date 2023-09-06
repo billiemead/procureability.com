@@ -6,6 +6,7 @@
             "key": "field_62eaa73bfbc46",
             "label": "Leadership title",
             "name": "leadership_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_62f6215614f08",
             "label": "Leadership people",
             "name": "leadership_people",
+            "aria-label": "",
             "type": "post_object",
             "instructions": "",
             "required": 0,
@@ -72,6 +74,13 @@
                 "operator": "==",
                 "value": "page-managed-services.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "procurement-transformation.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -83,5 +92,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1666267634
+    "modified": 1693935512
 }

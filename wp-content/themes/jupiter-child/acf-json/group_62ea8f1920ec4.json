@@ -100,6 +100,7 @@
             "max": 0,
             "layout": "table",
             "button_label": "Add Row",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_62ea93affac4e",
@@ -122,8 +123,7 @@
                     "maxlength": "",
                     "parent_repeater": "field_62ea9398fac4d"
                 }
-            ],
-            "rows_per_page": 20
+            ]
         },
         {
             "key": "field_62ea93b7fac4f",
@@ -229,6 +229,13 @@
                 "operator": "==",
                 "value": "single-video.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "procurement-transformation.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -240,5 +247,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673982507
+    "modified": 1693935568
 }
