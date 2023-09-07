@@ -11,7 +11,7 @@
             <?php endif; ?>
             <div class="max-w-[180px] md:max-w-[398px] xl:max-w-[755px] mx-auto relative">
                 <div id="ourProfessionalTeam" class="swiper">
-                    <div class="swiper-wrapper xl:flex xl:justify-center">
+                    <div class="swiper-wrapper flex justify-center">
                         <?php foreach ($leadership_people as $key => $post_id) : ?>
                             <div class="swiper-slide xl:!w-[192px]">
                                 <a class="block group cursor-pointer"
