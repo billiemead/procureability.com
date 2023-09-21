@@ -110,8 +110,8 @@ define( 'WP_MEMORY_LIMIT', '512M' );
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
 
 define('WP_LOCAL_DEV', true);
-define('WP_DEBUG', true);
-define( 'WP_DEBUG_LOG', true );
+define('WP_DEBUG', false);
+define( 'WP_DEBUG_LOG', false );
 define( 'WP_DEBUG_DISPLAY', false );
 @ini_set( 'display_errors', 0 );
 define( 'WP_SITEURL', 'http://procureability.com' );
