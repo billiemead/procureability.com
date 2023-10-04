@@ -34,7 +34,7 @@ $hero_button = get_field('hero_button');
 
 <!--hero-->
 <section
-        class="pt-[58px] pb-[48px] xl:pt-0 xl:pb-0 bg-center bg-cover bg-no-repeat xl:min-h-[480px] xl:flex xl:flex-col xl:justify-center xl:items-center"
+        class="pt-[58px] pb-[48px] xl:pt-0 xl:pb-0 bg-cover bg-no-repeat xl:min-h-[480px] xl:flex xl:flex-col xl:justify-center xl:items-center bg-[position:14%_0] md:bg-center"
         style="background-image: url('<?= $hero_background_image ? $hero_background_image['url'] : ''; ?>'); ">
     <div class="md:max-w-[636px] xl:max-w-[480px] mx-auto px-[33px] md:px-0">
         <?php if ($hero_title) : ?>
