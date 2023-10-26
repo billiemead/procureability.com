@@ -1,0 +1,242 @@
+.blog-strategic-plan-pages {
+    border: 1px solid rgba(0, 152, 174, 0.2);
+    overflow: hidden;
+    text-align: left;
+
+    @media (min-width: 992px) {
+        display: flex;
+    }
+}
+
+.blog-strategic-plan-page {
+    @media (min-width: 992px) {
+        width: 50%;
+    }
+
+    &--green {
+        background-color: rgba(242, 250, 251, 1);
+
+        @media (min-width: 992px) {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                display: block;
+                content: "";
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 50px;
+                background: linear-gradient(
+                        90deg,
+                        rgba(226, 236, 239, 1) 0%,
+                        rgba(242, 250, 251, 1) 50%
+                );
+            }
+        }
+    }
+}
+
+.blog-strategic-plan-page-title {
+    color: #0098ae;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 21px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 120px) 30px;
+    padding: 30px 30px 15px;
+
+    @media (max-width: 991px) {
+        background-image: none !important;
+    }
+
+    @media (min-width: 992px) {
+        padding: 70px 50px 40px 30px;
+    }
+}
+
+.blog-strategic-plan-list {
+    position: relative;
+    padding: 15px 30px 30px !important;
+    margin: 0 !important;
+
+    @media (min-width: 992px) {
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+}
+
+.blog-strategic-plan-list-item {
+    padding-left: 58px !important;
+    position: relative;
+
+    &:before,
+    &:after {
+        display: none !important;
+    }
+
+    & + & {
+        margin-top: 16px !important;
+    }
+}
+
+.blog-strategic-plan-list-item-index {
+    color: #0098ae;
+    font-family: Poppins;
+    font-size: 33px !important;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.313px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: -16px;
+}
+
+.blog-strategic-plan-list-item-content {
+}
+
+.blog-strategic-plan-list-item-title {
+    color: #393a40;
+    font-family: Poppins;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.blog-strategic-plan-list-item-sublist {
+    list-style: outside;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.blog-strategic-plan-list-item-sublist-item {
+    color: #777;
+    font-family: Poppins;
+    font-size: 11px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 0 !important;
+    list-style: disc !important;
+
+    &:before,
+    &:after {
+        display: none !important;
+    }
+
+    & + & {
+        margin-top: 5px !important;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: #0098ae !important;
+    }
+
+    strong {
+        font-weight: 600 !important;
+    }
+
+    sup {
+        font-size: 75% !important;
+        line-height: 0 !important;
+        position: relative !important;
+        vertical-align: baseline !important;
+        top: -0.5em !important;
+    }
+}
+
+.blog-strategic-plan-cta {
+    position: relative;
+    padding: 0px 30px 30px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+        text-align: left;
+        padding: 0px 30px 30px 257px;
+    }
+}
+
+.blog-strategic-plan-cta-image {
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    display: none;
+
+    @media (min-width: 992px) {
+        display: block;
+    }
+}
+
+.blog-strategic-plan-cta-title {
+    color: #393a40;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 16px !important;
+    position: relative;
+
+    @media (min-width: 992px) {
+        text-align: left;
+    }
+
+    br {
+        display: none;
+
+        @media (min-width: 992px) {
+            display: inline;
+        }
+    }
+}
+
+.blog-strategic-plan-cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 3px;
+    text-decoration: none !important;
+    position: relative;
+    background-color: rgb(59, 161, 124);
+
+    &:hover {
+        .blog-strategic-plan-cta-button-background {
+            opacity: 0;
+        }
+    }
+}
+
+.blog-strategic-plan-cta-button-background {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    transition-duration: 500ms;
+    background-position: center;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+}
+
+.blog-strategic-plan-cta-button-text {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+}

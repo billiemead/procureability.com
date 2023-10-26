@@ -534,6 +534,15 @@
       max-width: 940px;
       margin: 48px auto 0;
 
+      &--wider {
+        max-width: 970px !important;
+
+        .wpb_column {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+      }
+
       .wpb_column {
         padding: 0;
       }
@@ -786,6 +795,10 @@
     padding: 70px 0;
     margin-top: 64px;
     margin-bottom: -111px;
+
+    &--without-negative-bottom-margin {
+      margin-bottom: 0 !important;
+    }
 
     * {
       font-family: 'Poppins', sans-serif !important;
