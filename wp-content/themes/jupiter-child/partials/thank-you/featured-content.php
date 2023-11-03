@@ -1,5 +1,19 @@
 <?php $featured_content_title = get_field('featured_content_title'); ?>
-<?php $featured_content_posts = get_posts(array('posts_per_page' => 10)); ?>
+<?php $featured_content_posts = get_posts(array(
+    'posts_per_page' => 10,
+    'meta_query' => array(
+        'relation' => 'OR',
+        array(
+            'key' => 'hidden',
+            'value' => 0,
+            'compare' => '='
+        ),
+        array(
+            'key' => 'hidden',
+            'compare' => 'NOT EXISTS',
+        ),
+    )
+)); ?>
 
 <section
         class="py-[48px] md:py-[64px] xl:py-[72px]">

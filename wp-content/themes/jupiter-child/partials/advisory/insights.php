@@ -1,6 +1,21 @@
 <?php $insights_title = get_field('insights_title'); ?>
 <?php $insights_button = get_field('insights_button'); ?>
-<?php $insights_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 3)); ?>
+<?php $insights_query = new WP_Query(
+    array(
+        'post_type' => 'post',
+        'posts_per_page' => 3,
+        'meta_query' => array(
+            'relation' => 'OR',
+            array(
+                'key' => 'hidden',
+                'value' => 0,
+                'compare' => '='
+            ),
+            array(
+                'key' => 'hidden',
+                'compare' => 'NOT EXISTS',
+            ),
+        ))); ?>
 
 <!--insights-->
 <section class="py-[48px] md:py-[64px] xl:py-[72px]">
@@ -12,7 +27,7 @@
         <?php if ($insights_query->have_posts()) : ?>
             <div id="clientSuccessStories" class="swiper mb-[32px] xl:mb-[48px]">
                 <div class="swiper-wrapper">
-                    <?php while ( $insights_query->have_posts() ) : $insights_query->the_post(); ?>
+                    <?php while ($insights_query->have_posts()) : $insights_query->the_post(); ?>
                         <div class="swiper-slide">
                             <div>
                                 <a href="<?= get_permalink(); ?>"
