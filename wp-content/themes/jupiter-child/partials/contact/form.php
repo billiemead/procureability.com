@@ -67,7 +67,7 @@
                         <div><?= do_shortcode($cta_first_form_form); ?></div>
                         <?php if ($cta_first_text_under_the_form) : ?>
                             <div class="mt-[16px]">
-                                <div class="[&_p]:!font-poppins [&_p]:text-[14px] [&_p]:text-[#686868] [&_p]:leading-normal [&_a]:text-[#0098AE] [&_a]:font-medium [&_a:hover]:text-[#0098AE] [&_a]:!underline [&_a]:!decoration-dotted [&_a]:underline-offset-4 [&_a:hover]:decoration-transparent"><?= $cta_first_text_under_the_form; ?></div>
+                                <div class="[&_p]:mb-0 [&_p]:!font-poppins [&_p]:text-[14px] [&_p]:text-[#686868] [&_p]:leading-normal [&_a]:text-[#0098AE] [&_a]:font-medium [&_a:hover]:text-[#0098AE] [&_a]:!underline [&_a]:!decoration-dotted [&_a]:underline-offset-4 [&_a:hover]:decoration-transparent"><?= $cta_first_text_under_the_form; ?></div>
                             </div>
                         <?php endif; ?>
                     </div>
