@@ -1,18 +1,19 @@
 <?php $form_title = get_field('form_title'); ?>
 <?php $form_leading = get_field('form_leading'); ?>
 <?php $form_form = get_field('form_form'); ?>
+<?php $form_text_under_the_form = get_field('form_text_under_the_form'); ?>
 <?php $form_image = get_field('form_image'); ?>
 
 <?php if ($form_form) : ?>
     <section class="overflow-hidden" id="subscribe">
         <div class="max-w-[1200px] px-[15px] mx-auto">
-            <div class="lg:grid lg:grid-cols-[auto_588px] lg:min-h-[600px]">
+            <div class="lg:grid lg:gap-[100px] lg:grid-cols-[auto_500px] lg:min-h-[600px]">
                 <?php if ($form_image) : ?>
                     <div class="hidden lg:block relative">
                         <?= wp_get_attachment_image($form_image['id'], 'full', false, array('class' => 'block absolute right-0 top-0 h-full w-auto', 'title' => get_the_title($form_image['id']))); ?>
                     </div>
                 <?php endif; ?>
-                <div class="py-[50px] lg:pt-[100px] lg:pb-0 lg:px-[33px]">
+                <div class="py-[50px] lg:py-[64px]">
                     <?php if ($form_title | $form_leading) : ?>
                         <div class="max-w-[486px] mx-auto mb-[34px]">
                             <?php if ($form_title) : ?>
@@ -31,8 +32,13 @@
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>
-                    <div class="max-w-[420px] mx-auto">
-                        <?= do_shortcode($form_form); ?>
+                    <div class="max-w-[420px] lg:max-w-none mx-auto">
+                        <div><?= do_shortcode($form_form); ?></div>
+                        <?php if ($form_text_under_the_form) : ?>
+                            <div class="mt-[16px]">
+                                <div class="[&_p]:mb-0 [&_p]:!font-poppins [&_p]:text-[14px] [&_p]:text-[#686868] [&_p]:leading-normal [&_a]:text-[#0098AE] [&_a]:font-medium [&_a:hover]:text-[#0098AE] [&_a]:!underline [&_a]:!decoration-dotted [&_a]:underline-offset-4 [&_a:hover]:decoration-transparent"><?= $form_text_under_the_form; ?></div>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
