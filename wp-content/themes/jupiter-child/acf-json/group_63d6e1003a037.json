@@ -286,6 +286,26 @@
             "append": ""
         },
         {
+            "key": "field_654e1408be83a",
+            "label": "Text under the form",
+            "name": "cta_first_text_under_the_form",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_63daa76290ca0",
             "label": "Background image",
             "name": "cta_first_background_image",
@@ -606,5 +626,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680191080
+    "modified": 1699615809
 }
