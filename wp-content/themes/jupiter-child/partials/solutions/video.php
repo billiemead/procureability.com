@@ -17,7 +17,7 @@
             </a>
         </div>
 
-        <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[10px] md:rounded-[15px] rounded-tr-none">
+        <div class="px-[15px] pt-[20px] md:pt-[50px] pb-[34px] md:pb-[64px] bg-[#00a3b7] rounded-[10px] md:rounded-[15px] !rounded-tr-none">
             <div>
                 <?php if ($video_hash == 'es') { ?>
                     <div class="relative">
