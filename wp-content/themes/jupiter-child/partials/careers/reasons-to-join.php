@@ -27,7 +27,7 @@
                                     <div class="rotate-0 absolute inset-0 bg-[#e5f4f7] rtj-card-back p-[30px] overflow-hidden">
                                         <div class="relative z-20 w-full h-full">
                                             <div class="mb-[12px]">
-                                                <span class="text-[#009DB7] font-poppins text-transparent text-[18px] leading-[1.45] font-[600] tracking-[0.05em] uppercase"><?= $reason_to_join['title'] ?></span>
+                                                <span class="text-[#009DB7] font-poppins text-[18px] leading-[1.45] font-[600] tracking-[0.05em] uppercase"><?= $reason_to_join['title'] ?></span>
                                             </div>
                                             <div class="mb-[8px]">
                                                 <span class="font-poppins text-[14px] leading-[1.7] text-[#61636B] opacity-80"><?= $reason_to_join['excerpt']; ?></span>
@@ -94,7 +94,8 @@
         </div>
     </section>
     <?php if ($reasons_to_join) : ?>
-        <div data-x-cloak data-x-transition.opacity data-x-show="modal" class="fixed inset-0 flex flex-col z-[501] overflow-auto">
+        <div data-x-cloak data-x-transition:enter.opacity data-x-transition:leave.opacity data-x-transition:enter.duration.400ms
+             data-x-transition:leave.duration.500ms data-x-show="modal" class="fixed inset-0 flex flex-col z-[501] overflow-auto">
             <button class="hidden md:block absolute bg-transparent border-0 p-0 top-[20px] right-[20px] z-[502]">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.17209 23.9997C0.940287 23.9997 0.713675 23.931 0.520921 23.8022C0.328167 23.6735 0.177931 23.4904 0.0892164 23.2763C0.000501992 23.0621 -0.0227054 22.8265 0.0225297 22.5991C0.0677649 22.3718 0.17941 22.1629 0.343344 21.999L21.9996 0.342791C22.2194 0.122993 22.5175 -0.000488281 22.8283 -0.000488281C23.1392 -0.000488281 23.4373 0.122993 23.6571 0.342791C23.8769 0.562589 24.0004 0.8607 24.0004 1.17154C24.0004 1.48238 23.8769 1.78049 23.6571 2.00029L2.00084 23.6565C1.89211 23.7655 1.76292 23.8519 1.6207 23.9108C1.47848 23.9697 1.32602 23.9999 1.17209 23.9997Z"

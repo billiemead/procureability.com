@@ -36,6 +36,7 @@
                             <?php foreach ($map_socials as $map_social) : ?>
                                 <li class="m-0">
                                     <a class="hover:opacity-70 duration-700 ease-in-out transition-opacity opacity-100"
+                                       target="_blank"
                                        href="<?= $map_social['url']; ?>">
                                         <?php $auth = base64_encode("procureabi2dev:Braveheart");
                                         $context = stream_context_create([

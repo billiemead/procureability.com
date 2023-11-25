@@ -14,7 +14,7 @@
                                 </div>
                             </a>
                             <div class="py-[24px] px-[24px] xl:py-[50px] xl:pl-[51px] xl:pr-[25px]">
-                                <a href="<?= get_permalink($selected_post); ?>" class="font-poppins block text-[22px] leading-[1.3] text-[#393A40] font-[500] mb-[1.14em]">
+                                <a href="<?= get_permalink($selected_post); ?>" class="font-poppins block text-[22px] leading-[1.3] text-[#393A40] font-[500] mb-[1.14em] hover:text-[#0098AE]">
                                     <?= $selected_post->post_title; ?>
                                 </a>
                                 <div class="font-poppins text-[18px] leading-[1.4] text-[#61636B]">

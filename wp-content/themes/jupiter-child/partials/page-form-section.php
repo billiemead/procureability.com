@@ -6,7 +6,7 @@
              style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/form-section-bg.png')">
         <div class="max-w-[1200px] px-[33px] md:px-0 mx-auto">
             <div class="lg:grid lg:grid-cols-2 lg:gap-[76px] lg:items-center">
-                <div class="pt-[40px] pb-[32px] lg:py-0 px-[34px] lg:px-0">
+                <div class="pt-[40px] pb-[32px] lg:py-0 md:px-[34px] lg:px-0">
                     <?php $form_section_title = get_field('form_section_title'); ?>
                     <?php if ($form_section_title) : ?>
                         <div class="mb-[16px] lg:mb-[24px]">

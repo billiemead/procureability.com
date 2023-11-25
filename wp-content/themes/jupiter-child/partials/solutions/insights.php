@@ -21,9 +21,9 @@
                                     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
                                          style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
                                 </a>
-                                <div class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]">
+                                <a href="<?= get_permalink(); ?>" class="block font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]">
                                     <?= the_title(); ?>
-                                </div>
+                                </a>
                                 <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px]">
                                     <?= get_the_excerpt(); ?>
                                 </div>

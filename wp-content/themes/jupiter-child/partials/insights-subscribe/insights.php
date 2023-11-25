@@ -16,7 +16,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-[24px] gap-y-[40px]">
                 <?php foreach ($insights_insights as $insight) : ?>
                     <?php if ($insight['post']) : ?>
-                        <div>
+                        <div class="group/card">
                             <div class="mb-[20px]">
                                 <a href="<?= get_the_permalink($insight['post']); ?>"
                                    class="block pt-[52.47%] rounded-[5px] overflow-hidden relative group z-20"
@@ -35,7 +35,7 @@
                             <?php endif; ?>
                             <div>
                                 <a href="<?= get_the_permalink($insight['post']); ?>"
-                                   class="font-poppins text-[22px] leading-[1.4] font-semibold text-[#393A40]">
+                                   class="font-poppins text-[22px] leading-[1.4] font-semibold text-[#393A40] group-hover/card:text-[#0098AE]">
                                     <?= get_the_title($insight['post']); ?>
                                 </a>
                             </div>
