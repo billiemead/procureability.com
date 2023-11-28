@@ -780,12 +780,18 @@
       cursor: pointer;
       transition: .3s border-color linear;
 
+      .cp-issues__text {
+        span {
+          border-color: #3BA17C;
+        }
+      }
+
       &:hover {
         border-color: rgba(239, 79, 37, .7);
 
         .cp-issues__text {
           span {
-            border-color: #3BA17C;
+            border-color: transparent;
           }
         }
       }
