@@ -1,11 +1,22 @@
-<?php $webinars_and_podcasts = get_field('webinars_and_podcasts'); ?>
-<?php global $post; ?>
+<?php $webinars_and_podcasts = get_posts(
+    array(
+        'post_type' => 'post',
+        'numberposts' => -1,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'category',
+                'field' => 'slug',
+                'terms' => array('webinars', 'podcasts')
+            ),
+        )
+    )
+); ?>
 
 <section class="py-[50px] md:pb-[100px]">
     <div class="max-w-[968px] mx-auto px-[15px]">
         <?php if ($webinars_and_podcasts): ?>
             <ul class="m-0 p-0 list-none">
-                <?php foreach ($webinars_and_podcasts as $key => $post): setup_postdata($post); ?>
+                <?php foreach ($webinars_and_podcasts as $post): setup_postdata($post); ?>
                     <li class="py-[30px] px-[15px] m-0 border-b border-solid border-[#CCCCCC] last:border-none last:pb-0 first:pt-0">
                         <div class="grid md:grid-cols-[45%_auto] gap-[30px]">
                             <div>
