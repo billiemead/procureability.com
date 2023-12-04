@@ -46,10 +46,10 @@
                                                 <span class="font-poppins text-[14px] leading-[1.7] text-[#61636B] opacity-80"><?= $reason_to_join['excerpt']; ?></span>
                                             </div>
                                             <div>
-                                                <button class="bg-transparent p-0 border-0 text-[#61636B] text-[14px] leading-[1.5] font-[500] transition-opacity hover:opacity-70"
+                                                <a class="cursor-pointer text-[#61636B] text-[14px] leading-[1.5] font-[500] transition-opacity hover:opacity-70 hover:text-[#61636B]"
                                                         data-x-on:click="handleCardClick(<?= $index; ?>)">Read
                                                     More
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="absolute z-10 bottom-[-60px] right-0 opacity-20">
