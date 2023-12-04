@@ -23,8 +23,21 @@
                         <div class="rtj-card-holder">
                             <div class="rtj-card pt-[100%]" data-x-data="rtjCard" data-x-on:mouseleave="toggle" data-x-on:mouseenter="toggle">
                                 <div class="rtj-card-inner absolute inset-0" data-x-bind:class="{ 'active': active }">
+                                    <!--front-->
+                                    <div class="cursor-pointer absolute inset-0 rtj-card-front bg-center bg-cover overflow-hidden"
+                                         data-x-bind:class="{'pointer-events-none' : active}"
+                                         style="background-image: url('<?= $reason_to_join['image_front']['url']; ?>')">
+                                        <div class="absolute inset-0 rtj-card-front-image-gradient"></div>
+                                        <div class="absolute inset-0 p-[20px] flex flex-column justify-end">
+                                            <span class="rtj-card-front-title-gradient bg-clip-text text-transparent font-poppins text-[18px] font-[600] leading-[1.45] uppercase tracking-[0.05em]"><?= $reason_to_join['title'] ?></span>
+                                        </div>
+                                        <div class="hidden absolute bottom-[-60px] right-0">
+                                            <span class="rtj-card-front-index-gradient bg-clip-text text-transparent text-poppins text-[160px] leading-[1.45] tracking-[0.05em] uppercase"><?= $index + 1; ?></span>
+                                        </div>
+                                    </div>
+                                    <!--!front-->
                                     <!--back-->
-                                    <div class="rotate-0 absolute inset-0 bg-[#e5f4f7] rtj-card-back p-[30px] overflow-hidden">
+                                    <div class="absolute inset-0 bg-[#e5f4f7] rtj-card-back p-[30px] overflow-hidden">
                                         <div class="relative z-20 w-full h-full">
                                             <div class="mb-[12px]">
                                                 <span class="text-[#009DB7] font-poppins text-[18px] leading-[1.45] font-[600] tracking-[0.05em] uppercase"><?= $reason_to_join['title'] ?></span>
@@ -44,20 +57,6 @@
                                         </div>
                                     </div>
                                     <!--!back-->
-
-                                    <!--front-->
-                                    <div class="rotate-0 cursor-pointer absolute inset-0 rtj-card-front bg-center bg-cover overflow-hidden"
-                                         data-x-bind:class="{'pointer-events-none' : active}"
-                                         style="background-image: url('<?= $reason_to_join['image_front']['url']; ?>')">
-                                        <div class="absolute inset-0 rtj-card-front-image-gradient"></div>
-                                        <div class="absolute inset-0 p-[20px] flex flex-column justify-end">
-                                            <span class="rtj-card-front-title-gradient bg-clip-text text-transparent font-poppins text-[18px] font-[600] leading-[1.45] uppercase tracking-[0.05em]"><?= $reason_to_join['title'] ?></span>
-                                        </div>
-                                        <div class="hidden absolute bottom-[-60px] right-0">
-                                            <span class="rtj-card-front-index-gradient bg-clip-text text-transparent text-poppins text-[160px] leading-[1.45] tracking-[0.05em] uppercase"><?= $index + 1; ?></span>
-                                        </div>
-                                    </div>
-                                    <!--!front-->
                                 </div>
                             </div>
                         </div>
