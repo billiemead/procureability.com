@@ -37,24 +37,31 @@
     perspective: 1000px;
 
     &:hover {
-        .rtj-card-inner {
+        .rtj-card-front {
             transform: rotateY(180deg);
+        }
+
+        .rtj-card-back {
+            transform: rotateY(0deg);
         }
     }
 }
 
 .rtj-card-inner {
-    transform-style: preserve-3d;
+    //transform-style: preserve-3d;
     transition: transform 0.5s ease-in-out;
+    perspective: 1000px;
 }
 
 .rtj-card-front,
 .rtj-card-back {
+    transform-style: preserve-3d;
     backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
 }
 
 .rtj-card-front {
-
+    transform: rotateY(0deg);
 }
 .rtj-card-back {
     transform: rotateY(180deg);
