@@ -31,7 +31,7 @@
                             <div>
                                 <div class="mb-[16px]">
                                     <a href="<?= the_permalink(); ?>"
-                                       class="font-poppins text-[#393A40] text-[20px] leading-[1.3] font-semibold"><?= the_title(); ?></a>
+                                       class="font-poppins text-[#f97352] hover:text-[#2e2e2e] text-[20px] leading-[1.3] font-semibold"><?= the_title(); ?></a>
                                 </div>
                                 <div class="mb-[35px]">
                                     <div class="font-poppins text-[16px] leading-[1.6] text-[#61636B]"><?= the_excerpt(); ?></div>

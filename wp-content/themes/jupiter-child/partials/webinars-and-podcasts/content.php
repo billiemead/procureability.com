@@ -6,7 +6,7 @@
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                 <h1 class="section-h1"><?= get_the_title(); ?></h1>
-                <div class="cms-content">
+                <div class="cms-content [&_p]:!text-[18px]">
                     <?php the_content(); ?>
                 </div>
             <?php endwhile; ?>
@@ -26,7 +26,7 @@
             </div>
         <?php endif; ?>
         <?php if ($bottom_text) : ?>
-            <div class="cms-content">
+            <div class="cms-content [&_p]:!text-[18px]">
                 <?= $bottom_text; ?>
             </div>
         <?php endif; ?>
