@@ -13,7 +13,7 @@
                                          style="background-image: url('<?= get_the_post_thumbnail_url($selected_post, 'full'); ?>')"></div>
                                 </div>
                             </a>
-                            <div class="py-[24px] px-[24px] xl:py-[50px] xl:pl-[51px] xl:pr-[25px]">
+                            <div class="pt-[24px] pb-[50px] px-[24px] xl:py-[24px] xl:pl-[51px] xl:pr-[25px]">
                                 <a href="<?= get_permalink($selected_post); ?>" class="font-poppins block text-[22px] leading-[1.3] text-[#393A40] font-[500] mb-[1.14em] hover:text-[#0098AE]">
                                     <?= $selected_post->post_title; ?>
                                 </a>
