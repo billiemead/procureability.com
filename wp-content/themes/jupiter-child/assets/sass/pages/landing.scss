@@ -1,0 +1,10 @@
+.landing-banner__text {
+    text-align: left;
+  }
+  
+  @media (max-width: 640px) {
+    .landing-banner__text {
+      text-align: center;
+      background-image: none !important;
+    }
+  }
