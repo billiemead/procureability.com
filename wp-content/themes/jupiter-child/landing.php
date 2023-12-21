@@ -19,6 +19,10 @@
 <?php get_template_part('partials/landing/cta-file-download'); ?>
 <?php /** !CTA FILE DOWNLOAD */ ?>
 
+<?php /** BANNER */ ?>
+<?php get_template_part('partials/landing/banner'); ?>
+<?php /** !BANNER */ ?>
+
 <?php /** CTA */ ?>
 <?php get_template_part('partials/landing/cta'); ?>
 <?php /** !CTA */ ?>
