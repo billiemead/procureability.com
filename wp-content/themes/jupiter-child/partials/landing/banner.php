@@ -6,6 +6,8 @@ $background = get_field('background_image_landing_banner');
 
 ?>
 
+<?php if ($title) : ?>
+
 <section class="pb-[40px] md:pb-[80px] px-[15px] landing-banner">
     <div class="box-border
                     max-w-[984px]
@@ -63,3 +65,5 @@ $background = get_field('background_image_landing_banner');
         </a>
     </div>
 </section>
+
+<?php endif; ?>
