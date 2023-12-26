@@ -30,7 +30,9 @@
 
 .finalize-contract-steps__items {
   @extend .finalize-contract-steps__items__extend;
+}
 
+.finalize-contract-steps__items {
   &::before {
     content: "";
     position: absolute;
