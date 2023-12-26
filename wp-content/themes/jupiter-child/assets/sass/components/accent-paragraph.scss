@@ -4,3 +4,9 @@
   padding: 22px 32px;
   color: #393A40 !important;
 }
+
+@media (max-width: 640px) {
+  .accent-paragraph {
+    text-align: left;
+  }
+}

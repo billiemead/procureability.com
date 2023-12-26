@@ -36,3 +36,9 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 640px) {
+  .colorful-cards__card {
+    grid-column: span 12;
+  }
+}

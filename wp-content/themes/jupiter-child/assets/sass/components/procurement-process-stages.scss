@@ -30,6 +30,7 @@
 .procurement-process-stages__item-icon {
   & img {
     width: 48px;
+    max-width: none !important;
   }
 }
 
@@ -51,6 +52,12 @@
 
     &:nth-child(n+4) {
       grid-column: span 12;
+    }
+  }
+
+  .procurement-process-stages__item-title {
+    & h3 {
+      text-align: left;
     }
   }
 }
