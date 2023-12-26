@@ -6,6 +6,8 @@
     grid-gap: 15px;
     grid-template-columns: repeat(12, 1fr);
     background: #fff;
+    max-width: 910px;
+    margin: auto;
   }
   
   .accent-paragraph-with-image__image {
