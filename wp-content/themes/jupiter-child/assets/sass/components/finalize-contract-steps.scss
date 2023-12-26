@@ -19,6 +19,7 @@
   position: relative;
   margin-bottom: 60px !important;
   height: 61px;
+  align-items: flex-end;
 }
 
 .finalize-contract-steps__items {
@@ -115,10 +116,11 @@
     text-align: left;
 
     & p {
+      color: #fff !important;
+      font-size: 13px !important;
       margin: 0;
-      color: #fff;
       padding-left: 16px;
-      font-size: 13px;
+      margin-bottom: 0 !important;
     }
 
     & svg {
