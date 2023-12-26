@@ -197,9 +197,12 @@
     top: 15px;
   }
 
-  .finalize-contract-steps__items {
+  .finalize-contract-steps__items,
+  .finalize-contract-steps__items-last {
     @extend .finalize-contract-steps__items__extend_media_max_width_860;
+  }
 
+  .finalize-contract-steps__items {
     &::before {
       display: none;
     }
@@ -207,7 +210,7 @@
     &::after {
       display: none;
     }
-
+    
     &:nth-child(1) {
       & .finalize-contract-steps__items-line {
         @extend .finalize-contract-steps__items-line__extend;
@@ -226,8 +229,6 @@
   }
 
   .finalize-contract-steps__items-last {
-    @extend .finalize-contract-steps__items__extend_media_max_width_860;
-
     margin-top: 25px !important;
 
     & .finalize-contract-steps__item {
