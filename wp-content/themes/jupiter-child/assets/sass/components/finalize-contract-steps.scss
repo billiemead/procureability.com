@@ -22,6 +22,12 @@
   align-items: flex-end;
 }
 
+.finalize-contract-steps__mobile-image {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+}
+
 .finalize-contract-steps__items {
   @extend .finalize-contract-steps__items__extend;
 
@@ -169,6 +175,8 @@
   margin-top: 8px;
 }
 
+
+
 @media (max-width: 960px) {
   .finalize-contract-steps__item {
     font-size: 14px !important;
@@ -182,77 +190,7 @@
 }
 
 @media (max-width: 860px) {
-  .finalize-contract-steps__items__extend_media_max_width_860 {
-    height: auto;
-    flex-direction: column;
-    margin-bottom: 0px!important;
-    width: 100% !important;
-  }
-
-  .finalize-contract-steps__items-line__extend {
-    height: 101%;
-    width: 4px;
-    right: auto;
-    left: 0;
-    top: 15px;
-  }
-
-  .finalize-contract-steps__items,
-  .finalize-contract-steps__items-last {
-    @extend .finalize-contract-steps__items__extend_media_max_width_860;
-  }
-
-  .finalize-contract-steps__items {
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      display: none;
-    }
-    
-    &:nth-child(1) {
-      & .finalize-contract-steps__items-line {
-        @extend .finalize-contract-steps__items-line__extend;
-      }
-    }
-
-    &:nth-last-child(2) {
-      & .finalize-contract-steps__items-line {
-        @extend .finalize-contract-steps__items-line__extend;
-      }
-    }
-
-    &:nth-child(2n) {
-      @extend .finalize-contract-steps__items__extend_media_max_width_860;
-    }
-  }
-
-  .finalize-contract-steps__items-last {
-    margin-top: 25px !important;
-
-    & .finalize-contract-steps__item {
-      position: relative !important;
-      border-radius: 5px;
-    }
-  }
-
-  .finalize-contract-steps__items-line {
-    @extend .finalize-contract-steps__items__extend_media_max_width_860;
-  }
-
-  .finalize-contract-steps__item {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    text-align: left;
-    margin-bottom: 15px !important;
-  }
-
-  .finalize-contract-steps__bubble {
-    margin-top: 0;
-    position: relative;
-    left: -4px;
-    margin-right: 7px;
+  .finalize-contract-steps__mobile-image {
+    display: inline-block;
   }
 }
