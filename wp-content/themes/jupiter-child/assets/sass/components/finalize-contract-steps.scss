@@ -191,6 +191,24 @@
   }
 }
 
+@media (max-width: 860px) {
+  .finalize-contract-steps__items {
+    &:first-child {
+      & .finalize-contract-steps__items-line {
+        left: 82px;
+        width: 84%;
+      }
+    }
+  }
+}
+
+@media (max-width: 825px) {
+  .finalize-contract-steps__items-last {
+    width: 48.5%;
+  }
+}
+
+
 @media (max-width: 767px) {
   .finalize-contract-steps__mobile-image {
     display: inline-block;
