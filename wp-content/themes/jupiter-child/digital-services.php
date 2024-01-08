@@ -159,7 +159,7 @@
                         <div class="mb-[8px] xl:mb-0 xl:mr-[24px]">
                             <img class="block mx-auto xl:mx-0 md:w-[100px] xl:w-[95px]"
                                  src="<?= get_field('analytics_logo')['url']; ?>"
-                                 alt="">
+                                 alt="logo">
                         </div>
                         <div class="text-center xl:text-left">
                             <span class="brand-text-gradient text-transparent bg-clip-text text-[24px] leading-[1.47] font-[500] md:text-[26px] xl:text-[34px] xl:leading-[1.27] font-[600]"><?= get_field('analytics_title'); ?></span>
@@ -235,7 +235,7 @@
                         <div class=" mb-[8px] xl:mb-0">
                             <span class="brand-text-gradient text-transparent bg-clip-text text-[24px] font-[500] xl:text-[34px] leading-[1.27] xl:font-[600]"><?= get_field('benefits_title'); ?></span>
                         </div>
-                        <img class="max-w-[230px] block mx-auto" src="<?= get_field('benefits_logo')['url']; ?>" alt="">
+                        <img class="max-w-[230px] block mx-auto" src="<?= get_field('benefits_logo')['url']; ?>" alt="logo">
                     </div>
                     <?php $benefits_list = get_field('benefits_list'); ?>
                     <?php if ($benefits_list) : ?>
@@ -265,7 +265,7 @@
         <!--bottom content-->
         <section class="pt-[32px] pb-[48px] md:pt-[40px] xl:py-[83px] relative">
             <img class="hidden xl:block absolute top-[-75px] left-0"
-                 src="<?= get_stylesheet_directory_uri(); ?>/page-digital-services/triangles-bg.svg" alt="">
+                 src="<?= get_stylesheet_directory_uri(); ?>/page-digital-services/triangles-bg.svg" alt="triangles">
             <div class="relative px-[33px] xl:px-0 md:max-w-[646px] xl:max-w-[1200px] mx-auto grid gap-[48px] xl:gap-[107px]">
                 <div>
                     <div class="max-w-[1069px] mx-auto text-center mb-[24px] md:mb-[20px] xl:mb-[32px]">
