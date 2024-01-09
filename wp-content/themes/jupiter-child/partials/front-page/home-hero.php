@@ -17,7 +17,7 @@
 <section
         class="bg-no-repeat bg-center bg-[auto_125%] xl:bg-cover xl:bg-[center_top_16%]"
         data-no-lazy="1"
-        style="background-image: url('<?= $frontpage_hero_background_image['url'] ?>')">
+        style="background-image: url('<?= $frontpage_hero_background_image['url'] ?>'); background-color: #000">
     <div class="pt-[104px] md:pt-[133px] xl:pt-[252px] pb-[60px] md:pb-[74px] xl:pb-[48px]">
         <div class="px-[34px] xl:max-w-[1096px] mx-auto">
             <h1 class="text-center font-poppins text-white text-[28px] md:text-[42px] leading-[1.2] md:leading-[1.27] font-[600] mb-[16px]">

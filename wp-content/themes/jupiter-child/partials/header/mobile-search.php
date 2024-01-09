@@ -1,4 +1,4 @@
-<div data-x-show="mobileSearchActive" data-x-collapse class="relative xl:hidden">
+<div data-x-show="mobileSearchActive" data-x-collapse class="relative xl:hidden" style="display: none;">
     <form class="leading-[28px]" method="get"
           action="<?php echo home_url('/'); ?>">
         <input class="!border-none !text-[#9e9e9e] !text-[18px] !h-[70px] !m-0 !py-[27px] !px-[20px] !w-full !bg-[rgba(0,0,0,.02)] cursor-text !box-border"
