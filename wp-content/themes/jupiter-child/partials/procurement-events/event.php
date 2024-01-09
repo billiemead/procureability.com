@@ -10,7 +10,7 @@ $event = $args['event'] ? $args['event'] : [];
             <img
                 src="<?= $event['image']['url'] ?>"
                 alt="<?= $event['title'] ? strip_tags($event['title']) : '' ?>"
-                class="max-w-[340px] w-[100%]"
+                class="max-w-[210px] w-[100%]"
             />
         </div>
     <?php endif; ?>
