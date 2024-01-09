@@ -62,9 +62,9 @@
             <div class="max-w-[530px] px-[15px] mx-auto relative">
                 <?php if ($hero_title) : ?>
                     <div class="text-center mb-[16px]">
-                        <div class="font-poppins text-[42px] leading-[1.38] font-semibold brand-text-gradient text-transparent bg-clip-text">
+                        <h1 class="font-poppins text-[42px] leading-[1.38] font-semibold brand-text-gradient text-transparent bg-clip-text">
                             <?= $hero_title; ?>
-                        </div>
+                        </h1>
                     </div>
                 <?php endif; ?>
                 <?php if ($hero_leading) : ?>

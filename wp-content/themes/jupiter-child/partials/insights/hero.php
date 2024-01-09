@@ -9,7 +9,7 @@
 
     <div class="max-w-[947px] mx-auto px-[34px] relative">
         <div class="text-center mb-[16px]">
-            <div class="font-poppins text-[28px] md:text-[42px] leading-[1.2] font-semibold text-white"><?= get_the_title(); ?></div>
+            <h1 class="font-poppins text-[28px] md:text-[42px] leading-[1.2] font-semibold text-white"><?= get_the_title(); ?></h1>
         </div>
         <div class="text-center">
             <div class="hero__text font-poppins leading-[1.7] font-normal text-white [&_p]:text-white [&_p]:leading-[1.6]">
