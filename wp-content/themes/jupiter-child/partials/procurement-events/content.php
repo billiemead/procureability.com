@@ -25,10 +25,6 @@
         <?php get_template_part('partials/procurement-events/additional-events'); ?>
         <?php /** !ADDITIONAL EVENTS */ ?>
 
-        <?php /** SUBSCRIBE BUTTON */ ?>
-        <?php get_template_part('partials/procurement-events/subscribe-button'); ?>
-        <?php /** !SUBSCRIBE BUTTON */ ?>
-
         <?php /** CONTACT BUTTON */ ?>
         <?php get_template_part('partials/procurement-events/contact-button'); ?>
         <?php /** !CONTACT BUTTON */ ?>
