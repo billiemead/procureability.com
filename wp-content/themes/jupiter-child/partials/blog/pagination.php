@@ -29,7 +29,7 @@
             <?php if ($args['currentPage'] === ($i + 1)): ?>
                 <span class="text-[12px] font-normal"><?= $i + 1 ?></span>
             <?php else: ?>
-                <a class="text-[12px] font-normal text-[#000]" href="<?= home_url() . '/blog-test/page/' . ($i + 1) ?>"><?= $i + 1 ?></a>
+                <a class="text-[12px] font-normal text-[#000]" href="<?= home_url() . '/blog/page/' . ($i + 1) ?>"><?= $i + 1 ?></a>
             <?php endif; ?>
         </div>
     <?php endfor; ?>
