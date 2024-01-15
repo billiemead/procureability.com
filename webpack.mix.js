@@ -56,7 +56,6 @@ mix
     .js(resources_path + 'assets/js/page/contact.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/digital-services.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/about.js', resources_path + 'dist')
-    .js(resources_path + 'assets/js/page/culture.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/leadership.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/thank-you.js', resources_path + 'dist')
 
