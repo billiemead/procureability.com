@@ -5,7 +5,7 @@
 
 <section
         class="pt-[40px] md:pt-[56px] pb-[50px] md:pb-[75px] overflow-hidden bg-no-repeat bg-[left_calc(50%+338px+70px)_bottom_-145px]"
-        data-x-data="leadership"
+        x-data="leadership"
         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/triangles-bg-leadership.png')">
     <div class="max-w-[1200px] px-[15px] mx-auto">
         <div class="text-center mb-[42px]">
