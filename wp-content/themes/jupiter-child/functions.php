@@ -145,6 +145,8 @@ function procureability_enqueue_styles()
         wp_enqueue_script('leadership-section', get_stylesheet_directory_uri() . '/dist/leadership-section.js', array(), filemtime(get_stylesheet_directory() . '/dist/leadership-section.js'), true);
     }
 
+    /*Intersect AlpineJS*/
+    wp_enqueue_script('intersect-alpinejs', get_stylesheet_directory_uri() . '/dist/intersect-alpine.min.js', array(), false, true);
     /*Collapse AlpineJS*/
     wp_enqueue_script('collapse-alpinejs', get_stylesheet_directory_uri() . '/dist/collapse-alpine.min.js', array(), false, true);
     /*AlpineJS*/
