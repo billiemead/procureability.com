@@ -38,7 +38,7 @@
             </div>
 
             <div class="w-[100%] lg:w-[44%]">
-                <div id="bubbles" data-team-photos="<?= implode(';', $dataTeamPhotos) ?>">
+                <div id="bubbles">
                     <div class="max-w-[528px] mx-auto relative flex">
                         <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[154px] shrink-0 grow-0 h-[154px] z-10 top-0 left-0">
                             <div data-active="true" data-image="<?= $leadership_photos[0]; ?>"
