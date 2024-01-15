@@ -31,14 +31,14 @@
                     </div>
                 <?php endif; ?>
                 <?php if ($hero_quote_author) : ?>
-                    <div class="text-right lg:!text-left">
+                    <div class="pl-[40px] text-right lg:!text-left">
                         <div class="font-poppins text-[18px] md:text-[22px] leading-normal text-[#393A40]"><?= $hero_quote_author; ?></div>
                     </div>
                 <?php endif; ?>
             </div>
 
             <div class="w-[100%] lg:w-[44%]">
-                <div id="bubbles" class="hidden md:block">
+                <div id="bubbles" class="hidden lg:block">
                     <div class="max-w-[528px] mx-auto relative flex">
                         <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[154px] shrink-0 grow-0 h-[154px] z-10 top-0 left-0">
                             <div data-active="true" data-image="<?= $leadership_photos[0]; ?>"
