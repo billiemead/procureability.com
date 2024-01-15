@@ -108,7 +108,6 @@ function procureability_enqueue_styles()
     }
 
     if (is_page_template('leadership.php')) {
-<<<<<<< HEAD
         wp_enqueue_script('lodash');
         wp_enqueue_script('leadership', get_stylesheet_directory_uri() . '/dist/leadership.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/leadership.js'), true);
 
@@ -121,9 +120,6 @@ function procureability_enqueue_styles()
         set_query_var('teamMembersPhotos', $team_photo);
 
         wp_localize_script('leadership', 'teamOnlyImage', $team_photo);
-=======
-        wp_enqueue_script('leadership', get_stylesheet_directory_uri() . '/dist/leadership.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/leadership.js'), true);
->>>>>>> d7ea95b... [*] leadership new design
     }
 
     if (is_page_template('contact.php')) {
