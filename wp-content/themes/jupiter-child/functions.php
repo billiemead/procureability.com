@@ -107,7 +107,21 @@ function procureability_enqueue_styles()
         wp_enqueue_script('advisory', get_stylesheet_directory_uri() . '/dist/advisory.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/advisory.js'), true);
     }
 
-    /*Contact*/
+    if (is_page_template('leadership.php')) {
+        wp_enqueue_script('lodash');
+        wp_enqueue_script('leadership', get_stylesheet_directory_uri() . '/dist/leadership.js', array('swiper'), filemtime(get_stylesheet_directory() . '/dist/leadership.js'), true);
+
+        $team = get_field('hero_team');
+
+        $team_photo = $team ? array_map(function ($leader) {
+            return $leader['team_member']['url'];
+        }, $team) : array();
+
+        set_query_var('teamMembersPhotos', $team_photo);
+
+        wp_localize_script('leadership', 'teamOnlyImage', $team_photo);
+    }
+
     if (is_page_template('contact.php')) {
 
         wp_enqueue_script('lodash');

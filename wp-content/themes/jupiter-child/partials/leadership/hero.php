@@ -1,13 +1,14 @@
 <?php $hero_quote = get_field('hero_quote'); ?>
 <?php $hero_quote_author = get_field('hero_quote_author'); ?>
 <?php $hero_quote_author_photo = get_field('hero_quote_author_photo'); ?>
+<?php $leadership_photos = get_query_var('teamMembersPhotos'); ?>
 
 <section
-        class="pt-[50px] lg:py-[80px] bg-[#F7F9FB] overflow-hidden bg-no-repeat bg-[length:692px_auto] bg-[left_calc(50%+165px)_bottom_-150px] lg:bg-[left_calc(50%+346px+290px)_bottom_-270px]"
-        style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/branding-star-leadership.svg')">
-    <div class="max-w-[960px] px-[15px] mx-auto">
-        <div class="relative ">
-            <div class="lg:w-[52%] mb-[30px] lg:mb-0">
+        class="pt-[50px] pb-[50px] lg:pt-[80px] lg:pb-[120px] bg-[#F7F9FB] overflow-hidden bg-no-repeat bg-cover sm:bg-contain bg-right"
+        style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/leadership/triangle-blue.png')">
+    <div class="max-w-[1200px] px-[15px] mx-auto">
+        <div class="relative flex flex-col lg:flex-row">
+            <div class="w-[100%] lg:w-[56%] mb-[70px] lg:mb-[30px] lg:mb-0">
                 <?php if ($hero_quote) : ?>
                     <div class="mb-[29px]">
                         <div class="font-poppins text-[#393A40] text-[24px] md:text-[26px] leading-[1.55] font-medium">
@@ -35,11 +36,71 @@
                     </div>
                 <?php endif; ?>
             </div>
-            <?php if ($hero_quote_author_photo) : ?>
-                <div class="max-w-[380px] mx-auto lg:max-w-none lg:mx-0 lg:w-[39.58%] lg:absolute lg:bottom-[-80px] lg:right-[-10px]">
-                    <?= wp_get_attachment_image($hero_quote_author_photo['ID'], 'full', false, array('class' => 'block w-full h-auto')) ?>
+
+            <div class="w-[100%] lg:w-[44%]">
+                <div id="bubbles" data-team-photos="<?= implode(';', $dataTeamPhotos) ?>">
+                    <div class="max-w-[528px] mx-auto relative flex">
+                        <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[154px] shrink-0 grow-0 h-[154px] z-10 top-0 left-0">
+                            <div data-active="true" data-image="<?= $leadership_photos[0]; ?>"
+                                 class="opacity-100 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full">
+                            </div>
+                            <div data-active="false"
+                                 class="opacity-0 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full"></div>
+                        </div>
+                        <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[169px] shrink-0 grow-0 h-[169px] top-[-7px] left-[-23px]">
+                            <div data-active="true" data-image="<?= $leadership_photos[1]; ?>"
+                                 class="opacity-100 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full">
+                            </div>
+                            <div data-active="false"
+                                 class="opacity-0 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full"></div>
+                        </div>
+                        <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[132px] shrink-0 grow-0 h-[132px] z-10 top-[51px] left-[-60px]">
+                            <div data-active="true" data-image="<?= $leadership_photos[2]; ?>"
+                                 class="opacity-100 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full">
+                            </div>
+                            <div data-active="false"
+                                 class="opacity-0 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full"></div>
+                        </div>
+                        <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[150px] shrink-0 grow-0 h-[150px] top-[-26px] left-[-149px]">
+                            <div data-active="true" data-image="<?= $leadership_photos[3]; ?>"
+                                 class="opacity-100 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full">
+                            </div>
+                            <div data-active="false"
+                                 class="opacity-0 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="max-w-[528px] mx-auto relative flex">
+                        <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[159px] shrink-0 grow-0 h-[159px] top-[-24px] left-[62px]">
+                            <div data-active="true" data-image="<?= $leadership_photos[4]; ?>"
+                                 class="opacity-100 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full">
+                            </div>
+                            <div data-active="false"
+                                 class="opacity-0 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full"></div>
+                        </div>
+                        <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[118px] shrink-0 grow-0 h-[118px] z-10 top-[-8px] left-[33px]">
+                            <div data-active="true" data-image="<?= $leadership_photos[5]; ?>"
+                                 class="opacity-100 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full">
+                            </div>
+                            <div data-active="false"
+                                 class="opacity-0 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full"></div>
+                        </div>
+                        <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[143px] shrink-0 grow-0 h-[143px] top-[12px] left-[0px]">
+                            <div data-active="true" data-image="<?= $leadership_photos[6]; ?>"
+                                 class="opacity-100 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full">
+                            </div>
+                            <div data-active="false"
+                                 class="opacity-0 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full"></div>
+                        </div>
+                        <div class="bubble bg-center bg-no-repeat bg-cover inline-block relative rounded-full border-4 border-[#F7F9FA] border-solid basis-[123px] shrink-0 grow-0 h-[123px] top-[-58px] left-[-38px]">
+                            <div data-active="true" data-image="<?= $leadership_photos[7]; ?>"
+                                 class="opacity-100 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full">
+                            </div>
+                            <div data-active="false"
+                                 class="opacity-0 transition-opacity duration-1000 absolute inset-0 bg-cover bg-center bg-no-repeat rounded-full"></div>
+                        </div>
+                    </div>
                 </div>
-            <?php endif; ?>
+            </div>
         </div>
     </div>
 </section>
