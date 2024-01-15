@@ -152,7 +152,6 @@ function procureability_enqueue_styles()
     /*AlpineJS*/
     wp_enqueue_script('alpinejs', get_stylesheet_directory_uri() . '/dist/alpine.min.js', array('collapse-alpinejs'), false, true);
 }
-
 add_action('wp_enqueue_scripts', 'procureability_enqueue_styles');
 
 add_action('init', 'add_excerpts_to_pages');
