@@ -1,5 +1,7 @@
 <?php
 
+include_once get_stylesheet_directory() . "/services/Blog/Pagination.php";
+
 global $wp;
 
 $blogPages = get_field('blog_pages');
@@ -14,6 +16,8 @@ $countPostsPerPage = 12;
 $countPages = ceil($countPosts / $countPostsPerPage);
 
 $sliceArrayPosts = array_slice($posts, ($currentPage - 1) * $countPostsPerPage, $countPostsPerPage);
+
+$blogPagination = new BlogPagination($countPages, $currentPage);
 
 ?>
 
@@ -59,9 +63,6 @@ $sliceArrayPosts = array_slice($posts, ($currentPage - 1) * $countPostsPerPage, 
     </div>
 
     <?php get_template_part('partials/blog/pagination', null, [
-        'currentPage' => $currentPage,
-        'countPages'  => $countPages
+        'paginationList' => $blogPagination->getPaginationList()
     ]); ?>
 <?php endif; ?>
-
-

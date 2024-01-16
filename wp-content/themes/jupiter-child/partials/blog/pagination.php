@@ -1,5 +1,8 @@
 <div class="max-w-[960px] mx-auto flex justify-center my-[50px]">
-    <?php for ($i = 0; $i < $args['countPages']; $i++):
+
+    <?php foreach ($args['paginationList'] as $item): ?>
+
+        <?php
         $paginationClasses = [
             'mx-[2px]',
             'px-[11px]',
@@ -9,7 +12,7 @@
             'mb-[5px]'
         ];
 
-        if (($i + 1) === $args['currentPage']) {
+        if ($item['selected'] || !$item['link']) {
             $paginationClasses = array_merge($paginationClasses, [
                 'bg-[#fff]',
                 'border-[#bbb]',
@@ -24,13 +27,22 @@
                 'cursor-pointer'
             ]);
         }
+
         ?>
+
         <div class="<?= implode(" ", $paginationClasses) ?>">
-            <?php if ($args['currentPage'] === ($i + 1)): ?>
-                <span class="text-[12px] font-normal"><?= $i + 1 ?></span>
+            <?php if ($item['selected'] || !$item['link']): ?>
+                <span
+                        class="text-[12px] font-normal"
+                ><?= $item['label'] ?></span>
             <?php else: ?>
-                <a class="text-[12px] font-normal text-[#000]" href="<?= home_url() . '/blog/page/' . ($i + 1) ?>"><?= $i + 1 ?></a>
+                <a
+                        class="text-[12px] font-normal text-[#000]"
+                        href="<?= $item['link'] ?>"
+                ><?= $item['label'] ?></a>
             <?php endif; ?>
         </div>
-    <?php endfor; ?>
+
+    <?php endforeach; ?>
+
 </div>
