@@ -15,7 +15,7 @@ class BlogPagination
      */
     public function __construct($countPages = 0, $currentPage = 1)
     {
-        $this->baseUrl = home_url() . '/blog-test/page/';
+        $this->baseUrl = home_url() . '/blog/page/';
         $this->countPages = $countPages;
         $this->currentPage = $currentPage;
 
