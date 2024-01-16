@@ -36,6 +36,7 @@ mix.webpackConfig({
     }
 })
 
+mix.copy('node_modules/@alpinejs/intersect/dist/cdn.min.js', resources_path + 'dist/intersect-alpine.min.js');
 mix.copy('node_modules/@alpinejs/collapse/dist/cdn.min.js', resources_path + 'dist/collapse-alpine.min.js');
 mix.copy('node_modules/alpinejs/dist/cdn.min.js', resources_path + 'dist/alpine.min.js');
 

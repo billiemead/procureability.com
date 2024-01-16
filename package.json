@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "@alpinejs/collapse": "^3.10.3",
+        "@alpinejs/intersect": "^3.12.0",
         "@fancyapps/ui": "^4.0.31",
         "@tailwindcss/line-clamp": "^0.4.2",
         "alpinejs": "^3.10.3",
