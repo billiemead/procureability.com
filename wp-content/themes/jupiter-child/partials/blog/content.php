@@ -14,7 +14,7 @@ $rightColumnContent = get_field('right_column');
                         <?php the_content(); ?>
                     </div>
                 </div>
-                <div class="video-border-styles"><?= $rightColumnContent ?></div>
+                <div class="video-border-styles px-[15px]"><?= $rightColumnContent ?></div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-[70px]">
