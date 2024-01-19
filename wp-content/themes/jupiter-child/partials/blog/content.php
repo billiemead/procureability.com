@@ -1,5 +1,6 @@
 <?php
 
+$blogTitle = get_field('blog_title');
 $rightColumnContent = get_field('right_column');
 
 ?>
@@ -9,7 +10,7 @@ $rightColumnContent = get_field('right_column');
         <div class="max-w-[960px] px-[15px] mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-[auto_400px] gap-[30px] mb-[50px]">
                 <div>
-                    <h1 class="section-h1"><?= get_the_title(); ?></h1>
+                    <h1 class="section-h1"><?= $blogTitle ?></h1>
                     <div class="cms-content [&_p]:!text-[18px]">
                         <?php the_content(); ?>
                     </div>
