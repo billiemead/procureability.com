@@ -15,17 +15,12 @@
 <?php get_template_part('partials/blog/hero'); ?>
 <?php /** !HERO */ ?>
 
-<section class="section section--content">
-    <div class="section-container">
-        <?php /** CONTENT */ ?>
-        <?php get_template_part('partials/blog/content'); ?>
-        <?php /** !CONTENT */ ?>
+<?php /** CONTENT */ ?>
+<?php get_template_part('partials/blog/content'); ?>
+<?php /** !CONTENT */ ?>
 
-        <?php /** WEBINARS AND PODCASTS */ ?>
-        <?php get_template_part('partials/blog/blog'); ?>
-        <?php /** !WEBINARS AND PODCASTS */ ?>
-    </div>
-</section>
-
+<?php /** WEBINARS AND PODCASTS */ ?>
+<?php get_template_part('partials/blog/blog'); ?>
+<?php /** !WEBINARS AND PODCASTS */ ?>
 
 <?php get_footer(); ?>
