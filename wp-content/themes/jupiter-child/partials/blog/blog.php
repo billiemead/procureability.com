@@ -22,7 +22,7 @@ $blogPagination = new BlogPagination($countPages, $currentPage);
 ?>
 
 <?php if ($sliceArrayPosts): ?>
-    <div class="max-w-[960px] mx-auto px-[15px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
+    <div class="max-w-[960px] mx-auto px-[15px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
         <?php foreach ($sliceArrayPosts as $post): ?>
             <div>
                 <?php if ($post->post_type === 'page'): ?>

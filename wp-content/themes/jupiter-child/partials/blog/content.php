@@ -8,7 +8,7 @@ $rightColumnContent = get_field('right_column');
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
         <div class="max-w-[960px] px-[15px] mx-auto mt-[50px]">
-            <div class="grid grid-cols-1 sm:grid-cols-[auto_400px] gap-[30px] mb-[50px]">
+            <div class="grid grid-cols-1 sm:grid-cols-[auto_335px] lg:grid-cols-[auto_400px] gap-[30px] mb-[50px]">
                 <div>
                     <h1 class="section-h1"><?= $blogTitle ?></h1>
                     <div class="cms-content [&_p]:!text-[18px]">

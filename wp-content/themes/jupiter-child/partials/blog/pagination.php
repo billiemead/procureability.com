@@ -5,7 +5,6 @@
         <?php
         $paginationClasses = [
             'mx-[2px]',
-            'px-[11px]',
             'border',
             'border-solid',
             'leading-[30px]',
@@ -33,11 +32,11 @@
         <div class="<?= implode(" ", $paginationClasses) ?>">
             <?php if ($item['selected'] || !$item['link']): ?>
                 <span
-                        class="text-[12px] font-normal"
+                        class="text-[12px] font-normal leading-[30px] inline-block px-[11px]"
                 ><?= $item['label'] ?></span>
             <?php else: ?>
                 <a
-                        class="text-[12px] font-normal text-[#000]"
+                        class="text-[12px] font-normal text-[#000] leading-[30px] inline-block px-[11px]"
                         href="<?= $item['link'] ?>"
                 ><?= $item['label'] ?></a>
             <?php endif; ?>
