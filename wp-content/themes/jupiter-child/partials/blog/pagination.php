@@ -23,7 +23,11 @@
                 'bg-[#eee]',
                 'border-[#e5e5e5]',
                 'text-[#000]',
-                'cursor-pointer'
+                'cursor-pointer',
+                'hover:bg-[#fff]',
+                'hover:border-[#bbb]',
+                'hover:text-[#333]',
+                'hover:shadow-[0_3px_5px_0_rgba(0,0,0,0.13)]'
             ]);
         }
 
