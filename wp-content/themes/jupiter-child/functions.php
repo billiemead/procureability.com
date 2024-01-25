@@ -185,13 +185,11 @@ function dequeue_unwanted_styles() {
         wp_dequeue_style('mk-style');
         wp_dequeue_style('tp-fontello');
         wp_dequeue_style('rs-plugin-settings');
-        wp_dequeue_style('real3d-flipbook-style');
         wp_dequeue_style('rs-plugin-settings-css');
         wp_dequeue_style('svc-fontawosem-css');
         wp_dequeue_style('mkhb-row-css');
         wp_dequeue_style('scap.flashblock');
         wp_dequeue_style('scap.player');
-        wp_dequeue_style('real3d-flipbook-font-awesome');
         wp_dequeue_style('main-jupiter-child-css-custom-pages');
     }
 }
