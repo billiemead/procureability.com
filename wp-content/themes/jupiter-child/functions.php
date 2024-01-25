@@ -231,20 +231,7 @@ function dequeue_footer_styles() {
         wp_deregister_script( 'dflip-script' );
         wp_dequeue_script( 'jupiter-donut-shortcodes' );
         wp_deregister_script( 'jupiter-donut-shortcodes' );
-        wp_dequeue_script( 'real3d-flipbook-iscroll' );
-        wp_deregister_script( 'real3d-flipbook-iscroll' );
-        wp_dequeue_script( 'real3d-flipbook' );
-        wp_deregister_script( 'real3d-flipbook' );
-        wp_dequeue_script( 'real3d-flipbook-bookswipe' );
-        wp_deregister_script( 'real3d-flipbook-bookswipe' );
-        wp_dequeue_script( 'real3d-flipbook-pdfservice' );
-        wp_deregister_script( 'real3d-flipbook-pdfservice' );
-        wp_dequeue_script( 'real3d-flipbook-pdfjs' );
-        wp_deregister_script( 'real3d-flipbook-pdfjs' );
-        wp_dequeue_script( 'real3d-flipbook-embed' );
-        wp_deregister_script( 'real3d-flipbook-embed' );
-        wp_dequeue_script( 'real3d-flipbook-threejs' );
-        wp_deregister_script( 'real3d-flipbook-threejs' );
+
     }
 }
 

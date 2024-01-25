@@ -33,7 +33,8 @@ while (have_posts()) :
 
             <?php if (!$image_in_content) : ?>
                 <div class="post_img">
-                    <img src="<?php echo esc_url($custom_image); ?>" class="max-w-full" alt="<?php echo esc_attr($custom_post_title); ?>">
+                    <img src="<?php echo esc_url($custom_image); ?>" class="max-w-full"
+                         alt="<?php echo esc_attr($custom_post_title); ?>">
                 </div>
             <?php endif; ?>
         </div>
@@ -43,3 +44,4 @@ while (have_posts()) :
 
 get_footer();
 ?>
+
