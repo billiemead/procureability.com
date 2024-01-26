@@ -188,8 +188,6 @@ function dequeue_unwanted_styles() {
         wp_dequeue_style('rs-plugin-settings-css');
         wp_dequeue_style('svc-fontawosem-css');
         wp_dequeue_style('mkhb-row-css');
-        wp_dequeue_style('scap.flashblock');
-        wp_dequeue_style('scap.player');
         wp_dequeue_style('main-jupiter-child-css-custom-pages');
     }
 }
@@ -201,8 +199,6 @@ function dequeue_footer_styles() {
 
     if (is_page_template('custom-single-post.php')) {
 
-        wp_dequeue_script( 'scap.soundmanager2' );
-        wp_deregister_script( 'scap.soundmanager2' );
         wp_dequeue_script( 'swiper' );
         wp_deregister_script( 'swiper' );
         wp_dequeue_script( 'leaders' );
