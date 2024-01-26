@@ -63,6 +63,7 @@ mix
 
     // SASS
     .sass(resources_path + 'assets/sass/main.scss', resources_path + 'dist/main.css')
+    .sass(resources_path + 'assets/sass/custom-single-post.scss', resources_path + 'dist/custom-single-post.css')
 
     //jupiter theme styles
     .postCss(resources_path + 'assets/postcss/jupiter/full-styles-only-required.pcss', resources_path + 'dist/full-styles-only-required.css')
