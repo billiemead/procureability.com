@@ -194,7 +194,7 @@ function dequeue_unwanted_styles() {
     }
 }
 
-//add_action('wp_print_styles', 'dequeue_unwanted_styles');
+add_action('wp_print_styles', 'dequeue_unwanted_styles');
 
 
 function dequeue_footer_styles() {
