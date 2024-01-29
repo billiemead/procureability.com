@@ -16,17 +16,17 @@ function asset_hash($file)
 function procureability_enqueue_styles()
 {
     /*Owl.carousel*/
-    wp_register_script( 'owl-carousel', get_stylesheet_directory_uri() . '/dist/owl-carousel.js', array('jquery'), '2.3.4', true);
+    wp_register_script('owl-carousel', get_stylesheet_directory_uri() . '/dist/owl-carousel.js', array('jquery'), '2.3.4', true);
 
     /*Swiper*/
-    wp_register_script( 'swiper', get_stylesheet_directory_uri() . '/dist/swiper.js', array(), '8.4.7', true);
-    wp_register_style( 'swiper', get_stylesheet_directory_uri() . '/dist/swiper.css', array(), '8.4.7' );
+    wp_register_script('swiper', get_stylesheet_directory_uri() . '/dist/swiper.js', array(), '8.4.7', true);
+    wp_register_style('swiper', get_stylesheet_directory_uri() . '/dist/swiper.css', array(), '8.4.7');
 
     /*Lodash*/
     wp_register_script('lodash', false, array(), false, true);
 
     //Jupiter theme styles without anything not required
-    wp_register_style( 'full-styles-only-required', get_stylesheet_directory_uri() . '/dist/full-styles-only-required.css', array(), filemtime(get_stylesheet_directory() . '/dist/full-styles-only-required.css'));
+    wp_register_style('full-styles-only-required', get_stylesheet_directory_uri() . '/dist/full-styles-only-required.css', array(), filemtime(get_stylesheet_directory() . '/dist/full-styles-only-required.css'));
 
     wp_enqueue_script('swiper');
     wp_enqueue_style('swiper');
@@ -109,6 +109,11 @@ function procureability_enqueue_styles()
     /*Careers*/
     if (is_page_template('careers.php')) {
         wp_enqueue_script('careers', '/wp-content/themes/jupiter-child/dist/careers.js', array('theme-scripts'), filemtime(get_stylesheet_directory() . '/dist/careers.js'), true);
+    }
+
+    /*Culture*/
+    if (is_page_template('culture.php')) {
+        wp_enqueue_script('culture', get_stylesheet_directory_uri() . '/dist/culture.js', array(), filemtime(get_stylesheet_directory() . '/dist/culture.js'), true);
     }
 
     /*Advisory*/
@@ -795,11 +800,12 @@ add_filter('wpseo_opengraph_image_size', 'override_images_size');
 
 //add test commit
 
-function show_gtag_manager_after_body_tag() {
+function show_gtag_manager_after_body_tag()
+{
     echo '<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W73KW8F"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->';
 }
 
-add_action( 'mk_theme_after_body_opening', 'show_gtag_manager_after_body_tag', 10, 0 );
+add_action('mk_theme_after_body_opening', 'show_gtag_manager_after_body_tag', 10, 0);

@@ -1,3 +1,5 @@
+import rtjCards from '../partials/rtj-cards';
+
 new Swiper('#procureabilityBenefits', {
     loop: false,
     slidesPerView: 1,
@@ -114,26 +116,6 @@ breakpoint.addEventListener("change", breakpointChecker);
 
 breakpointChecker();
 
-document.addEventListener('alpine:init', () => {
-    Alpine.data("rtjCard", () => ({
-        active: false,
-        toggle() {
-            this.active = !this.active;
-        }
-    }));
-
-    Alpine.data("rtjCards", () => ({
-        modal: false,
-        toggleModal() {
-            this.modal = !this.modal;
-
-            document.body.style.overflow = this.modal ? 'hidden' : 'visible';
-        },
-        handleCardClick(index) {
-            rtjSlider.slideTo(index);
-            this.toggleModal()
-        },
-    }));
-})
+document.addEventListener('alpine:init', rtjCards(rtjSlider));
 
 
