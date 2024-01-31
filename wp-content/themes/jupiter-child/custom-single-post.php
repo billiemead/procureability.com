@@ -15,7 +15,7 @@ while (have_posts()) :
     $image_in_content = get_field('image_in_content');
 
     $custom_font_size_for_title = $custom_font_size_for_title ? 'style="font-size: ' . esc_attr($custom_font_size_for_title) . ';"' : '';
-    $custom_width = $image_in_content ? 'style="width: calc(100% - 30px);"' : '';
+    $custom_width = $image_in_content ? 'style="width: 100%;"' : '';
     $custom_image = $custom_image ?: get_the_post_thumbnail_url();
     ?>
 
