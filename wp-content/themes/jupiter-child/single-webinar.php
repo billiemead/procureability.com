@@ -1,6 +1,8 @@
 <?php
 
-$videoLink = get_field('video_link');
+$baseYouTubeEmbedLink = 'https://www.youtube.com/embed/';
+
+$youTubeVideoId = get_field('youtube_video_id');
 $videoPoster = get_field('video_poster');
 
 $subscribeTitle = get_field('subscribe_title');
@@ -15,7 +17,7 @@ $subscribeButtonUrl = get_field('subscribe_button_url');
             <h1 class="text-[36px] text-[#404040] text-left font-semibold"><?= get_the_title() ?></h1>
 
             <div class="content mb-[20px]">
-                <?php if ($videoPoster && $videoLink): ?>
+                <?php if ($videoPoster && $youTubeVideoId): ?>
                     <div
                             class="block md:inline w-[100%] md:w-[465px] pb-[56.25%] md:pb-[27.25%] max-w-[100%] relative float-right ml-[1.5em] mb-[1.5em] video-container"
                     >
@@ -71,14 +73,14 @@ $subscribeButtonUrl = get_field('subscribe_button_url');
         </div>
     </section>
 
-    <?php if ($videoLink): ?>
+    <?php if ($youTubeVideoId): ?>
         <iframe
                 id="fancybox-frame"
                 name="fancybox-frame"
                 class="fancybox-iframe"
                 allowfullscreen="allowfullscreen"
                 allow="autoplay; fullscreen"
-                src="<?= $videoLink ?>"
+                src="<?= $baseYouTubeEmbedLink . $youTubeVideoId ?>"
                 scrolling="auto"
                 style="display:none;"
         ></iframe>

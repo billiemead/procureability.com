@@ -20,11 +20,11 @@
             "endpoint": 0
         },
         {
-            "key": "field_65b29f92f0cc0",
-            "label": "Link",
-            "name": "video_link",
+            "key": "field_65bb8ce98a9bd",
+            "label": "YouTube Video ID",
+            "name": "youtube_video_id",
             "aria-label": "",
-            "type": "url",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,7 +34,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": ""
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_65b29fabf0cc1",
@@ -191,5 +194,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706703224
+    "modified": 1706790162
 }
