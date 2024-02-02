@@ -12,8 +12,8 @@ $subscribeButtonUrl = get_field('subscribe_button_url');
 ?>
 
 <?php get_header(); ?>
-    <section class="pt-[40px] pb-[110px] lg:pt-[60px]">
-        <div class="max-w-[960px] px-[20px] mx-auto overflow-hidden">
+    <section class="pt-[40px] pb-[85px] lg:pt-[60px]">
+        <div class="max-w-[960px] px-[15px] mx-auto overflow-hidden">
             <h1 class="text-[36px] text-[#404040] text-left font-semibold"><?= get_the_title() ?></h1>
 
             <div class="content mb-[20px]">
