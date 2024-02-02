@@ -677,6 +677,10 @@ if (!function_exists('is_transparent_header')) {
             return false;
         }
 
+        if (is_singular('webinar')) {
+            return false;
+        }
+
         return true;
     }
 }
