@@ -16,38 +16,51 @@ $insights = get_field('insights');
 ?>
 <div class="custom-page diversity-page">
     <!--Hero-->
-    <?php get_template_part('partials/page-hero-with-team-photo'); ?>
+    <?php //get_template_part('partials/page-hero-with-team-photo'); ?>
     <!--Hero-->
 
-  <section class="cp-about">
-    <div class="cp-about__bg"
-         style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/branding-star-revision.svg')"></div>
+  <section
+          class="pt-[72px] pb-[80px] bg-cover bg-no-repeat bg-right"
+          style="background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/diversity-page/bg-dei-triangles.jpg')"
+  >
 
     <?php if(!empty($about['list'])) : ?>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <h1 class="cp-about__title"><?= $about['title'] ?></h1>
+        <div class="max-w-[1230px] w-[100%] px-[15px] mx-auto">
+            <h1
+                    class="diversity-mission-approach-and-commitment__title text-center text-[#0098AE] text-[36px] font-semibold font-poppins mb-[40px]"
+            ><?= $about['title'] ?></h1>
 
-          <ul class="cp-about__list">
-            <?php
-              foreach($about['list'] as $item):
-            ?>
-            <li class="cp-about__item">
-              <h4><?= $item['title'] ?></h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
+                <?php foreach($about['list'] as $item): ?>
+                    <div class="relative overflow-hidden diversity-mission-approach-and-commitment__card">
+                        <div
+                                class="diversity-mission-approach-and-commitment__card-bg rounded-[5px] absolute top-0 left-0 h-[100%] w-[100%] bg-cover bg-no-repeat bg-center flex items-end justify-center px-[20px] opacity-100"
+                                style="background-image: url(<?= $item['image']['url'] ?>);"
+                        >
+                            <h4
+                                    class="text-[#fff] font-poppins mb-[30px]"
+                            ><?= $item['title'] ?></h4>
+                        </div>
 
-              <p><?= $item['text'] ?></p>
-            </li>
-            <?php endforeach; ?>
-          </ul>
+                        <div
+                                class="diversity-mission-approach-and-commitment__card-content rounded-[5px] h-[100%] opacity-0"
+                                style="border: 0.948px solid rgba(0, 152, 174, 0.70); box-shadow: 0px 9.478px 18.956px 0px rgba(59, 161, 124, 0.30);"
+                        >
+                            <h4
+                                    class="text-[#3BA17C] text-[24px] font-poppins font-semibold leading-snug"
+                            ><?= $item['title'] ?></h4>
+
+                            <p class="text-[#777] font-poppins text-[18px] font-normal leading-relaxed mb-0"><?= $item['text'] ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
         </div>
-      </div>
-    </div>
     <?php endif; ?>
   </section>
 
   <section class="cp-ceo"
-           style="background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/diversity-page/ceo-bg.jpg')">
+           style="background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/diversity-page/ceo-bg-new.jpg')">
     <div class="container">
       <div class="cp-ceo__wrapper d-flex align-items-center">
         <div class="cp-ceo__photo d-flex align-items-end">
