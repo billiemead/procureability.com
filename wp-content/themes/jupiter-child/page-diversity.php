@@ -21,7 +21,7 @@ $insights = get_field('insights');
 
   <section
           class="pt-[72px] pb-[80px] bg-cover bg-no-repeat bg-right"
-          style="background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/diversity-page/bg-dei-triangles.jpg')"
+          style="background-image: url('/wp-content/themes/jupiter-child/assets/img/pages/diversity-page/bg-dei-triangles.jpg')"
   >
 
     <?php if(!empty($about['list'])) : ?>
@@ -60,7 +60,7 @@ $insights = get_field('insights');
   </section>
 
   <section class="cp-ceo"
-           style="background-image: url('/wp-content/themes/jupiter-child/dist/img/pages/diversity-page/ceo-bg-new.jpg')">
+           style="background-image: url('/wp-content/themes/jupiter-child/assets/img/pages/diversity-page/ceo-bg-new.jpg')">
     <div class="container">
       <div class="cp-ceo__wrapper d-flex align-items-center">
         <div class="cp-ceo__photo d-flex align-items-end">
