@@ -44,6 +44,7 @@ mix.copy('node_modules/alpinejs/dist/cdn.min.js', resources_path + 'dist/alpine.
 mix
     .js(resources_path + 'assets/js/index.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/leaders.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/hubspot-events.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/partials/leadership-section.js', resources_path + 'dist')
     /*third parties*/
     .js(resources_path + 'assets/js/thirdparties/owl-carousel.js', resources_path + 'dist')
