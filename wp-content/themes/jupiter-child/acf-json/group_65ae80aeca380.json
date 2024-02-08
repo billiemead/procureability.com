@@ -20,11 +20,11 @@
             "endpoint": 0
         },
         {
-            "key": "field_65b29f92f0cc0",
-            "label": "Link",
-            "name": "video_link",
+            "key": "field_65bb8ce98a9bd",
+            "label": "YouTube Video ID",
+            "name": "youtube_video_id",
             "aria-label": "",
-            "type": "url",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,7 +34,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": ""
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_65b29fabf0cc1",
@@ -134,6 +137,43 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_65ba38f1ba4f3",
+            "label": "Visibility",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65ba390fba4f4",
+            "label": "ProcureAbility Webinars and Podcasts Page",
+            "name": "procureability_webinars_and_podcasts_page",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show on the ProcureAbility Webinars and Podcasts Page?",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 0
         }
     ],
     "location": [
@@ -154,5 +194,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706205136
+    "modified": 1706790162
 }

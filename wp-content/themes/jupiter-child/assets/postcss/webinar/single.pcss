@@ -3,4 +3,42 @@
         max-width: 100%;
         height: auto;
     }
+
+    & strong {
+        color: #f97352;
+    }
+
+    & sup {
+        font-size: .8em;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+        top: -0.5em;
+    }
+
+    & .video-container {
+        padding-bottom: 56.25%;
+        max-width: 100%;
+
+        @media (min-width: 768px) {
+            padding-bottom: 27.25%;
+            max-width: 371px;
+        }
+
+        @media (min-width: 991px) {
+            max-width: 465px;
+        }
+    }
+}
+
+.fancybox-slide {
+    padding: 44px !important;
+
+    & .fancybox-content {
+        height: 100%;
+        overflow: visible;
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+    }
 }

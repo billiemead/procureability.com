@@ -1,6 +1,8 @@
 <?php
 
-$videoLink = get_field('video_link');
+$baseYouTubeEmbedLink = 'https://www.youtube.com/embed/';
+
+$youTubeVideoId = get_field('youtube_video_id');
 $videoPoster = get_field('video_poster');
 
 $subscribeTitle = get_field('subscribe_title');
@@ -10,17 +12,41 @@ $subscribeButtonUrl = get_field('subscribe_button_url');
 ?>
 
 <?php get_header(); ?>
-    <section class="pt-[40px] pb-[110px] lg:pt-[60px]">
-        <div class="max-w-[960px] px-[20px] mx-auto overflow-hidden">
+    <section class="pt-[40px] pb-[85px] lg:pt-[60px]">
+        <div class="max-w-[960px] px-[15px] mx-auto overflow-hidden">
             <h1 class="text-[36px] text-[#404040] text-left font-semibold"><?= get_the_title() ?></h1>
 
             <div class="content mb-[20px]">
-                <?php if ($videoPoster): ?>
-                    <div class="inline w-[450px] max-w-[100%] relative float-right ml-[1.5em] mb-[1.5em]">
-                        <div
-                                class="absolute top-0 left-0 w-[100%] pb-[56.25%] overflow-hidden bg-no-repeat bg-center bg-cover"
-                                style="background-image: url('<?= $videoPoster['url'] ?>')"
-                        ></div>
+                <?php if ($videoPoster && $youTubeVideoId): ?>
+                    <div
+                            class="block md:inline w-[100%] md:w-[465px] pb-[56.25%] md:pb-[27.25%] max-w-[100%] relative float-right ml-[1.5em] mb-[1.5em] video-container"
+                    >
+                        <div class="video-thumbnail fade-in">
+                            <div
+                                    class="absolute top-0 left-0 h-[100%] w-[100%] overflow-hidden bg-no-repeat bg-center bg-cover"
+                                    style="background-image: url('<?= $videoPoster['url'] ?>')"
+                            ></div>
+
+                            <div class="video-thumbnail-overlay" style="position: absolute;">
+                                <button
+                                        class="bg-transparent border-0 opacity-50 hover:opacity-100 w-auto h-auto block mx-auto absolute top-0 left-0 bottom-0 right-0 transition-all duration-[200ms] ease-in-out"
+                                        data-fancybox
+                                        data-src="#fancybox-frame"
+                                >
+                                    <svg
+                                            style="fill: rgb(255, 255, 255); height: 64px; width: 50.275px;"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 1408 1792"
+                                            data-width="50.275"
+                                            data-height="64"
+                                    >
+                                        <path
+                                                d="M1384 927l-1328 738q-23 13-39.5 3t-16.5-36v-1472q0-26 16.5-36t39.5 3l1328 738q23 13 23 31t-23 31z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 <?php endif; ?>
 
@@ -46,4 +72,18 @@ $subscribeButtonUrl = get_field('subscribe_button_url');
             </div>
         </div>
     </section>
+
+    <?php if ($youTubeVideoId): ?>
+        <iframe
+                id="fancybox-frame"
+                name="fancybox-frame"
+                class="fancybox-iframe"
+                allowfullscreen="allowfullscreen"
+                allow="autoplay; fullscreen"
+                src="<?= $baseYouTubeEmbedLink . $youTubeVideoId ?>"
+                scrolling="auto"
+                style="display:none;"
+        ></iframe>
+    <?php endif; ?>
+
 <?php get_footer(); ?>
