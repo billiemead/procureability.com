@@ -29,6 +29,8 @@
 @import "blog/parts/blog-single-column-list-block.pcss";
 @import "blog/parts/blog-single-column-list-block.pcss";
 
+@import "webinar/single.pcss";
+
 @import 'header/index.pcss';
 @import 'footer/navigation.pcss';
 
