@@ -4,7 +4,7 @@
 <?php $frontpage_who_we_are_button_link = get_field('frontpage_who_we_are_button_link'); ?>
 
 <section
-        class="pt-[48px] md:pt-[0px] bg-[#F2F6F6] [&_*]:box-border relative bg-no-repeat bg-[length:657px_auto] md:bg-[length:865px_auto] xl:bg-[length:1020px_auto] bg-[position:calc(50%-40px)_bottom] md:bg-[position:calc(50%+200px)_bottom] xl:bg-[position:calc(50%+250px_bottom]"
+        class="who-we-are pt-[48px] md:pt-[0px] bg-[#F2F6F6] [&_*]:box-border relative bg-no-repeat bg-[length:657px_auto] md:bg-[length:865px_auto] xl:bg-[length:1020px_auto] bg-[position:calc(50%-40px)_bottom] md:bg-[position:calc(50%+200px)_bottom] xl:bg-[position:calc(50%+250px_bottom]"
         style="background-image: url('/wp-content/themes/jupiter-child/assets/img/pages/homepage/who-we-are-bg.png')">
 
     <div class="max-w-[310px] md:max-w-[637px] xl:max-w-[1200px] mx-auto relative">

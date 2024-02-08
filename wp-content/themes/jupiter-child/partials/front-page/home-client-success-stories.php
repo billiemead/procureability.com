@@ -18,6 +18,8 @@
                         <div class="swiper-slide">
                             <div>
                                 <a href="<?= get_permalink(); ?>"
+                                   aria-label="<?= the_title(); ?>"
+                                   title="<?= the_title(); ?>"
                                    class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
                                 >
                                     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
@@ -31,7 +33,7 @@
                                      href="<?= get_permalink(); ?>">
                                     <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                 </div>
-                                <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
+                                <a class="font-poppins text-[#007A8C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
                         </div>
