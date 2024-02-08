@@ -31,7 +31,12 @@ $insights = get_field('insights');
             ><?= $about['title'] ?></h1>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
-                <?php foreach($about['list'] as $item): ?>
+                <?php foreach($about['list'] as $key => $item): ?>
+                    <?php
+
+                    $titleColor = $key == array_key_first($about['list']) ? '#0098AE' : '#3BA17C';
+
+                    ?>
                     <div class="relative overflow-hidden diversity-mission-approach-and-commitment__card">
                         <div
                                 class="diversity-mission-approach-and-commitment__card-bg rounded-[5px] absolute top-0 left-0 h-[100%] w-[100%] bg-cover bg-no-repeat bg-center flex items-end justify-center px-[20px] opacity-100"
@@ -47,7 +52,7 @@ $insights = get_field('insights');
                                 style="border: 0.948px solid rgba(0, 152, 174, 0.70); box-shadow: 0px 9.478px 18.956px 0px rgba(59, 161, 124, 0.30);"
                         >
                             <h4
-                                    class="text-[#3BA17C] text-[24px] font-poppins font-semibold leading-snug"
+                                    class="text-[<?= $titleColor ?>] text-[24px] font-poppins font-semibold leading-snug"
                             ><?= $item['title'] ?></h4>
 
                             <p class="text-[#777] font-poppins text-[18px] font-normal leading-relaxed mb-0"><?= $item['text'] ?></p>
