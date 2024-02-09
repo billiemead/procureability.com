@@ -78,10 +78,7 @@ $insights = get_field('insights');
           </p>
 
           <div class="cp-ceo__name">
-            <?= $ceo['name'] ?>,
-            <span>
-                <?= $ceo['position'] ?>
-            </span>
+            <?= $ceo['name'] . ', ' . $ceo['position'] ?>
           </div>
         </div>
       </div>
