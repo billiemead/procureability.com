@@ -155,6 +155,10 @@ function procureability_enqueue_styles()
         wp_localize_script('contact', 'teamOnlyImage', $team_photo);
     }
 
+    if (is_page_template('supply-chain-and-logistics.php')) {
+        wp_enqueue_script('supply-chain-and-logistics', get_stylesheet_directory_uri() . '/dist/supply-chain-and-logistics.js', array(), filemtime(get_stylesheet_directory() . '/dist/contact.js'), true);
+    }
+
     $leadership_section_pages_slug = array('assessments-and-transformations', 'category-management', 'strategic-sourcing', 'supply-chain-and-logistics', 'managed-services', 'digital-services', 'procurement-staffing-and-recruiting', 'digital-procurement-solutions', 'procurement-transformation', 'category-management-services');
 
     if (is_page($leadership_section_pages_slug)) {
