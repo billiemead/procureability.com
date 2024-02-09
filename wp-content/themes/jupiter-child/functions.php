@@ -31,6 +31,9 @@ function procureability_enqueue_styles()
     wp_enqueue_script('swiper');
     wp_enqueue_style('swiper');
 
+    /*Hubspot Events*/
+    wp_enqueue_script('hubspot-events', get_stylesheet_directory_uri() . '/dist/hubspot-events.js', array(), false, true);
+
     /*Fancybox*/
     wp_enqueue_style('fancybox3', get_stylesheet_directory_uri() . '/assets/sass/jquery.fancybox.min.css');
     wp_enqueue_script('fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', array(), false, true);
