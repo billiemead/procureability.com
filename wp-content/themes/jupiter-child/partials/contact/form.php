@@ -26,7 +26,7 @@
                                 <button class="bg-transparent p-0 border-none relative w-full pr-[24px] text-left"
                                         data-x-on:click="open = !open">
                                     <span class="font-poppins text-[27px] md:text-[34px] leading-[1.5] text-[#393A40] font-medium"
-                                          data-x-text="value ? value : '<?= $cta_first_form_select['placeholder']; ?>'"></span>
+                                          data-x-text="value ? value : '<?= $cta_first_form_select['services'][0]['service']; ?>'"></span>
                                     <svg class="absolute right-0 top-[21px]" width="16" height="9" viewBox="0 0 16 9"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 0.5H16L8 8.5L0 0.5Z" fill="#61636B"/>
