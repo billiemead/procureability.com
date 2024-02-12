@@ -20,7 +20,10 @@ document.addEventListener("DOMContentLoaded", event => {
             const form = document.querySelector('.hsForm_' + event.data.id);
 
             const loader = form.querySelector('.hubspot-form-loader__wrapper');
-            loader.remove();
+
+            setTimeout(() => {
+                loader.remove();
+            }, 2000);
         }
     });
 
