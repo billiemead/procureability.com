@@ -28,7 +28,7 @@
             <div id="clientSuccessStories" class="swiper mb-[32px] xl:mb-[48px]">
                 <div class="swiper-wrapper items-stretch">
                     <?php while ($insights_query->have_posts()) : $insights_query->the_post(); ?>
-                        <div class="swiper-slide pb-[30px]" style="height: auto;">
+                        <div class="swiper-slide pb-[50px]" style="height: auto;">
                             <div>
                                 <a href="<?= get_permalink(); ?>"
                                    class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
