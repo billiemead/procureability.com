@@ -14,3 +14,19 @@ $('.js-cp-testimonials').owlCarousel({
     margin: 30,
     stagePadding: 15
 });
+
+$(function () {
+    $('.mfp-post').magnificPopup({
+        type: 'inline',
+        removalDelay: 300,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = 'mfp-zoom-out';
+                $('body').addClass('mfp-is-open');
+            },
+            close: function () {
+                $('body').removeClass('mfp-is-open');
+            }
+        },
+    });
+})
