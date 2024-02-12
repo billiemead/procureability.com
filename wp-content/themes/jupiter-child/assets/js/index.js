@@ -127,4 +127,8 @@ $(document).ready(event => {
     $('body').on('blur', '.pum-theme-download-5-bold-procurement-predictions-for-2030 input', eventData => {
         $(document).trigger('resize');
     });
+
+    $('body').on('submit', "form#hsForm_794fc76d-49dd-4cbb-b777-bb844d175ca0", eventData => {
+        $(document).trigger('resize');
+    });
 });
