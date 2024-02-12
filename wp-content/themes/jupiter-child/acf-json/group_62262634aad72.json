@@ -6,6 +6,7 @@
             "key": "field_62262b0745045",
             "label": "About",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -22,6 +23,7 @@
             "key": "field_62262663cf6ec",
             "label": "About",
             "name": "about",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -37,6 +39,7 @@
                     "key": "field_62262737cf6ed",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -56,6 +59,7 @@
                     "key": "field_6226275fcf6ee",
                     "label": "List",
                     "name": "list",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -69,12 +73,14 @@
                     "min": 0,
                     "max": 0,
                     "layout": "table",
-                    "button_label": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_622627d09b4e6",
                             "label": "Title",
                             "name": "title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -88,12 +94,14 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "parent_repeater": "field_6226275fcf6ee"
                         },
                         {
                             "key": "field_622627d79b4e7",
                             "label": "Text",
                             "name": "text",
+                            "aria-label": "",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -107,7 +115,34 @@
                             "placeholder": "",
                             "maxlength": "",
                             "rows": 4,
-                            "new_lines": ""
+                            "new_lines": "",
+                            "parent_repeater": "field_6226275fcf6ee"
+                        },
+                        {
+                            "key": "field_65c3945c006e6",
+                            "label": "Image",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium",
+                            "parent_repeater": "field_6226275fcf6ee"
                         }
                     ]
                 }
@@ -117,6 +152,7 @@
             "key": "field_62262aec45043",
             "label": "CEO",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -133,6 +169,7 @@
             "key": "field_62262afc45044",
             "label": "CEO",
             "name": "ceo",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -148,6 +185,7 @@
                     "key": "field_62262b3e4504d",
                     "label": "Photo",
                     "name": "photo",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -172,6 +210,7 @@
                     "key": "field_62262b194504a",
                     "label": "Text",
                     "name": "text",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -191,6 +230,7 @@
                     "key": "field_62262b324504b",
                     "label": "Name",
                     "name": "name",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -210,6 +250,7 @@
                     "key": "field_62262b374504c",
                     "label": "Position",
                     "name": "position",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -231,6 +272,7 @@
             "key": "field_62262b6a4504e",
             "label": "Statistics",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -247,6 +289,7 @@
             "key": "field_62274d7fa7476",
             "label": "Statistics",
             "name": "statistics",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -262,6 +305,7 @@
                     "key": "field_62263030d9106",
                     "label": "Statistics Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -281,6 +325,7 @@
                     "key": "field_62262b764504f",
                     "label": "Statistics Image",
                     "name": "image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -305,6 +350,7 @@
                     "key": "field_62274da2a7477",
                     "label": "Popup Image",
                     "name": "popup_image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -329,6 +375,7 @@
                     "key": "field_62274dafa7478",
                     "label": "Download File",
                     "name": "download_file",
+                    "aria-label": "",
                     "type": "file",
                     "instructions": "",
                     "required": 0,
@@ -348,6 +395,7 @@
                     "key": "field_62274db7a7479",
                     "label": "Download Text",
                     "name": "download_text",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -369,6 +417,7 @@
             "key": "field_62262b8c45050",
             "label": "Testimonials",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -385,6 +434,7 @@
             "key": "field_62262b9b45051",
             "label": "Testimonials",
             "name": "testimonials",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -400,6 +450,7 @@
                     "key": "field_62262bb045052",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -419,6 +470,7 @@
                     "key": "field_62262bb645053",
                     "label": "Items",
                     "name": "items",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -432,12 +484,14 @@
                     "min": 0,
                     "max": 0,
                     "layout": "block",
-                    "button_label": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_62262bbe45054",
                             "label": "Text",
                             "name": "text",
+                            "aria-label": "",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -451,12 +505,14 @@
                             "placeholder": "",
                             "maxlength": "",
                             "rows": "",
-                            "new_lines": ""
+                            "new_lines": "",
+                            "parent_repeater": "field_62262bb645053"
                         },
                         {
                             "key": "field_62262bc945055",
                             "label": "Name",
                             "name": "name",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -470,12 +526,14 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "parent_repeater": "field_62262bb645053"
                         },
                         {
                             "key": "field_62262bd445056",
                             "label": "Position",
                             "name": "position",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -489,12 +547,14 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "parent_repeater": "field_62262bb645053"
                         },
                         {
                             "key": "field_62262bda45057",
                             "label": "Photo",
                             "name": "photo",
+                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -513,7 +573,8 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ""
+                            "mime_types": "",
+                            "parent_repeater": "field_62262bb645053"
                         }
                     ]
                 }
@@ -523,6 +584,7 @@
             "key": "field_62262c0445058",
             "label": "Insights",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -539,6 +601,7 @@
             "key": "field_62262c1145059",
             "label": "Insights",
             "name": "insights",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -554,6 +617,7 @@
                     "key": "field_62262c194505a",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -573,6 +637,7 @@
                     "key": "field_62262c1d4505b",
                     "label": "Items",
                     "name": "items",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -586,12 +651,14 @@
                     "min": 0,
                     "max": 0,
                     "layout": "block",
-                    "button_label": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
                     "sub_fields": [
                         {
                             "key": "field_62262c284505c",
                             "label": "Title",
                             "name": "title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -605,12 +672,14 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "parent_repeater": "field_62262c1d4505b"
                         },
                         {
                             "key": "field_62262c304505d",
                             "label": "Text",
                             "name": "text",
+                            "aria-label": "",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -624,12 +693,14 @@
                             "placeholder": "",
                             "maxlength": "",
                             "rows": 4,
-                            "new_lines": ""
+                            "new_lines": "",
+                            "parent_repeater": "field_62262c1d4505b"
                         },
                         {
                             "key": "field_62330573ae528",
                             "label": "Full Text",
                             "name": "full_text",
+                            "aria-label": "",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -643,12 +714,14 @@
                             "placeholder": "",
                             "maxlength": "",
                             "rows": "",
-                            "new_lines": "wpautop"
+                            "new_lines": "wpautop",
+                            "parent_repeater": "field_62262c1d4505b"
                         },
                         {
                             "key": "field_62262f184505f",
                             "label": "Read More Text",
                             "name": "read_more_text",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -662,12 +735,14 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "parent_repeater": "field_62262c1d4505b"
                         },
                         {
                             "key": "field_62262c3a4505e",
                             "label": "Link",
                             "name": "link",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -681,7 +756,8 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "parent_repeater": "field_62262c1d4505b"
                         }
                     ]
                 }
@@ -706,5 +782,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1666472346
+    "modified": 1707316333
 }
