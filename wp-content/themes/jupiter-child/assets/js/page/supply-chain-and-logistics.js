@@ -3,12 +3,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
         loop: false,
         slidesPerView: 1,
         spaceBetween: 34,
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        // },
         pagination: {
             el: '#clientSuccessStoriesPagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1240: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            }
+        }
+    });
+
+    new Swiper('#supplyChainAndLogisticsBlog', {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 34,
+        pagination: {
+            el: '#supplyChainAndLogisticsBlogPagination',
             clickable: true,
         },
         breakpoints: {
