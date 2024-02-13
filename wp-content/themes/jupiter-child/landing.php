@@ -20,7 +20,7 @@
 <?php /** !CTA FILE DOWNLOAD */ ?>
 
 <?php /** BANNER */ ?>
-<?php get_template_part('partials/landing/banner'); ?>
+<?php //get_template_part('partials/landing/banner'); ?>
 <?php /** !BANNER */ ?>
 
 <?php /** CTA */ ?>
