@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", event => {
 
             setTimeout(() => {
                 loader.remove();
-            }, 2000);
+            }, 10000);
         }
     });
 
