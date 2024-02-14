@@ -29,6 +29,9 @@ function procureability_enqueue_styles()
     wp_enqueue_script('swiper');
     wp_enqueue_style('swiper');
 
+    /*Hubspot Events*/
+    wp_enqueue_script('hubspot-events', get_stylesheet_directory_uri() . '/dist/hubspot-events.js', array(), false, true);
+
     /*Fancybox*/
     wp_enqueue_style('fancybox3', get_stylesheet_directory_uri() . '/assets/sass/jquery.fancybox.min.css');
     wp_enqueue_script('fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', array(), false, true);
@@ -143,6 +146,10 @@ function procureability_enqueue_styles()
         set_query_var('teamMembersPhotos', $team_photo);
 
         wp_localize_script('contact', 'teamOnlyImage', $team_photo);
+    }
+
+    if (is_page_template('supply-chain-and-logistics.php')) {
+        wp_enqueue_script('supply-chain-and-logistics', get_stylesheet_directory_uri() . '/dist/supply-chain-and-logistics.js', array(), filemtime(get_stylesheet_directory() . '/dist/contact.js'), true);
     }
 
     $leadership_section_pages_slug = array('assessments-and-transformations', 'category-management', 'strategic-sourcing', 'supply-chain-and-logistics', 'managed-services', 'digital-services', 'procurement-staffing-and-recruiting', 'digital-procurement-solutions', 'procurement-transformation', 'category-management-services');
