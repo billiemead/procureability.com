@@ -166,23 +166,34 @@
             <?php $studies_query = new WP_Query(array('category_name' => 'supply-chain-and-logistics-case-studies', 'posts_per_page' => 3)); ?>
 
             <?php if ($studies_query->have_posts()) : ?>
-                <div class="cards-wrapper space-y-[30px] md:space-y-0">
-                    <?php while ($studies_query->have_posts()) : $studies_query->the_post(); ?>
-                        <div class="cards-item">
-                            <div class="card">
-                                <a href="<?= the_permalink(); ?>" class="block pt-[52.41%] flex-[0_0_auto] overflow-hidden relative">
-                                    <div class="rocket-lazyload absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300" data-bg="<?= get_the_post_thumbnail_url(null, 'large'); ?>"></div>
-                                </a>
-                                <div class="card__body">
-                                    <div class="card__text"><?= get_the_excerpt(); ?></div>
-                                    <div class="card__button-wrapper">
-                                        <a class="card__button" href="<?= the_permalink(); ?>">Read more</a>
+                <div id="clientSuccessStories" class="swiper mb-[32px] xl:mb-[48px]">
+                    <div class="swiper-wrapper">
+                        <?php while ($studies_query->have_posts()) : $studies_query->the_post(); ?>
+                            <div class="swiper-slide">
+                                <div>
+                                    <a href="<?= get_permalink(); ?>"
+                                       class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
+                                    >
+                                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
+                                             style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
+                                    </a>
+                                    <a class="block mb-[12px] group/title"
+                                       href="<?= get_permalink(); ?>" title="<?= the_title(); ?>">
+                                        <span class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] group-hover/title:text-[#3BA17C] transition-colors line-clamp-2"><?= the_title(); ?></span>
+                                    </a>
+                                    <div class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] "
+                                         href="<?= get_permalink(); ?>">
+                                        <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                     </div>
+                                    <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
+                                       href="<?= get_permalink(); ?>">Read More</a>
                                 </div>
                             </div>
-                        </div>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                    <div id="clientSuccessStoriesPagination"
+                         class="xl:!hidden mt-[24px] xl:mt-[40px] flex justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#0098AE] [&_span]:!opacity-100"></div>
                 </div>
             <?php endif; ?>
         </div>
@@ -200,23 +211,34 @@
             <?php $blog_query = new WP_Query(array('category_name' => 'supply-chain-management', 'posts_per_page' => 3)); ?>
 
             <?php if ($blog_query->have_posts()) : ?>
-                <div class="cards-wrapper space-y-[30px] md:space-y-0">
-                    <?php while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
-                        <div class="cards-item">
-                            <div class="card">
-                                <a href="<?= the_permalink(); ?>" class="block pt-[52.41%] flex-[0_0_auto] overflow-hidden relative">
-                                    <div class="rocket-lazyload absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300" data-bg="<?= get_the_post_thumbnail_url(null, 'large'); ?>"></div>
-                                </a>
-                                <div class="card__body">
-                                    <div class="card__text"><?= get_the_excerpt(); ?></div>
-                                    <div class="card__button-wrapper">
-                                        <a class="card__button" href="<?= the_permalink(); ?>">Read more</a>
+                <div id="supplyChainAndLogisticsBlog" class="swiper mb-[32px] xl:mb-[48px]">
+                    <div class="swiper-wrapper">
+                        <?php while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
+                            <div class="swiper-slide">
+                                <div>
+                                    <a href="<?= get_permalink(); ?>"
+                                       class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
+                                    >
+                                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
+                                             style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
+                                    </a>
+                                    <a class="block mb-[12px] group/title"
+                                       href="<?= get_permalink(); ?>" title="<?= the_title(); ?>">
+                                        <span class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] group-hover/title:text-[#3BA17C] transition-colors line-clamp-2"><?= the_title(); ?></span>
+                                    </a>
+                                    <div class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] "
+                                         href="<?= get_permalink(); ?>">
+                                        <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                     </div>
+                                    <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
+                                       href="<?= get_permalink(); ?>">Read More</a>
                                 </div>
                             </div>
-                        </div>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                    <div id="supplyChainAndLogisticsBlogPagination"
+                         class="xl:!hidden mt-[24px] xl:mt-[40px] flex justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#0098AE] [&_span]:!opacity-100"></div>
                 </div>
             <?php endif; ?>
         </div>

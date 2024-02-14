@@ -44,6 +44,7 @@ mix.copy('node_modules/alpinejs/dist/cdn.min.js', resources_path + 'dist/alpine.
 mix
     .js(resources_path + 'assets/js/index.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/leaders.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/hubspot-events.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/partials/leadership-section.js', resources_path + 'dist')
     /*third parties*/
     .js(resources_path + 'assets/js/thirdparties/owl-carousel.js', resources_path + 'dist')
@@ -59,6 +60,7 @@ mix
     .js(resources_path + 'assets/js/page/about.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/leadership.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/thank-you.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/page/supply-chain-and-logistics.js', resources_path + 'dist')
     .vue()
 
     // SASS

@@ -26,9 +26,9 @@
         </div>
         <?php if ($insights_query->have_posts()) : ?>
             <div id="clientSuccessStories" class="swiper mb-[32px] xl:mb-[48px]">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper items-stretch">
                     <?php while ($insights_query->have_posts()) : $insights_query->the_post(); ?>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide pb-[50px]" style="height: auto;">
                             <div>
                                 <a href="<?= get_permalink(); ?>"
                                    class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
@@ -39,10 +39,10 @@
                                 <a href="<?= get_permalink(); ?>" class="block font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]">
                                     <?= the_title(); ?>
                                 </a>
-                                <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] line-clamp-3">
+                                <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] line-clamp-3">
                                     <?= get_the_excerpt(); ?>
                                 </div>
-                                <a class="font-poppins text-[#3BA17C] transition-all text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
+                                <a class="absolute bottom-[4px] font-poppins text-[#3BA17C] transition-all text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
                         </div>

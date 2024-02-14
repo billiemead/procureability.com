@@ -122,3 +122,13 @@ window.addEventListener('message', event => {
         window.location.href = "https://procureability.com/wp-content/uploads/2023/07/final-white-paper-bold-predictions-27.6.23.pdf";
     }
 });
+
+$(document).ready(event => {
+    $('body').on('blur', '.pum-theme-download-5-bold-procurement-predictions-for-2030 input', eventData => {
+        $(document).trigger('resize');
+    });
+
+    $('body').on('submit', "form#hsForm_794fc76d-49dd-4cbb-b777-bb844d175ca0, form#hsForm_8ddc5061-7eb7-4dca-8d14-7b35f3d86482", eventData => {
+        $(document).trigger('resize');
+    });
+});
