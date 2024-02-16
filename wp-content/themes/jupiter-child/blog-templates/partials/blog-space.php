@@ -1,0 +1,1 @@
+<hr class="border-0 mt-0 mb-[<?= $args['space'] ?>]" style="margin-bottom: <?= $args['space'] ?>;" />
