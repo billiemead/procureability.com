@@ -1,0 +1,1 @@
+<div class="blog-text-block"><?= $args['content'] ?></div>
