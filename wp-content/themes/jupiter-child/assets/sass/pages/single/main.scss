@@ -36,6 +36,7 @@ img {
 
   @media (min-width: 991.9px) {
     margin-top: 60px;
+    margin-bottom: 70px;
   }
 
   &.full_size {
@@ -98,6 +99,14 @@ img {
         width: 100%;
       }
     }
+
+
+  }
+
+  .caption__image-descripion {
+    background-color: #e6f5f7;
+    border-bottom: 2px solid #0098ae;
+    padding: 16px 24px;
   }
 
   &-container {
@@ -170,6 +179,9 @@ img {
 
   &__image {
     margin: 25px 0px 0px 0;
+    display: flex;
+    flex-direction: column;
+
     @media (min-width: 991.9px) {
       position: absolute;
       max-width: 656px;
@@ -195,7 +207,7 @@ img {
 }
 
 .single_with_banner strong {
-  color: #f97352 !important;
+  color: #f97352;
 }
 
 .post {

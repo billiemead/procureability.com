@@ -225,6 +225,26 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_65d3ad806b19c",
+            "label": "Custom Image description",
+            "name": "custom_image_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_65b209b47e778",
             "label": "Image in content",
             "name": "image_in_content",
@@ -361,5 +381,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708325668
+    "modified": 1708371360
 }

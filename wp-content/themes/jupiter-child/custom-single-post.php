@@ -18,6 +18,7 @@ while (have_posts()) :
     $first_screen_banner_show = get_field('first_screen_banner_show');
     $first_screen_banner_subtitle = get_field('first_screen_banner_subtitle');
     $first_screen_banner_btn = get_field('first_screen_banner_btn');
+    $custom_image_description = get_field('custom_image_description');
 
     //first screen full size banner
     $first_screen_banner_show_full_screen = get_field('first_screen_banner_show_full_screen');
@@ -58,6 +59,9 @@ while (have_posts()) :
             <div class="caption__image">
                 <img src="<?php echo esc_url($custom_image); ?>" class="max-w-full"
                      alt="<?php echo esc_attr($custom_post_title); ?>">
+                <?php if ($custom_image_description) { ?>
+                    <div class="caption__image-descripion"><?php echo $custom_image_description;?></div>
+                <?php } ?>
                 <?php if ($first_screen_banner_show_full_screen && $first_screen_banner_full_screen_text) { ?>
                     <div class="caption__text-description">
                         <?php echo $first_screen_banner_full_screen_text; ?>
@@ -120,8 +124,9 @@ while (have_posts()) :
         echo $full_size_after_content_block;
     }
     ?>
+    <style>
 
-
+    </style>
 <?php endwhile;
 
 get_footer();
