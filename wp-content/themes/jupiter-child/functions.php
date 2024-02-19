@@ -214,8 +214,6 @@ function dequeue_footer_styles() {
         wp_deregister_script( 'front-page' );
         wp_dequeue_script( 'mk-webfontloader' );
         wp_deregister_script( 'mk-webfontloader' );
-        wp_dequeue_script( 'tp-tools' );
-        wp_deregister_script( 'tp-tools' );
         wp_dequeue_script( 'mkhb-render' );
         wp_deregister_script( 'mkhb-render' );
         wp_dequeue_script( 'revmin' );

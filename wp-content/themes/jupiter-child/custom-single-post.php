@@ -112,9 +112,7 @@ while (have_posts()) :
                    href="<?php echo $end_post_cta_block_button['url']; ?>"><?php echo $end_post_cta_block_button['title']; ?></a>
             <?php } ?>
         </section>
-
     <?php } ?>
-
     <?php
     $full_size_after_content_block = get_field('full_size_after_content_block');
 
@@ -122,6 +120,7 @@ while (have_posts()) :
         echo $full_size_after_content_block;
     }
     ?>
+
 
 <?php endwhile;
 

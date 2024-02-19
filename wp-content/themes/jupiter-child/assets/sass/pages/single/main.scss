@@ -92,6 +92,7 @@ img {
       @media (min-width: 1199.9px) {
         max-width: 50%;
       }
+
       img {
         margin-bottom: 15px;
         width: 100%;
@@ -1080,4 +1081,20 @@ img {
   margin-top: -50px;
   padding: 40px 15px;
   background: rgb(240, 240, 240);
+}
+
+.recomendet_blogs {
+  text-align: center;
+  margin-top: 40px;
+
+  h2 {
+    font-size: 24px;
+    color: #404040;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  .single-container {
+    padding-top: 0;
+  }
 }
