@@ -1,7 +1,7 @@
 <?php if ($args['list']): ?>
-    <div>
+    <div class="blog-list-with-icons-type-1">
         <?php $count = 0; foreach ($args['list'] as $item): ?>
-            <div class="mb-[50px] flex flex-wrap md:flex-nowrap">
+            <div class="blog-list-with-icons-type-1__item mb-[50px]">
                 <div class="mr-[20px] md:mx-[20px] text-[#393A40] font-poppins text-[20px] font-semibold leading-[1.5] pt-[22px]">
                     <span><?= (($count + 1) > 8) ? ($count + 1) : '0' . ($count + 1) ?></span>
                 </div>
