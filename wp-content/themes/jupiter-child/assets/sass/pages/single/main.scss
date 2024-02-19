@@ -41,7 +41,7 @@ img {
   &.full_size {
 
     @media (min-width: 1199.9px) {
-      margin-bottom: 80px;
+      min-height: 460px;
     }
 
     .caption-container {
@@ -50,7 +50,10 @@ img {
       padding: 0 15px;
 
       @media (min-width: 767.9px) {
-        padding: 0 5%;
+        padding-left: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
     }
 
@@ -76,11 +79,19 @@ img {
       }
 
       @media (min-width: 1199.9px) {
-        max-width: 674px;
+        max-width: 645px;
       }
     }
 
     .caption__image {
+
+      @media (min-width: 767.9px) {
+        position: static;
+      }
+
+      @media (min-width: 1199.9px) {
+        max-width: 50%;
+      }
       img {
         margin-bottom: 15px;
         width: 100%;
