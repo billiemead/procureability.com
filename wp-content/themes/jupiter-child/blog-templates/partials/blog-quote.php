@@ -6,6 +6,6 @@
         style="font-family: Poppins;"
     ><?= $args['text'] ?></p>
     <span
-        class="text-[#61636B] font-poppins text-[16px] italic font-normal leading-[1.6]"
+        class="text-[#61636B] font-poppins text-[16px] font-normal leading-[1.6]"
     ><?= $args['author'] ?></span>
 </div>
