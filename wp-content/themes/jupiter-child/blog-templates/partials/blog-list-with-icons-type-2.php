@@ -6,7 +6,7 @@
 
                 <div>
                     <div class="mb-[4px]">
-                        <span class="text-[#393A40] font-medium text-[18px] font-medium leading-[1.47556]"><?= $item['title'] ?></span>
+                        <span class="text-[#393A40] font-poppins font-medium text-[18px] font-medium leading-[1.47556]"><?= $item['title'] ?></span>
                     </div>
 
                     <div class="text-[#777] font-poppins text-[16px] font-normal leading-[1.66]"><?= $item['text'] ?></div>

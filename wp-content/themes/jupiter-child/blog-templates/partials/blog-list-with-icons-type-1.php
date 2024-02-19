@@ -6,7 +6,7 @@
                     <span><?= (($count + 1) > 8) ? ($count + 1) : '0' . ($count + 1) ?></span>
                 </div>
 
-                <div><img src="<?= $item['icon']['url'] ?>" alt="<?= $item['title'] ?>"></div>
+                <div><img class="max-w-[70px]" src="<?= $item['icon']['url'] ?>" alt="<?= $item['title'] ?>"></div>
 
                 <div class="md:ml-[29px] pt-[24px]">
                     <div class="mb-[27px]"><span class="text-[#393A40] font-poppins text-[18px] font-semibold leading-[1.5]"><?= $item['title'] ?></span></div>
