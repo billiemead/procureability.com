@@ -36,9 +36,11 @@ img {
 
   @media (min-width: 991.9px) {
     margin-top: 60px;
-    margin-bottom: 70px;
   }
 
+  @media (min-width: 1199.9px) {
+    margin-bottom: 70px;
+  }
   &.full_size {
 
     @media (min-width: 1199.9px) {
@@ -184,10 +186,14 @@ img {
 
     @media (min-width: 991.9px) {
       position: absolute;
-      max-width: 656px;
+      max-width: 496px;
       right: 0;
       top: 0;
       margin: 0;
+    }
+
+    @media (min-width: 1199.9px) {
+      max-width: 656px;
     }
     @media (min-width: 1500.9px) {
       right: 10%;
@@ -211,6 +217,8 @@ img {
 }
 
 .post {
+
+
 
   @media (min-width: 767.9px) {
     display: flex;
