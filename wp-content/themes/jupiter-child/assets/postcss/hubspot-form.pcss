@@ -208,7 +208,7 @@
                             border-radius: 4px !important;
 
                             @media (min-width: 1024px) {
-                                font-size: 18px !important;
+                                font-size: 16px !important;
                                 padding-top: 12px !important;
                                 padding-bottom: 12px !important;
                                 letter-spacing: 0.1em !important;
@@ -249,12 +249,17 @@
             ul {
                 &.no-list {
                     &.hs-error-msgs {
+                        position: absolute;
+                        bottom: -20px;
+                        left: 1px;
+
                         &.inputs-list {
                             li {
                                 label {
                                     margin-top: 4px;
                                     color: #FF6D6D !important;
                                     opacity: 1 !important;
+                                    font-size: 10px !important;
                                 }
                             }
                         }
@@ -290,12 +295,13 @@
             }
 
             .hs-form-field {
-                margin-top: 8px !important;
+                margin-top: 17px !important;
                 float: none !important;
+                position: relative;
             }
 
             .hs-submit {
-                margin-top: 8px !important;
+                margin-top: 17px !important;
             }
 
             &.hs-form {
@@ -309,6 +315,7 @@
                                 background: #3BA17C !important;
                                 opacity: 1 !important;
                                 transition: opacity .75s;
+                                font-size: 16px;
 
                                 &:hover {
                                     opacity: 0.7 !important;
