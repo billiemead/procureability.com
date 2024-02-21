@@ -39,7 +39,7 @@ $contactBackgroundImage = get_field('contact_background_image');
     ]); ?>
 </section>
 
-<section class="max-w-[1076px] w-[100%] max-w-[100%] px-[15px] pb-[72px] mx-auto box-border">
+<section class="max-w-[1076px] w-[100%] px-[15px] pb-[72px] mx-auto box-border">
     <?php get_template_part('blog-templates/partials/blog', 'quote', ['text' => $quoteText, 'author' => $quoteAuthor]); ?>
 
     <?php get_template_part('blog-templates/partials/blog', 'space', ['space' => '22px']); ?>
@@ -73,7 +73,7 @@ $contactBackgroundImage = get_field('contact_background_image');
 </section>
 
 <section class="w-[100%]">
-    <?php get_template_part('blog-templates/partials/blog', 'contact', [
+    <?php get_template_part('blog-templates/partials/blog', 'cta', [
         'title' => $contactTitle,
         'text' => $contactText,
         'button_text' => $contactButtonText,
