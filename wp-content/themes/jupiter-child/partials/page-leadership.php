@@ -6,7 +6,8 @@
         <div class="px-[33px] xl:px-0 max-w-[1180px] mx-auto">
             <?php if ($leadership_section_title) : ?>
                 <div class="text-center mb-[24px] xl:mb-[48px]">
-                    <span class="text-[#f7941f] text-[24px] font-[500] xl:text-[34px] leading-[1.47] xl:font-[600]"><?= $leadership_section_title; ?></span>
+                    <span class="text-[#005E6B] text-[24px] font-[500]  leading-[1.47] xl:font-[500]" style="font-family: Poppins;
+color: #005E6B;font-weight: 500;line-height: 140%; /* 33.6px */"><?= $leadership_section_title; ?></span>
                 </div>
             <?php endif; ?>
             <div class="max-w-[180px] md:max-w-[398px] xl:max-w-[755px] mx-auto relative">
@@ -29,7 +30,7 @@
                                         </div>
                                     </div>
                                     <div class="text-center text-[16px] leading-[1.5]">
-                                        <div class="capitalize font-[600] text-[#393A40]"><?= get_field('leadership_name', $post_id); ?></div>
+                                        <div class="capitalize font-[600] text-[#393A40] text-[18px]" style="font-family: Poppins;"><?= get_field('leadership_name', $post_id); ?></div>
                                         <div class="capitalize text-[#393A40] text-[14px]"><?= get_field('leadership_title', $post_id); ?></div>
                                     </div>
                                 </a>

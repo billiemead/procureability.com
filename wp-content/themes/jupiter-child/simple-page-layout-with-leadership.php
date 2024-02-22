@@ -14,7 +14,7 @@
 <!--Content-->
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-        <?php get_template_part('partials/page', 'content'); ?>
+        <?php get_template_part('partials/page', 'content', ['management-services']); ?>
     <?php endwhile; ?>
 <?php endif; ?>
 <!--Content-->
