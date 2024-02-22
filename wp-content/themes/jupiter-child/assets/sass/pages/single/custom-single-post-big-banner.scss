@@ -1,0 +1,98 @@
+
+.single-container {
+  max-width: 960px;
+  padding: 25px 15px 100px 15px;
+  margin: 0 auto;
+  @media (min-width: 767.9px) {
+    padding-top: 50px;
+  }
+}
+img{
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+
+.title {
+  font-size: 30px;
+  text-align: left;
+  color: #404040;
+  font-weight: 600;
+  text-transform: none;
+
+  @media (min-width: 767.9px) {
+    max-width: 90%;
+    margin-bottom: 60px;
+  }
+}
+
+.post {
+  @media (min-width: 767.9px) {
+    display: flex;
+  }
+
+  &_content {
+    width: 100%;
+    @media (min-width: 767.9px) {
+      min-width: 54%;
+      width: 54%;
+      padding: 0;
+    }
+
+    img {
+      padding-bottom: 20px;
+
+      @media (min-width: 580.9px) {
+        min-width: 416px;
+        max-width: 45%;
+        float: right;
+        padding-left: 20px;
+      }
+      @media (min-width: 767.9px) {
+        padding-bottom: 30px;
+      }
+
+    }
+    .aligncenter {
+
+      @media (min-width: 580.9px) {
+        min-width: 100%;
+        max-width: 100%;
+        float: right;
+      }
+    }
+    form {
+      margin: 0 -15px;
+
+      @media (min-width: 767.9px) {
+        max-width: 256px;
+        margin: 30px auto 0 auto;
+      }
+    }
+  }
+
+  &_img {
+    padding: 0 15px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+
+  .custom_btn {
+    border: 2px solid rgb(87, 172, 133);
+    color: rgb(87, 172, 133);
+    background-color: transparent;
+    padding: 13px 19px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      border-color: transparent;
+      color: rgb(87, 172, 133);
+    }
+  }
+
+}
