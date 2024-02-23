@@ -3,7 +3,7 @@
 <?php if ($form_section_form_shortcode) : ?>
     <!--Form section-->
     <section class="py-[32px] bg-[#0098AE] bg-center bg-cover bg-no-repeat"
-             style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/form-section-bg.png')">
+             style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/form-section-bg.jpg')">
         <div class="max-w-[1200px] px-[33px] md:px-0 mx-auto">
             <div class="lg:grid lg:grid-cols-2 lg:gap-[76px] lg:items-center">
                 <div class="pt-[40px] pb-[32px] lg:py-0 md:px-[34px] lg:px-0">
