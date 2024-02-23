@@ -34,7 +34,7 @@
                                     <?= get_the_excerpt(); ?>
                                 </div>
                                 <a
-                                        class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
+                                        class="font-poppins text-[#005E6B] text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
                                         href="<?= get_permalink(); ?>"
                                         title="Read more about <?= get_the_title(); ?>"
                                 >Read More</a>
