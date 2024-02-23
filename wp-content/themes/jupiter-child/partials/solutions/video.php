@@ -8,11 +8,11 @@
         <?php global $wp; ?>
         <div class="flex justify-end">
             <a href="<?= home_url($wp->request); ?>#video"
-               class="font-poppins text-[20px] bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00626B] [&.active]:font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
+               class="font-poppins text-[#00626B] text-[20px] bg-[#f3f6f5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:text-[#fff] [&.active]:bg-[#00626B] font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
                 EN
             </a>
             <a href="<?= home_url($wp->request); ?>/?video=es#video"
-               class="font-poppins text-[20px] bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00626B] [&.active]:font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
+               class="font-poppins text-[#00626B] text-[20px] bg-[#f3f6f5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:text-[#fff] [&.active]:bg-[#00626B] font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
                 ES
             </a>
         </div>

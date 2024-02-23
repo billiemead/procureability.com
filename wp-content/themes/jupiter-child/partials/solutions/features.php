@@ -9,6 +9,7 @@
                     role="switch"
                     aria-label="Prev Button"
                     title="Prev Button"
+                    aria-checked="true"
             >
                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.75037 1.35406L0.981135 8.1233L7.75037 14.8925" stroke="currentColor"
@@ -22,6 +23,7 @@
                     role="switch"
                     aria-label="Next Button"
                     title="Next Button"
+                    aria-checked="true"
             >
                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.24976 14.6458L8.01899 7.87658L1.24976 1.10735" stroke="currentColor"
