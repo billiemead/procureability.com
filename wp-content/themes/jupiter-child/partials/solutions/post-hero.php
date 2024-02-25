@@ -10,7 +10,7 @@
             <div class="mb-[16px] text-center lg:!text-left">
                 <span class="text-poppins brand-text-gradient text-transparent bg-clip-text text-[22px] lg:text-[36px] leading-[1.4] lg:leading-[1.5] font-[600]"><?= $post_hero_title; ?></span>
             </div>
-            <div class="[&_p]:!font-poppins [&_p]:text-[14px] lg:[&_p]:text-[16px] [&_p]:text-[1.7] [&_p]:text-[#61636B] [&_p:not(:last-child)]:!mb-[8px] lg:[&_p:not(:last-child)]:!mb-[16px] text-center lg:!text-left">
+            <div class="[&_p]:!font-poppins [&_p]:text-[14px] lg:[&_p]:text-[16px] [&_p]:text-[1.7] [&_p]:text-[#393A40] [&_p:not(:last-child)]:!mb-[8px] lg:[&_p:not(:last-child)]:!mb-[16px] text-center lg:!text-left">
                 <?= $post_hero_content; ?>
             </div>
         </div>
