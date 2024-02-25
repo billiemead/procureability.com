@@ -16,17 +16,17 @@ function asset_hash($file)
 function procureability_enqueue_styles()
 {
     /*Owl.carousel*/
-    wp_register_script('owl-carousel', get_stylesheet_directory_uri() . '/dist/owl-carousel.js', array('jquery'), '2.3.4', true);
+    wp_register_script( 'owl-carousel', get_stylesheet_directory_uri() . '/dist/owl-carousel.js', array('jquery'), '2.3.4', true);
 
     /*Swiper*/
-    wp_register_script('swiper', get_stylesheet_directory_uri() . '/dist/swiper.js', array(), '8.4.7', true);
-    wp_register_style('swiper', get_stylesheet_directory_uri() . '/dist/swiper.css', array(), '8.4.7');
+    wp_register_script( 'swiper', get_stylesheet_directory_uri() . '/dist/swiper.js', array(), '8.4.7', true);
+    wp_register_style( 'swiper', get_stylesheet_directory_uri() . '/dist/swiper.css', array(), '8.4.7' );
 
     /*Lodash*/
     wp_register_script('lodash', false, array(), false, true);
 
     //Jupiter theme styles without anything not required
-    wp_register_style('full-styles-only-required', get_stylesheet_directory_uri() . '/dist/full-styles-only-required.css', array(), filemtime(get_stylesheet_directory() . '/dist/full-styles-only-required.css'));
+    wp_register_style( 'full-styles-only-required', get_stylesheet_directory_uri() . '/dist/full-styles-only-required.css', array(), filemtime(get_stylesheet_directory() . '/dist/full-styles-only-required.css'));
 
     wp_enqueue_script('swiper');
     wp_enqueue_style('swiper');
@@ -65,7 +65,11 @@ function procureability_enqueue_styles()
     if (is_page_template('custom-single-post.php')) {
         wp_register_style( 'custom-single-post', get_stylesheet_directory_uri() . '/dist/custom-single-post.css', array(), filemtime(get_stylesheet_directory() . '/dist/custom-single-post.css'));
         wp_enqueue_style('custom-single-post');
-
+    }
+    /*custom single big banner style*/
+    if (is_page_template('custom-single-post-big-banner.php')) {
+        wp_register_style( 'custom-single-post-big-banner', get_stylesheet_directory_uri() . '/dist/custom-single-post-big-banner.css', array(), filemtime(get_stylesheet_directory() . '/dist/custom-single-post.css'));
+        wp_enqueue_style('custom-single-post-big-banner');
     }
 
     /*Diversity Equity Inclusion*/
