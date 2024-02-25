@@ -33,10 +33,10 @@ while (have_posts()) :
                 <?php if ($custom_description) { ?>
                     <div class="banner__caption-description"><?php echo $custom_description; ?></div>
                 <?php } ?>
-                <?php if ($custom_button['title'] && $custom_button['url']): ?>
+                <?php if ($custom_button && ($custom_button['title'] && $custom_button['url'])) { ?>
                     <a href="<?php echo $custom_button['url']; ?>"
                        class="banner__btn custom_btn"><?php echo $custom_button['title']; ?></a>
-                <?php endif; ?>
+                <?php } ?>
             </div>
             <div class="banner__image">
                 <?php
