@@ -161,6 +161,10 @@ function dequeue_footer_styles()
         wp_deregister_script('theme-scripts');
         wp_dequeue_script('scap.soundmanager2');
         wp_deregister_script('scap.soundmanager2');
+
+
+        wp_register_style('js_composer_front', asset_hash('/wp-content/plugins/js_composer_theme/assets/css/js_composer.min.css?ver=6.9.0'), array(), null);
+        wp_enqueue_style('js_composer_front');
     }
 }
 
