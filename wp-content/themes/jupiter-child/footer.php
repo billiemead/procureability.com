@@ -81,6 +81,33 @@
 </div>
 </div>
 
+
+<script>
+    window.hotjarStatus = false;
+    window.addEventListener('mousemove', startIntercom, {passive: true});
+    window.addEventListener('touchstart', startIntercom, {passive: true});
+    window.addEventListener('scroll', startIntercom, {passive: true});
+
+    function startIntercom() {
+        if (window.hotjarStatus == true) return;
+
+
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {hjid: 3325935, hjsv: 6};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+        window.hotjarStatus = true;
+    }
+</script>
+
 <?php get_template_part('partials/footer/scroll-to-top'); ?>
 
 <?php get_template_part('partials/footer/desktop-search'); ?>

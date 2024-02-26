@@ -30,19 +30,19 @@
                     <?php while ($insights_query->have_posts()) : $insights_query->the_post(); ?>
                         <div class="swiper-slide">
                             <div>
-                                <a href="<?= get_permalink(); ?>"
+                                <div
                                    class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
                                 >
                                     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
                                          style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
-                                </a>
+                                </div>
                                 <a href="<?= get_permalink(); ?>" class="block font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]">
                                     <?= the_title(); ?>
                                 </a>
                                 <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px]">
                                     <?= get_the_excerpt(); ?>
                                 </div>
-                                <a class="font-poppins text-[#3BA17C] transition-colors text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
+                                <a class="font-poppins text-[#000] transition-colors text-[14px] xl:text-[18px] leading-[1.5] font-[500]"
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
                         </div>

@@ -58,6 +58,7 @@ mix
     .js(resources_path + 'assets/js/page/contact.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/digital-services.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/about.js', resources_path + 'dist')
+    .js(resources_path + 'assets/js/page/culture.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/leadership.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/thank-you.js', resources_path + 'dist')
     .js(resources_path + 'assets/js/page/supply-chain-and-logistics.js', resources_path + 'dist')
@@ -66,6 +67,7 @@ mix
     // SASS
     .sass(resources_path + 'assets/sass/main.scss', resources_path + 'dist/main.css')
     .sass(resources_path + 'assets/sass/custom-single-post.scss', resources_path + 'dist/custom-single-post.css')
+    .sass(resources_path + 'assets/sass/custom-single-post-big-banner.scss', resources_path + 'dist/custom-single-post-big-banner.css')
 
     //jupiter theme styles
     .postCss(resources_path + 'assets/postcss/jupiter/full-styles-only-required.pcss', resources_path + 'dist/full-styles-only-required.css')

@@ -12,6 +12,10 @@
 @import 'vendors/popup-maker/themes/pum-theme-download-5-bold-procurement-predictions-for-2030.pcss';
 @import 'vendors/popup-maker/themes/pum-theme-event-page.pcss';
 
+@import "blog/parts/blog-hero.pcss";
+@import "blog/parts/blog-text-block.pcss";
+@import "blog/parts/blog-accent-paragraph-blue.pcss";
+@import "blog/parts/blog-list-with-icons-type-1.pcss";
 @import "blog/parts/blog-list.pcss";
 @import "blog/parts/custom-content-block.pcss";
 @import "blog/parts/ism-block.pcss";
@@ -28,6 +32,8 @@
 @import "blog/parts/blog-strategic-plan.pcss";
 @import "blog/parts/blog-single-column-list-block.pcss";
 @import "blog/parts/blog-single-column-list-block.pcss";
+@import "blog/parts/blog-table-accelerate-value-through-integrated-sourcing-and-data.pcss";
+@import "blog/parts/blog-accelerate-value-through-integrated-sourcing-and-data-arrow-block.pcss";
 
 @import "webinar/single.pcss";
 
