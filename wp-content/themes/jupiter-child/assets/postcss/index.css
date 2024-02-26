@@ -13,10 +13,12 @@
 @import 'vendors/popup-maker/themes/pum-theme-event-page.pcss';
 
 @import "blog/parts/blog-hero.pcss";
+@import "blog/parts/blog-content-section.pcss";
 @import "blog/parts/blog-text-block.pcss";
 @import "blog/parts/blog-accent-paragraph-blue.pcss";
 @import "blog/parts/blog-list-with-icons-type-1.pcss";
 @import "blog/parts/blog-list.pcss";
+@import "blog/parts/blog-sticky-banner.pcss";
 @import "blog/parts/custom-content-block.pcss";
 @import "blog/parts/ism-block.pcss";
 @import "blog/parts/blog-list-with-icons.pcss";
