@@ -7,8 +7,14 @@ $ctaButtonLink = get_field('cta_button_link');
 
 ?>
 
-<div class="bg-no-repeat webinar-cta" style="background-image: url(<?= $ctaBanner['url'] ?>);">
-    <div class="max-w-[1140px] mx-auto px-[15px]">
+<div
+        class="webinar-cta"
+>
+    <div
+            class="absolute w-[100%] h-[100%] webinar-cta__bg top-0 left-0 z-0"
+            style="background-image: url(<?= $ctaBanner['url'] ?>);"
+    ></div>
+    <div class="max-w-[1140px] mx-auto px-[15px] relative z-10">
         <div class="max-w-[100%] lg:max-w-[540px] webinar-cta__content">
             <h2 class="font-poppins text-[40px] text-[#393A40] font-semibold leading-[1.4] mb-[32px]"><?= $ctaTitle ?></h2>
             <a
