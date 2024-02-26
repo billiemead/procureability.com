@@ -5,7 +5,7 @@
         <span class="block text-[#777] font-poppins text-[14px] font-normal leading-[1.5] tracking-[-0.28px] mb-[4px]">
             <a
                     href="<?= $contributor['link'] ?>"
-                    class="font-poppins text-[14px] font-medium leading-[1.5] tracking-[-0.28px] mb-[4px] hover:!text-[#b7b7b7]"
+                    class="font-poppins text-[14px] font-medium leading-[1.5] tracking-[-0.28px] mb-[4px] hover:!bg-none"
                     title="<?= $contributor['name'] ?>"
                     style="
                         color: rgba(57, 58, 64, 0.80);
