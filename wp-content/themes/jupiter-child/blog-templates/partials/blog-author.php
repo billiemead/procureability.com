@@ -12,7 +12,7 @@
 
         <div>
             <a
-                    class="font-poppins text-[14px] font-medium leading-[1.5] tracking-[-0.28px] mb-[4px]"
+                    class="font-poppins text-[14px] font-medium leading-[1.5] tracking-[-0.28px] mb-[4px] hover:!text-[#b7b7b7]"
                     style="
                         color: rgba(57, 58, 64, 0.80);
                         background-image: url(/wp-content/themes/jupiter-child/assets/img/border-bottom-dotted.svg);
