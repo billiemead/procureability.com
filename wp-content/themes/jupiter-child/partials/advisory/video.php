@@ -32,7 +32,7 @@
                 <?php endif; ?>
             </div>
             <?php if ($video_title) : ?>
-                <div class="text-center text-[18px] leading-[1.3] md:text-[25px] md:leading-none text-white font-[600] pt-[20px] md:pt-[55px]">
+                <div class="font-poppins text-center text-[18px] leading-[1.3] md:text-[25px] md:leading-none text-white font-[600] pt-[20px] md:pt-[55px]">
                     <?= $video_title; ?>
                 </div>
             <?php endif; ?>
