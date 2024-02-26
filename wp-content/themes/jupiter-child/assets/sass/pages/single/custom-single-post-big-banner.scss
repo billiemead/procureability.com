@@ -305,6 +305,7 @@ img {
   padding: 50px 0;
   background-color: #f9f9f9;
   text-align: center;
+  font-family: Poppins, sans-serif !important;
   @media (max-width: 991.9px) {
 
     background-image: none !important;
@@ -313,13 +314,14 @@ img {
     text-align: left;
     margin-top: 64px;
     padding: 87px 0 122px 0;
-    background-position: right -300px center!important;
+    background-position: right -300px center !important;
   }
 
   @media (min-width: 1199.9px) {
 
     background-position: 100% !important;
   }
+
   &__container {
     max-width: 1230px;
     padding: 0px 15px;
@@ -327,6 +329,7 @@ img {
   }
 
   h2 {
+    font-family: Poppins, sans-serif !important;
     font-size: 36px;
     font-weight: 600;
     line-height: 1.4;
@@ -347,6 +350,7 @@ img {
     margin-bottom: 40px;
     color: #61636b;
     text-align: center;
+    font-family: Poppins, sans-serif !important;
 
     @media (min-width: 767.9px) {
       max-width: 69%;
@@ -362,6 +366,7 @@ img {
 
       max-width: 40.25%;
     }
+
     a {
       color: #3ba17c;
       text-decoration: underline;
@@ -382,3 +387,5 @@ img {
     }
   }
 }
+
+```
