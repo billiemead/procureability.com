@@ -5,7 +5,7 @@
             target="_blank"
     >
         <img
-                class="w-[100%] max-w-[300px]"
+                class="w-[100%] sm:max-w-[300px]"
                 src="<?= $args['banner_image'] ?>"
                 alt="Banner Right"
         >
