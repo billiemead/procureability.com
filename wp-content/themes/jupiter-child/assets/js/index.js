@@ -119,7 +119,7 @@ window.addEventListener('message', event => {
 
         popup.dispatchEvent(new Event("pumSetCookie", {bubbles: true}));
 
-        window.location.href = "https://procureability.com/wp-content/uploads/2023/07/final-white-paper-bold-predictions-27.6.23.pdf";
+        window.location.href = "https://procureability.com/wp-content/uploads/2024/02/whitepaper-talent.pdf";
     }
 });
 

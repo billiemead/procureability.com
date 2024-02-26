@@ -77,3 +77,34 @@
   font-weight: 700;
   font-style: normal;
 }
+.management-services {
+  .section-h1 {
+    color: #005E6B;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .cms-content {
+    h2 {
+      span, strong {
+        color: #393A40!important;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 108.333% */
+      }
+    }
+    p, li {
+      color: #393A40;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26.56px; /* 166% */
+    }
+  }
+}
