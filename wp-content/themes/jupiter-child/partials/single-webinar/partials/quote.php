@@ -7,7 +7,7 @@ $quoteAuthor = get_field('quote_author');
 
 <?php if ($quoteText && $quoteAuthor): ?>
     <p
-        class="text-center bg-[#0098AE08] border-[0.4px] border-solid border-[#3BA17C] rounded-[10px] py-[24px] px-[32px] mb-[20px] text-[#0098AE] font-poppins text-[16px] font-medium leading-[1.66] tracking-[0.7px]"
+        class="text-center bg-[#0098AE08] border-[0.4px] border-solid border-[#0098AE] rounded-[10px] py-[24px] px-[32px] mb-[20px] text-[#0098AE] font-poppins text-[16px] font-medium leading-[1.66] tracking-[0.7px]"
         style="font-family: Poppins;"
     >
         <?= $quoteText ?>
