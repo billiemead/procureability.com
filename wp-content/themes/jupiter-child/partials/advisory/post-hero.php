@@ -7,7 +7,7 @@
         style="background-image: url('<?= $post_hero_background_image['url']; ?>')">
     <div class="max-w-[1200px] mx-auto px-[34px]">
         <div class="max-w-[516px] mx-auto lg:mx-0">
-            <div class="[&_p]:!font-poppins [&_p]:text-[14px] [&_p]:leading-[1.7] lg:[&_p]:text-[20px] lg:[&_p]:leading-[1.8] [&_p]:text-[#61636B] [&_p:not(:last-child)]:!mb-[8px] lg:[&_p:not(:last-child)]:!mb-[16px] text-center lg:!text-left">
+            <div class="[&_p]:!font-poppins [&_p]:text-[14px] [&_p]:leading-[1.7] lg:[&_p]:text-[20px] lg:[&_p]:leading-[1.8] [&_p]:text-[#393A40] [&_p:not(:last-child)]:!mb-[8px] lg:[&_p:not(:last-child)]:!mb-[16px] text-center lg:!text-left">
                 <?= $post_hero_content; ?>
             </div>
         </div>
