@@ -42,3 +42,19 @@
         background-color: transparent;
     }
 }
+
+.webinar-cta {
+    background-position: left;
+
+    @media (min-width: 1200px) {
+        background-position: right;
+    }
+
+    &__content {
+        text-align: center;
+
+        @media (min-width: 860px) {
+            text-align: left;
+        }
+    }
+}
