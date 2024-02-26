@@ -6,7 +6,7 @@ $videoPoster = get_field('video_poster');
 
 <?php if ($videoPoster): ?>
     <div
-        class="block md:inline w-[100%] md:w-[465px] pb-[56.25%] md:pb-[27.25%] max-w-[100%] relative float-right ml-[1.5em] mb-[1.5em] video-container"
+        class="block md:inline w-[100%] md:w-[465px] pb-[56.25%] md:pb-[27.25%] max-w-[100%] relative float-right ml-[1.5em] mb-[15px] sm:mb-[1.5em] video-container"
     >
         <div class="video-thumbnail fade-in">
             <div
