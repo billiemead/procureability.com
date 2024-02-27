@@ -10,9 +10,9 @@
 color: #005E6B;font-weight: 500;line-height: 140%; /* 33.6px */"><?= $leadership_section_title; ?></span>
                 </div>
             <?php endif; ?>
-            <div class="max-w-[180px] md:max-w-[398px] xl:max-w-[755px] mx-auto relative">
+            <div class="max-w-[180px] md:max-w-[398px] xl:max-w-[755px] mx-auto relative 12345">
                 <div id="ourProfessionalTeam" class="swiper">
-                    <div class="swiper-wrapper flex justify-center">
+                    <div class="swiper-wrapper flex md:justify-center">
                         <?php foreach ($leadership_people as $key => $post_id) : ?>
                             <div class="swiper-slide xl:!w-[192px]">
                                 <a class="block group cursor-pointer"
@@ -39,6 +39,7 @@ color: #005E6B;font-weight: 500;line-height: 140%; /* 33.6px */"><?= $leadership
                     </div>
                     <div class="xl:hidden swiper-pagination"></div>
                 </div>
+                <?php if (count($leadership_people) > 1){?>
                 <button id="ourProfessionalTeamPrevButton"
                         class="swiper-button-prev after:!content-none xl:!hidden absolute !left-[-64px] md:!left-[-119px] top-[50%] translate-y-[-50%] !w-[19px] !h-[19px] bg-transparent border-0 p-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
@@ -53,6 +54,7 @@ color: #005E6B;font-weight: 500;line-height: 140%; /* 33.6px */"><?= $leadership
                               stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
+                <?php }?>
             </div>
 
             <?php foreach ($leadership_people as $key => $post_id):

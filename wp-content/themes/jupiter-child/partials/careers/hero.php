@@ -10,7 +10,7 @@
     <div class="max-w-[1010px] mx-auto px-[15px]">
         <div class="text-center mb-[8px]">
             <?php if ($hero_title) : ?>
-                <h1 class="font-poppins text-white text-[32px] lg:text-[42px] leading-[1.27] font-[600] tracking-[0.02em] !m-0"><?= $hero_title; ?>
+                <h1 class="font-poppins text-[#0098AE] text-[32px] lg:text-[42px] leading-[1.27] font-[600] tracking-[0.02em] !m-0"><?= $hero_title; ?>
                 </h1>
             <?php endif; ?>
         </div>
