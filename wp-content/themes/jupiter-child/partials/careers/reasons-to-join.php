@@ -18,7 +18,7 @@
                 <div class="[&_p]:!font-poppins [&_p]:text-[#393A40] [&_p]:text-[16px] [&_p]:leading-[1.7]"><?= $reasons_to_join_leading; ?></div>
             </div>
             <?php if ($reasons_to_join) : ?>
-                <div class="rtj-cards grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-[25px] lg:mt-[50px]">
+                <div class="rtj-cards grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-[25px] lg:mt-[50px] gap-[10px] md:gap-[0]">
                     <?php foreach ($reasons_to_join as $index => $reason_to_join) : ?>
                         <div class="rtj-card-holder">
                             <div class="rtj-card pt-[100%]" data-x-data="rtjCard">

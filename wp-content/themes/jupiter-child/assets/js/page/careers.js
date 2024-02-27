@@ -87,6 +87,7 @@ const breakpointChecker = function () {
         }
         return;
     } else if (breakpoint.matches === false) {
+    
         enableTeamSwiper();
     }
 };
@@ -95,6 +96,7 @@ const enableTeamSwiper = function () {
     teamSwiper = new Swiper('#ourProfessionalTeam', {
         loop: true,
         slidesPerView: 1,
+        centeredSlides: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

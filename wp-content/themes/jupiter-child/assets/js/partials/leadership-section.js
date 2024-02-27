@@ -15,8 +15,9 @@ const breakpointChecker = function () {
 
 const enableTeamSwiper = function () {
     teamSwiper = new Swiper('#ourProfessionalTeam', {
-        loop: false,
+        loop: true,
         slidesPerView: 1,
+        //centeredSlides: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

@@ -56,7 +56,7 @@
                                              style="background-image: linear-gradient(360deg, rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, 0.8) 10%, rgba(<?= $feature['color']['red']; ?>, <?= $feature['color']['green']; ?>, <?= $feature['color']['blue']; ?>, 0) 110%), url('<?= $feature['background_image']['url']; ?>')"
                                         >
                                         <span style="background: linear-gradient(90deg, rgba(<?= $feature['title_gradient_color_start']['red']; ?>, <?= $feature['title_gradient_color_start']['green']; ?>, <?= $feature['title_gradient_color_start']['blue']; ?>, 0.5) 0.6%, rgba(<?= $feature['title_gradient_color_end']['red']; ?>, <?= $feature['title_gradient_color_end']['green']; ?>, <?= $feature['title_gradient_color_end']['blue']; ?>, 0.2) 75%), #FFFFFF;"
-                                              class="font-poppins text-transparent !bg-clip-text text-[16px] lg:text-[28px] leading-[1.4] font-[600] tracking-[0.05em] uppercase text-center [&_br]:hidden md:[&_br]:inline"><?= $feature['title']; ?></span>
+                                              class="font-poppins max-w-[95%] text-transparent !bg-clip-text text-[16px] lg:text-[28px] leading-[1.4] font-[600] tracking-[0.05em] uppercase text-center [&_br]:hidden md:[&_br]:inline"><?= $feature['title']; ?></span>
                                         </div>
                                         <!--!active-->
                                     </button>

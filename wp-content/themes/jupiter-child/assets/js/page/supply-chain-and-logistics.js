@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     new Swiper('#clientSuccessStories', {
-        loop: false,
+        loop: true,
         slidesPerView: 1,
         spaceBetween: 34,
         pagination: {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     new Swiper('#supplyChainAndLogisticsBlog', {
-        loop: false,
+        loop: true,
         slidesPerView: 1,
         spaceBetween: 34,
         pagination: {
