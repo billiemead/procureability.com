@@ -13,7 +13,7 @@ $subscribeButtonUrl = get_field('subscribe_button_url');
         <h1 class="text-[36px] text-[#404040] text-left font-semibold"><?= get_the_title() ?></h1>
 
         <div class="content mb-[20px]">
-            <?php if ($videoPoster && $youTubeVideoId): ?>
+            <?php if ($videoPoster): ?>
                 <div
                     class="block md:inline w-[100%] md:w-[465px] pb-[56.25%] md:pb-[27.25%] max-w-[100%] relative float-right ml-[1.5em] mb-[1.5em] video-container"
                 >
