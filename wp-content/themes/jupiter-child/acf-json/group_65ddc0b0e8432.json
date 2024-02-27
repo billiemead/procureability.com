@@ -1,9 +1,9 @@
 {
-    "key": "group_65ae80aeca380",
-    "title": "Webinar",
+    "key": "group_65ddc0b0e8432",
+    "title": "Podcast",
     "fields": [
         {
-            "key": "field_65dc90d9001f3",
+            "key": "field_65ddc0b21ba37",
             "label": "Template",
             "name": "",
             "aria-label": "",
@@ -20,9 +20,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_65dc90e3001f4",
+            "key": "field_65ddc0c91ba38",
             "label": "Template",
-            "name": "template_webinar",
+            "name": "template_podcast",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -46,7 +46,7 @@
             "placeholder": ""
         },
         {
-            "key": "field_65aeb1fe44c64",
+            "key": "field_65ddc0e71ba39",
             "label": "Video",
             "name": "",
             "aria-label": "",
@@ -63,7 +63,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_65bb8ce98a9bd",
+            "key": "field_65ddc0ff1ba3a",
             "label": "YouTube Video ID",
             "name": "youtube_video_id",
             "aria-label": "",
@@ -83,7 +83,7 @@
             "append": ""
         },
         {
-            "key": "field_65b29fabf0cc1",
+            "key": "field_65ddc10f1ba3b",
             "label": "Poster",
             "name": "video_poster",
             "aria-label": "",
@@ -108,81 +108,7 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_65ae80b0143a2",
-            "label": "Subcribe",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_65ae80d9143a3",
-            "label": "Title",
-            "name": "subscribe_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_65ae80ef143a4",
-            "label": "Button Text",
-            "name": "subscribe_button_text",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_65ae8100143a5",
-            "label": "Button URL",
-            "name": "subscribe_button_url",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_65ba38f1ba4f3",
+            "key": "field_65ddc1321ba3c",
             "label": "Visibility",
             "name": "",
             "aria-label": "",
@@ -199,7 +125,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_65ba390fba4f4",
+            "key": "field_65ddc1421ba3d",
             "label": "ProcureAbility Webinars and Podcasts Page",
             "name": "procureability_webinars_and_podcasts_page",
             "aria-label": "",
@@ -219,7 +145,7 @@
             "ui": 0
         },
         {
-            "key": "field_65dc83979676f",
+            "key": "field_65ddc1611ba3e",
             "label": "Quote",
             "name": "",
             "aria-label": "",
@@ -236,7 +162,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_65dc83ae96770",
+            "key": "field_65ddc1681ba3f",
             "label": "Quote text",
             "name": "quote_text",
             "aria-label": "",
@@ -256,7 +182,7 @@
             "new_lines": ""
         },
         {
-            "key": "field_65dc83b996771",
+            "key": "field_65ddc16f1ba40",
             "label": "Quote author",
             "name": "quote_author",
             "aria-label": "",
@@ -276,7 +202,7 @@
             "append": ""
         },
         {
-            "key": "field_65dca60374279",
+            "key": "field_65ddc17e1ba41",
             "label": "CTA",
             "name": "",
             "aria-label": "",
@@ -293,7 +219,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_65dca60c7427a",
+            "key": "field_65ddc1891ba42",
             "label": "CTA Title",
             "name": "cta_title",
             "aria-label": "",
@@ -313,7 +239,7 @@
             "append": ""
         },
         {
-            "key": "field_65dca6167427b",
+            "key": "field_65ddc1941ba43",
             "label": "CTA Banner",
             "name": "cta_banner",
             "aria-label": "",
@@ -338,7 +264,7 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_65dca6237427c",
+            "key": "field_65ddc1a01ba44",
             "label": "CTA Button Text",
             "name": "cta_button_text",
             "aria-label": "",
@@ -358,7 +284,7 @@
             "append": ""
         },
         {
-            "key": "field_65dca62d7427d",
+            "key": "field_65ddc1ac1ba45",
             "label": "CTA Button Link",
             "name": "cta_button_link",
             "aria-label": "",
@@ -383,7 +309,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "webinar"
+                "value": "podcast"
             }
         ]
     ],
@@ -396,5 +322,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709031590
+    "modified": 1709031872
 }
