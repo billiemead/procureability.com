@@ -8,11 +8,11 @@
         <?php global $wp; ?>
         <div class="flex justify-end">
             <a href="<?= home_url($wp->request); ?>#video"
-               class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
+               class="font-poppins text-[#00626B] text-[20px] bg-[#f3f6f5] cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:text-[#fff] [&.active]:bg-[#00626B] font-extrabold <?= ($video_hash !== 'es') ? 'active' : null; ?>">
                 EN
             </a>
             <a href="<?= home_url($wp->request); ?>/?video=es#video"
-               class="bg-[#0093a5] text-white cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:bg-[#00a3b7] [&.active]:font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
+               class="font-poppins text-[#00626B] text-[20px] bg-[#f3f6f5] cursor-pointer block font-medium py-[10px] px-[20px] [&.active]:text-[#fff] [&.active]:bg-[#00626B] font-extrabold <?= ($video_hash === 'es') ? 'active' : null; ?>">
                 ES
             </a>
         </div>
@@ -30,7 +30,7 @@
                 <?php } ?>
             </div>
             <?php if ($video_text) : ?>
-                <div class="text-center text-[18px] leading-[1.3] md:text-[25px] md:leading-none text-white font-[600] pt-[20px] md:pt-[55px]">
+                <div class="font-poppins text-center text-[18px] leading-[1.3] md:text-[25px] md:leading-none text-white font-[600] pt-[20px] md:pt-[55px]">
                     <?= $video_text; ?>
                 </div>
             <?php endif; ?>
