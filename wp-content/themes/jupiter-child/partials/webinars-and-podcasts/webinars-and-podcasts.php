@@ -1,7 +1,7 @@
 <?php
 
-$webinars = get_posts([
-    'post_type'     => 'webinar',
+$webinarsAndPodcasts = get_posts([
+    'post_type'     => ['webinar', 'podcast'],
     'numberposts'   => -1,
     'meta_key'      => 'procureability_webinars_and_podcasts_page',
     'meta_value'    => '1'
@@ -21,7 +21,7 @@ $podcasts = get_posts(
     )
 );
 
-$posts = array_merge($webinars, $podcasts);
+$posts = array_merge($webinarsAndPodcasts, $podcasts);
 
 ?>
 
