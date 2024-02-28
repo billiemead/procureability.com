@@ -25,7 +25,7 @@
                                         <path d="M5.24467 8.83995L2.39684 5.99212C2.24339 5.83867 2.03527 5.75246 1.81825 5.75246C1.60124 5.75246 1.39311 5.83867 1.23966 5.99212C1.08621 6.14558 1 6.3537 1 6.57072C1 6.67817 1.02116 6.78457 1.06229 6.88385C1.10341 6.98312 1.16368 7.07333 1.23966 7.14931L4.67018 10.5798C4.99025 10.8999 5.50729 10.8999 5.82736 10.5798L14.5103 1.89684C14.6638 1.74339 14.75 1.53527 14.75 1.31825C14.75 1.10124 14.6638 0.893113 14.5103 0.739661C14.3569 0.586209 14.1488 0.5 13.9317 0.5C13.7147 0.5 13.5066 0.586209 13.3532 0.739661L5.24467 8.83995Z"
                                               fill="white" stroke="white" stroke-width="0.2"/>
                                     </svg>
-                                    <span class="opacity-90"><?= $form_section_list_item['form_section_list_item']; ?></span>
+                                    <span class="opacity-80"><?= $form_section_list_item['form_section_list_item']; ?></span>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
@@ -37,7 +37,7 @@
                         <?php $form_section_form_title = get_field('form_section_form_title'); ?>
                         <?php if ($form_section_form_title) : ?>
                             <div class="mb-[24px] lg:mb-[32px] lg:text-center">
-                                <span class="font-poppins text-[18px] xl:text-[20px] leading-[1.5] font-[600] lg:font-[500]  text-center text-[#393A40] font-semibold lg:font-medium"><?= $form_section_form_title; ?></span>
+                                <span class="font-poppins text-[18px] xl:text-[20px] leading-[1.5] font-[600] lg:font-[500] text-center text-[#393A40] font-semibold lg:font-medium"><?= $form_section_form_title; ?></span>
                             </div>
                         <?php endif; ?>
                         <?= do_shortcode($form_section_form_shortcode); ?>
