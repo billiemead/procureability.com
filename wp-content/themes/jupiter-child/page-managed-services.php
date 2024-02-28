@@ -39,7 +39,7 @@ get_header();
         <div class="container">
             <div>
                 <div>
-                    <h4 class="cp-approach__title text-gradient"><?= $approach['title'] ?></h4>
+                    <h2 class="!text-[24px] !font-poppins !leading-[1.6] !mb-[16px] !text-[#0098AE] !font-medium"><?= $approach['title'] ?></h2>
 
                     <div class="cms-content [&_p]:!mb-[20px]"><?= $approach['text'] ?></div>
                 </div>
