@@ -1,11 +1,13 @@
 
-div, p, a, span, strong {
-  font-family: Poppins, sans-serif;
+div, p, a, span, strong, h1, h2, h3, h4, h5, h6, ul, ol, li, img, form, input, textarea, button, select, option, label, table, thead, tbody, tr, th, td, iframe, blockquote, hr, pre, code, abbr, address, article, aside, audio, b, canvas, caption, cite, col, colgroup, dd, dl, dt, em, fieldset, figcaption, figure, footer, header, hgroup, i, iframe, legend, mark, nav, noscript, output, rp, rt, ruby, section, small, source, sub, summary, sup, time, track, u, video, wbr {
+  font-family: Poppins, sans-serif!important;
 }
+
 .single-container {
   max-width: 960px;
   padding: 25px 15px 100px 15px;
   margin: 0 auto;
+  font-family: Poppins,sans-serif;
   @media (min-width: 767.9px) {
     padding-top: 50px;
   }
@@ -31,86 +33,13 @@ img {
 }
 
 .caption {
-  display: flex;
-  position: relative;
-  min-height: 344px;
-  margin-top: 40px;
-  align-items: center;
-  justify-content: flex-start;
+  padding-top: 40px;
+  width: 100%;
 
 
-  @media (min-width: 991.9px) {
-    margin-top: 60px;
-    margin-bottom: -30px;
-  }
-
-  &.full_size {
-
-    @media (min-width: 1199.9px) {
-      min-height: 460px;
-    }
-
-    .caption-container {
-
-      max-width: 100%;
-      padding: 0 15px;
-
-      @media (min-width: 767.9px) {
-        padding-left: 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
-
-    .title {
-      color: rgb(249, 115, 82);
-      font-size: 26px;
-      font-weight: 400;
-      max-width: 100%;
-      @media (min-width: 767.9px) {
-        font-size: 50px;
-      }
-
-      @media (min-width: 1199.9px) {
-        margin-bottom: 18px;
-      }
-    }
-
-    .caption__text {
-      max-width: 100%;
-      padding: 0 15px;
-
-      @media (min-width: 991.9px) {
-        max-width: 513px;
-      }
-
-      @media (min-width: 1199.9px) {
-        max-width: 645px;
-      }
-
-      &-subtitle {
-
-      }
-    }
-
-    .caption__image {
-
-      @media (min-width: 767.9px) {
-        position: static;
-      }
-
-      @media (min-width: 1199.9px) {
-        max-width: 50%;
-      }
-
-      img {
-        margin-bottom: 15px;
-        width: 100%;
-      }
-    }
-
-
+  @media (min-width: 767.9px) {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .caption__image-descripion {
@@ -120,9 +49,15 @@ img {
   }
 
   &-container {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 960px;
+    @media (min-width: 767.9px) {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (min-width: 991.9px) {
+      margin-left: calc(50vw - 498.5px);
+    }
   }
 
   &__text {
@@ -130,12 +65,14 @@ img {
     padding: 0 15px;
     text-align: left;
 
-    @media (min-width: 991.9px) {
-      max-width: 513px;
+    @media (min-width: 767.9px) {
+      margin-bottom: 25px;
+      padding: 0 15px;
     }
 
     .title {
       text-align: left !important;
+
       br {
         display: none;
         @media (min-width: 991.9px) {
@@ -152,6 +89,7 @@ img {
 
       font-family: Poppins, sans-serif !important;
       margin-bottom: 8px;
+
       br {
         display: none;
         @media (min-width: 991.9px) {
@@ -201,7 +139,6 @@ img {
     font-size: 32px;
     font-weight: 600;
     line-height: 125%;
-    margin-bottom: 0;
 
     @media (min-width: 991.9px) {
       text-align: left;
@@ -209,27 +146,12 @@ img {
   }
 
   &__image {
-    margin: 25px 0px 0px 0;
-    display: flex;
-    flex-direction: column;
 
-    @media (min-width: 991.9px) {
-      position: absolute;
-      max-width: 496px;
-      right: 0;
-      top: 0;
-      margin: 0;
+    @media (min-width: 767.9px) {
+      min-width: 48%;
+      max-width: 656px;
     }
 
-    @media (min-width: 1199.9px) {
-      max-width: 600px;
-    }
-    @media (min-width: 1500.9px) {
-      right: 6%;
-    }
-    @media (min-width: 1990.9px) {
-      right: 18%;
-    }
 
     .caption__text-description {
       display: block;
@@ -351,6 +273,13 @@ img {
     font-family: Poppins, sans-serif !important;
     @media (min-width: 767.9px) {
       font-size: 34px;
+    }
+
+    br{
+      display: none;
+      @media (min-width: 769.9px) {
+        display: block;
+      }
     }
   }
 
