@@ -9,6 +9,7 @@ get_header();
 while (have_posts()) :
     the_post();
 
+    $seo_title = get_field('custom_seo_title') ?: get_the_title();
     $custom_post_title = get_field('custom_post_title') ?: get_the_title();
     $custom_font_size_for_title = get_field('custom_font_size_for_title');
     $custom_image = get_field('custom_image');
@@ -20,7 +21,8 @@ while (have_posts()) :
     ?>
 
     <section class="single-container">
-        <h1 class="title" <?php echo $custom_font_size_for_title; ?>><?php echo $custom_post_title; ?></h1>
+        <h1 class="hidden"><?= $seo_title ?></h1>
+        <h2 class="title" <?php echo $custom_font_size_for_title; ?>><?php echo $custom_post_title; ?></h2>
         <div class="post">
             <div class="post_content" <?php echo $custom_width; ?>>
                 <?php
