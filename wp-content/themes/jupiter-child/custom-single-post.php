@@ -22,6 +22,7 @@ while (have_posts()) :
 
     <section class="single-container">
         <h1 class="hidden"><?= $seo_title ?></h1>
+
         <h2 class="title" <?php echo $custom_font_size_for_title; ?>><?php echo $custom_post_title; ?></h2>
         <div class="post">
             <div class="post_content" <?php echo $custom_width; ?>>
