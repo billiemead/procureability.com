@@ -32,12 +32,8 @@ while (have_posts()) :
     <?php if ($first_screen_banner_show) {
     $banner_style = 'single_with_banner';
 
-    $full_size_banner = '';
-    if ($first_screen_banner_show_full_screen) {
-        $full_size_banner = 'full_size';
-    }
     ?>
-    <div class="caption <?php echo $full_size_banner; ?>">
+    <div class="caption">
         <div class="caption-container">
             <div class="caption__text">
                 <?php if ($first_screen_banner_subtitle) { ?>
@@ -46,11 +42,7 @@ while (have_posts()) :
                     </div>
                 <?php } ?>
                 <h1 class="title" <?php echo $custom_font_size_for_title; ?>><?php echo $custom_post_title; ?></h1>
-                <?php if ($first_screen_banner_show_full_screen && $first_screen_banner_full_screen_text) { ?>
-                    <div class="caption__text-description">
-                        <?php echo $first_screen_banner_full_screen_text; ?>
-                    </div>
-                <?php } ?>
+
                 <?php if (!empty($first_screen_banner_btn['title'])) { ?>
                     <a class="caption__text-btn"
                        href="<?php echo $first_screen_banner_btn['url']; ?>"><?php echo $first_screen_banner_btn['title']; ?></a>
@@ -62,11 +54,7 @@ while (have_posts()) :
                 <?php if ($custom_image_description) { ?>
                     <div class="caption__image-descripion"><?php echo $custom_image_description; ?></div>
                 <?php } ?>
-                <?php if ($first_screen_banner_show_full_screen && $first_screen_banner_full_screen_text) { ?>
-                    <div class="caption__text-description">
-                        <?php echo $first_screen_banner_full_screen_text; ?>
-                    </div>
-                <?php } ?>
+
             </div>
         </div>
     </div>
