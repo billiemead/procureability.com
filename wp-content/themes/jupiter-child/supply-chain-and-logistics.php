@@ -55,12 +55,12 @@
     <!--Video-->
 <section id="video" class="py-[30px]">
     <div class="max-w-[930px] px-[15px] mx-auto">
-        <div class="bg-[#0095b0] px-[15px] pt-[15px] pb-[40px]">
+        <div class="bg-[#13839C] px-[15px] pt-[15px] pb-[40px]">
             <div>
                 <?= $video_video; ?>
             </div>
             <div class="text-center mt-[20px]">
-                <div class="text-[19px] leading-black text-[#000] font-[700] capitalize"><?= $video_title; ?></div>
+                <div class="font-poppins text-[19px] leading-black text-[#fff] font-[700] capitalize"><?= $video_title; ?></div>
             </div>
         </div>
     </div>
@@ -173,20 +173,26 @@
                                 <div>
                                     <a href="<?= get_permalink(); ?>"
                                        class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
+                                       title="<?= get_the_title(); ?>"
                                     >
                                         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
                                              style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
                                     </a>
                                     <a class="block mb-[12px] group/title"
-                                       href="<?= get_permalink(); ?>" title="<?= the_title(); ?>">
+                                       href="<?= get_permalink(); ?>"
+                                       title="<?= get_the_title(); ?>"
+                                    >
                                         <span class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] group-hover/title:text-[#3BA17C] transition-colors line-clamp-2"><?= the_title(); ?></span>
                                     </a>
                                     <div class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] "
                                          href="<?= get_permalink(); ?>">
                                         <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                     </div>
-                                    <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
-                                       href="<?= get_permalink(); ?>">Read More</a>
+                                    <a
+                                            class="font-poppins text-[#005E6B] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
+                                            href="<?= get_permalink(); ?>"
+                                            title="Read more about the <?= get_the_title(); ?>"
+                                    >Read More</a>
                                 </div>
                             </div>
                         <?php endwhile; ?>
@@ -218,20 +224,25 @@
                                 <div>
                                     <a href="<?= get_permalink(); ?>"
                                        class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
+                                       title="<?= get_the_title(); ?>"
                                     >
                                         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
                                              style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
                                     </a>
                                     <a class="block mb-[12px] group/title"
-                                       href="<?= get_permalink(); ?>" title="<?= the_title(); ?>">
+                                       href="<?= get_permalink(); ?>"
+                                       title="<?= get_the_title(); ?>"
+                                    >
                                         <span class="font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] group-hover/title:text-[#3BA17C] transition-colors line-clamp-2"><?= the_title(); ?></span>
                                     </a>
                                     <div class="block font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px] "
                                          href="<?= get_permalink(); ?>">
                                         <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                     </div>
-                                    <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
-                                       href="<?= get_permalink(); ?>">Read More</a>
+                                    <a class="font-poppins text-[#005E6B] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
+                                       href="<?= get_permalink(); ?>"
+                                       title="Read more about the <?= get_the_title(); ?>"
+                                    >Read More</a>
                                 </div>
                             </div>
                         <?php endwhile; ?>
