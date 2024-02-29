@@ -5,12 +5,13 @@
 <?php $hero_industry_button = get_field('hero_industry_button'); ?>
 
 <!--hero-->
-<section class="pt-[185px] pb-[25px] xl:pt-[190px] bg-no-repeat bg-cover md:bg-center bg-[left_48%_center]"
+<section class="relative pt-[185px] pb-[25px] xl:pt-[190px] bg-no-repeat bg-cover md:bg-center bg-[left_48%_center]"
          style="background-image: url(<?= $hero_background_image['url']; ?>)">
+    <div class="absolute top-0 left-0 right-0 bottom-0 z-0 bg-blue-900 opacity-10"></div>
     <div class="max-w-[1010px] mx-auto px-[15px]">
         <div class="text-center mb-[8px]">
             <?php if ($hero_title) : ?>
-                <h1 class="font-poppins text-[#0098AE] text-[32px] lg:text-[42px] leading-[1.27] font-[600] tracking-[0.02em] !m-0"><?= $hero_title; ?>
+                <h1 class="font-poppins text-[#fff] text-[32px] lg:text-[42px] leading-[1.27] font-[600] tracking-[0.02em] !m-0"><?= $hero_title; ?>
                 </h1>
             <?php endif; ?>
         </div>

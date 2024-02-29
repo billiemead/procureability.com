@@ -80,8 +80,8 @@
              style="background-image: url('<? $cta_background_image['utl']; ?>')">
         <div class="h-[300%] w-full absolute top-[-150%]">
             <div class="rellax absolute inset-0" data-rellax-percentage="0.5" data-rellax-speed="5">
-                <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                     style="background-image: url('https://procureability.com/wp-content/uploads/2020/03/procureability-about4.jpg')"></div>
+                <div  class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                     style="background-position: 0px 480px;background-image: url('https://procureability.com/wp-content/uploads/2020/03/procureability-about4.jpg')"></div>
             </div>
         </div>
         <div class="relative z-20 max-w-[1000px] mx-auto">
