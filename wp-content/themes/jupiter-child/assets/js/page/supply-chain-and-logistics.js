@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    new Swiper('#clientSuccessStories', {
-        loop: true,
+    const clientSuccessStories = new Swiper('#clientSuccessStories', {
+        loop: false,
         slidesPerView: 1,
         spaceBetween: 34,
-        pagination: {
-            el: '#clientSuccessStoriesPagination',
-            clickable: true,
-        },
+        pagination: '#clientSuccessStoriesPagination',
+        paginationClickable: true,
         breakpoints: {
             768: {
                 slidesPerView: 2,
@@ -18,8 +16,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
 
-    new Swiper('#supplyChainAndLogisticsBlog', {
-        loop: true,
+    const supplyChainAndLogisticsBlog = new Swiper('#supplyChainAndLogisticsBlog', {
+        loop: false,
         slidesPerView: 1,
         spaceBetween: 34,
         pagination: {
