@@ -16,7 +16,7 @@ $ctaButtonLink = get_field('cta_button_link');
     ></div>
     <div class="max-w-[1140px] mx-auto px-[15px] relative z-10">
         <div class="max-w-[100%] md:max-w-[672px] webinar-cta-type-2__content">
-            <h2 class="font-poppins text-[32px] text-[#FFFFFF] font-semibold leading-[1.4] mb-[32px]"><?= $ctaTitle ?></h2>
+            <h2 class="font-poppins text-[32px] text-[#FFFFFF] font-medium leading-[1.4] mb-[32px]"><?= $ctaTitle ?></h2>
             <a
                 href="<?= $ctaButtonLink ?>"
                 target="_blank"
@@ -27,7 +27,7 @@ $ctaButtonLink = get_field('cta_button_link');
                     class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
                     style="background-image: url('https://development.procureability.com/wp-content/uploads/2024/01/button-bg-pattern.svg')"
                 ></div>
-                <span class="font-poppins text-white text-[24px] leading-[1.515] font-semibold uppercase"><?= $ctaButtonText ?></span>
+                <span class="font-poppins text-white text-[24px] leading-[1.515] font-medium uppercase"><?= $ctaButtonText ?></span>
             </a>
         </div>
     </div>
