@@ -10,7 +10,9 @@
                 [&_h2]:mb-[16px]
                 [&_p]:!font-poppins
                 [&_p]:text-[#393A40]
-                [&_p]:mb-[16px]"
+                [&_p]:mb-[16px]
+                [&_a]:text-[#005E6B]
+                [&_a]:font-poppins"
         >
             <?php the_content(); ?>
         </div>
