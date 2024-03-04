@@ -27,7 +27,7 @@ $ctaButtonLink = get_field('cta_button_link');
                     class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
                     style="background-image: url('https://development.procureability.com/wp-content/uploads/2024/01/button-bg-pattern.svg')"
                 ></div>
-                <span class="font-poppins text-white text-[24px] leading-[1.515] font-medium uppercase"><?= $ctaButtonText ?></span>
+                <span class="font-poppins text-white text-[18px] leading-[1.515] font-medium uppercase"><?= $ctaButtonText ?></span>
             </a>
         </div>
     </div>
