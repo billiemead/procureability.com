@@ -68,3 +68,7 @@ $subscribeButtonUrl = get_field('subscribe_button_url');
         </div>
     </div>
 </section>
+
+<?php /** CTA */ ?>
+<?php get_template_part('partials/single-webinar/partials/cta-type-2'); ?>
+<?php /** !CTA */ ?>
