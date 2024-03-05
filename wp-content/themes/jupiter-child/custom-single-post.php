@@ -15,13 +15,13 @@ while (have_posts()) :
     $custom_image = get_field('custom_image');
     $image_in_content = get_field('image_in_content');
 
-//first screen banner
+    //first screen banner
     $first_screen_banner_show = get_field('first_screen_banner_show');
     $first_screen_banner_subtitle = get_field('first_screen_banner_subtitle');
     $first_screen_banner_btn = get_field('first_screen_banner_btn');
     $custom_image_description = get_field('custom_image_description');
 
-//first screen full size banner
+    //first screen full size banner
     $first_screen_banner_show_full_screen = get_field('first_screen_banner_show_full_screen');
     $first_screen_banner_full_screen_text = get_field('first_screen_banner_full_screen_text');
 
@@ -121,4 +121,3 @@ while (have_posts()) :
 
 get_footer();
 ?>
-
