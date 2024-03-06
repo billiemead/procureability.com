@@ -53,12 +53,17 @@ img {
     @media (min-width: 767.9px) {
       align-items: center;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 100%;
     }
 
     @media (min-width: 991.9px) {
       margin-left: calc(50vw - 498.5px);
+      gap: 40px;
+    }
+
+    @media (min-width: 1199.9px) {
+      gap: 90px;
     }
   }
 
