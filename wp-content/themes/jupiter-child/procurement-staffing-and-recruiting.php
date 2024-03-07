@@ -47,7 +47,16 @@ $hero_button = get_field('hero_button');
     <?php while (have_posts()) : the_post(); ?>
         <section class="section section--content">
             <div class="section-container">
-                <div class="cms-content">
+                <div class="cms-content
+                            [&_h2]:font-poppins
+                            [&_h2]:text-[#393A40]
+                            [&_h2]:text-[24px]
+                            [&_h2]:font-medium
+                            [&_h2]:leading-[1.33333]
+                            [&_h2]:mb-[16px]
+                            [&_p]:!font-poppins
+                            [&_p]:text-[#393A40]
+                            [&_p]:mb-[16px]">
                     <?php the_content(); ?>
                 </div>
             </div>
