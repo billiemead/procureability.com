@@ -125,6 +125,7 @@ img {
 }
 
 .post {
+  overflow-x: hidden;
   @media (min-width: 767.9px) {
     display: flex;
   }
@@ -399,7 +400,7 @@ img {
   .custom-post {
 
     .custom-desc {
-      border-left: 2px solid #4DA780;
+      border-left: 2px solid #0098AE;
       padding: 24px 32px;
       margin-top: -5px;
 
@@ -451,21 +452,21 @@ img {
         display: flex;
         align-items: center;
         padding: 31px 24px;
-        @media (min-width: 767.9px) {
+        @media (min-width: 991.9px) {
           height: 160px;
           position: relative;
         }
 
         &.steps-arrow__step--opacity {
           border-color: rgba(59, 161, 124, .4);
-          @media (min-width: 767.9px) {
+          @media (min-width: 991.9px) {
             border-right: none;
           }
         }
 
         &:first-child {
           z-index: 1;
-          @media (min-width: 767.9px) {
+          @media (min-width: 991.9px) {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
             width: 38%;
@@ -476,7 +477,7 @@ img {
 
         &:last-child {
           background: rgba(77, 167, 128, 0.10);
-          @media (min-width: 767.9px) {
+          @media (min-width: 991.9px) {
             padding: 0 43px 0 95px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
@@ -516,7 +517,7 @@ img {
 
           &.steps-arrow__arrow--left {
 
-            @media (min-width: 767.9px) {
+            @media (min-width: 991.9px) {
               background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEiIGhlaWdodD0iMTYwIiB2aWV3Qm94PSIwIDAgNTEgMTYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBpZD0iTGVmdCIgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE0NV82NzApIj4KPGcgaWQ9IlJlY3RhbmdsZSAyNzk0Ij4KPHBhdGggZD0iTTUxLjAwMDkgODBMMS4wMDA4NSAwSDBWMTYwSDEuMDAwODVMNTEuMDAwOSA4MFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0wLjUgMC41SDAuNzIzNzMxTDUwLjQxMTIgODBMMC43MjM3MzEgMTU5LjVIMC41VjAuNVoiIHN0cm9rZT0iIzREQTc4MCIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIvPgo8L2c+CjxwYXRoIGlkPSJSZWN0YW5nbGUgMjc5NSIgZD0iTTAuMDAwODU0NDkyIDBMNTAuMDAwOSA4MEwwLjAwMDg1NDQ5MiAxNjBWMFoiIGZpbGw9IndoaXRlIi8+CjxyZWN0IGlkPSJSZWN0YW5nbGUgMjc5NiIgeT0iMTU5IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjQTZEM0JGIi8+CjxyZWN0IGlkPSJSZWN0YW5nbGUgMjc5NyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0E2RDNCRiIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE0NV82NzAiPgo8cmVjdCB3aWR0aD0iNTEuMDAwOSIgaGVpZ2h0PSIxNjAiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==");
               height: 100%;
               width: 53px;
@@ -530,7 +531,7 @@ img {
           }
 
           &.steps-arrow__arrow--right {
-            @media (min-width: 767.9px) {
+            @media (min-width: 991.9px) {
               height: 158px;
               width: calc(100% - 1px);
               left: 0px;
@@ -554,13 +555,13 @@ img {
         flex-direction: column;
         gap: 20px;
 
-        @media (min-width: 767px) {
+        @media (min-width: 991px) {
           flex-direction: initial;
           gap: 0;
         }
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         .steps-arrow__step:last-child {
           width: 100%;
         }
@@ -594,7 +595,7 @@ img {
       font-weight: 500;
       line-height: 26px;
       align-items: center;
-      margin-top: 32px;
+      margin-top: 42px;
       margin-bottom: 24px;
     }
 
@@ -639,7 +640,7 @@ img {
         font-weight: 400;
         line-height: 150%; /* 24px */
         max-width: 96%;
-        margin: 0 auto 23px auto;
+        margin: 0 auto 0px auto;
       }
 
       &.mobile {
@@ -718,7 +719,7 @@ img {
       gap: 9px;
       align-items: center;
 
-      h4 {
+      a {
         color: rgba(57, 58, 64, 0.80);
         font-family: Poppins;
         font-size: 14px;
@@ -730,7 +731,11 @@ img {
         margin-bottom: 4px;
         display: inline-block;
         border-bottom: 1px dotted rgba(57, 58, 64, 0.80);
+        transition: all 0.3s ease-in-out;
 
+        &:hover {
+          text-decoration: none;
+        }
       }
 
       p {
@@ -770,9 +775,9 @@ img {
         text-align: right;
         font-feature-settings: 'sups' on;
         font-family: Poppins;
-        font-size: 14px;
+        font-size: 8px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 26.56px; /* 166% */
       }
 

@@ -111,7 +111,7 @@ while (have_posts()) :
                 <?php } ?>
                 <?php if ($get_started_button['title']) { ?>
                     <a class="btn inline-block pt-[13px] pb-[11px] px-[47px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
-                       href="<?php $get_started_button['url'] ?>">
+                       href="<?php echo $get_started_button['url'] ?>">
                         <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 rocket-lazyload lazyloaded"></div>
                         <span class="relative text-white text-[18px] leading-[1.51] font-[600] uppercase"><?php echo $get_started_button['title']; ?></span>
                     </a>
