@@ -53,12 +53,17 @@ img {
     @media (min-width: 767.9px) {
       align-items: center;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 100%;
     }
 
     @media (min-width: 991.9px) {
       margin-left: calc(50vw - 498.5px);
+      gap: 40px;
+    }
+
+    @media (min-width: 1199.9px) {
+      gap: 90px;
     }
   }
 
@@ -151,9 +156,13 @@ img {
 
     @media (min-width: 991.9px) {
       margin-right: 30px;
-      max-width: 656px;
+      max-width: 556px;
     }
 
+    @media (min-width: 1199.9px) {
+
+      max-width: 656px;
+    }
     .caption__text-description {
       display: block;
 
@@ -1089,4 +1098,20 @@ img {
   .single-container {
     padding-top: 0;
   }
+}
+
+.mk-blockquote.quote-style:after {
+  content: ''!important;
+  width: 24px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-image: url("https://procureability.com/wp-content/uploads/2024/03/quote-right-solid.svg")!important;
+}
+.mk-blockquote.quote-style:before {
+  content: ''!important;
+  width: 24px;
+  height: 25px;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  background-image: url("https://procureability.com/wp-content/uploads/2024/03/quote-right-solid.svg")!important;
 }
