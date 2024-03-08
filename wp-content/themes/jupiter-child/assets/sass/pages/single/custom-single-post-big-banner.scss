@@ -719,6 +719,7 @@ img {
       gap: 9px;
       align-items: center;
 
+
       a {
         color: rgba(57, 58, 64, 0.80);
         font-family: Poppins;
@@ -789,9 +790,13 @@ img {
         font-weight: 400;
         line-height: 26.56px; /* 166% */
         border-bottom: 1px dotted #0098AE;
-
+        transition: all 0.3s ease-in-out;
         @media (min-width: 767.9px) {
           font-size: 16px;
+        }
+
+        &:hover {
+          border-bottom: none;
         }
       }
     }
