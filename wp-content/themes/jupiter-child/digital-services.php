@@ -296,7 +296,7 @@
                             <div>
                                 <div class="xl:flex xl:items-center xl:justify-between">
                                     <div class="mb-[24px] xl:mb-0 xl:w-[calc((524/1200)*100%)] <?= ($key % 2 !== 0) ? 'xl:order-2' : null; ?>">
-                                        <div class=" text-[24px] font-[500] mb-[16px] xl:text-[34px] leading-[1.47] xl:font-[600] xl:mb-[24px] <?= ($key % 2 !== 0) ? 'text-[#F6881B]' : 'text-[#3BA17C]'; ?>">
+                                        <div class=" text-[24px] font-[500] mb-[16px] xl:text-[34px] leading-[1.47] xl:font-[600] xl:mb-[24px] <?= ($key % 2 !== 0) ? 'text-[#005E6B]' : 'text-[#3BA17C]'; ?>">
                                             <?= $bottom_content_group_item['title']; ?>
                                         </div>
                                         <div class="[&_p]:text-[14px] [&_p]:xl:text-[18px] [&_p]:leading-[1.6] [&_a]:font-[600] [&_a]:xl:font-[500] [&_a]:!underline [&_a]:!decoration-[transparent] [&_a]:!transition-all [&_a]:!duration-200 [&_a]:!decoration-[#3BA17C] [&_a]:!decoration-dotted [&_a]:!font-poppins [&_a]:!underline-offset-[6px] hover:[&_a]:!decoration-[transparent]">
@@ -308,8 +308,8 @@
                                         <div class="xl:w-[calc((572/1200)*100%)] <?= ($key % 2 == 0) ? 'xl:order-1' : null; ?>">
                                             <div class="relative">
                                                 <div class="hidden xl:block absolute inset-0 bg-center bg-auto bg-no-repeat "
-                                                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/<?= $key === 0 ? 'list-bg-green.svg' : 'list-bg-red.svg'; ?>')"></div>
-                                                <ul class="py-[7px] xl:py-0 relative rounded-[5px] border border-solid text-[14px] md:text-[16px] xl:text-[18px] xl:border-0 list-none text-[18px] font-[500] xl:font-[600] leading-[1.2] m-0 <?= ($key % 2 == 0) ? 'text-[#3BA17C] border-[rgba(59,161,124,0.4)]' : 'text-[#F6881B] border-[rgba(246,136,27,0.4)]'; ?>">
+                                                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/<?= $key === 0 ? 'list-bg-green.svg' : 'list-bg-blue.svg'; ?>')"></div>
+                                                <ul class="py-[7px] xl:py-0 relative rounded-[5px] border border-solid text-[14px] md:text-[16px] xl:text-[18px] xl:border-0 list-none text-[18px] font-[500] xl:font-[600] leading-[1.2] m-0 <?= ($key % 2 == 0) ? 'text-[#3BA17C] border-[rgba(59,161,124,0.4)]' : 'text-[#005E6B] border-[rgba(246,136,27,0.4)]'; ?>">
                                                     <?php foreach ($bottom_content_group_item_list as $bottom_content_group_item_list_item) : ?>
                                                         <li class="py-[20px] px-[10px] border-b last:border-0 border-solid xl:border-0 text-center xl:!text-left ml-0 xl:py-[28px] xl:h-[77px] box-border <?= ($key % 2 == 0) ? 'xl:pl-[122px] border-[rgba(59,161,124,0.4)]' : 'xl:pl-[50px] border-[rgba(246,136,27,0.4)]'; ?>"><?= $bottom_content_group_item_list_item['item']; ?></li>
                                                     <?php endforeach; ?>
@@ -451,7 +451,7 @@
                                     <div class="hidden xl:block text-[#393A40] text-[14px] leading-[1.65] md:text-[16px] opacity-[.8] md:mb-[16px]">
                                         <?= get_the_excerpt($insights_list_item); ?>
                                     </div>
-                                    <a href="<?= get_permalink($insights_list_item); ?>" class="block mt-[12px] text-[#3BA17C] text-[16px] leading-[1.51] font-[500] uppercase xl:!normal-case group-hover:underline underline-offset-[5px] group-hover:text-[#3BA17C] !decoration-dotted">Read More</a>
+                                    <a href="<?= get_permalink($insights_list_item); ?>" class="block mt-[12px] text-[#005E6B] text-[16px] leading-[1.51] font-[500] uppercase xl:!normal-case group-hover:underline underline-offset-[5px] group-hover:text-[#222222] !decoration-dotted">Read More</a>
                                 </div>
                             <?php endforeach; ?>
                         </div>
