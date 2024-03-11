@@ -61,7 +61,7 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
-
+    font-family: Poppins, sans-serif;
     &:hover {
       background-color: #fff;
       color: #0098ae;
@@ -109,6 +109,8 @@ img {
   font-weight: 600;
   text-transform: none;
   max-width: 96%;
+  font-family: Poppins, sans-serif;
+
   @media (min-width: 767.9px) {
     max-width: 90%;
   }
@@ -268,6 +270,12 @@ img {
     @media (min-width: 767.9px) {
       font-size: 34px;
     }
+    br{
+      display: none;
+      @media (min-width: 991.9px) {
+        display: block;
+      }
+    }
   }
 
   &__description {
@@ -319,7 +327,6 @@ img {
   }
   @media (min-width: 991.9px) {
     text-align: left;
-    margin-top: 64px;
     padding: 87px 0 122px 0;
     background-position: right -300px center !important;
   }
