@@ -42,3 +42,60 @@
         background-color: transparent;
     }
 }
+
+.webinar-cta {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    background: url(/wp-content/themes/jupiter-child/assets/img/triangle-green.jpg);
+    position: relative;
+
+    @media (min-width: 1200px) {
+        padding-top: 100px;
+        padding-bottom: 105px;
+    }
+
+    &__bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+
+        @media (min-width: 1440px) {
+            background-size: contain;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        margin: auto;
+
+        @media (min-width: 1200px) {
+            text-align: left;
+            margin: unset;
+        }
+    }
+}
+
+.webinar-cta-type-2 {
+    &__bg {
+        background-position: left;
+
+        @media (min-width: 1024px) {
+            background-position: center;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        margin: auto;
+
+        @media (min-width: 1024px) {
+            text-align: left;
+            margin: unset;
+        }
+    }
+}

@@ -65,11 +65,20 @@
     }
 
     .mejs-video .mejs-controls {
-      opacity: 0;
+      //opacity: 0;
     }
 
     .mejs-video .mejs-overlay-button {
-      visibility: hidden;
+      //visibility: hidden;
     }
+  }
+}
+#video {
+  .mejs-video .mejs-controls {
+    opacity: 1;
+  }
+
+  .mejs-video .mejs-overlay-button {
+    visibility: visible;
   }
 }

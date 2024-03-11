@@ -687,7 +687,7 @@ if (!function_exists('is_transparent_header')) {
             return false;
         }
 
-        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'thank-you-digital', 'thank-you', 'hire-a-temporary-resource', 'video', 'privacy-policy', 'contact', 'subscribe', 'leadership', 'procurement-services-provider');
+        $pages_slug = array('analytics-insights', 'analytics-insights', 'intelligence-insights', 'consulting-insights', 'staffing-insights', 'recruiting-insights', 'thank-you-digital', 'thank-you', 'hire-a-temporary-resource', 'video', 'privacy-policy', 'contact', 'subscribe', 'leadership', 'procurement-services-provider', 'creating-transformative-value-in-2024-and-beyond-form');
 
         if (is_page($pages_slug)) {
             return false;
@@ -706,6 +706,10 @@ if (!function_exists('is_transparent_header')) {
         }
 
         if (is_singular('webinar')) {
+            return false;
+        }
+
+        if (is_singular('podcast')) {
             return false;
         }
 

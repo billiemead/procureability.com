@@ -37,7 +37,7 @@
                         <?php $form_section_form_title = get_field('form_section_form_title'); ?>
                         <?php if ($form_section_form_title) : ?>
                             <div class="mb-[24px] lg:mb-[32px] lg:text-center">
-                                <span class="font-poppins text-[18px] xl:text-[20px] leading-[1.5] font-[600] lg:font-[500]  text-center text-[#393A40] font-semibold lg:font-medium"><?= $form_section_form_title; ?></span>
+                                <span class="font-poppins text-[18px] xl:text-[20px] leading-[1.5] font-[600] lg:font-[500] text-center text-[#393A40] font-semibold lg:font-medium"><?= $form_section_form_title; ?></span>
                             </div>
                         <?php endif; ?>
                         <?= do_shortcode($form_section_form_shortcode); ?>

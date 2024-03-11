@@ -47,7 +47,7 @@ while (have_posts()) :
     </section>
 
     <section class="single-container theme-content master-holder">
-        <div class="post">
+        <div class="post custom-post">
             <div class="post_content">
                 <?php
                 the_content();

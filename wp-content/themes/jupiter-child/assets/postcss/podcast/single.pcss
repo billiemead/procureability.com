@@ -1,0 +1,81 @@
+.content {
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    & strong {
+        color: #f97352;
+    }
+
+    & sup {
+        font-size: .8em;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+        top: -0.5em;
+    }
+
+    & .video-container {
+        padding-bottom: 56.25%;
+        max-width: 100%;
+
+        @media (min-width: 768px) {
+            padding-bottom: 27.25%;
+            max-width: 371px;
+        }
+
+        @media (min-width: 991px) {
+            max-width: 465px;
+        }
+    }
+}
+
+.fancybox-slide {
+    padding: 44px !important;
+
+    & .fancybox-content {
+        height: 100%;
+        overflow: visible;
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+}
+
+.podcast-cta {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    background: url(/wp-content/themes/jupiter-child/assets/img/triangle-green.jpg);
+    position: relative;
+
+    @media (min-width: 1200px) {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    &__bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+
+        @media (min-width: 1440px) {
+            background-size: contain;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        margin: auto;
+
+        @media (min-width: 1200px) {
+            text-align: left;
+            margin: unset;
+        }
+    }
+}

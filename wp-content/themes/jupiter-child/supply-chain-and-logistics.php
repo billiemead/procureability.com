@@ -55,12 +55,12 @@
     <!--Video-->
 <section id="video" class="py-[30px]">
     <div class="max-w-[930px] px-[15px] mx-auto">
-        <div class="bg-[#0095b0] px-[15px] pt-[15px] pb-[40px]">
+        <div class="bg-[#13839C] px-[15px] pt-[15px] pb-[40px]">
             <div>
                 <?= $video_video; ?>
             </div>
             <div class="text-center mt-[20px]">
-                <div class="text-[19px] leading-black text-[#000] font-[700] capitalize"><?= $video_title; ?></div>
+                <div class="font-poppins text-[19px] leading-black text-[#fff] font-[700] capitalize"><?= $video_title; ?></div>
             </div>
         </div>
     </div>
@@ -189,7 +189,7 @@
                                         <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                     </div>
                                     <a
-                                            class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
+                                            class="font-poppins text-[#005E6B] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
                                             href="<?= get_permalink(); ?>"
                                             title="Read more about the <?= get_the_title(); ?>"
                                     >Read More</a>
@@ -199,7 +199,7 @@
                         <?php wp_reset_postdata(); ?>
                     </div>
                     <div id="clientSuccessStoriesPagination"
-                         class="xl:!hidden mt-[24px] xl:mt-[40px] flex justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#0098AE] [&_span]:!opacity-100"></div>
+                         class=" xl:!hidden mt-[24px] xl:mt-[40px] flex justify-center [&_span]:!mx-[8px] [&_span]:!w-[6px] [&_span]:!h-[6px] [&_span]:rounded-full [&_span]:!bg-[#DDE5E5] [&_span.swiper-pagination-bullet-active]:!bg-[#0098AE] [&_span]:!opacity-100"></div>
                 </div>
             <?php endif; ?>
         </div>
@@ -239,7 +239,7 @@
                                          href="<?= get_permalink(); ?>">
                                         <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                     </div>
-                                    <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
+                                    <a class="font-poppins text-[#005E6B] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
                                        href="<?= get_permalink(); ?>"
                                        title="Read more about the <?= get_the_title(); ?>"
                                     >Read More</a>
@@ -261,3 +261,4 @@
     <!--Leadership-->
 
 <?php get_footer(); ?>
+

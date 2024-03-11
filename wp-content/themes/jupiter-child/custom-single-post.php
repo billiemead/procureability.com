@@ -9,6 +9,7 @@ get_header();
 while (have_posts()) :
     the_post();
 
+    $seo_title = get_field('custom_seo_title') ?: get_the_title();
     $custom_post_title = get_field('custom_post_title') ?: get_the_title();
     $custom_font_size_for_title = get_field('custom_font_size_for_title');
     $custom_image = get_field('custom_image');
@@ -28,49 +29,39 @@ while (have_posts()) :
     $custom_width = $image_in_content ? 'style="width: 100%;"' : '';
     $custom_image = $custom_image ?: get_the_post_thumbnail_url();
     $banner_style = '';
-    ?>
-    <?php if ($first_screen_banner_show) {
-    $banner_style = 'single_with_banner';
 
-    $full_size_banner = '';
-    if ($first_screen_banner_show_full_screen) {
-        $full_size_banner = 'full_size';
-    }
-    ?>
-    <div class="caption <?php echo $full_size_banner; ?>">
-        <div class="caption-container">
-            <div class="caption__text">
-                <?php if ($first_screen_banner_subtitle) { ?>
-                    <div class="caption__text-subtitle">
-                        <?php echo $first_screen_banner_subtitle; ?>
-                    </div>
-                <?php } ?>
-                <h1 class="title" <?php echo $custom_font_size_for_title; ?>><?php echo $custom_post_title; ?></h1>
-                <?php if ($first_screen_banner_show_full_screen && $first_screen_banner_full_screen_text) { ?>
-                    <div class="caption__text-description">
-                        <?php echo $first_screen_banner_full_screen_text; ?>
-                    </div>
-                <?php } ?>
-                <?php if (!empty($first_screen_banner_btn['title'])) { ?>
-                    <a class="caption__text-btn"
-                       href="<?php echo $first_screen_banner_btn['url']; ?>"><?php echo $first_screen_banner_btn['title']; ?></a>
-                <?php } ?>
-            </div>
-            <div class="caption__image">
-                <img src="<?php echo esc_url($custom_image); ?>" class="max-w-full"
-                     alt="<?php echo esc_attr($custom_post_title); ?>">
-                <?php if ($custom_image_description) { ?>
-                    <div class="caption__image-descripion"><?php echo $custom_image_description; ?></div>
-                <?php } ?>
-                <?php if ($first_screen_banner_show_full_screen && $first_screen_banner_full_screen_text) { ?>
-                    <div class="caption__text-description">
-                        <?php echo $first_screen_banner_full_screen_text; ?>
-                    </div>
-                <?php } ?>
+    if ($first_screen_banner_show) {
+        $banner_style = 'single_with_banner';
+        ?>
+
+        <h1 class="hidden"><?= $seo_title ?></h1>
+        <div class="caption">
+            <div class="caption-container">
+                <div class="caption__text">
+                    <?php if ($first_screen_banner_subtitle) { ?>
+                        <div class="caption__text-subtitle">
+                            <?php echo $first_screen_banner_subtitle; ?>
+                        </div>
+                    <?php } ?>
+
+                    <h2 class="title" <?php echo $custom_font_size_for_title; ?>><?php echo $custom_post_title; ?></h2>
+
+                    <?php if (!empty($first_screen_banner_btn['title'])) { ?>
+                        <a class="caption__text-btn"
+                           href="<?php echo $first_screen_banner_btn['url']; ?>"><?php echo $first_screen_banner_btn['title']; ?></a>
+                    <?php } ?>
+                </div>
+                <div class="caption__image">
+                    <img src="<?php echo esc_url($custom_image); ?>" class="max-w-full"
+                         alt="<?php echo esc_attr($custom_post_title); ?>">
+                    <?php if ($custom_image_description) { ?>
+                        <div class="caption__image-descripion"><?php echo $custom_image_description; ?></div>
+                    <?php } ?>
+
+                </div>
             </div>
         </div>
-    </div>
-<?php } ?>
+    <?php } ?>
 
     <section class="single-container <?php echo $banner_style; ?>">
         <?php if (!$first_screen_banner_show) { ?>
@@ -129,5 +120,4 @@ while (have_posts()) :
 
 get_footer();
 ?>
-
 

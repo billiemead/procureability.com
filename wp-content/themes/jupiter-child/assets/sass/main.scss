@@ -23,8 +23,11 @@
 
 #theme-page.master-holder {
   overflow: hidden;
-}
 
+  @media (min-width: 1240px) {
+    min-height: calc(100vh - 686px);
+  }
+}
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -134,4 +137,8 @@
 
 .white-space-nowrap {
   white-space: nowrap;
+}
+
+.mejs-time {
+  padding-bottom: 10px;
 }

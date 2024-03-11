@@ -42,7 +42,7 @@
                                 <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] mb-[16px]">
                                     <?= get_the_excerpt(); ?>
                                 </div>
-                                <a class="font-poppins text-[#000] transition-colors text-[14px] xl:text-[18px] leading-[1.5] font-[500]"
+                                <a class="font-poppins text-[#005E6B] transition-colors text-[14px] xl:text-[18px] leading-[1.5] font-[500]"
                                    href="<?= get_permalink(); ?>">Read More</a>
                             </div>
                         </div>
