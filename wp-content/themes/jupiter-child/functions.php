@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/includes/enqueue.php';
+require_once __DIR__ . '/includes/general-functions.php';
 
 function asset_hash($file)
 {
