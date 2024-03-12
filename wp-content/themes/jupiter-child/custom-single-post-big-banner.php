@@ -9,7 +9,7 @@ get_header();
 while (have_posts()) :
     the_post();
 
-    $custom_post_title = get_field('custom_post_title') ?: get_the_title();
+    $custom_post_title = get_field('custom_title') ?: get_the_title();
     $custom_font_size_for_title = get_field('custom_font_size_for_title');
     $custom_image = get_field('custom_image');
     $custom_button = get_field('custom_button');
@@ -19,6 +19,7 @@ while (have_posts()) :
 
     $custom_font_size_for_title = $custom_font_size_for_title ? 'style="font-size: ' . esc_attr($custom_font_size_for_title) . ';"' : '';
     $custom_image = $custom_image ?: get_the_post_thumbnail_url();
+
     ?>
     <section class="banner">
         <div class="banner-container">
@@ -54,6 +55,8 @@ while (have_posts()) :
                 ?>
             </div>
         </div>
+
+
     </section>
 
 
@@ -108,7 +111,7 @@ while (have_posts()) :
                 <?php } ?>
                 <?php if ($get_started_button['title']) { ?>
                     <a class="btn inline-block pt-[13px] pb-[11px] px-[47px] brand-button-gradient rounded-[3px] border-0 group relative overflow-hidden"
-                       href="<?php $get_started_button['url'] ?>">
+                       href="<?php echo $get_started_button['url'] ?>">
                         <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 rocket-lazyload lazyloaded"></div>
                         <span class="relative text-white text-[18px] leading-[1.51] font-[600] uppercase"><?php echo $get_started_button['title']; ?></span>
                     </a>

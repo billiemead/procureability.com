@@ -103,7 +103,7 @@ document.addEventListener('alpine:init', () => {
                 },
                 on: {
                     init: swiper => {
-                        if (this.active && Number.isInteger(this.active)) {
+                        if (this.active && Number.isInteger(this.active) || this.active === 0) {
                             swiper.slideTo(this.active, 0)
                             this.toggleModal();
                             this.$lockbody(this.$refs.modal);

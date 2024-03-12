@@ -13,7 +13,11 @@
         </div>
         <div class="max-w-[345px] mx-auto sm:max-w-none sm:mx-0 sm:flex sm:flex-wrap sm:mr-[-26px] mb-[-42px]">
             <?php if ($team) : ?>
-                <?php foreach ($team as $key => $post): setup_postdata($post); ?>
+                <?php foreach ($team as $key => $post): setup_postdata($post);
+                if ($key == 0){
+                    $key = count($team);
+                }
+                ?>
                     <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 sm:pr-[26px] mb-[42px] box-border">
                         <a class="block group cursor-pointer"
                            data-x-on:click.prevent="handleClick($event, <?= $key; ?>, '<?= get_permalink(); ?>')"
