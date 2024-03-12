@@ -44,6 +44,14 @@
 
   &__image {
     max-width: 656px;
+
+    @media (min-width: 767.9px) {
+      max-width: 356px;
+    }
+
+    @media (min-width: 1024.9px) {
+      max-width: 656px;
+    }
   }
 
   &__btn {
@@ -76,7 +84,7 @@
     }
 
     @media (min-width: 991.9px) {
-      margin-left: calc(50vw - 428.5px);
+      margin-left: calc(50vw - 490.5px);
     }
   }
 }
@@ -87,7 +95,7 @@ div, p, a, span, strong {
 
 .single-container {
 
-  max-width: 830px;
+  max-width: 940px;
   padding: 25px 15px 100px 15px;
   margin: 0 auto;
 
@@ -127,7 +135,7 @@ img {
 }
 
 .post {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   @media (min-width: 767.9px) {
     display: flex;
   }
@@ -265,14 +273,14 @@ img {
     text-transform: none;
     text-align: center;
     font-size: 22px;
-    max-width: 85%;
+    max-width: 87%;
     font-family: Poppins, sans-serif !important;
     @media (min-width: 767.9px) {
       font-size: 34px;
     }
     br{
       display: none;
-      @media (min-width: 991.9px) {
+      @media (min-width: 1024.9px) {
         display: block;
       }
     }
