@@ -309,9 +309,9 @@
                                             <div class="relative">
                                                 <div class="hidden xl:block absolute inset-0 bg-center bg-auto bg-no-repeat "
                                                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/<?= $key === 0 ? 'list-bg-green.svg' : 'list-bg-blue.svg'; ?>')"></div>
-                                                <ul class="py-[7px] xl:py-0 relative rounded-[5px] border border-solid text-[14px] md:text-[16px] xl:text-[18px] xl:border-0 list-none text-[18px] font-[500] xl:font-[600] leading-[1.2] m-0 <?= ($key % 2 == 0) ? 'text-[#3BA17C] border-[rgba(59,161,124,0.4)]' : 'text-[#005E6B] border-[rgba(246,136,27,0.4)]'; ?>">
+                                                <ul class="py-[7px] xl:py-0 relative rounded-[5px] border border-solid text-[14px] md:text-[16px] xl:text-[18px] xl:border-0 list-none text-[18px] font-[500] xl:font-[600] leading-[1.2] m-0 <?= ($key % 2 == 0) ? 'text-[#3BA17C] border-[rgba(59,161,124,0.6)]' : 'text-[#005E6B] border-[rgba(246,136,27,0.4)]'; ?>">
                                                     <?php foreach ($bottom_content_group_item_list as $bottom_content_group_item_list_item) : ?>
-                                                        <li class="py-[20px] px-[10px] border-b last:border-0 border-solid xl:border-0 text-center xl:!text-left ml-0 xl:py-[28px] xl:h-[77px] box-border <?= ($key % 2 == 0) ? 'xl:pl-[122px] border-[rgba(59,161,124,0.4)]' : 'xl:pl-[50px] border-[rgba(246,136,27,0.4)]'; ?>"><?= $bottom_content_group_item_list_item['item']; ?></li>
+                                                        <li class="py-[20px] px-[10px] border-b last:border-0 border-solid xl:border-0 text-center xl:!text-left ml-0 xl:py-[28px] xl:h-[77px] box-border <?= ($key % 2 == 0) ? 'xl:pl-[122px] border-[rgba(59,161,124,0.6)]' : 'xl:pl-[50px] border-[rgba(246,136,27,0.6)]'; ?>"><?= $bottom_content_group_item_list_item['item']; ?></li>
                                                     <?php endforeach; ?>
                                                 </ul>
                                             </div>
@@ -340,6 +340,7 @@
                                 <?php foreach ($team_list as $team_list_item) : ?>
                                     <div class="swiper-slide xl:!w-[192px]">
                                         <a class="block group cursor-pointer"
+                                           title="<?= get_field('leadership_name', $team_list_item); ?>"
                                            data-fancybox="team"
                                            data-src="#leader-<?= $team_list_item; ?>"
                                            data-thumb="<?= get_the_post_thumbnail_url($team_list_item); ?>"
@@ -441,17 +442,17 @@
                         <div class="swiper-wrapper xl:!grid xl:!grid-cols-3 xl:!gap-[24px] ">
                             <?php foreach ($insights_list as $insights_list_item): ?>
                                 <div class="swiper-slide group">
-                                    <a href="<?= get_permalink($insights_list_item); ?>" class="block pb-[55.47%] rounded-[6px] mb-[16px] md:mb-[24px] xl:mb-[32px] overflow-hidden relative">
+                                    <a href="<?= get_permalink($insights_list_item); ?>" title="<?= get_the_title($insights_list_item); ?>" class="block pb-[55.47%] rounded-[6px] mb-[16px] md:mb-[24px] xl:mb-[32px] overflow-hidden relative">
                                         <div class="absolute inset-0 bg-no-repeat bg-cover bg-center group-hover:scale-[1.1] duration-[.4s] ease-linear"
                                              style="background-image: url('<?= get_the_post_thumbnail_url($insights_list_item); ?>')"></div>
                                     </a>
-                                    <a href="<?= get_permalink($insights_list_item); ?>" class="text-[14px] md:text-[16px] leading-[1.65] text-[#393A40] xl:text-[24px] xl:leading-[1.27] xl:font-[500] mb-[8px] md:mb-[16px] xl:mb-[12px] opacity-80 xl:opacity-100">
+                                    <a href="<?= get_permalink($insights_list_item); ?>" title="<?= get_the_title($insights_list_item); ?>" class="text-[14px] md:text-[16px] leading-[1.65] text-[#393A40] xl:text-[24px] xl:leading-[1.27] xl:font-[500] mb-[8px] md:mb-[16px] xl:mb-[12px] opacity-80 xl:opacity-100">
                                         <?= get_the_title($insights_list_item); ?>
                                     </a>
                                     <div class="hidden xl:block text-[#393A40] text-[14px] leading-[1.65] md:text-[16px] opacity-[.8] md:mb-[16px]">
                                         <?= get_the_excerpt($insights_list_item); ?>
                                     </div>
-                                    <a href="<?= get_permalink($insights_list_item); ?>" class="block mt-[12px] text-[#005E6B] text-[16px] leading-[1.51] font-[500] uppercase xl:!normal-case group-hover:underline underline-offset-[5px] group-hover:text-[#222222] !decoration-dotted">Read More</a>
+                                    <a title=" <?= get_the_title($insights_list_item); ?>" href="<?= get_permalink($insights_list_item); ?>" class="block mt-[12px] text-[#005E6B] text-[16px] leading-[1.51] font-[500] uppercase xl:!normal-case group-hover:underline underline-offset-[5px] group-hover:text-[#222222] !decoration-dotted">Read More</a>
                                 </div>
                             <?php endforeach; ?>
                         </div>
