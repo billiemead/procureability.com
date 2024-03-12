@@ -119,6 +119,18 @@
           {
             "type": "vcs",
             "url": "git@github.com:ProcureAbility-com/hotjar.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/login-ip-country-restriction.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/change-wp-admin-login.git"
+          },
+          {
+            "type": "vcs",
+            "url": "git@github.com:ProcureAbility-com/wp-security-audit-log.git"
           }
     ],
     "require": {
@@ -170,7 +182,10 @@
         "procureability-com/wp-timelines": "^3.5",
         "procureability-com/wp-asset-clean-up-pro": "1.2.2.4",
         "procureability-com/hotjar": "*",
-        "wp-cli/wp-cli-bundle": "^2.7"
+        "wp-cli/wp-cli-bundle": "^2.7",
+        "procureability-com/login-ip-country-restriction": "dev-main",
+        "procureability-com/wp-security-audit-log": "dev-main",
+        "procureability-com/change-wp-admin-login": "dev-main"
     },
     "config": {
         "github-oauth": {
