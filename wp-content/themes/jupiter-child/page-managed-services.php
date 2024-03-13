@@ -39,9 +39,9 @@ get_header();
         <div class="container">
             <div>
                 <div>
-                    <h2 class="!text-[24px] !font-poppins !leading-[1.6] !mb-[16px] !text-[#0098AE] !font-medium"><?= $approach['title'] ?></h2>
+                    <h2 class="!text-[24px] !font-poppins !leading-[1.6] !mb-[16px] !text-[#005E6B] !font-medium"><?= $approach['title'] ?></h2>
 
-                    <div class="cms-content [&_p]:!mb-[20px]"><?= $approach['text'] ?></div>
+                    <div class="[&_p]:text-[#393A40]  cms-content [&_p]:!mb-[20px]"><?= $approach['text'] ?></div>
                 </div>
 
                 <div class="hidden cp-approach__scl">
@@ -78,12 +78,12 @@ get_header();
         <!--Video-->
         <section id="video-2" class="pb-[30px] pt-[15px] md:pt-0 before:content-[''] before:block before:h-[76px] before:mt-[-76px] before:invisible">
             <div class="max-w-[930px] px-[15px] mx-auto">
-                <div class="bg-[#0095b0] px-[15px] pt-[15px] pb-[40px]">
+                <div class="bg-[#13839C] px-[15px] pt-[15px] pb-[40px]">
                     <div>
                         <?= $video_video; ?>
                     </div>
                     <div class="text-center mt-[20px]">
-                        <div class="text-[19px] text-white font-[700]"><?= $video_title; ?></div>
+                        <div class="font-poppins text-[19px] text-white font-[700]"><?= $video_title; ?></div>
                     </div>
                 </div>
             </div>
@@ -126,10 +126,10 @@ get_header();
                 </div>
 
                 <div class="cp-support__desc">
-                    <div class="cp-support__text"><?= $support['text'] ?></div>
+                    <div class="cp-support__text text-[#393A40] "><?= $support['text'] ?></div>
 
                     <?php if ($support['btn_link'] && $support['btn_text']) : ?>
-                        <a class="inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll"
+                        <a class="inline-block py-[12px] px-[32px]  bg-[#155B39] rounded-[3px] group relative js-smooth-scroll"
                            href="<?= $support['btn_link'] ?>">
                             <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                                  style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
@@ -174,7 +174,7 @@ get_header();
 
 
                     <?php if ($opportunities['btn_link'] && $opportunities['btn_text']) : ?>
-                        <a class="hidden min-[992px]:inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll"
+                        <a class="hidden min-[992px]:inline-block py-[12px] px-[32px]  bg-[#155B39] rounded-[3px] group relative js-smooth-scroll"
                            href="<?= $opportunities['btn_link'] ?>">
                             <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                                  style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
@@ -337,7 +337,7 @@ get_header();
 
             <?php if ($industries['btn_link'] && $industries['btn_text']) : ?>
                 <div class="relative z-20">
-                    <a class="hidden min-[768px]:inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll"
+                    <a class="hidden min-[768px]:inline-block py-[12px] px-[32px]  bg-[#155B39] rounded-[3px] group relative js-smooth-scroll"
                        href="<?= $industries['btn_link'] ?>">
                         <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                              style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
@@ -473,7 +473,7 @@ get_header();
             <div class="cp-help__text"><?= $help['text'] ?></div>
 
             <?php if ($help['btn_link'] && $help['btn_text']) : ?>
-                <a class="inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative js-smooth-scroll"
+                <a class="inline-block py-[12px] px-[32px]  bg-[#155B39] rounded-[3px] group relative js-smooth-scroll"
                    href="<?= $help['btn_link'] ?>">
                     <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                          style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg');"></div>
