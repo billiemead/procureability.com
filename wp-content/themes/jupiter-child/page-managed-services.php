@@ -460,7 +460,7 @@ get_header();
                 <div class="text-center">
                     <a data-x-on:click.prevent="open = !open"
                        data-x-text="open ? 'Hide all advantages' : 'Show all advantages'"
-                       class="cp-advantages__link cursor-pointer"></a>
+                       class="cp-advantages__link cursor-pointer text-[#005E6B]"></a>
                 </div>
             <?php endif; ?>
         </div>
@@ -499,7 +499,7 @@ get_header();
 
                                 <div class="cp-insights__heading"><?= $item->post_title ?></div>
 
-                                <div class="cp-insights__more">Read More</div>
+                                <div class="cp-insights__more text-[#005E6B]">Read More</div>
                             </a>
                         </div>
                     <?php endforeach; ?>
