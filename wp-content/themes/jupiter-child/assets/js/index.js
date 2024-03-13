@@ -135,10 +135,8 @@ $(document).ready(event => {
 });
 
 $(document).ready(() => {
-    $('body').on('click', '.mejs-container', function(event) {
-        $('.mejs-captions-selector-label').each(function(index) {
-            const label = $(this).text();
-            $(this).attr('aria-label', label);
-        });
+    $('.mejs-captions-selector-label').each(function (index) {
+        const label = $(this).text();
+        $(this).attr('aria-label', label);
     });
 });
