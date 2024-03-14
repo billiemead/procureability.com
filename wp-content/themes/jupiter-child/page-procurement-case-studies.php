@@ -13,7 +13,7 @@
                 <div class="grid sm:grid-cols-[auto_312px] gap-[30px]">
                     <div>
                         <div class="max-w-[353px]">
-                            <h1 class="section-h1 text-[#005E6B]"><?= get_the_title(); ?></h1>
+                            <h1 class="section-h1 font-poppins text-[#005E6B]"><?= get_the_title(); ?></h1>
                             <?php $post_cta_content_content = get_field('post_cta_content_content'); ?>
                             <?php if ($post_cta_content_content) : ?>
                                 <div class="[&_p]:!font-poppins [&_p]:text-[14px] [&_p]:leading-[1.4] [&_p]:text-[#393A40] [&_a]:!font-poppins [&_a]:text-[#393A40] [&_a]:!underline [&_a]:hover:decoration-transparent [&_a]:transition-colors">
