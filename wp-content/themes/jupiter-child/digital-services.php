@@ -296,7 +296,7 @@
                             <div>
                                 <div class="xl:flex xl:items-center xl:justify-between">
                                     <div class="mb-[24px] xl:mb-0 xl:w-[calc((524/1200)*100%)] <?= ($key % 2 !== 0) ? 'xl:order-2' : null; ?>">
-                                        <div class=" text-[24px] font-[500] mb-[16px] xl:text-[34px] leading-[1.47] xl:font-[600] xl:mb-[24px] <?= ($key % 2 !== 0) ? 'text-[#005E6B]' : 'text-[#3BA17C]'; ?>">
+                                        <div class=" text-[24px] font-[500] mb-[16px] xl:text-[34px] leading-[1.47] xl:font-[600] xl:mb-[24px] <?= ($key % 2 !== 0) ? 'text-[#005E6B]' : 'text-[#00a3b7]'; ?>">
                                             <?= $bottom_content_group_item['title']; ?>
                                         </div>
                                         <div class="[&_p]:text-[14px] [&_p]:xl:text-[18px] [&_p]:leading-[1.6] [&_a]:font-[600] [&_a]:xl:font-[500] [&_a]:!underline [&_a]:!decoration-[transparent] [&_a]:!transition-all [&_a]:!duration-200 [&_a]:!decoration-[#3BA17C] [&_a]:!decoration-dotted [&_a]:!font-poppins [&_a]:!underline-offset-[6px] hover:[&_a]:!decoration-[transparent]">
@@ -309,9 +309,9 @@
                                             <div class="relative">
                                                 <div class="hidden xl:block absolute inset-0 bg-center bg-auto bg-no-repeat "
                                                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/<?= $key === 0 ? 'list-bg-green.svg' : 'list-bg-blue.svg'; ?>')"></div>
-                                                <ul class="py-[7px] xl:py-0 relative rounded-[5px] border border-solid text-[14px] md:text-[16px] xl:text-[18px] xl:border-0 list-none text-[18px] font-[500] xl:font-[600] leading-[1.2] m-0 <?= ($key % 2 == 0) ? 'text-[#3BA17C] border-[rgba(59,161,124,0.6)]' : 'text-[#005E6B] border-[rgba(246,136,27,0.4)]'; ?>">
+                                                <ul class="py-[7px] xl:py-0 relative rounded-[5px] border border-solid text-[14px] md:text-[16px] xl:text-[18px] xl:border-0 list-none text-[18px] font-[500] xl:font-[600] leading-[1.2] m-0 <?= ($key % 2 == 0) ? 'text-[#006471] border-[rgba(59,161,124,1)]' : 'text-[#005E6B] border-[rgba(246,136,27,1)]'; ?>">
                                                     <?php foreach ($bottom_content_group_item_list as $bottom_content_group_item_list_item) : ?>
-                                                        <li class="py-[20px] px-[10px] border-b last:border-0 border-solid xl:border-0 text-center xl:!text-left ml-0 xl:py-[28px] xl:h-[77px] box-border <?= ($key % 2 == 0) ? 'xl:pl-[122px] border-[rgba(59,161,124,0.6)]' : 'xl:pl-[50px] border-[rgba(246,136,27,0.6)]'; ?>"><?= $bottom_content_group_item_list_item['item']; ?></li>
+                                                        <li class=" py-[20px] px-[10px] border-b last:border-0 border-solid xl:border-0 text-center xl:!text-left ml-0 xl:py-[28px] xl:h-[77px] box-border <?= ($key % 2 == 0) ? 'xl:pl-[122px] border-[rgba(59,161,124,1)]' : 'xl:pl-[50px] border-[rgba(246,136,27,1)]'; ?>"><?= $bottom_content_group_item_list_item['item']; ?></li>
                                                     <?php endforeach; ?>
                                                 </ul>
                                             </div>
