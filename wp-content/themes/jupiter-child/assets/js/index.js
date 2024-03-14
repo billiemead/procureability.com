@@ -135,10 +135,12 @@ $(document).ready(event => {
 });
 
 $(document).ready(() => {
-    $('body').on('click', '.mejs-container', function(event) {
-        $('.mejs-captions-selector-label').each(function(index) {
+
+    setTimeout(function () {
+        $('body .mejs-captions-selector-label').each(function (index) {
+            console.log($(this).text())
             const label = $(this).text();
             $(this).attr('aria-label', label);
         });
-    });
+    }, 300);
 });
