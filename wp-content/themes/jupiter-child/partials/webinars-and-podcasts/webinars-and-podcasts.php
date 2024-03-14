@@ -44,13 +44,13 @@ $posts = array_merge($webinarsAndPodcasts, $podcasts);
                             <div>
                                 <div class="mb-[16px]">
                                     <a href="<?= the_permalink(); ?>"
-                                       class="font-poppins text-[#f97352] hover:text-[#2e2e2e] text-[20px] leading-[1.3] font-semibold"><?= the_title(); ?></a>
+                                       class="font-poppins text-[#005E6B] hover:text-[#2e2e2e] text-[20px] leading-[1.3] font-semibold"><?= the_title(); ?></a>
                                 </div>
                                 <div class="mb-[35px]">
-                                    <div class="font-poppins text-[16px] leading-[1.6] text-[#61636B]"><?= the_excerpt(); ?></div>
+                                    <div class="font-poppins text-[16px] leading-[1.6] [&_p]:font-poppins text-[#393A40] [&_p]:text-[#393A40] text-[#61636B]"><?= the_excerpt(); ?></div>
                                 </div>
                                 <div>
-                                    <a class="font-poppins hover:decoration-transparent transition-colors text-[#3BA17C] text-[16px] font-semibold leading-normal uppercase tracking-[1.6px] !underline underline-offset-[7px] !decoration-dotted"
+                                    <a class="font-poppins hover:decoration-transparent transition-colors text-[#155B39] text-[16px] font-semibold leading-normal uppercase tracking-[1.6px] !underline underline-offset-[7px] !decoration-dotted"
                                        href="<?= the_permalink(); ?>">read more</a>
                                 </div>
                             </div>

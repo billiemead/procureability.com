@@ -21,6 +21,9 @@
 
 @import 'fancybox';
 
+body, p, a{
+  font-family: 'Poppins'!important;
+}
 #theme-page.master-holder {
   overflow: hidden;
 
