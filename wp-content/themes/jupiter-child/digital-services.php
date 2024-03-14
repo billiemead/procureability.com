@@ -296,7 +296,7 @@
                             <div>
                                 <div class="xl:flex xl:items-center xl:justify-between">
                                     <div class="mb-[24px] xl:mb-0 xl:w-[calc((524/1200)*100%)] <?= ($key % 2 !== 0) ? 'xl:order-2' : null; ?>">
-                                        <div class=" text-[24px] font-[500] mb-[16px] xl:text-[34px] leading-[1.47] xl:font-[600] xl:mb-[24px] <?= ($key % 2 !== 0) ? 'text-[#005E6B]' : 'text-[#00a3b7]'; ?>">
+                                        <div class=" text-[24px] font-[500] mb-[16px] xl:text-[34px] leading-[1.47] xl:font-[600] xl:mb-[24px] <?= ($key % 2 !== 0) ? 'text-[#005E6B]' : 'text-[#006471]'; ?>">
                                             <?= $bottom_content_group_item['title']; ?>
                                         </div>
                                         <div class="[&_p]:text-[14px] [&_p]:xl:text-[18px] [&_p]:leading-[1.6] [&_a]:font-[600] [&_a]:xl:font-[500] [&_a]:!underline [&_a]:!decoration-[transparent] [&_a]:!transition-all [&_a]:!duration-200 [&_a]:!decoration-[#3BA17C] [&_a]:!decoration-dotted [&_a]:!font-poppins [&_a]:!underline-offset-[6px] hover:[&_a]:!decoration-[transparent]">
