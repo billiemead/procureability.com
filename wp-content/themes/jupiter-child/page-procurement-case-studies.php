@@ -13,7 +13,7 @@
                 <div class="grid sm:grid-cols-[auto_312px] gap-[30px]">
                     <div>
                         <div class="max-w-[353px]">
-                            <h1 class="section-h1"><?= get_the_title(); ?></h1>
+                            <h1 class="section-h1 text-[#005E6B]"><?= get_the_title(); ?></h1>
                             <?php $post_cta_content_content = get_field('post_cta_content_content'); ?>
                             <?php if ($post_cta_content_content) : ?>
                                 <div class="[&_p]:!font-poppins [&_p]:text-[14px] [&_p]:leading-[1.4] [&_p]:text-[#393A40] [&_a]:!font-poppins [&_a]:text-[#393A40] [&_a]:!underline [&_a]:hover:decoration-transparent [&_a]:transition-colors">
@@ -26,7 +26,7 @@
                             <div class="mt-[30px]">
                                 <div class="min-w-[0px]">
                                     <a target="<?= $cta_subscribe['target'] ?: '_self'; ?>"
-                                       class="inline-block py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[rgb(87,172,133)] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 duration-[.2s] ease-in-out"
+                                       class="inline-block uppercase  font-poppins py-[13px] px-[19px] text-[14px] box-border leading-[normal] text-[#155B39] hover:text-white hover:bg-[rgb(87,172,133)] border-[rgb(87,172,133)] border-solid border-2 duration-[.2s] ease-in-out"
                                        href="<?= $cta_subscribe['url']; ?>"><?= $cta_subscribe['title']; ?></a>
 
                                 </div>
@@ -78,14 +78,14 @@ $custom_query = new WP_Query($args);
                             <div class="md:w-1/2 px-[15px]">
                                 <div class="md:pl-[20px]">
                                     <a href="<?= get_permalink(); ?>"
-                                       class="font-poppins text-[22px] leading-[1.3] text-[#393A40] font-[600] !underline !decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:!decoration-[#393a40] duration-[.3s] cursor-pointer">
+                                       class="font-poppins text-[#393A40]  text-[22px] leading-[1.3]  font-[600] !underline !decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:!decoration-[#393a40] duration-[.3s] cursor-pointer">
                                         <?php the_title(); ?>
                                     </a>
                                     <div class="font-poppins text-[16px] leading-[1.4] text-[#61636b] mt-[20px]">
                                         <?= get_the_excerpt(); ?>
                                     </div>
                                     <div class="mt-[20px] md:mt-[32px]">
-                                        <a class="font-poppins text-[#3ba17c] text-[16px] leading-[1.27] !underline !decoration-[hsla(0,0%,100%,0)] transition-[text-decoration-color] hover:text-[#3ba17c] hover:!decoration-[#3ba17c] duration-[.3s]"
+                                        <a class="font-poppins hover:decoration-transparent transition-colors text-[#005E6B] text-[16px] font-semibold leading-normal uppercase tracking-[1.6px] !underline underline-offset-[7px] !decoration-dotted"
                                            href="<?= get_permalink(); ?>">Learn More</a>
                                     </div>
                                 </div>
