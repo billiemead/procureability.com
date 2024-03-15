@@ -90,7 +90,7 @@ $insights = get_field('insights');
       </h2>
 
       <div class="cp-statistic__image">
-        <a title="<?= $statistics['image']['alt'] ?>"
+        <a title="<?= $statistics['title'] ?>"
                 href="
         <?=
           !empty($statistics['popup_image']) ? $statistics['popup_image']['url'] : $statistics['image']['url']
@@ -99,7 +99,7 @@ $insights = get_field('insights');
         </a>
       </div>
 
-      <a title="<?= $statistics['image']['alt'] ?>" href="<?= $statistics['download_file']['url'] ?>" class="cp-statistic__button" download>
+      <a title="<?= $statistics['title'] ?>" href="<?= $statistics['download_file']['url'] ?>" class="cp-statistic__button" download>
         <?= $statistics['download_text'] ?>
       </a>
     </div>
