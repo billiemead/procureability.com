@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "950de58d648444a16e00d83557321816",
+    "content-hash": "42229472f3d90c4dd948389ba66f6f6e",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1163,6 +1163,40 @@
             "time": "2022-11-07T04:45:06+00:00"
         },
         {
+            "name": "procureability-com/change-wp-admin-login",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/change-wp-admin-login.git",
+                "reference": "20e38c9264b88ecdd70f53e0c213beb3450056ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/change-wp-admin-login/zipball/20e38c9264b88ecdd70f53e0c213beb3450056ad",
+                "reference": "20e38c9264b88ecdd70f53e0c213beb3450056ad",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Alexander Holovko",
+                    "email": "holovko.works@gmail.com"
+                }
+            ],
+            "description": "Change WP Admin Login",
+            "homepage": "https://github.com/procureability-com/change-wp-admin-login",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/change-wp-admin-login/tree/main",
+                "issues": "https://github.com/ProcureAbility-com/change-wp-admin-login/issues"
+            },
+            "time": "2024-03-12T09:07:09+00:00"
+        },
+        {
             "name": "procureability-com/dflip",
             "version": "1.7.32",
             "source": {
@@ -1605,6 +1639,41 @@
             "time": "2022-09-20T01:21:39+00:00"
         },
         {
+            "name": "procureability-com/login-ip-country-restriction",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/login-ip-country-restriction.git",
+                "reference": "1da0053789fd6843856a3e807858b0ff8629db43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/login-ip-country-restriction/zipball/1da0053789fd6843856a3e807858b0ff8629db43",
+                "reference": "1da0053789fd6843856a3e807858b0ff8629db43",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Billie Mead",
+                    "homepage": "https://billiemead.com",
+                    "email": "billie@billiemead.com"
+                }
+            ],
+            "description": "Login Ip Country Restriction",
+            "homepage": "https://github.com/procureability-com/login-ip-country-restriction",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/login-ip-country-restriction/tree/main",
+                "issues": "https://github.com/ProcureAbility-com/login-ip-country-restriction/issues"
+            },
+            "time": "2024-03-12T08:59:26+00:00"
+        },
+        {
             "name": "procureability-com/mega-addons-for-visual-composer-pro",
             "version": "10.4.3",
             "source": {
@@ -1910,6 +1979,40 @@
                 "issues": "https://github.com/ProcureAbility-com/wp-migrate-db-pro/issues"
             },
             "time": "2022-10-22T21:23:55+00:00"
+        },
+        {
+            "name": "procureability-com/wp-security-audit-log",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ProcureAbility-com/wp-security-audit-log.git",
+                "reference": "312e7daa0544359e6f92e708621ca0fb956f3fec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ProcureAbility-com/wp-security-audit-log/zipball/312e7daa0544359e6f92e708621ca0fb956f3fec",
+                "reference": "312e7daa0544359e6f92e708621ca0fb956f3fec",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Alexander Holovko",
+                    "email": "holovko.works@gmail.com"
+                }
+            ],
+            "description": "Wp Security Audit Log",
+            "homepage": "https://github.com/procureability-com/wp-security-audit-log",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/ProcureAbility-com/wp-security-audit-log/tree/main",
+                "issues": "https://github.com/ProcureAbility-com/wp-security-audit-log/issues"
+            },
+            "time": "2024-03-12T09:06:37+00:00"
         },
         {
             "name": "procureability-com/wp-timelines",
@@ -5877,11 +5980,13 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "procureability-com/wp-migrate-db-pro": 20
+        "procureability-com/wp-migrate-db-pro": 20,
+        "procureability-com/login-ip-country-restriction": 20,
+        "procureability-com/wp-security-audit-log": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
