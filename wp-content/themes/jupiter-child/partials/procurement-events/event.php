@@ -4,7 +4,7 @@ $event = $args['event'] ? $args['event'] : [];
 
 ?>
 
-<div class="mb-[20px] sm:mb-[40px] after:content-[''] after:block after:clear-both after:invisible after:overflow-hidden after:w-0 after:h-0">
+<div class="mb-[20px] sm:mb-[40px] after:content-[''] after:block after:clear-both after:invisible after:overflow-hidden after:w-0 after:h-0 [&_a]:text-[#005E6B] [&_p]:text-[#393A40] [&_li]:text-[#393A40] [&_a]:font-[600]">
     <?php if (isset($event['image']['url']) && !empty($event['image']['url'])): ?>
         <div class="mb-[20px]">
             <img
