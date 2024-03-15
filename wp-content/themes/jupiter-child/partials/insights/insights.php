@@ -47,7 +47,7 @@
                                     <!--back-->
                                     <!--front-->
                                     <div class="absolute inset-0 rotate-0 backface-hidden overflow-hidden p-[40px] flex flex-col bg-cover bg-center bg-no-repeat rounded-[5px]"
-                                         style="background-image: linear-gradient(45deg, rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>) -15%, transparent 55%), url('<?= $insight['image']['url']; ?>');"
+                                         style="background-image: linear-gradient(45deg, rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>) -16.1%, transparent 55%), url('<?= $insight['image']['url']; ?>');"
                                     >
                                         <div class="mt-auto">
                                             <div class="font-poppins text-[30px] leading-[1.35] text-white font-semibold"><?= $insight['title']; ?></div>
@@ -70,9 +70,9 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <a class="inline-block pt-[11px] pb-[8px] px-[22px] text-center rounded-[3px] bg-[#3BA17C] border-2 border-solid group border-[#3BA17C] hover:bg-transparent transition-colors duration-500"
+                                    <a class="inline-block pt-[11px] pb-[8px] px-[22px] text-center rounded-[3px] bg-[#155B39] border-2 border-solid group border-[#155B39] hover:bg-transparent transition-colors duration-500"
                                        href="<?= $insights_cta['button']['url']; ?>">
-                                        <span class="font-poppins text-white text-[18px] leading-[1.3] font-semibold tracking-[0.1em] uppercase group-hover:text-[#3BA17C] transition-colors duration-500"><?= $insights_cta['button']['title']; ?></span>
+                                        <span class="font-poppins text-white text-[18px] leading-[1.3] font-semibold tracking-[0.1em] uppercase group-hover:text-[#155B39] transition-colors duration-500"><?= $insights_cta['button']['title']; ?></span>
                                     </a>
                                 </div>
                             </div>
