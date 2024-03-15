@@ -1,6 +1,6 @@
 <div class="mb-[35px] text-center">
     <a
-        class="inline-block py-[12px] px-[30px] bg-[#3BA17C] rounded-[3px] group relative"
+        class="inline-block py-[12px] px-[30px] bg-[#155B39] rounded-[3px] group relative"
         href="/insights/subscribe/"
         title="Subscribe to Insights"
     >

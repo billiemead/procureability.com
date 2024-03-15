@@ -1,13 +1,12 @@
 <div class="flex mb-[50px] max-w-[960px] mx-auto procurement-events__wrapper px-[15px] sm:px-0">
     <div class="flex-initial w-[100%] sm:w-[66.66666667%] px-[15px] box-border procurement-events__column">
         <h1
-                class="mt-[50px]
-                        text-[#ef932f]
+                class="mt-[50px] text-[#005E6B]
                         text-[25px]
                         font-medium"
         ><?= get_the_title() ?></h1>
 
-        <div class="text-[18px] mb-[25px]"><?= get_the_content() ?></div>
+        <div class="text-[18px] mb-[25px] [&_p]:text-[#393A40]"><?= get_the_content() ?></div>
 
         <?php /** SUBSCRIBE BUTTON */ ?>
         <?php get_template_part('partials/procurement-events/subscribe-button'); ?>
