@@ -56,7 +56,8 @@ $hero_button = get_field('hero_button');
                             [&_h2]:mb-[16px]
                             [&_p]:!font-poppins
                             [&_p]:text-[#393A40]
-                            [&_p]:mb-[16px]">
+                            [&_p]:mb-[16px]
+                            [&_strong]:!text-[#393A40]">
                     <?php the_content(); ?>
                 </div>
             </div>
