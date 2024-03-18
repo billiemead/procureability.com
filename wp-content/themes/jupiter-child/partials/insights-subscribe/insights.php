@@ -46,11 +46,11 @@
         <?php endif; ?>
         <?php if ($insights_button && $form_form) : ?>
             <div class="text-center mt-[56px]">
-                <button class="inline-block pt-[13px] pb-[11px] lg:p-[16px] max-w-[300px] lg:max-w-[420px] w-full uppercase bg-[#3BA17C] rounded-[3px] group relative box-border border-none"
+                <button class="inline-block bg-[#155B39] pt-[13px] pb-[11px] lg:p-[16px] max-w-[300px] lg:max-w-[420px] w-full uppercase  rounded-[3px] group relative box-border border-none"
                         data-x-data="{}"
                         data-x-on:click="document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' })"
                 >
-                    <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
+                    <div class="absolute  inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
                          style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/button-bg-pattern.svg')"
                     ></div>
                     <span class="font-poppins text-white text-[16px] lg:text-[20px] leading-[1.5] font-semibold tracking-[0.1em] uppercase"><?= $insights_button['title']; ?></span>

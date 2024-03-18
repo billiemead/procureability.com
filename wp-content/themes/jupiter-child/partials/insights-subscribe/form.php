@@ -36,7 +36,7 @@
                         <div><?= do_shortcode($form_form); ?></div>
                         <?php if ($form_text_under_the_form) : ?>
                             <div class="mt-[16px]">
-                                <div class="[&_p]:mb-0 [&_p]:!font-poppins [&_p]:text-[14px] [&_p]:text-[#686868] [&_p]:leading-normal [&_a]:text-[#0098AE] [&_a]:font-medium [&_a:hover]:text-[#0098AE] [&_a]:!underline [&_a]:!decoration-dotted [&_a]:underline-offset-4 [&_a:hover]:decoration-transparent"><?= $form_text_under_the_form; ?></div>
+                                <div class="[&_p]:mb-0 [&_p]:!font-poppins [&_p]:text-[14px] [&_p]:text-[#686868] [&_p]:leading-normal [&_a]:text-[#155B39] [&_a]:font-medium [&_a:hover]:text-[#0098AE] [&_a]:!underline [&_a]:!decoration-dotted [&_a]:underline-offset-4 [&_a:hover]:decoration-transparent"><?= $form_text_under_the_form; ?></div>
                             </div>
                         <?php endif; ?>
                     </div>
