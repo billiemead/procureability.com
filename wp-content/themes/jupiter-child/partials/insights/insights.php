@@ -47,10 +47,10 @@
                                     <!--back-->
                                     <!--front-->
                                     <div class="absolute inset-0 rotate-0 backface-hidden overflow-hidden p-[40px] flex flex-col bg-cover bg-center bg-no-repeat rounded-[5px]"
-                                         style="background-image: linear-gradient(45deg, rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>) -16.1%, transparent 55%), url('<?= $insight['image']['url']; ?>');"
+                                         style="background-image: url('<?= $insight['image']['url']; ?>');"
                                     >
                                         <div class="mt-auto">
-                                            <div class="font-poppins text-[30px] leading-[1.35] text-white font-semibold"><?= $insight['title']; ?></div>
+<!--                                            <div class="font-poppins text-[30px] leading-[1.35] text-white font-semibold">--><?//= $insight['title']; ?><!--</div>-->
                                         </div>
                                     </div>
                                     <!--front-->
