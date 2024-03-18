@@ -116,6 +116,15 @@ while (have_posts()) :
     }
     ?>
 
+    <?php $ctaType2Show = get_field('show_cta_type_2'); ?>
+
+
+    <?php if ($ctaType2Show): ?>
+        <?php /** YOUTUBE VIDEO */ ?>
+        <?php get_template_part('partials/custom-single-post/cta-type-2'); ?>
+        <?php /** !YOUTUBE VIDEO */ ?>
+    <?php endif; ?>
+
 <?php endwhile;
 
 get_footer();
