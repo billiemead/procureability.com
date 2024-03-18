@@ -15,11 +15,13 @@ $ctaButtonLink = get_field('button_link_cta_type_2');
             class="absolute w-[100%] h-[100%] bg-no-repeat bg-cover top-0 left-0 z-0 webinar-cta-type-2__bg"
             style="background-image: url(<?= $ctaBanner['url'] ?>);"
         ></div>
-        <div class="max-w-[1140px] mx-auto px-[15px] relative z-10">
-            <div class="max-w-[100%] md:max-w-[610px] webinar-cta-type-2__content">
-                <h2 class="font-poppins text-[36px] text-[#FFFFFF] font-semibold leading-[1.4] mb-[20px]"><?= $ctaTitle ?></h2>
+        <div class="max-w-[1200px] mx-auto px-[15px] relative z-10">
+            <div class="max-w-[100%] md:max-w-[610px] lg:max-w-[722px] webinar-cta-type-2__content">
+                <div class="max-w-[100%] md:max-w-[610px]">
+                    <h2 class="font-poppins text-[36px] text-[#FFFFFF] font-semibold leading-[1.4] mb-[20px]"><?= $ctaTitle ?></h2>
+                </div>
 
-                <div class="text-[#fff] font-poppins text-[18px] font-normal leading-[1.6] mb-[40px]">
+                <div class="text-[#fff] font-poppins text-[20px] font-normal leading-[1.6] mb-[40px]">
                     <?= $ctaText ?>
                 </div>
 
