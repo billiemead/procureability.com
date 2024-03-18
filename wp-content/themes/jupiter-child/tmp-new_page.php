@@ -117,7 +117,7 @@ $form_shortcode = get_field('form_shortcode');
 
                     <div class="custom-page__body-wrapper">
 
-                        <h3 style="font-size: 31px;color: #f7941f;text-align: left;font-family:Roboto;font-weight:700;font-style:normal" class="vc_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1567796018869 wpb_start_animation animated">LEADERSHIP</h3>
+                        <h3 style="font-size: 31px;color: #f7941f;text-align: left;font-weight:700;font-style:normal" class="vc_custom_heading wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1567796018869 wpb_start_animation animated">LEADERSHIP</h3>
 
                         <?php echo do_shortcode($leadership_shortcode); ?>
 

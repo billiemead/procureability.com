@@ -21,9 +21,10 @@
 
 @import 'fancybox';
 
-body, p, a{
-  font-family: 'Poppins'!important;
+body, p, a {
+  font-family: 'Poppins' !important;
 }
+
 #theme-page.master-holder {
   overflow: hidden;
 
@@ -31,6 +32,7 @@ body, p, a{
     min-height: calc(100vh - 686px);
   }
 }
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -144,4 +146,30 @@ body, p, a{
 
 .mejs-time {
   padding-bottom: 10px;
+}
+
+.page-newsroom {
+  .master-holder {
+    h2 {
+      a {
+        color: #393A40;
+      }
+    }
+    .mk-text-block {
+      p {
+        color: #393A40;
+      }
+      a{
+        color: #155B39;
+        font-weight: 600;
+      }
+    }
+    .vc_separator .vc_sep_holder .vc_sep_line {
+      border-color: #155B39!important;
+    }
+    .vc_btn3-style-outline-custom {
+      color: #155B39!important;
+      font-weight: 600;
+    }
+  }
 }
