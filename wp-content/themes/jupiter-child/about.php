@@ -16,8 +16,8 @@
     <?php while (have_posts()) : the_post(); ?>
         <section class="pt-[20px] md:pt-[50px]">
             <div class="max-w-[1000px] px-[15px] mx-auto">
-                <h1 class="text-[25px] text-[#ef932f] font-roboto font-[700]"><?= get_the_title(); ?></h1>
-                <div class="cms-content">
+                <h1 class="text-[25px] text-[#005E6B] font-[700]"><?= get_the_title(); ?></h1>
+                <div class="cms-content [&_p]:text-[#393A40]">
                     <?php the_content(); ?>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                 <?= $cta_text; ?>
             </h2>
             <div class="text-center">
-                <a class="inline-block py-[11px] px-[20px] text-[14px] text-[#24B9CD] bg-white border border-[#24B9CD] border-solid rounded-[3px] hover:bg-[#D1D1D1] hover:text-[#24B9CD] active:relative active:top-[1px]"
+                <a class="inline-block py-[11px] px-[20px] text-[14px] text-[#155B39] font-[600] bg-white border border-[#24B9CD] border-solid rounded-[3px] hover:bg-[#D1D1D1] hover:text-[#24B9CD] active:relative active:top-[1px]"
                    href="<?= $cta_button_url; ?>"><?= $cta_button_text; ?></a>
             </div>
         </div>
@@ -135,7 +135,7 @@
                 <?php if ($experts_title && $experts_text) : ?>
                     <div class="px-[15px]">
                         <h3 class="text-[25px] leading-[1.66] mb-[20px]"><?= $experts_title; ?></h3>
-                        <div><?= $experts_text; ?></div>
+                        <div class="[&_p]:text-[#393A40]"><?= $experts_text; ?></div>
                     </div>
                 <?php endif; ?>
                 <?php if ($quotes_title && $quotes_quotes) : ?>
@@ -144,7 +144,7 @@
                         <?php if ($quotes_quotes) : ?>
                             <div class="space-y-[20px]">
                                 <?php foreach ($quotes_quotes as $quotes_quote) : ?>
-                                    <div class="py-[15px] pr-[16px] pl-[70px] bg-[rgba(0,0,0,.05)] relative">
+                                    <div class="py-[15px] pr-[16px] pl-[70px] bg-[rgba(0,0,0,.05)] relative [&_p]:text-[#393A40]">
                                         <svg class="absolute top-[20px] left-[20px] w-[32px] h-[35px]"
                                              xmlns="http://www.w3.org/2000/svg" fill="#ddd"
                                              viewBox="0 0 1664 1792">
