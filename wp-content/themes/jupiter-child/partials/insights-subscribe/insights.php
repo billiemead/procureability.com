@@ -18,7 +18,7 @@
                     <?php if ($insight['post']) : ?>
                         <div class="group/card">
                             <div class="mb-[20px]">
-                                <a href="<?= get_the_permalink($insight['post']); ?>"
+                                <a href="<?= get_the_permalink($insight['post']); ?>" title=" <?= get_the_title($insight['post']); ?>"
                                    class="block pt-[52.47%] rounded-[5px] overflow-hidden relative group z-20"
                                 >
                                     <div class="absolute bg-cover bg-no-repeat bg-center inset-0 group-hover:scale-110 transition-transform ease-in-out duration-300 z-10"
@@ -34,7 +34,7 @@
                                 </div>
                             <?php endif; ?>
                             <div>
-                                <a href="<?= get_the_permalink($insight['post']); ?>"
+                                <a href="<?= get_the_permalink($insight['post']); ?>" title=" <?= get_the_title($insight['post']); ?>"
                                    class="font-poppins text-[22px] leading-[1.4] font-semibold text-[#393A40] group-hover/card:text-[#0098AE]">
                                     <?= get_the_title($insight['post']); ?>
                                 </a>
