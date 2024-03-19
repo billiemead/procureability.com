@@ -29,7 +29,7 @@ get_header(); ?>
     </div>
 
     <?php if ($statBoxShow): ?>
-        <div class="mb-[32px] rounded-[7.25px] border border-solid border-[rgba(0,152,174,0.40)] bg-[#fff] px-[20px] py-[20px] text-[#393A40] font-poppins text-[16px] font-medium leading-[1.5]">
+        <div class="mb-[32px] rounded-[7.25px] border border-solid border-[rgba(0,152,174,0.40)] bg-[#fff] px-[20px] py-[20px] text-[#393A40] font-poppins text-[16px] font-medium leading-[1.5] [&_sup]:relative [&_sup]:top-0 [&_sup]:text-[8px]">
             <span class="text-[24px] text-[#0098AE]"><?= $statBoxPercentage ?></span> <?= $statBoxText ?>
         </div>
     <?php endif; ?>
