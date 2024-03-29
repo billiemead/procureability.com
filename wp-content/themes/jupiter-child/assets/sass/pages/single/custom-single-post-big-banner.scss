@@ -70,6 +70,7 @@
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
     font-family: Poppins, sans-serif;
+
     &:hover {
       background-color: #fff;
       color: #0098ae;
@@ -278,7 +279,8 @@ img {
     @media (min-width: 767.9px) {
       font-size: 34px;
     }
-    br{
+
+    br {
       display: none;
       @media (min-width: 1024.9px) {
         display: block;
@@ -413,6 +415,36 @@ img {
 
 .master-holder {
   .custom-post {
+
+    .custom-text-border {
+      border-radius: 5px;
+      border: 0.4px solid #0098AE;
+      background: rgba(0, 152, 174, 0.00);
+      padding: 24px 40px;
+
+      p {
+        color: var(--Text-Description, #61636B);
+      }
+
+      &:last-child {
+
+        max-width: 99%;
+        margin-bottom: 0;
+      }
+    }
+
+    .custom-blockquote {
+      color: #777;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26.56px; /* 166% */
+
+      border-left: 2px solid #0098AE;
+      padding: 24px 32px;
+      margin-top: -5px;
+    }
 
     .custom-desc {
       border-left: 2px solid #0098AE;
