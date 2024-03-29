@@ -14,6 +14,10 @@
                 <?php /** VIDEO POSTER */ ?>
                 <?php get_template_part('partials/single-podcast/partials/video-poster'); ?>
                 <?php /** !VIDEO POSTER */ ?>
+
+                <?php /** VIDEO POSTER */ ?>
+                <?php get_template_part('partials/single-podcast/partials/banner'); ?>
+                <?php /** !VIDEO POSTER */ ?>
             </div>
         </div>
     </div>
