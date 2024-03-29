@@ -415,6 +415,34 @@ img {
 
 .master-holder {
   .custom-post {
+    .table-container {
+      overflow-x: auto;
+      $table-bg-color-1: rgba(0, 152, 174, 0.07);;
+      $table-bg-color-2: #ccffcc;
+      $table-bg-color-3: #ccccff;
+      table {
+        background: rgba(97, 99, 107, 0.05);
+        width: 100%;
+        border-collapse: collapse;
+
+        td {
+          padding: 10px;
+          border: 1px solid #000;
+        }
+
+        .col1 {
+          background: rgba(0, 152, 174, 0.07);
+        }
+
+        .col2 {
+          background: rgba(239, 79, 37, 0.07);
+        }
+
+        .col3 {
+          background: rgba(59, 161, 124, 0.07);
+        }
+      }
+    }
 
     .custom-text-border {
       border-radius: 5px;
