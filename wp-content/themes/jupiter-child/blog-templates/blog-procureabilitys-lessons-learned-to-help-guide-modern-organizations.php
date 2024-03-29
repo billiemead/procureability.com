@@ -45,6 +45,7 @@ $contentBlock8Content = get_field('content_block_8_content');
 $authorPhoto = get_field('author_photo');
 $authorName = get_field('author_name');
 $authorLink = get_field('author_link');
+$authorPosition = get_field('author_position');
 
 $contributorsList = get_field('contributors_list');
 
@@ -71,7 +72,7 @@ $contactBackgroundImage = get_field('cta_background_image');
     ]); ?>
 </section>
 
-<section class="max-w-[970px] w-[100%] px-[15px] mx-auto box-border [&_a]:border-b [&_a]:border-[#0098AE] [&_a]:border-dotted [&_a]:text-[#0098AE] [&_a:hover]:border-b-0 [&_sup]:text-[10px] [&_sup]:top-[1px]">
+<section class="max-w-[970px] w-[100%] px-[15px] mx-auto box-border [&_ul]:text-[16px]  [&_li]:text-[16px] [&_a]:border-b [&_a]:border-[#0098AE] [&_a]:border-dotted [&_a]:text-[#0098AE] [&_a:hover]:border-b-0 [&_sup]:text-[10px] [&_sup]:top-[1px]">
     <div class="mb-[56px]">
         <?php get_template_part('blog-templates/partials/blog', 'text-block', ['content' => $contentBlock1Text]); ?>
     </div>
@@ -199,7 +200,8 @@ $contactBackgroundImage = get_field('cta_background_image');
             <?php get_template_part('blog-templates/partials/blog', 'author', [
                 'author_photo' => $authorPhoto,
                 'author_name' => $authorName,
-                'author_link' => $authorLink
+                'author_link' => $authorLink,
+                'author_position' => $authorPosition
             ]); ?>
         </div>
 

@@ -10,7 +10,7 @@
             >
         </div>
 
-        <div>
+        <div class="flex flex-col">
             <a
                     class="font-poppins text-[14px] font-medium leading-[1.5] tracking-[-0.28px] mb-[4px] hover:!bg-none"
                     style="
@@ -23,7 +23,9 @@
                     title="<?= $args['author_name'] ?>"
                     target="_blank"
             ><?= $args['author_name'] ?></a>
-
+            <?php if ($args['author_position']){?>
+                <span><?= $args['author_position'] ?></span>
+            <?php } ?>
             <span class="text-[#777] font-poppins text-[14px] font-normal leading-[1.5] tracking-[-0.28px] block"><?= $args['author_position'] ?></span>
         </div>
     </div>
