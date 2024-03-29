@@ -118,6 +118,7 @@ while (have_posts()) :
                 <?php } ?>
             </div>
         </section>
+
         <?php
     }
     ?>
