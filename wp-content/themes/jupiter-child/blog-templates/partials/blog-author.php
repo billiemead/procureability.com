@@ -23,9 +23,6 @@
                     title="<?= $args['author_name'] ?>"
                     target="_blank"
             ><?= $args['author_name'] ?></a>
-            <?php if ($args['author_position']){?>
-                <span><?= $args['author_position'] ?></span>
-            <?php } ?>
             <span class="text-[#777] font-poppins text-[14px] font-normal leading-[1.5] tracking-[-0.28px] block"><?= $args['author_position'] ?></span>
         </div>
     </div>
