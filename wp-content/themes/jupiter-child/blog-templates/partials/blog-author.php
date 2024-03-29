@@ -18,7 +18,8 @@
                         background-image: url(/wp-content/themes/jupiter-child/assets/img/border-bottom-dotted.svg);
                         background-position: bottom;
                         background-repeat: repeat-x;
-                        background-size: auto;"
+                        background-size: auto;
+                        max-width: 65%"
                     href="<?= $args['author_link'] ?>"
                     title="<?= $args['author_name'] ?>"
                     target="_blank"
