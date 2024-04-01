@@ -1,0 +1,1 @@
+<h2 class="text-[#393A40] font-poppins text-[24px] font-semibold leading-[1.5] mb-[24px]"><?= $args['title'] ?></h2>
