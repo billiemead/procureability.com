@@ -69,7 +69,10 @@ function procureability_enqueue_styles()
     }
     /*custom single big banner style*/
     if (is_page_template('custom-single-post-big-banner.php')) {
-        wp_register_style( 'custom-single-post-big-banner', get_stylesheet_directory_uri() . '/dist/custom-single-post-big-banner.css', array(), filemtime(get_stylesheet_directory() . '/dist/custom-single-post.css'));
+        $css_file_path = get_stylesheet_directory() . '/dist/custom-single-post-big-banner.css';
+        $css_file_uri = get_stylesheet_directory_uri() . '/dist/custom-single-post-big-banner.css';
+        $css_file_version = filemtime($css_file_path);
+        wp_register_style('custom-single-post-big-banner', $css_file_uri, array(), $css_file_version);
         wp_enqueue_style('custom-single-post-big-banner');
     }
 

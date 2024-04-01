@@ -53,16 +53,11 @@ while (have_posts()) :
                 <?php
                 the_content();
                 ?>
-
             </div>
         </div>
-
-
     </section>
 
-
     <?php
-
     $end_post_cta_block_show = get_field('end_post_cta_block_show');
     if ($end_post_cta_block_show) {
 
@@ -129,4 +124,3 @@ while (have_posts()) :
 
 get_footer();
 ?>
-
