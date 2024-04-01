@@ -1,5 +1,5 @@
 <section class="bg-[#0098ae]">
-    <div class="pt-[40px] pb-[45px] md:py-[100px] bg-left sm:bg-center bg-cover bg-no-repeat"
+    <div class="pt-[40px] pb-[45px] md:py-[100px] xl:py-[170px] xxl:py-[240px] bg-left sm:bg-center bg-cover bg-no-repeat"
          style="background-image: url('<?= $args['background_image']['url'] ?>')">
         <div class="max-w-[1200px] mx-auto px-[15px]">
             <div class="text-left font-poppins text-[#393A40] text-[32px] sm:text-[40px] md:text-[34px] leading-[1.4] font-[600] mb-[24px] w-[100%] sm:w-[568px]">
