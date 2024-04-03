@@ -51,7 +51,7 @@
                 <?php endforeach; ?>
                 <?php wp_reset_postdata(); ?>
                 <?php if ($cta_title && $cta_text && $cta_button) : ?>
-                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 sm:pr-[26px] mb-[42px] box-border">
+                    <div class="flex w-full sm:w-6/12 md:w-8/12 lg:w-6/12 sm:pr-[26px] mb-[42px] box-border">
                         <div class="max-w-[508px] m-auto">
                             <div class="text-center mb-[16px]">
                                 <div class="font-poppins text-[42px] leading-[1.38] font-medium text-[#3BA17C]">
