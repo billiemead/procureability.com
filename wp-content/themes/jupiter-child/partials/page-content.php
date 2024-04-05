@@ -12,7 +12,11 @@
                     [&_p]:text-[#393A40]
                     [&_p]:mb-[16px]
                     [&_a]:text-[#005E6B]
-                    [&_a]:font-poppins"
+                    [&_a]:font-poppins
+                    [&_li]:text-[#393A40]
+                    [&_li]:font-poppins
+                    font-poppins
+                    text-[#393A40]"
         >
             <?php the_content(); ?>
         </div>
