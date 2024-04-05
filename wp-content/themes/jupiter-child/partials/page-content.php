@@ -16,7 +16,9 @@
                     [&_li]:text-[#393A40]
                     [&_li]:font-poppins
                     font-poppins
-                    text-[#393A40]"
+                    text-[#393A40]
+                    [&_img]:h-auto
+                    [&_img]:max-w-[100%]"
         >
             <?php the_content(); ?>
         </div>
