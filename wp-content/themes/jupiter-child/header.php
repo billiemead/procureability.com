@@ -8,6 +8,20 @@
  * @package Jupiter
  */
 
+$headerSettingsFadeGradientEnable = false;
+$postType = get_post_type();
+if (
+    $postType === 'post' ||
+    $postType === 'page' ||
+    $postType === 'leadership' ||
+    $postType === 'podcast' ||
+    $postType === 'webinar'
+) {
+    $headerSettingsFadeGradientEnable = get_field('header_settings_fade_gradient_enable');
+    $headerSettingsFadeGradientColor = get_field('header_settings_fade_gradient_color');
+    $headerSettingsFadeGradientLength = get_field('header_settings_fade_gradient_length');
+}
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> itemscope itemtype="http://schema.org/WebPage">
@@ -47,7 +61,10 @@ if (function_exists('wp_body_open')) {
                 data-x-on:scroll.window="scrollHandler"
         >
             <div class="h-[76px] hidden" data-x-bind:class="{'xl:block': !isTransparent}"></div>
-            <div class="xl:!fixed top-0 left-0 w-full h-[76px] relative"
+
+            <div
+                class="xl:!fixed top-0 left-0 w-full h-[76px] relative"
+                style="<?= $headerSettingsFadeGradientEnable ? 'background: linear-gradient(180deg, ' . $headerSettingsFadeGradientColor . ' ' . $headerSettingsFadeGradientLength . '%, transparent);' : '' ?>"
             >
                 <div data-x-bind:class="{'xl:!opacity-100' : sticky || !isTransparent }"
                      class="xl:opacity-0 transition-opacity ease-in-out duration-200 absolute inset-0 bg-white border-b border-solid border-[rgba(97,99,107,0.2)] shadow-[0_4px_8px_rgba(0,0,0,.15)] xl:shadow-none"

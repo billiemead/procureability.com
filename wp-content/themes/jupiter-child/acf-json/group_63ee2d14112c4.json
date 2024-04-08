@@ -222,26 +222,6 @@
             "append": ""
         },
         {
-            "key": "field_654e1d6d93d00",
-            "label": "Text under the form",
-            "name": "form_text_under_the_form",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
             "key": "field_63ee2dd608b4f",
             "label": "Image",
             "name": "form_image",
@@ -369,6 +349,27 @@
                     "parent_repeater": "field_63ee2e1308b52"
                 },
                 {
+                    "key": "field_66102a7e803dd",
+                    "label": "Category Link",
+                    "name": "category_link",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_63ee2e1308b52"
+                },
+                {
                     "key": "field_63ee2e8108b55",
                     "label": "Color",
                     "name": "color",
@@ -424,5 +425,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699618198
+    "modified": 1712335507
 }

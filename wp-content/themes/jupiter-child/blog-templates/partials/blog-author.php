@@ -10,7 +10,7 @@
             >
         </div>
 
-        <div>
+        <div class="flex flex-col">
             <a
                     class="font-poppins text-[14px] font-medium leading-[1.5] tracking-[-0.28px] mb-[4px] hover:!bg-none"
                     style="
@@ -18,12 +18,12 @@
                         background-image: url(/wp-content/themes/jupiter-child/assets/img/border-bottom-dotted.svg);
                         background-position: bottom;
                         background-repeat: repeat-x;
-                        background-size: auto;"
+                        background-size: auto;
+                        max-width: 65%"
                     href="<?= $args['author_link'] ?>"
                     title="<?= $args['author_name'] ?>"
                     target="_blank"
             ><?= $args['author_name'] ?></a>
-
             <span class="text-[#777] font-poppins text-[14px] font-normal leading-[1.5] tracking-[-0.28px] block"><?= $args['author_position'] ?></span>
         </div>
     </div>
