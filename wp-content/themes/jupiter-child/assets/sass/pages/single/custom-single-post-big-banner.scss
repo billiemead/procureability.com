@@ -468,9 +468,11 @@ img {
             font-weight: 500;
             line-height: 120%; /* 21.6px */
             padding: 31px;
+
             img {
               margin-bottom: 12px;
             }
+
             &:nth-child(1) {
               background: var(--Main-Blue, #0098AE);
             }
@@ -975,7 +977,8 @@ img {
     .links {
       display: flex;
       flex-direction: column;
-      p{
+
+      p {
         margin-bottom: 5px;
       }
     }
@@ -996,6 +999,7 @@ img {
     .custom__author {
       margin-top: 13px;
       margin-bottom: 32px;
+
       img {
         border-radius: 50%;
         margin-right: 12px;
@@ -1060,6 +1064,5 @@ img {
     }
   }
 }
-
 
 
