@@ -491,7 +491,7 @@ get_header();
                 <div class="cp-insights__list text-left row owl-carousel js-insights-slider">
                     <?php foreach ($insights as $item) : ?>
                         <div class="cp-insights__col col-lg-4">
-                            <a href="<?= get_permalink($item->ID) ?>" class="cp-insights__item">
+                            <a href="<?= get_permalink($item->ID) ?>" class="cp-insights__item relative pb-[30px]">
                                 <div class="cp-insights__image">
                                     <img src="<?= get_the_post_thumbnail_url($item->ID) ?>"
                                          alt="<?= $item->post_title ?>">
@@ -499,7 +499,7 @@ get_header();
 
                                 <div class="cp-insights__heading"><?= $item->post_title ?></div>
 
-                                <div class="cp-insights__more text-[#005E6B]">Read More</div>
+                                <div class="absolute bottom-0 font-poppins text-[#005E6B] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500">Read More</div>
                             </a>
                         </div>
                     <?php endforeach; ?>

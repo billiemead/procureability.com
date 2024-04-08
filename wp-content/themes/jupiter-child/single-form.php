@@ -16,7 +16,7 @@
     <?php while (have_posts()) : the_post(); ?>
         <section class="py-[50px]">
             <div class="mx-auto px-[15px] max-w-[500px]">
-                <h1 class="font-roboto text-[25px] text-[#ef932f] leading-[1.3] font-bold mb-[16px]"><?= get_the_title(); ?></h1>
+                <h1 class="font-poppins text-[25px] text-[#ef932f] leading-[1.3] font-bold mb-[16px]"><?= get_the_title(); ?></h1>
                 <div class="cms-content">
                     <?php the_content(); ?>
                 </div>

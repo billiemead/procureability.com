@@ -27,10 +27,15 @@
                             </div>
                             <?php if ($insight['category']) : ?>
                                 <div class="mb-[12px]">
-                                    <div class="font-poppins text-[12px] leading-[1.2] tracking-[0.2em] font-medium uppercase"
-                                         style="color: rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>)">
+                                    <a
+                                        href="<?= $insight['category_link'] ?>"
+                                        class="font-poppins text-[12px] leading-[1.2] tracking-[0.2em] font-medium uppercase"
+                                        style="color: rgba(<?= $insight['color']['red']; ?>, <?= $insight['color']['green']; ?>, <?= $insight['color']['blue']; ?>, <?= $insight['color']['alpha']; ?>)"
+                                        title="<?= $insight['category'] ?>"
+                                        target="_blank"
+                                    >
                                         <?= $insight['category']; ?>
-                                    </div>
+                                    </a>
                                 </div>
                             <?php endif; ?>
                             <div>

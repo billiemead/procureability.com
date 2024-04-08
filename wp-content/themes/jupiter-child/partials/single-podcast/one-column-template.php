@@ -61,7 +61,7 @@ $subscribeButtonUrl = get_field('subscribe_button_url');
                         href="<?= $subscribeButtonUrl ?>"
                         title="<?= $subscribeButtonText ?>"
                         target="_blank"
-                        class="text-[14px] text-[#57ac85] font-roboto py-[9px] px-[18px] my-[25px] mx-0 bg-transparent rounded-0 border-2 border-solid border-[#57ac85] inline-block cursor-pointer hover:bg-[#57ac85] hover:text-[#ffffff]"
+                        class="text-[14px] text-[#57ac85] font-poppins py-[9px] px-[18px] my-[25px] mx-0 bg-transparent rounded-0 border-2 border-solid border-[#57ac85] inline-block cursor-pointer hover:bg-[#57ac85] hover:text-[#ffffff]"
                     ><?= $subscribeButtonText ?></a>
                 </p>
             <?php endif; ?>
