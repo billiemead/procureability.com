@@ -1,6 +1,7 @@
 <?php $recruitment_process_title = get_field('recruitment_process_title'); ?>
 <?php $recruitment_process_leading = get_field('recruitment_process_leading'); ?>
 <?php $recruitment_process_steps = get_field('recruitment_process_steps'); ?>
+<?php $recruitment_process_steps_image = get_field('recruitment_process_steps_image'); ?>
 
 <section class="pt-[30px] lg:pt-[80px]">
     <div class="max-w-[636px] xl:max-w-[742px] px-[34px] md:px-0 mx-auto mb-[50px]">
@@ -21,9 +22,13 @@
         <div class="bg-no-repeat bg-[center_top] pt-[115px]"
              style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent-test/city-test.svg')">
             <div class="max-w-[1200px] mx-auto">
-                <div class="w-full bg-[length:1200px_auto] bg-no-repeat bg-[center_top_100px] overflow-auto pb-[15px] px-[15px] box-border"
-                     style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/pages/talent-test/road-test.svg')">
-                    <div class="flex">
+                <div class="w-full bg-[length:1200px_auto] bg-no-repeat bg-[center_top_100px] overflow-auto pb-[15px] px-[15px] box-border">
+
+                    <div class="text-center px-[15px] box-border overflow-x-auto">
+                        <img class="min-w-[540px] max-w-[100%]" src="<?= $recruitment_process_steps_image['url'] ?>" alt="Recruitment Proccess">
+                    </div>
+
+                    <div class="flex" style="display: none;">
                         <?php foreach ($recruitment_process_steps as $step) : ?>
                             <div class="px-[15px] box-border w-1/2 md:w-1/3 lg:w-3/12 flex-[1_0_auto] text-center"
                                  style="color: rgb(<?= $step['color']['red']; ?>, <?= $step['color']['green']; ?>, <?= $step['color']['blue']; ?>)">

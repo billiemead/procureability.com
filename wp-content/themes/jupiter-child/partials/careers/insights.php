@@ -46,7 +46,7 @@
                                 <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] line-clamp-3">
                                     <?= get_the_excerpt(); ?>
                                 </div>
-                                <a class="absolute bottom-[4px] font-poppins text-[#3BA17C] transition-all text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
+                                <a class="absolute bottom-[4px] font-poppins text-[#005E6B] transition-all text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
                                    href="<?= get_permalink(); ?>"
                                    title="Read more <?= strip_tags(get_the_title()) ?>"
                                 >Read More</a>
