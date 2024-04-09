@@ -6,7 +6,7 @@
 <!--map-->
 <section class="pb-[60px] md:py-[60px] relative">
     <div class="pt-[66.67%] !relative md:pt-0 md:!absolute md:inset-0">
-        <iframe class="!absolute inset-0 md:!static md:inset-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7089.340846363897!2d-81.66357161314166!3d30.329325762853113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f4304ee580a1ef7!2zMzDCsDE5JzQ1LjIiTiA4McKwMzknMzUuMiJX!5e0!3m2!1sen!2sua!4v1675194677408!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="!absolute inset-0 md:!static md:inset-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7089.340846363897!2d-81.66357161314166!3d30.329325762853113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f4304ee580a1ef7!2zMzDCsDE5JzQ1LjIiTiA4McKwMzknMzUuMiJX!5e0!3m2!1sen!2sua!4v1675194677408!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map"></iframe>
     </div>
     <div class="max-w-[1200px] mx-auto relative pointer-events-none">
         <div class="md:max-w-[300px] md:px-[15px] pointer-events-auto">
@@ -34,9 +34,19 @@
                     <div class="mt-[36px]">
                         <ul class="list-none m-0 flex gap-[16px]">
                             <?php foreach ($map_socials as $map_social) : ?>
+                                <?php
+                                    $map_social_link_title = 'Social Link';
+
+                                    if (strpos($map_social['url'], 'linkedin')) {
+                                        $map_social_link_title = 'Linkedin';
+                                    } else if (strpos($map_social['url'], 'youtube')) {
+                                        $map_social_link_title = 'YouTube';
+                                    }
+                                ?>
                                 <li class="m-0">
                                     <a class="hover:opacity-70 duration-700 ease-in-out transition-opacity opacity-100"
                                        target="_blank"
+                                       title="<?= $map_social_link_title ?>"
                                        href="<?= $map_social['url']; ?>">
                                         <?php $auth = base64_encode("procureabi2dev:SnowboardingSoccer24");
                                         $context = stream_context_create([

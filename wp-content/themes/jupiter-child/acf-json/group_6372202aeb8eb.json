@@ -625,6 +625,31 @@
             "delay": 0
         },
         {
+            "key": "field_66157196dc9c0",
+            "label": "Steps Image",
+            "name": "recruitment_process_steps_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
             "key": "field_6376ab1bc8c19",
             "label": "Steps",
             "name": "recruitment_process_steps",
@@ -744,6 +769,7 @@
             "max": 0,
             "layout": "row",
             "button_label": "Add Row",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_63729b1175a6d",
@@ -849,8 +875,7 @@
                     "return_format": "array",
                     "parent_repeater": "field_63729acf75a6c"
                 }
-            ],
-            "rows_per_page": 20
+            ]
         },
         {
             "key": "field_637267f29b19f",
@@ -985,6 +1010,7 @@
             "max": 0,
             "layout": "table",
             "button_label": "Add Row",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_63725f73e66d5",
@@ -1012,8 +1038,7 @@
                     "mime_types": "",
                     "parent_repeater": "field_63725f07e66d4"
                 }
-            ],
-            "rows_per_page": 20
+            ]
         },
         {
             "key": "field_6372323ee19aa",
@@ -1096,6 +1121,7 @@
             "max": 0,
             "layout": "table",
             "button_label": "Add Row",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_637243a3e19ad",
@@ -1139,8 +1165,7 @@
                     "maxlength": "",
                     "parent_repeater": "field_63724383e19ac"
                 }
-            ],
-            "rows_per_page": 20
+            ]
         },
         {
             "key": "field_637243d4e19af",
@@ -1314,5 +1339,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677505257
+    "modified": 1712681435
 }
