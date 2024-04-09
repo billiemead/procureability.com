@@ -79,3 +79,27 @@
         }
     }
 }
+
+.podcast-banner {
+
+    &__desktop-wrapper {
+        display: none;
+
+        @media (min-width: 767px) {
+            display: block;
+        }
+    }
+
+    &__mobile-wrapper {
+        display: block;
+        text-align: center;
+
+        & > div {
+            max-width: none;
+        }
+
+        @media (min-width: 767px) {
+            display: none;
+        }
+    }
+}

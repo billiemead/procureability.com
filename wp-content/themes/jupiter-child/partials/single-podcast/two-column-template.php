@@ -9,11 +9,23 @@
                 <?php /** !YOUTUBE VIDEO */ ?>
 
                 <div class="[&>ul>li]:mb-[8px] [&>ul>li]:!font-poppins [&>p]:!font-poppins"><?= get_the_content() ?></div>
+
+                <div class="podcast-banner__mobile-wrapper">
+                    <?php /** VIDEO POSTER */ ?>
+                    <?php get_template_part('partials/single-podcast/partials/banner'); ?>
+                    <?php /** !VIDEO POSTER */ ?>
+                </div>
             </div>
             <div class="w-[100%] sm:w-[40%] lg:max-w-[465px] lg:w-[50%]">
                 <?php /** VIDEO POSTER */ ?>
                 <?php get_template_part('partials/single-podcast/partials/video-poster'); ?>
                 <?php /** !VIDEO POSTER */ ?>
+
+                <div class="podcast-banner__desktop-wrapper">
+                    <?php /** VIDEO POSTER */ ?>
+                    <?php get_template_part('partials/single-podcast/partials/banner'); ?>
+                    <?php /** !VIDEO POSTER */ ?>
+                </div>
             </div>
         </div>
     </div>
