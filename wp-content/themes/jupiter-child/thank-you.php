@@ -7,17 +7,21 @@
 
 <?php get_header(); ?>
 
-<?php /** HERO */ ?>
-<?php get_template_part('partials/thank-you/hero'); ?>
-<?php /** !HERO */ ?>
+<main>
 
-<?php /** CTA */ ?>
-<?php get_template_part('partials/thank-you/cta'); ?>
-<?php /** !CTA */ ?>
+    <?php /** HERO */ ?>
+    <?php get_template_part('partials/thank-you/hero'); ?>
+    <?php /** !HERO */ ?>
 
-<?php /** FEATURED CONTENT */ ?>
-<?php get_template_part('partials/thank-you/featured-content'); ?>
-<?php /** !FEATURED CONTENT */ ?>
+    <?php /** CTA */ ?>
+    <?php get_template_part('partials/thank-you/cta'); ?>
+    <?php /** !CTA */ ?>
+
+    <?php /** FEATURED CONTENT */ ?>
+    <?php get_template_part('partials/thank-you/featured-content'); ?>
+    <?php /** !FEATURED CONTENT */ ?>
+
+</main>
 
 <?php get_footer(); ?>
 
