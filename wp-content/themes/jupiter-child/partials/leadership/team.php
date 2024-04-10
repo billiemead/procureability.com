@@ -17,6 +17,8 @@
                     <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 sm:pr-[26px] mb-[42px] box-border">
                         <a class="block group cursor-pointer"
                            data-x-on:click.prevent="handleClick($event, <?= $key; ?>, '<?= get_permalink(); ?>')"
+                           data-key-bio="<?= $key ?>"
+                           data-permalink-bio="<?= get_permalink() ?>"
                         >
                             <div class="pb-[100%] mx-auto mb-[30px] xl:mb-[14px] relative">
                                 <div class="absolute inset-0 bg-cover rounded-full overflow-hidden"
@@ -136,13 +138,10 @@
                                                         <div class="font-poppins text-[#61636B] text-[18px] leading-normal"><?= $leadership_title; ?></div>
                                                     </div>
                                                 </div>
-                                                <div class="flex-0 grid gap-[60px] grid-cols-[53.09%_auto] overflow-y-auto overflow-x-hidden px-[40px] lg:px-[80px]">
+                                                <div class="flex flex-wrap-reverse gap-[20px] flex-0 sm:!grid sm:gap-[60px] grid-cols-[53.09%_auto] overflow-y-auto overflow-x-hidden px-[40px] lg:px-[80px]" style="transform: translateZ(0);">
                                                     <div>
-                                                        <div class="[&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]">
-                                                            <?= apply_filters('the_content', $leadership_bio); ?>
-                                                        </div>
                                                         <?php if ($leadership_socials) : ?>
-                                                            <div class="mt-[32px] space-x-[30px]">
+                                                            <div class="space-x-[30px] sticky top-[86%] pt-[20px] pb-[10px] bg-[#fff]">
                                                                 <?php foreach ($leadership_socials as $leadership_social) : ?>
                                                                     <a href="<?= $leadership_social['url']; ?>"
                                                                        target="_blank"
@@ -155,6 +154,11 @@
                                                                 <?php endforeach; ?>
                                                             </div>
                                                         <?php endif; ?>
+
+                                                        <div class="mt-[-60px] [&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]">
+                                                            <?= apply_filters('the_content', $leadership_bio); ?>
+                                                        </div>
+
                                                     </div>
                                                     <div>
                                                         <?php if ($leadership_casual_image) : ?>

@@ -104,9 +104,16 @@ document.addEventListener('alpine:init', () => {
                 on: {
                     init: swiper => {
                         if (this.active && Number.isInteger(this.active) || this.active === 0) {
-                            swiper.slideTo(this.active, 0)
-                            this.toggleModal();
-                            this.$lockbody(this.$refs.modal);
+                            const viewportWidth = window.innerWidth;
+                            if (viewportWidth >= 1024) {
+                                swiper.slideTo(this.active, 0)
+                                this.toggleModal();
+                                this.$lockbody(this.$refs.modal);
+                            } else {
+                                const url = document.querySelector(`a[data-key-bio="${this.active}"]`).dataset.permalinkBio;
+
+                                if (url) window.location.href = url;
+                            }
                         }
                     },
                     slideChangeTransitionEnd: swiper => {
