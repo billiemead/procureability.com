@@ -40,7 +40,7 @@
                             </div>
                             <div>
                                 <div class="text-center mb-[6px]">
-                                    <div class="font-poppins text-[22px] leading-normal font-medium text-[#0098AE] transition-colors group-hover:decoration-transparent underline decoration-dashed decoration-1 underline-offset-[6px]"><?= get_field('leadership_name'); ?></div>
+                                    <div class="font-poppins text-[22px] leading-normal font-medium text-[#005E6B] transition-colors group-hover:decoration-transparent underline decoration-dashed decoration-1 underline-offset-[6px]"><?= get_field('leadership_name'); ?></div>
                                 </div>
                                 <div class="text-center">
                                     <div class="font-poppins text-[16px] leading-normal text-[#61636B]"><?= get_field('leadership_title'); ?></div>
@@ -54,21 +54,21 @@
                     <div class="flex w-full sm:w-6/12 md:w-8/12 lg:w-6/12 sm:pr-[26px] mb-[42px] box-border">
                         <div class="max-w-[508px] m-auto">
                             <div class="text-center mb-[16px]">
-                                <div class="font-poppins text-[42px] leading-[1.38] font-medium text-[#3BA17C]">
+                                <div class="font-poppins text-[42px] leading-[1.38] font-medium text-[#016544]">
                                     <?= $cta_title; ?>
                                 </div>
                             </div>
                             <div class="text-center mb-[32px]">
-                                <div class="font-poppins text-[18px] leading-[1.6] opacity-80 text-[#5A5A5A]">
+                                <div class="font-poppins text-[18px] leading-[1.6] opacity-80 text-[#61636B]">
                                     <?= $cta_text; ?>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <a class="inline-block border-2 group border-[#3BA17C] bg-white border-solid py-[16px] px-[40px] rounded-[3px] transition-colors hover:bg-[#3BA17C]"
+                                <a class="inline-block border-2 group border-[#016544] bg-white border-solid py-[16px] px-[40px] rounded-[3px] transition-colors hover:bg-[#016544]"
                                    href="<?= $cta_button['url']; ?>"
                                    target="<?= $cta_button['target'] ?: '_self'; ?>"
                                 >
-                                    <span class="text-poppins text-[18px] leading-normal text-[#3BA17C] group-hover:text-white transition-colors font-semibold tracking-[0.14em] uppercase"><?= $cta_button['title']; ?></span>
+                                    <span class="text-poppins text-[18px] leading-normal text-[#016544] group-hover:text-white transition-colors font-semibold tracking-[0.14em] uppercase"><?= $cta_button['title']; ?></span>
                                 </a>
                             </div>
                         </div>
