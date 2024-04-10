@@ -46,7 +46,7 @@
                                          href="<?= get_permalink(); ?>">
                                         <span class="line-clamp-3"><?= get_the_excerpt(); ?></span>
                                     </div>
-                                    <a class="font-poppins text-[#3BA17C] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
+                                    <a class="font-poppins text-[#005E6B] text-[14px] xl:text-[16px] leading-[1.5] font-[500] transition-colors duration-500"
                                        href="<?= get_permalink(); ?>" title="Read more: <?= get_the_title(); ?>">Read More</a>
                                 </div>
                             </div>
