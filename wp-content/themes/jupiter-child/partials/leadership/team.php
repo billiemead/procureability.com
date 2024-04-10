@@ -141,7 +141,7 @@
                                                 <div class="flex flex-wrap-reverse gap-[20px] flex-0 sm:!grid sm:gap-[60px] grid-cols-[53.09%_auto] overflow-y-auto overflow-x-hidden px-[40px] lg:px-[80px]" style="transform: translateZ(0);">
                                                     <div>
                                                         <?php if ($leadership_socials) : ?>
-                                                            <div class="space-x-[30px] sticky top-[87.5%] pt-[20px] bg-[#fff]">
+                                                            <div class="space-x-[30px] sticky top-[86.5%] pt-[26.9px] bg-[#fff]">
                                                                 <?php foreach ($leadership_socials as $leadership_social) : ?>
                                                                     <a href="<?= $leadership_social['url']; ?>"
                                                                        target="_blank"
@@ -155,7 +155,10 @@
                                                             </div>
                                                         <?php endif; ?>
 
-                                                        <div class="mt-[-60px] [&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]">
+                                                        <div
+                                                                class="[&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]"
+                                                                style="<?= $leadership_socials ? 'margin-top: -60px;' : '' ?>"
+                                                        >
                                                             <?= apply_filters('the_content', $leadership_bio); ?>
                                                         </div>
 
