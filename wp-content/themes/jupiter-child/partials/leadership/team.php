@@ -136,7 +136,7 @@
                                                         <div class="font-poppins text-[#61636B] text-[18px] leading-normal"><?= $leadership_title; ?></div>
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-wrap-reverse gap-[20px] flex-0 sm:!grid sm:gap-[60px] grid-cols-[53.09%_auto] overflow-y-auto overflow-x-hidden px-[40px] lg:px-[80px]" style="transform: translateZ(0); -webkit-overflow-scrolling: touch;">
+                                                <div class="flex flex-wrap-reverse gap-[20px] flex-0 sm:!grid sm:gap-[60px] grid-cols-[53.09%_auto] overflow-y-auto overflow-x-hidden px-[40px] lg:px-[80px]" style="transform: translateZ(0);">
                                                     <div>
                                                         <div class="[&_p]:!font-poppins [&_p]:text-[#61636B] [&_p]:text-[14px] [&_p]:leading-[1.7]">
                                                             <?= apply_filters('the_content', $leadership_bio); ?>
