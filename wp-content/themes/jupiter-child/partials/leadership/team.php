@@ -17,6 +17,8 @@
                     <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 sm:pr-[26px] mb-[42px] box-border">
                         <a class="block group cursor-pointer"
                            data-x-on:click.prevent="handleClick($event, <?= $key; ?>, '<?= get_permalink(); ?>')"
+                           data-key-bio="<?= $key ?>"
+                           data-permalink-bio="<?= get_permalink() ?>"
                         >
                             <div class="pb-[100%] mx-auto mb-[30px] xl:mb-[14px] relative">
                                 <div class="absolute inset-0 bg-cover rounded-full overflow-hidden"
