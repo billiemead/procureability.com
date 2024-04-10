@@ -32,18 +32,24 @@
                             <div>
                                 <a href="<?= get_permalink(); ?>"
                                    class="block pb-[52.12%] md:pb-[55.32%] mb-[24px] xl:mb-[32px] rounded-[6px] relative overflow-hidden z-20"
+                                   title="<?= strip_tags(get_the_title()) ?>"
                                 >
                                     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-110 transition-transform ease-in-out duration-300 z-10"
                                          style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')"></div>
                                 </a>
-                                <a href="<?= get_permalink(); ?>" class="block font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]">
+                                <a href="<?= get_permalink(); ?>"
+                                   class="block font-poppins text-[#393A40] text-[18px] xl:text-[24px] leading-[1.2] xl:leading-[1.27] font-[500] mb-[12px]"
+                                   title="<?= strip_tags(get_the_title()) ?>"
+                                >
                                     <?= the_title(); ?>
                                 </a>
                                 <div class="font-poppins text-[#393A40] text-[14px] xl:text-[16px] leading-[1.7] xl:leading-[1.65] line-clamp-3">
                                     <?= get_the_excerpt(); ?>
                                 </div>
-                                <a class="absolute bottom-[4px] font-poppins text-[#3BA17C] transition-all text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
-                                   href="<?= get_permalink(); ?>">Read More</a>
+                                <a class="absolute bottom-[4px] font-poppins text-[#005E6B] transition-all text-[14px] xl:text-[16px] leading-[1.5] font-[500]"
+                                   href="<?= get_permalink(); ?>"
+                                   title="Read more <?= strip_tags(get_the_title()) ?>"
+                                >Read More</a>
                             </div>
                         </div>
                     <?php endwhile; ?>
