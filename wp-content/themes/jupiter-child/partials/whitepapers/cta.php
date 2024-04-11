@@ -11,7 +11,7 @@
         </div>
         <div class="text-center">
             <a target="<?= $cta_pre_footer_button['target'] ?: '_self' ?>"
-               class="inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative"
+               class="inline-block py-[12px] px-[32px]  bg-[#155B39] rounded-[3px] group relative"
                href="<?= $cta_pre_footer_button['url']; ?>">
                 <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
