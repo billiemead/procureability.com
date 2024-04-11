@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                             <div class="text-center mb-[32px]">
-                                <div class="font-poppins text-[18px] leading-[1.6] opacity-80 text-[#61636B]">
+                                <div class="font-poppins text-[18px] leading-[1.6] opacity-80 text-[#393A40]">
                                     <?= $cta_text; ?>
                                 </div>
                             </div>
