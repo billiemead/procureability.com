@@ -13,6 +13,48 @@ header {
         --root-level-highlight-link-color: #3BA17C;
     }
 
+    &.is-transparent {
+        .desktop-nav {
+            ul.menu {
+                & > li.menu-item {
+                    &.current-menu-item,
+                    &.current-menu-ancestor {
+                        & > a {
+                            color: #fff;
+                        }
+                    }
+
+                    &.highlight-on-scroll {
+                        & > a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.is-transparent.is-sticky {
+        .desktop-nav {
+            ul.menu {
+                & > li.menu-item {
+                    &.current-menu-item,
+                    &.current-menu-ancestor {
+                        & > a {
+                            color: #155B39;
+                        }
+                    }
+
+                    &.highlight-on-scroll {
+                        & > a {
+                            color: #155B39;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .desktop-nav {
         height: 72px;
 
@@ -42,7 +84,7 @@ header {
 
                 &.highlight-on-scroll {
                     & > a {
-                        color: #155B39 !important;
+                        color: #155B39;
                     }
                 }
 
