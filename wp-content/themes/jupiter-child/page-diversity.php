@@ -42,18 +42,16 @@ $insights = get_field('insights');
                                 class="diversity-mission-approach-and-commitment__card-bg rounded-[5px] absolute top-0 left-0 h-[100%] w-[100%] bg-cover bg-no-repeat bg-center flex items-end justify-center px-[20px] opacity-100"
                                 style="background-image: url(<?= $item['image']['url'] ?>);"
                         >
-                            <h4
+                            <h2
                                     class="text-[#fff] font-poppins mb-[30px]"
-                            ><?= $item['title'] ?></h4>
+                            ><?= $item['title'] ?></h2>
                         </div>
 
-                        <div
-                                class="diversity-mission-approach-and-commitment__card-content rounded-[5px] h-[100%] opacity-0"
+                        <div class="diversity-mission-approach-and-commitment__card-content rounded-[5px] h-[100%] opacity-0"
                                 style="border: 0.948px solid rgba(0, 152, 174, 0.70); box-shadow: 0px 9.478px 18.956px 0px rgba(59, 161, 124, 0.30);"
                         >
-                            <h4
-                                    class="text-[<?= $titleColor ?>] text-[24px] font-poppins font-semibold leading-snug"
-                            ><?= $item['title'] ?></h4>
+                            <h2 class="text-[<?= $titleColor ?>] text-[24px] font-poppins font-semibold leading-snug"
+                            ><?= $item['title'] ?></h2>
 
                             <p class="text-[#777] font-poppins text-[18px] font-normal leading-relaxed mb-0"><?= $item['text'] ?></p>
                         </div>
@@ -92,7 +90,8 @@ $insights = get_field('insights');
       </h2>
 
       <div class="cp-statistic__image">
-        <a href="
+        <a title="<?= $statistics['title'] ?>"
+                href="
         <?=
           !empty($statistics['popup_image']) ? $statistics['popup_image']['url'] : $statistics['image']['url']
         ?>" class="mfp-image">
@@ -100,7 +99,7 @@ $insights = get_field('insights');
         </a>
       </div>
 
-      <a href="<?= $statistics['download_file']['url'] ?>" class="cp-statistic__button" download>
+      <a title="<?= $statistics['title'] ?>" href="<?= $statistics['download_file']['url'] ?>" class="cp-statistic__button" download>
         <?= $statistics['download_text'] ?>
       </a>
     </div>
@@ -120,7 +119,7 @@ $insights = get_field('insights');
           ?>
           <div class="cp-testimonials__item d-flex align-items-center">
             <div class="cp-testimonials__desc">
-              <p class="cp-testimonials__text">
+              <p class="cp-testimonials__text text-[#393A40]">
                 <?= $item['text'] ?>
               </p>
 
@@ -131,7 +130,7 @@ $insights = get_field('insights');
                 <div>
                   <div class="cp-testimonials__name"><?= $item['name'] ?></div>
 
-                  <div class="cp-testimonials__position"><?= $item['position'] ?></div>
+                  <div class="cp-testimonials__position text-[#393A40]"><?= $item['position'] ?></div>
                 </div>
               </div>
             </div>
@@ -167,7 +166,7 @@ $insights = get_field('insights');
             </div>
           </div>
 
-          <a href="#mfp-post-<?= $key ?>" class="cp-insights-item__button mfp-post">
+          <a href="#mfp-post-<?= $key ?>" class="cp-insights-item__button mfp-post text-[#155B39]">
             <?= $item['read_more_text'] ?>
           </a>
         </div>
