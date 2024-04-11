@@ -25,10 +25,10 @@
                                     <a href="<?= the_permalink(); ?>" class="font-poppins text-[#393A40] text-[20px] leading-[1.3] font-semibold"><?= the_title(); ?></a>
                                 </div>
                                 <div class="mb-[35px]">
-                                    <div class="font-poppins text-[16px] leading-[1.6] text-[#61636B]"><?= the_excerpt(); ?></div>
+                                    <div class="font-poppins text-[16px] leading-[1.6] text-[#393A40]"><?= the_excerpt(); ?></div>
                                 </div>
                                 <div>
-                                    <a class="font-poppins hover:decoration-transparent transition-colors text-[#3BA17C] text-[16px] font-semibold leading-normal uppercase tracking-[1.6px] !underline underline-offset-[7px] !decoration-dotted"
+                                    <a class="font-poppins hover:decoration-transparent transition-colors text-[#155B39] text-[16px] font-semibold leading-normal uppercase tracking-[1.6px] !underline underline-offset-[7px] !decoration-dotted"
                                        href="<?= the_permalink(); ?>">read more</a>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                         </div>
                                         <div class="mt-[24px] text-center">
                                             <a target="<?= $cta_between_whitepapers_button['target'] ?: '_self' ?>"
-                                               class="inline-block py-[12px] px-[32px]  bg-[#3BA17C] rounded-[3px] group relative"
+                                               class="inline-block py-[12px] px-[32px] text-[#005E6B]  bg-[#155B39] rounded-[3px] group relative"
                                                href="<?= $cta_between_whitepapers_button['url']; ?>">
                                                 <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500"
                                                      style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/page-digital-services/button-bg.svg')"
