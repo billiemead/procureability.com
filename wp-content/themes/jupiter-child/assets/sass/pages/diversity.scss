@@ -524,12 +524,16 @@
       }
     }
 
+    &__text {
+      color: #61636B;
+    }
+
     &__name {
       font-weight: 500;
       font-size: 16px;
       line-height: 150%;
       letter-spacing: -0.02em;
-      color: rgba(57, 58, 64, 0.8);
+      color: #393a40;
 
       @media (max-width: 576px) {
         font-size: 14px;
@@ -542,7 +546,7 @@
       font-size: 16px;
       line-height: 150%;
       letter-spacing: -0.02em;
-      color: rgba(57, 58, 64, 0.5);
+      color: #61636B;
 
       @media (max-width: 576px) {
         font-size: 14px;
@@ -649,7 +653,7 @@
       }
 
       &__button {
-        color: #155B39;
+        color: #005E6B;
         position: relative;
         display: inline-block;
         align-self: flex-start;
