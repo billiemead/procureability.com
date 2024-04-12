@@ -18,7 +18,7 @@
                     <?php if ($insight['post']) : ?>
                         <div class="group/card">
                             <div class="mb-[20px]">
-                                <a href="<?= get_the_permalink($insight['post']); ?>"
+                                <a href="<?= get_the_permalink($insight['post']); ?>" title=" <?= get_the_title($insight['post']); ?>"
                                    class="block pt-[52.47%] rounded-[5px] overflow-hidden relative group z-20"
                                 >
                                     <div class="absolute bg-cover bg-no-repeat bg-center inset-0 group-hover:scale-110 transition-transform ease-in-out duration-300 z-10"
@@ -39,7 +39,7 @@
                                 </div>
                             <?php endif; ?>
                             <div>
-                                <a href="<?= get_the_permalink($insight['post']); ?>"
+                                <a href="<?= get_the_permalink($insight['post']); ?>" title=" <?= get_the_title($insight['post']); ?>"
                                    class="font-poppins text-[22px] leading-[1.4] font-semibold text-[#393A40] group-hover/card:text-[#0098AE]">
                                     <?= get_the_title($insight['post']); ?>
                                 </a>
@@ -51,11 +51,11 @@
         <?php endif; ?>
         <?php if ($insights_button && $form_form) : ?>
             <div class="text-center mt-[56px]">
-                <button class="inline-block pt-[13px] pb-[11px] lg:p-[16px] max-w-[300px] lg:max-w-[420px] w-full uppercase bg-[#3BA17C] rounded-[3px] group relative box-border border-none"
+                <button class="inline-block bg-[#3ba17c] pt-[13px] pb-[11px] lg:p-[16px] max-w-[300px] lg:max-w-[420px] w-full uppercase  rounded-[3px] group relative box-border border-none"
                         data-x-data="{}"
                         data-x-on:click="document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' })"
                 >
-                    <div class="absolute inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
+                    <div class="absolute  inset-0 group-hover:opacity-0 opacity-100 transition-opacity duration-500 bg-no-repeat bg-center"
                          style="background-image: url('<?= get_stylesheet_directory_uri(); ?>/assets/img/button-bg-pattern.svg')"
                     ></div>
                     <span class="font-poppins text-white text-[16px] lg:text-[20px] leading-[1.5] font-semibold tracking-[0.1em] uppercase"><?= $insights_button['title']; ?></span>
