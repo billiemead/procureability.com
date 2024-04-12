@@ -57,7 +57,7 @@
                         <?php endif; ?>
                         <?php if ($cta_first_text) : ?>
                             <div>
-                                <div class="[&_p]:font-poppins [&_p]:text-[18px] [&_p]:leading-[1.6] [&_p]:text-[#5A5A5A] [&_p]:mb-0 opacity-80">
+                                <div class="[&_p]:font-poppins [&_p]:text-[18px] [&_p]:leading-[1.6] [&_p]:text-[#393A40] [&_p]:mb-0">
                                     <?= $cta_first_text; ?>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                         <div><?= do_shortcode($cta_first_form_form); ?></div>
                         <?php if ($cta_first_text_under_the_form) : ?>
                             <div class="mt-[16px]">
-                                <div class="[&_p]:mb-0 [&_p]:!font-poppins [&_p]:text-[14px] [&_p]:text-[#686868] [&_p]:leading-normal [&_a]:text-[#0098AE] [&_a]:font-medium [&_a:hover]:text-[#0098AE] [&_a]:!underline [&_a]:!decoration-dotted [&_a]:underline-offset-4 [&_a:hover]:decoration-transparent"><?= $cta_first_text_under_the_form; ?></div>
+                                <div class="[&_p]:mb-0 [&_p]:!font-poppins [&_p]:text-[14px] [&_p]:text-[#686868] [&_p]:leading-normal [&_a]:text-[#005E6B] [&_a]:font-medium [&_a:hover]:text-[#0098AE] [&_a]:!underline [&_a]:!decoration-dotted [&_a]:underline-offset-4 [&_a:hover]:decoration-transparent"><?= $cta_first_text_under_the_form; ?></div>
                             </div>
                         <?php endif; ?>
                     </div>

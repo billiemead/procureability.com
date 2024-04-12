@@ -13,20 +13,20 @@
             <div class="pt-[32px] px-[32px] pb-[43px] bg-white md:rounded-[6px] md:shadow-[0px_4px_24px_rgba(0,0,0,0.1)] before:content-[''] before:h-[4px] before:block before:absolute before:top-0 before:left-0 before:w-full before:bg-[#0098AE] before:opacity-40 relative overflow-hidden">
                 <?php if ($map_title) : ?>
                     <div class="mb-[16px]">
-                        <div class="font-poppins text-[14px] leading-[1.5] text-[#0098AE] font-semibold tracking-[3px] uppercase">
+                        <div class="font-poppins text-[14px] leading-[1.5] text-[#005E6B] font-semibold tracking-[3px] uppercase">
                             <?= $map_title; ?>
                         </div>
                     </div>
                 <?php endif; ?>
                 <?php if ($map_address) : ?>
                     <div class="mb-[24px]">
-                        <div class="font-poppins text-[16px] leading-[1.6] text-[#5A5A5A]"><?= $map_address; ?>
+                        <div class="font-poppins text-[16px] leading-[1.6] text-[#393A40]"><?= $map_address; ?>
                         </div>
                     </div>
                 <?php endif; ?>
                 <?php if ($map_email) : ?>
                     <div>
-                        <a class="font-poppins text-[14px] leading-[1.6] text-[#5A5A5A] !underline font-medium"
+                        <a class="font-poppins text-[14px] leading-[1.6] text-[#393A40] !underline font-medium"
                            href="mailto:<?= $map_email; ?>"><?= $map_email; ?></a>
                     </div>
                 <?php endif; ?>
