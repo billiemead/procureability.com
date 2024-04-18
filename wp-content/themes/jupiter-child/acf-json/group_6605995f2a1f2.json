@@ -1162,6 +1162,26 @@
             "append": ""
         },
         {
+            "key": "field_6606a2f28aba6",
+            "label": "Position",
+            "name": "author_position",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6605c6bf18765",
             "label": "Link",
             "name": "author_link",
@@ -1592,5 +1612,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711656846
+    "modified": 1711964591
 }
